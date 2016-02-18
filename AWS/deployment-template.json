@@ -1,0 +1,55 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    
+    "Parameters" : {
+    
+        "ProjectResourceHandler": {
+            "Type": "String",
+            "Description": "Service token of the custom resource handler."
+        },
+        
+        "ConfigurationBucket": {
+            "Type": "String",
+            "Description": "Bucket that contains configuration data."
+        },
+
+        "ConfigurationKey": {
+            "Type": "String",
+            "Description": "Location in the configuration bucket of configuration data."
+        }
+        
+    },
+
+    "Resources": {
+
+        "DontDieAWSConfiguration" : {
+            "Type": "Custom::FeatureConfiguration",
+            "Properties": {
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "ConfigurationBucket": { "Ref": "ConfigurationBucket" },
+                "ConfigurationKey": { "Ref": "ConfigurationKey" },
+                "FeatureName": "DontDieAWS"
+            }
+        },
+
+        "DontDieAWS": {
+            "Type": "AWS::CloudFormation::Stack",
+            "Properties": {
+                "TemplateURL": { "Fn::GetAtt": [ "DontDieAWSConfiguration", "TemplateURL" ] },
+                "Parameters": {
+                    "ProjectResourceHandler": { "Ref": "ProjectResourceHandler" },
+                    "ConfigurationBucket": { "Fn::GetAtt": [ "DontDieAWSConfiguration", "ConfigurationBucket" ] },
+                    "ConfigurationKey": { "Fn::GetAtt": [ "DontDieAWSConfiguration", "ConfigurationKey" ] }
+                }
+            }
+        }
+    },
+
+    "Outputs": {
+        "StackName": {
+            "Description": "The deployment stack name.",
+            "Value": {"Ref": "AWS::StackName"}
+        }
+    }
+    
+}

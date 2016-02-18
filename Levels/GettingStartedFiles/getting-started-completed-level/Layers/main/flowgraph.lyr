@@ -1,0 +1,149 @@
+<ObjectLayer>
+ <Layer Name="Flowgraph" GUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="1044720" ParentGUID="{27CDCC98-D526-403E-A96E-D2DDCFDDCBC8}">
+  <LayerObjects>
+   <Object Type="TagPoint" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{88DD2E35-D7E8-4663-87BD-D52299281BB1}" Name="TagPoint2" HideOrder="0" Pos="529.12488,596,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{5DB98253-56AA-4B33-89BF-C2A13524A58C}" Name="ProximityTrigger1" HideOrder="0" Pos="533.62494,583,34.499996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="25" DimY="10" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Camera" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{9AFD1657-96CE-455A-BAB8-89FC72027FD2}" Name="Camera1" HideOrder="0" Pos="533.039,588.91315,36.678837" FloorNumber="-1" Rotate="0.99534464,-0.096331798,0.00029254734,-0.0030227343" ColorRGB="16776960" FOV="1.0472" NearZ="0.2" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="TagPoint" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{4226A284-D6A2-4D68-8F13-D037634B55D3}" Name="TagPoint3" HideOrder="0" Pos="537.87494,596,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16384000" EntityClass="TagPoint"/>
+   <Object Type="GeomEntity" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{50A5238F-8D92-4231-B761-19C36E358987}" Name="gs_block1" HideOrder="0" Pos="533.37488,596,32" FloorNumber="-1" Rotate="0.98480779,0.17364818,0,0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/GettingStartedAssets/gs_block.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{E881CEBA-8B1C-445A-966E-81FDEA3F87B5}" Name="FlowgraphEntity1" HideOrder="0" Pos="540.12494,571,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="GettingStarted" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-10,350,0" flags="0" EntityGUID="{5DB98253-56AA-4B33-89BF-C2A13524A58C}" EntityGUID_64="4B3356AA5DB98253">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="Camera:View" pos="770,280,0" flags="0" EntityGUID="{9AFD1657-96CE-455A-BAB8-89FC72027FD2}" EntityGUID_64="455A96CE9AFD1657">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="4" Class="Camera:View" pos="770,520,0" flags="0">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="5" Class="Mission:GameTokenGet" pos="370,520,0" flags="0">
+       <Inputs gametoken_Token="GettingStarted_GT.3P_CameraID"/>
+      </Node>
+      <Node Id="6" Class="Movement:MoveEntityTo" pos="640,950,0" flags="0" EntityGUID="{50A5238F-8D92-4231-B761-19C36E358987}" EntityGUID_64="42318D9250A5238F">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="4" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="7" Class="Movement:MoveEntityTo" pos="1160,970,0" flags="0" EntityGUID="{50A5238F-8D92-4231-B761-19C36E358987}" EntityGUID_64="42318D9250A5238F">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="4" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="8" Class="Debug:InputKey" pos="380,1090,0" flags="0">
+       <Inputs entityId="0" Key="j" NonDevMode="0"/>
+      </Node>
+      <Node Id="9" Class="Debug:InputKey" pos="910,1090,0" flags="0">
+       <Inputs entityId="0" Key="l" NonDevMode="0"/>
+      </Node>
+      <Node Id="11" Class="entity:TagPoint" pos="380,940,0" flags="0" EntityGUID="{88DD2E35-D7E8-4663-87BD-D52299281BB1}" EntityGUID_64="4663D7E888DD2E35">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="13" Class="entity:TagPoint" pos="910,930,0" flags="0" EntityGUID="{4226A284-D6A2-4D68-8F13-D037634B55D3}" EntityGUID_64="4D68D6A24226A284">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="14" Class="Debug:InputKey" pos="1040,-130,0" flags="0">
+       <Inputs entityId="0" Key="i" NonDevMode="0"/>
+      </Node>
+      <Node Id="15" Class="Entity:SpawnArchetype" pos="1390,-290,0" flags="0">
+       <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+      </Node>
+      <Node Id="16" Class="Physics:ActionImpulse" pos="1850,-250,0" flags="0">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="17" Class="String:SetString" pos="1040,-420,0" flags="0">
+       <Inputs In="GSArchetype.Physics.Ball"/>
+      </Node>
+      <Node Id="19" Class="entity:TagPoint" pos="1040,-320,0" flags="0" EntityGUID="{F121D8ED-9F71-4587-B8B5-55E4BB45EBE4}" EntityGUID_64="45879F71F121D8ED">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="20" Class="Interpolate:Int" pos="1380,-110,0" flags="0">
+       <Inputs StartValue="0" EndValue="6000" Time="1" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="21" Class="Vec3:ToVec3" pos="1640,-120,0" flags="0">
+       <Inputs x="0" y="0" z="1000"/>
+      </Node>
+      <Node Id="22" Class="Debug:DisplayMessage" pos="1760,-10,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="23" Class="Game:Start" pos="-20,1270,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="24" Class="Logic:Any" pos="240,1170,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="25" Class="Logic:Any" pos="720,1270,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="26" Class="Game:Start" pos="550,-120,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="27" Class="Logic:Any" pos="790,-120,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="28" Name="Block Mover Script" Class="_commentbox" pos="-30,889.69092,0" flags="0">
+       <Inputs TextSize="2" Color="0.603827,1,0.351533" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1420" Height="470"/>
+       <NodeSize Width="1420" Height="504"/>
+      </Node>
+      <Node Id="29" Name="Camera Switch" Class="_commentbox" pos="-30,215.71025,0" flags="0">
+       <Inputs TextSize="2" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1020" Height="500"/>
+       <NodeSize Width="1020" Height="534"/>
+      </Node>
+      <Node Id="30" Name="Spawn Ball" Class="_commentbox" pos="540,-460.30899,0" flags="0">
+       <Inputs TextSize="2" Color="0.545725,0.846873,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1483" Height="606"/>
+       <NodeSize Width="1483" Height="640"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="3" nodeOut="2" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="2" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="2" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="2" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="2" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="24" nodeOut="2" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="2" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="27" nodeOut="2" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="5" portIn="Enable" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="5" portIn="entityId" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="8" portIn="Start" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="8" portIn="Stop" portOut="Released" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="9" portIn="Start" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="9" portIn="Stop" portOut="Released" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="11" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="14" portIn="Spawn" portOut="Released" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="14" portIn="Start" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="14" portIn="Stop" portOut="Released" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="15" portIn="Activate" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="15" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="17" portIn="Archetype" portOut="Out" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="19" portIn="Pos" portOut="pos" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="20" portIn="y" portOut="Value" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="20" portIn="Show" portOut="Value" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="20" portIn="message" portOut="Value" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="21" portIn="Impulse" portOut="Result" enabled="1"/>
+      <Edge nodeIn="24" nodeOut="23" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="23" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="24" portIn="Disable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="25" portIn="Disable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="27" nodeOut="26" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="27" portIn="Disable" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Flowgraph" LayerGUID="{2F3AFAC5-B762-48E4-8913-3C4B140C336D}" Id="{F121D8ED-9F71-4587-B8B5-55E4BB45EBE4}" Name="TagPoint4" HideOrder="0" Parent="{50A5238F-8D92-4231-B761-19C36E358987}" Pos="-0.49993896,2.625,0.49999619" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

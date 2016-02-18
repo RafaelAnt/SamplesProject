@@ -1,0 +1,9 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+   <GameToken Name="Dynamic_Fov_ex2" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="Dynamic_Fov_ex1" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="Robot_Cam_Dynamic_Fov" Type="Float" Value="0.000000" LocalOnly="1"/>
+  </LevelLibrary>
+ </GameTokensLibrary>
+</GameTokens>

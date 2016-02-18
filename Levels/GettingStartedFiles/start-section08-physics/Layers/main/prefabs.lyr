@@ -1,0 +1,9 @@
+<ObjectLayer>
+ <Layer Name="Prefabs" GUID="{0AAE25D5-5C6C-499B-B465-4EB5EA33BC26}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="1044720" ParentGUID="{27CDCC98-D526-403E-A96E-D2DDCFDDCBC8}">
+  <LayerObjects>
+   <Object Type="Prefab" Layer="Prefabs" LayerGUID="{0AAE25D5-5C6C-499B-B465-4EB5EA33BC26}" Id="{E3448118-B89D-4CCE-ADEA-1FEED07C5957}" Name="NeighborhoodBlock.Block_A1" HideOrder="0" Pos="453.99997,541,31.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" MatLayersMask="0" PrefabGUID="{00BF3CBF-F764-4BE4-A0F0-A141355F405A}" PrefabName="StyleTown.NeighborhoodBlock.Block_A"/>
+   <Object Type="Prefab" Layer="Prefabs" LayerGUID="{0AAE25D5-5C6C-499B-B465-4EB5EA33BC26}" Id="{3F316B19-0CEC-44C4-9270-CC1AAB9BD468}" Name="NeighborhoodBlock.StreetSet_A1" HideOrder="0" Pos="440.99997,524.86505,31.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" MatLayersMask="0" PrefabGUID="{F2EA1882-BEFF-4DE8-9F1E-DBA50C4BEEA3}" PrefabName="StyleTown.NeighborhoodBlock.StreetSet_A"/>
+   <Object Type="Prefab" Layer="Prefabs" LayerGUID="{0AAE25D5-5C6C-499B-B465-4EB5EA33BC26}" Id="{A2E79ABD-D3B8-440C-BB7D-158848494050}" Name="NeighborhoodBlock.StreetLight_A1" HideOrder="0" Pos="525.99994,543,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" MatLayersMask="0" PrefabGUID="{C303F08D-2F4A-44DB-9A76-B0C71891AAD9}" PrefabName="StyleTown.NeighborhoodBlock.StreetLight_A"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

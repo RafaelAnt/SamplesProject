@@ -1,0 +1,114 @@
+<ObjectLayer>
+ <Layer Name="Brush Placement" GUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="1044720" ParentGUID="{27CDCC98-D526-403E-A96E-D2DDCFDDCBC8}">
+  <LayerObjects>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{4BF8F011-BC30-40A7-A91F-7BF6EF987F3A}" Name="tubehedge_23" HideOrder="0" Pos="546.49994,554.5,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tubehedge_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{B76BEE13-04EA-4FB2-9379-78EAD25E9969}" Name="townblock1" HideOrder="0" Pos="537.99994,538,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/Terrain/townblock.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{3F75481D-6457-4FF9-AD5B-6E069E3525DB}" Name="tubehedge_26" HideOrder="0" Pos="546.62494,551.75,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tubehedge_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{9005A420-BD7F-4E5D-A8D9-ED7A90C80AC8}" Name="townblock2" HideOrder="0" Pos="454,538,31.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/Terrain/townblock.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{2FC1BC20-A9BA-42A1-B6D7-1779B7827594}" Name="tree_31" HideOrder="0" Pos="584.5,606.25,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tree_04.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{B41CBC5C-D589-4712-89E7-7DB37BC75D43}" Name="tree_30" HideOrder="0" Pos="547.12494,582,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tree_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{89218685-9E4E-4E23-92C0-BD305DD12963}" Name="tree_32" HideOrder="0" Pos="546.49994,600.875,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tree_04.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{73523F9A-C849-4EFF-BC6A-C3B927931416}" Name="tree_34" HideOrder="0" Pos="544.49994,621.5,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tree_07.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{17F740A6-5D11-471B-90A2-093585F4C7D8}" Name="b3_h11" HideOrder="0" Pos="546.12494,597.125,32.374996" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Architecture/Buildings/b3_h17.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{924F6BA6-855A-42E1-B54A-CFD7F65989E5}" Name="b13_h18" HideOrder="0" Pos="545.37494,604.125,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Architecture/Buildings/b13_h04.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{2BFFE6BE-A782-4DA2-B01D-4724E0F9D606}" Name="tubehedge_24" HideOrder="0" Pos="548.62494,566.125,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tubehedge_03.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{B34E64C7-9B01-4282-8BC8-1C5EA3D4F7FF}" Name="tree_29" HideOrder="0" Pos="570.74994,587.5,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tree_09.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{CA8813DA-B63B-4B8F-9BEE-8F6492DDAE76}" Name="tubehedge_25" HideOrder="0" Pos="546.62494,557.375,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tubehedge_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{BBB2F8DD-3FC0-4F8F-93F4-E8A550D93F3F}" Name="b13_h17" HideOrder="0" Pos="546.62494,628,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Architecture/Buildings/b13_h01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{E29DCEE2-8CD9-40F8-A6A5-7CA14F5DF49C}" Name="b13_h15" HideOrder="0" Pos="548.12494,546.125,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Architecture/Buildings/b13_h02.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{490489EA-A40C-42E5-A80C-3A666BFE131C}" Name="b3_h10" HideOrder="0" Pos="570.37494,619.625,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Architecture/Buildings/b3_h1.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{31E127FA-E984-4A62-8D14-16E2E78E7F34}" Name="b8_h3" HideOrder="0" Pos="546.99994,578,32.374996" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Architecture/Buildings/b8_h21.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Brush Placement" LayerGUID="{F2EAEEEA-9FAD-460E-A4BC-5AABFE68C7B7}" Id="{0382ABFD-FEAF-43EB-A065-ECA394C76897}" Name="tree_33" HideOrder="0" Pos="564.12494,603.875,32.374996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/StyleTown/Natural/vegetation/tree_02.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

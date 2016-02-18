@@ -1,0 +1,894 @@
+<ObjectLayer>
+ <Layer Name="GEOMETRY" GUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FullName="GEOMETRY" External="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="0" IsDefaultColor="1">
+  <LayerObjects>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{398083F9-4B78-0335-283B-16D6217467FF}" name="Mover_Display" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.0, 1003.46410161514, 50.0482326173455" Rotate="0.707106781186548, -0.0, -0.0, -0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Mover_Display.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{EB50D199-CC5B-92B9-5033-858AF3DCE509}" name="Horizontal_Display_Case" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="980.0, 1006.92823234256, 50.0482326744181" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Horizontal_Display_Case.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{203827F7-B7D6-66D5-1C47-69192BCFE5A0}" name="Hex_Plat_4m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.0, 1004.61880215352, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plat_4m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{EB4FC90E-FB28-29EF-F4ED-BD644A0684EA}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="995.0, 1001.73205080757, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{79990453-E6BA-BE5C-DF33-D801D85504BA}" name="Hex_Plate_1m_m99_m100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.5, 1008.37157890325, 49.65" Rotate="0.499999999999939, -0.0, -0.0, -0.866025403784474" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_1m_m99_m100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{E535AD42-6C38-2DB0-47E6-4222C3602721}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.0, 1005.19615242271, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{5A9D4B69-6D7C-52B3-366E-58FBD70254F2}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.0, 1006.92820323028, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{0B825A5E-B651-68B9-1F05-41E306BE7030}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="992.0, 1006.92820323028, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{425B966A-3A8B-8EF2-311B-70088B0FE476}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.0, 1005.19615242271, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4312892A-FEFB-C07F-3666-D8A1B6A1E5D0}" name="Hex_Plate_1m_m99_m100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.5, 1008.37157890325, 49.65" Rotate="0.499999999999939, -0.0, -0.0, -0.866025403784474" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_1m_m99_m100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F82F75C4-B5FC-BE1E-B71C-01AA77AC1557}" name="Hex_Plate_1m_m99_m100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.0, 1009.23760430703, 49.65" Rotate="0.499999999999939, -0.0, -0.0, -0.866025403784474" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_1m_m99_m100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{2DD0E4EA-CBA8-9EB6-EB53-BFE52015AE44}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.0, 1004.04145188433, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FA69446C-BCC6-7058-DDCA-F5B9A532B331}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.0, 1003.46410161514, 49.65" Rotate="0.866025403784439, -0.0, 0.0, 0.499999999999999" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FA3BC616-D8B5-788F-B7B0-FDED5E4F477A}" name="Triangle_Plate_2m_m100_m99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.0, 1000.0, 49.65" Rotate="-0.499999999999999, -0.0, -0.0, -0.866025403784439" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m_m100_m99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{810E638F-A6BE-5FF0-39D1-64414C912724}" name="Hex_Plat_4m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.0, 998.845299461621, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plat_4m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{CD28634A-CF14-94E9-A27F-5E197FEA62EA}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="995.0, 1006.35085296109, 49.65" Rotate="0.866025403784439, -0.0, 0.0, 0.499999999999999" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{72E7A06C-31D5-EB38-DF31-D3CB4185FF48}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.0, 1008.08290376865, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BFABA9BC-8387-00C3-26F9-C8761C3336C4}" name="Triangle_Plate_1m_50_50_50" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.5, 1007.79422863406, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_1m_50_50_50.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{6D6EE36E-E311-C573-696A-01668AB3A92E}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="992.0, 996.535898384862, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{2B1512C0-2F01-B0B6-F756-8979E603478E}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="992.999999999996, 995.95854811567, 49.65" Rotate="0.866025403784439, -0.0, 0.0, 0.499999999999999" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{47245222-E9C6-4C42-F0DC-F058792B5D47}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.000000062924, 995.958548115673, 49.65" Rotate="-0.499999976403494, -0.0, -0.0, -0.866025417407888" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{AE2B1E72-800F-BD16-F98B-9DF06A4AE288}" name="Hex_Plat_4m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="990.000000185128, 998.845299641163, 49.649999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plat_4m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{9CC2F791-44D0-E106-4E37-05E1D9D6D251}" name="Triangle_Plate_2m_100_99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.0, 1003.46410161514, 49.649999999998" Rotate="0.866025403784439, -0.0, -0.0, -0.5" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m_100_99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D2A8871A-0D8E-3C57-519B-1840686D9DF7}" name="Hex_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="989.000000185128, 1001.73205098711, 49.649999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D49771D8-0238-71F2-220F-3506E023E2CD}" name="Triangle_Plate_2m_100_99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="988.000000185128, 1001.15470071792, 49.649999999998" Rotate="0.866025403784427, -0.0, -0.0, -0.500000000000021" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m_100_99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4D8F917F-C6C4-D0CF-0AFA-9DFB9839621B}" name="Hex_Plat_4m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1002.0, 1005.7735026919, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plat_4m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F7BCFFDA-E1E9-58E8-DDFF-C8DE17C695FC}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.0, 1006.35085296109, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A1EF0AAF-0D99-1FFC-B77C-FF536AF9EF82}" name="Triangle_Plate_2m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.0, 1006.92820323028, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Triangle_Plate_2m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{6C1A15C9-9AC9-53D2-E1F3-3BE86794427B}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="978.500000185128, 1009.52627962117, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{43E479AF-53EF-03C7-C777-BE79CC34E91F}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.500000185128, 1009.52627962117, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{51155655-20C3-C18C-B410-991C2AA0B524}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.500000185128, 1004.33012719846, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FCAFDDEE-F281-DE6C-A970-25A883836470}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="978.500000185128, 1004.33012719846, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{B4D002DF-3493-8C3C-8BFC-FC35EBC737A1}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="977.000000185128, 1005.19615260225, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7D93FD2F-4B11-664A-2DE1-4F4FE2332784}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="977.000000185128, 1008.66025421739, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FC3463D9-3B5D-9107-D2D4-10ED9F09EF00}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.000000185128, 1005.19615260225, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{54BD36A1-AE1E-90A7-B73D-6C2A15876283}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.000000185128, 1008.66025421739, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{62CC7401-8DCA-67EF-846D-8CE212A6FF9A}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="980.000000185128, 1006.92820340982, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{DA413BDD-7D78-0CB3-9158-1595545C3938}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="980.000000185128, 1010.39230502496, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FC779E65-1970-CC64-A217-CAAFE4D26A08}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="980.000000185128, 1003.46410179468, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A4791DD9-323C-D697-D116-CE70DF7FA70C}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.000000185128, 1006.92820340982, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{3B5EF15A-2BD6-3056-A252-3ADA08264381}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="977.000000185128, 1006.92820340982, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{0724020E-5F5C-3C4C-FEBF-4EB7B8DD8B0A}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="985.500000185128, 997.401923968189, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{C661705D-0388-19C4-24C3-1E7DFA90B531}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.000000185128, 1000.00000017954, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1BC2E308-3378-70AF-9FCA-1C078D7E3872}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="984.000000185128, 996.535898564405, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A6680004-2E52-F1A0-8449-35D8B9C7F1D5}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.000000185128, 1000.00000017954, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F8AB150E-BB19-A69E-9EC9-BF3646C13412}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="982.500000185128, 997.401923968189, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{35A3DA96-F032-23E7-BFB5-0ED35AEE47BB}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="985.500000185128, 1002.5980763909, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D1348DA0-58D6-21C0-DCC0-9ED072237DF1}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.000000185128, 1001.73205098711, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FB6653A5-4DF7-B504-AB67-C563501A484A}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="984.000000185128, 1003.46410179468, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{0AED3A34-B666-DC74-923E-0AF8F19C99D8}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="984.000000185128, 1000.00000017954, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7508C4D0-566D-21F3-0F9A-5FB5E3C2876E}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.000000185128, 998.267949371974, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{DB8432F4-1F25-1552-361F-4CB1BE079D7D}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="982.500000185128, 1002.5980763909, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FC75DA10-4819-4C70-E337-837CBD1FDA67}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.000000185128, 1001.73205098711, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{0469E874-08BC-6307-CE1E-15224187C06E}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.000000185128, 998.267949371974, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{69BE6AA8-7985-F71C-C08A-B6FF20700AD5}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.000000185128, 993.071796949267, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{57264C1D-B67D-6D03-D8D0-5BCDF3D39980}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="988.000000185128, 989.607695334129, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{26440CE5-C6B8-5BDD-5848-174EEC129963}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="988.000000185128, 996.535898564405, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{CAC46226-8264-493B-1663-59C1EEECCF59}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="988.000000185128, 993.071796949267, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7829B0F0-47D2-938E-F13C-225FB41467FC}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.000000185128, 994.803847756836, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{CC751B39-68B8-852E-DE12-EEE876FCAE1F}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.000000185128, 991.339746141698, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{79362D0B-5F3A-5565-13B5-87A5A45D275B}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="985.000000185128, 994.803847756836, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{3E8F7E18-9ACD-9388-20D5-3184BDBD4D6F}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="985.000000185128, 991.339746141698, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{2ACD529D-C0CF-E518-B4DD-72E0B2AF8894}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="986.500000185128, 990.473720737914, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{B54419AE-6B50-930C-C2D8-A03905EC8ADA}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="989.500000185128, 995.66987316062, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{195CA01B-F83B-AAE7-26BF-72F3D78C81AA}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="986.500000185128, 995.66987316062, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{9043FB36-2D61-B6E4-BC6B-88B9332A4ED8}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="989.500000185128, 990.473720737914, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{11645B25-856D-8036-C736-D37782F17BDE}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="985.000000185128, 993.071796949267, 50.049999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{015DB899-B8F0-100D-A7E7-B32AC92CFFDC}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.000000048669, 993.071796854021, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{6874733B-D323-845F-0574-9D2A6E5B80F4}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.000000048669, 993.071796854021, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{AF947E56-4F99-C4BC-38E1-C7AF8F840408}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000000048669, 989.607695238883, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A0F7FD4D-6CA5-B48F-9D0B-99D03B139619}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000000048669, 996.535898469159, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{ED9B454C-48EA-358D-6C99-56BB03F3946B}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000000048669, 993.071796854021, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{81B83E0B-2F72-CD33-EBF3-CB9F6E68731E}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.000000048669, 991.339746046452, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F73F3446-FA6A-50EE-84D0-76CDB2FAF15C}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.000000048669, 994.80384766159, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{9164B9DF-88FC-5060-3CB7-D83055715AD5}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.000000048669, 994.80384766159, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{0C10F324-45A3-28CD-2684-D02C3900D948}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.000000048669, 991.339746046452, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{CF876659-A38A-A063-675E-C279041FA9B5}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.500000048669, 990.473720642668, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{08261B6E-138E-B8E6-6861-3492349DCA74}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="997.500000048669, 995.669873065374, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{116B68E7-CB38-508D-CECC-8669C2F44021}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.500000048669, 995.669873065374, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{0694E4A5-E2CB-B830-59E4-D770FB0138FC}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="997.500000048669, 990.473720642668, 50.049999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{70AA41CD-D183-4616-3419-0BCB98ECE26E}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1001.5, 997.401923788647, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{061FA4C7-27A3-6D90-38D8-684AE8C5E845}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.5, 1002.59807621135, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FA1D6AA3-2DC2-1192-F650-902C56E2BDAB}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="997.0, 1000.0, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BC5C4BCA-2324-A36A-D634-AD1E6CB1BC4C}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.0, 1000.0, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{73F57080-7251-8328-9614-518A60D009E1}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.0, 996.535898384862, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{64360BFC-A342-7625-6DAA-24E7231290E0}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.0, 1003.46410161514, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{C378CBB3-2397-5014-FF42-8F01D2678A32}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.0, 1000.0, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1EFF6732-806F-1C10-922E-1C6C1C25E8E8}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.0, 1001.73205080757, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{85288B05-9436-0CFD-795F-F00898820019}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.0, 998.267949192431, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{9D41A00D-8FD9-8FB5-8859-23D1E71FD4CD}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="997.0, 1001.73205080757, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{3FEA73CB-3884-D64C-A26E-72459ACB2504}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="997.0, 998.267949192431, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{18C7D66E-7F73-9A44-7E46-311DDC1E4E4F}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.5, 997.401923788647, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{517E451D-ACC2-80CC-96AE-A8BD5752300B}" name="Helper_Node" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1001.5, 1002.59807621135, 50.05" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Helper_Node.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{8A5FEA4A-63C5-72DA-0820-83832614CC95}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.0, 1000.0, 49.65" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{412438D3-073B-0454-BC0D-4E8848D27F49}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000000048669, 993.071796854021, 49.649999999999" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BB8D06B6-D7EE-DBE1-D902-6F106BA66249}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="988.000000185128, 993.071796949267, 49.649999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{754CC496-DFCC-58B7-5755-A6B37E527280}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="984.000000185128, 1000.00000017954, 49.649999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{ED7DD148-25A9-0A64-31CD-0F8CB755FFDA}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="980.000000185128, 1006.92820340982, 49.649999999998" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{36B7427E-55D3-F0EB-F89D-7B6E0FBC05D4}" name="Hex_10m_Rimlight_m100_99_m100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.999999997019, 1003.46410160998, 55.6419464851133" Rotate="-1.29043771676929e-008, 0.499999999999927, -0.866025403784481, -7.45034576005202e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_10m_Rimlight_m100_99_m100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7059E83B-0E31-1406-6C88-A7672950DCBB}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.999999962081, 993.071796753764, 56.0419465180683" Rotate="1.0529771499523e-013, 8.32667259452468e-017, -1.0, 4.00153584397435e-019" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{B1E5A46F-8624-2B54-1CA8-EB266148413A}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="995.999999962081, 993.071796753764, 56.0419465180683" Rotate="4.74620343061635e-014, 8.32667259452468e-017, -1.0, 4.0015358440225e-019" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{EE8210D6-FFA0-B9A9-B456-4207976C3179}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.999999962081, 999.99999998404, 56.0419465180682" Rotate="-6.07847105952027e-014, 1.38777877176505e-016, -1.0, 4.00152757234025e-019" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{56B90270-492B-C944-0CCB-56E69B82A70C}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="979.999999962081, 1006.92820321432, 56.0419465180682" Rotate="2.76008382819155e-013, 8.32667259452469e-017, -1.0, 4.0015358438322e-019" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F7F449AC-0964-08DD-5553-664F013588F4}" name="PlateLightCombo" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="980.0, 1006.92820323028, 54.6499999999979" Rotate="1.32631487427934e-013, 3.01407974667063e-025, -1.0, 1.65436122510601e-024" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/PlateLightCombo.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{C64982D0-B094-9703-6379-E5D7EA4953F3}" name="PlateLightCombo" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="984.0, 1000.0, 54.6499999999979" Rotate="-2.58596298769207e-014, 0.499999999999726, -0.866025403784597, 1.49300642724836e-014" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/PlateLightCombo.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BD0DA957-A2C7-9C4D-EDF2-046770D1EBE7}" name="PlateLightCombo" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.0, 993.071796769724, 54.649999999998" Rotate="2.39091577384573e-013, -0.499999999998097, -0.866025403785537, 1.38039586565165e-013" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/PlateLightCombo.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1735432F-9147-F357-A9CC-C531963909DA}" name="PlateLightCombo" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="988.000000000001, 993.071796769725, 54.6500000000008" Rotate="1.32631487427934e-013, 3.01407974667063e-025, -1.0, 1.65436122510601e-024" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/PlateLightCombo.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1DBE1DBA-923D-E974-ABB1-A66F592C6361}" name="PlateLightCombo" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.0, 1000.0, 54.6499999999958" Rotate="1.32631487427934e-013, 3.01407974667063e-025, -1.0, 1.65436122510601e-024" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/PlateLightCombo.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{64C6B71D-3710-A69A-64DA-C57063E7585D}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.999999962081, 999.99999998404, 56.0419465180683" Rotate="4.88144247249407e-013, 8.3266725945247e-017, -1.0, 4.00153584365556e-019" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{21564744-C8FD-20B1-BB30-3A9E019DC165}" name="Hex_10m_Rimlight_99_m100_m100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.999999993337, 993.071796773571, 55.6419464851133" Rotate="-1.29053701055346e-008, -0.86602540378448, -0.499999999999927, -7.45091897239444e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_10m_Rimlight_99_m100_m100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{43E176C0-9EA1-08E4-237E-1AD034190550}" name="Hex_10m_Rimlight" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.999999998509, 999.99999999742, 55.6419464851133" Rotate="-6.45240953851048e-009, 0.499999999999927, -0.866025403784481, -3.72530038409019e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Movers_Sample/Geometry/Hex_10m_Rimlight.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		</LayerObjects>
+	</Layer>
+</ObjectLayer>

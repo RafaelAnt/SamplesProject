@@ -1,0 +1,13 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+   <GameToken Name="WorldStates.PlayerDead" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="WorldStates.ResetGame" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="Username" Type="String" Value="" LocalOnly="1"/>
+   <GameToken Name="CanvasID" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="AWS.Lambda Update" Type="String" Value="0.000000" LocalOnly="1"/>
+  </LevelLibrary>
+  <Library Name="AWS"/>
+  <Library Name="Dont_Die_Game"/>
+ </GameTokensLibrary>
+</GameTokens>

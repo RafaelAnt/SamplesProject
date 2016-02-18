@@ -1,0 +1,11 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="SUDCColorD01" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.99110222,0.9046613,0.65837497" Specular="1,1,1" Emissive="0,0,0" Opacity="1" Shininess="193" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Dont_Die/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

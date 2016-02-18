@@ -1,0 +1,45 @@
+<ObjectLayer>
+ <Layer Name="Comments" GUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{E8AC5409-468D-4B4D-A5B0-98DF15100A79}" Name="Comment14" Pos="963,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 11"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{AD8E541C-D368-46D3-A470-0032F31654FE}" Name="Comment12" Pos="977,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 10"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{50A6874C-DA2C-4D8E-8033-548100BACC47}" Name="Comment8" Pos="1004,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 6"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{DDFB4B6B-E864-495C-B149-461003E98A9C}" Name="Comment15" Pos="957,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 12"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{067EA37E-E6D5-4432-9305-7C56007F00B8}" Name="Comment5" Pos="1026,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 3"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{73B34983-FF1B-4967-BCC9-7B530F520178}" Name="Comment11" Pos="986,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 9"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{1F5383BD-D7FF-4FB3-AB22-48AE9DF5A821}" Name="Comment4" Pos="1032,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 2"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{9BAFB9C8-0D1F-4861-92BB-AF6D1660EA2D}" Name="Comment9" Pos="998,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 7"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{2984B3D1-38A3-44C3-9ECE-42F3386A7380}" Name="Comment3" Pos="1038,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 1"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{E6579BEA-B96C-429C-828A-DBCAEB00F0AD}" Name="Comment10" Pos="992,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 8"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{EDAA5BEB-F8B1-461A-9ECA-AD6703F5BDFC}" Name="Comment2" Pos="998,997.5,60.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="34" clrDiffuse="0.89627,0.552011,0.0395462" bFixed="0" bHidden="0" fMaxDist="100" fSize="2" Text="To get the correct ambient light- create a global environment probe"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{2A8DE7F8-FE8B-450F-BB8C-37CF68BE835F}" Name="Comment7" Pos="1010,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 5"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{8D339B1A-51B2-439A-9CD5-4CDA9F0CA0A0}" Id="{75AA55FE-A212-46C3-9A97-464F43905643}" Name="Comment6" Pos="1016,1034,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="10" clrDiffuse="1,0.8,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="5" Text="Ex. 4"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

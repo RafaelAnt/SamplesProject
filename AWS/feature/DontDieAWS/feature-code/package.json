@@ -1,0 +1,14 @@
+{
+    "name": "dontdie",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dontdie.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "dependencies": {
+        "aws-sdk": "2.2.17",
+        "async": "1.4.2"
+    }
+}

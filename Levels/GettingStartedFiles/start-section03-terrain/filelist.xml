@@ -1,0 +1,6 @@
+<download name="gs_section_01" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="253052" md5="b624d363340a3195b05414a008ffe457"/>
+ </files>
+</download>

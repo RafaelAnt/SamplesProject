@@ -1,0 +1,24 @@
+<EntityPrototypeLibrary Name="GSArchetype">
+ <EntityPrototype Name="Physics.Ball" Id="{D50D8E2E-6DDB-4BF0-81CF-5150FA91695E}" Library="GSArchetype" Class="BasicEntity" Description="">
+  <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/gettingstartedassets/gs_sphere.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+    <CollisionFiltering />
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Physics.Block" Id="{AEEAFEAF-BDF6-4B0C-AEB4-20C361893357}" Library="GSArchetype" Class="BasicEntity" Description="">
+  <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/gettingstartedassets/gs_block.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+    <CollisionFiltering />
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

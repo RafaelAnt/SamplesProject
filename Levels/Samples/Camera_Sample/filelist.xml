@@ -1,0 +1,6 @@
+<download name="Camera_Sample" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="2903448" md5="7a60ede772f9c63abe1fdd07644d834b"/>
+ </files>
+</download>

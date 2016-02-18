@@ -1,0 +1,8 @@
+<EntityPrototypeLibrary Name="foobar_entity_archetypes">
+ <EntityPrototype Name="audio.AudioTriggerSpot" Id="{C53051E0-B563-4D0B-98D3-FC82A2877EFD}" Library="foobar_entity_archetypes" Class="AudioTriggerSpot" Description="">
+  <Properties bEnabled="1" fMaxDelay="2" fMinDelay="1" bPlayOnX="0" bPlayOnY="0" bPlayOnZ="0" bPlayRandom="0" audioTriggerPlayTriggerName="" fRadiusRandom="10" bSerializePlayState="1" eiSoundObstructionType="1" audioTriggerStopTriggerName="">
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

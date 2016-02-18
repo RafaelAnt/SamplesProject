@@ -1,0 +1,13 @@
+<Material MtlFlags="256">
+	<SubMaterials>
+		<Material Name="SUDCColorD10" MtlFlags="128" SurfaceType="" Diffuse="0.619142589796,0.549301712074,0.380093839594" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1.0">
+				<Textures>
+					<Texture Map="Diffuse" File="Levels/Samples/Trigger_Sample/Geometry/textures/playup_nomaterial.tif" />
+				</Textures>
+			</Material>		<Material Name="SUDCColor001" MtlFlags="128" SurfaceType="" Diffuse="0.771377209036,0.771377209036,0.771377209036" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1.0">
+				<Textures>
+					<Texture Map="Diffuse" File="Levels/Samples/Trigger_Sample/Geometry/textures/playup_nomaterial.tif" />
+				</Textures>
+			</Material>
+	</SubMaterials>
+</Material>

@@ -1,0 +1,12 @@
+﻿{
+    "id": "6d2125be-937b-49f1-a904-abba834b6e92",
+    "detail-type": "Scheduled Event",
+    "source": "aws.events",
+    "account": "554229317296",
+    "time": "2015-11-06T02:56:41Z",
+    "region": "us-east-1",
+    "resources": [
+        "arn:aws:events:us-east-1:554229317296:rule/ScheduledUpdate"
+    ],
+    "detail": {}
+}

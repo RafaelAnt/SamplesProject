@@ -1,0 +1,390 @@
+<ObjectLayer>
+ <Layer Name="TERRAIN" GUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FullName="TERRAIN" External="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="0" IsDefaultColor="1">
+  <LayerObjects>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{88618221-87D8-D80E-B3C6-0B98FF459DC1}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="879.0, 836.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{3761E162-68F9-3243-93A0-74FAC910E5A5}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="792.950493334641, 950.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{FF5CDA4A-CB6F-D836-AE75-AF983D32F240}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="792.950493334641, 836.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{8019DFC5-9B57-53F4-9A8C-49B8F33243B1}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1132.94851999608, 938.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{D2A4D3EE-B816-7B3F-E560-0C1D38334442}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="866.950493334641, 1066.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{67D8B314-EE3F-8155-1B2F-1139C33F735C}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="796.950493334641, 1052.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{117B2763-DE5B-3F43-7CCF-BA430E576424}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="866.950493334641, 838.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{37FEA696-019D-C7A1-C657-AD7146EE3A27}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="796.950493334641, 824.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{44E5080B-5F53-B132-87C7-1B950C97BE2E}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="866.950493334641, 952.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{2C5D1501-38F2-FF09-934F-B7B0E8E5A33A}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="796.950493334641, 938.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{96D812C9-F40C-48C3-EA5D-37606DC688C6}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1034.94950666536, 952.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{51FD173F-777F-6E8E-3809-6D599B24B1A3}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="964.949506665359, 938.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{F59B32D8-1784-C18A-27EB-504E3DAACE40}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1118.94901333072, 952.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{8F3B15C0-F87E-EC10-B9D5-FF4823BF3FF5}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1048.94901333072, 938.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{47B70C59-E398-12A8-A0A7-2006BCF54C20}" name="Road_14x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1202.94851999608, 1166.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_14x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{D3FCF5F5-19A2-3941-6524-14629C6FB6C5}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="879.0, 950.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{2121C30A-39D4-78D4-0AD2-B7EF0D4D6E04}" name="ParkBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="963.0, 950.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/ParkBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{FF2ECD62-20F8-4B9F-EBFB-F8BB69D74F75}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1047.0, 950.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{4132F32B-54FC-98FE-B40C-B6D09A9E7ED7}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1131.0, 950.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{2A71D4D0-0A64-8BA2-75FD-40A45777AAF3}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1047.0, 1064.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{21883E78-E045-3EA4-312E-56F0521A5262}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1131.0, 1064.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{42DB1CA9-9BA7-8D47-FA36-9587FA4257DC}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="963.0, 1064.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{B599F90F-D89B-58F1-D841-7B7A3856DAC2}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="963.0, 836.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{3611647B-EFD7-7DF0-4058-680D790FEB26}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1131.0, 836.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{592C5A82-E0FA-1023-969C-DA282FCB7093}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="792.950493334641, 1064.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{6D9DA2A9-D8CF-7898-B616-FC307CCA2151}" name="Terrain" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="392.911544850514, 585.65263981055, 39.9999494465028" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Terrain.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{0D19F1D1-BBE3-7477-7617-51E598ABD656}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="879.0, 1064.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{BEE9053B-6FA2-0F82-55C9-4D8F1962CEE5}" name="TownBlock" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1047.0, 836.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/TownBlock.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{51BBF3AC-1451-F306-CF60-FCEB4DC76DBE}" name="Pool" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="997.354465236663, 1022.04318758972, 45.9232" Rotate="0.130526192220422, -0.0, -0.0, -0.991444861373762" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Pool.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{299392B3-5D5F-9009-7448-D193013B5CC3}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="950.95, 1066.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{F85467AB-C95D-9B56-FA24-4EB433B5A646}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="880.95, 1052.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{0C4DDC46-2BE5-4DDC-1314-6F2ECDA6A3FC}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1034.94950666536, 1066.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{CD3E325E-E84A-90A8-35C5-46EB3058C524}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="964.949506665359, 1052.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{6C6D2920-AD6D-A462-828E-D02E4227B92C}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1118.94901333072, 1066.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{1347435F-A1EF-5606-E36E-7BC8A1C4AA84}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1048.94901333072, 1052.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{8E34BBC8-0699-0BEE-4527-0833EF0E7681}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="950.95, 952.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{1A88A52D-1322-AF72-801F-75CD788FBF4C}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="880.95, 938.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{B6226278-69AB-EC73-06BF-61F5AD1E4E36}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1118.94901333072, 838.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{EB0798ED-C484-C044-2B0F-D822701E1848}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1048.94901333072, 824.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{2438B2D7-EE50-5A63-33DC-5EBD55CB93FD}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1034.94950666536, 838.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{C56F0ACF-3239-7538-ACC0-9F7FF9B74C33}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="964.949506665359, 824.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{C9F2BC71-3B55-8352-30BA-D9C491ADAC25}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="950.95, 838.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{7C43B2D0-A1E1-0ABB-CEBD-843C4C31EA81}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="880.95, 824.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{CF3BA89E-FB3A-8738-492A-97E6FC649C46}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1202.94851999608, 1066.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{009296B6-F162-6101-3D12-EED9D1FFEA57}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1132.94851999608, 1052.89976624122, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{10BA69B7-EA4A-612E-2AFC-9541A0C752E4}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1202.94851999608, 838.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{B2045559-D0F2-956B-42D7-330BDF56D287}" name="Road_84x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1132.94851999608, 824.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_84x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="TERRAIN" Id="{F17A4DEF-EA73-E9B9-AC8F-4A555D051F96}" name="Road_100x14" LayerGUID="{EE150DFA-272B-2B26-50FC-5F1857AF91BF}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1202.94851999608, 952.899766241216, 50.0" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Natural/Terrain/Road_100x14.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		</LayerObjects>
+	</Layer>
+</ObjectLayer>

@@ -1,0 +1,101 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="_dev_Clay" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.87136728,0.79910284,0.79910284" Specular="0.0043914425,0.0056053922,0.010960096" Emissive="0,0,0" Opacity="1" Shininess="145" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Clay.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Stucco" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0.057805438,0.052860651,0.03189604" Emissive="0,0,0" Opacity="1" Shininess="193" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Stucco.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Grey_Med" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="131" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Grey_Med.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Grey_Light" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="177" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Grey_Light.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Brown_Light" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="173" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Brown_Light.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Red" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0.010960096,0.011612247,0.024157634" Emissive="0,0,0" Opacity="1" Shininess="153" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Red.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Forest_Light" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.78353792,0.78353792,0.78353792" Specular="0.013702084,0.01228649,0.023153368" Emissive="0,0,0" Opacity="1" Shininess="145" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Forest_Light.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_White" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.72305524,0.72305524,0.72305524" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="170" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_White.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Brown_Dark" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="120" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Brown_Dark.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Gray_Dark" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="124" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Gray_Dark.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Grey" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.63075727,0.63075727,0.63075727" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="177" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Grey.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="nomaterial" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="144" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Forest_Med_NG" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="142" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Forest_Med_NG.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Forest_Dark_NG" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="153" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Forest_Dark_NG.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Brown_Med" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="141" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Brown_Med.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_dev_Yellow_Med" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="130" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/styletown/_dev_Yellow_Med.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

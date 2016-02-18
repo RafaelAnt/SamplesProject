@@ -1,0 +1,3 @@
+<ObjectLayer>
+ <Layer Name="Debris" GUID="{365EECB6-77FA-4E11-A0EA-98769AB0C5C4}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}"/>
+</ObjectLayer>

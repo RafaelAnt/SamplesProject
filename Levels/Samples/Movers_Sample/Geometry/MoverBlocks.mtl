@@ -1,0 +1,21 @@
+<Material MtlFlags="256">
+	<SubMaterials>
+		<Material Name="SUDCColorG12" MtlFlags="128" SurfaceType="" Diffuse="0.0047785171,0.330607393834,0.0047785171" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1.0">
+				<Textures>
+					<Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif" />
+				</Textures>
+			</Material>		<Material Name="SUDCColorI02" MtlFlags="128" SurfaceType="" Diffuse="0.0221405035,0.0221405035,1" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1.0">
+				<Textures>
+					<Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif" />
+				</Textures>
+			</Material>		<Material Name="SUDCColorD01" MtlFlags="128" SurfaceType="" Diffuse="1,0.537052922266,0" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1.0">
+				<Textures>
+					<Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif" />
+				</Textures>
+			</Material>		<Material Name="SUDCColorA07" MtlFlags="128" SurfaceType="" Diffuse="0.619142589796,0.0117304657,0.0117304657" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1.0">
+				<Textures>
+					<Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif" />
+				</Textures>
+			</Material>
+	</SubMaterials>
+</Material>

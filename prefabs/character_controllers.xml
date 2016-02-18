@@ -1,0 +1,95 @@
+<PrefabsLibrary Name="Character_Controllers">
+ <Prefab Name="Sphere_Controller" Id="{93573FEF-0FD4-4F6C-8D2C-E862C4A09762}" Library="Character_Controllers">
+  <Objects>
+   <Object Type="Camera" Layer="Main" LayerGUID="{A88A6761-F80A-4B67-8383-63E53E12A57D}" Id="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" Name="Camera Controller Rig" HideOrder="0" Parent="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" Pos="0,-5.7960205,1.3320923" FloorNumber="-1" Rotate="0.99619472,-0.087155759,8.5359e-009,-3.0013602e-008" ColorRGB="16776960" FOV="1.0472" NearZ="0.2" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Main" LayerGUID="{A88A6761-F80A-4B67-8383-63E53E12A57D}" Id="{4C5010C0-C1A9-4D11-940F-7744F4FC3143}" Name="robot_body" HideOrder="0" Pos="1.0239868,3.8677979,2.0925255" FloorNumber="-1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/CharacterModels/R0-B/robot_body.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="CameraTarget" Layer="Main" LayerGUID="{A88A6761-F80A-4B67-8383-63E53E12A57D}" Id="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Name="Controller_Ref_Box_Move" HideOrder="0" Pos="1.0239868,3.8677979,3.0925255" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="CameraTarget" Layer="Main" LayerGUID="{AF14C377-7F58-4BF8-8E5D-5A28E11D4E41}" Id="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Name="Head_Tilt_Parent" HideOrder="0" Parent="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Pos="0,0,-1" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="CameraTarget" Layer="Main" LayerGUID="{AF14C377-7F58-4BF8-8E5D-5A28E11D4E41}" Id="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" Name="Controller_Ref_Box_Pitch" HideOrder="0" Parent="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Pos="-0.00030517578,0.00036621094,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Entity" Layer="lights" LayerGUID="{A5EA5D7C-DE72-4215-9D40-6FD5CDA1509D}" Id="{5B39CD6A-8C08-454A-8388-7FE6C2D6FE1B}" Name="Controller_Prefab_Logic" HideOrder="0" Pos="0.99987793,3,0.99999237" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="Entity:EntityId" pos="-550,-130,0" flags="0" EntityGUID="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" EntityGUID_64="40F529B5EA1129AB">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="3" Class="Entity:EntityId" pos="-520,-20,0" flags="0" EntityGUID="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" EntityGUID_64="4739DEB287A95A92">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="4" Class="Module:Call_Character_Controller_Robot" pos="-150,-110,0" flags="0">
+       <Inputs Instanced="1" InstanceID="-1" Controller_Ref_Box_Pitch="0" Controller_Ref_Box_Move="0" Awesome_Sphere="0" Robot_Head="0" Camera_Rig="0" Robot_Body="0" Head_Tilt_Parent="0"/>
+      </Node>
+      <Node Id="5" Class="Game:Start" pos="-400,-190,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="8" Class="Entity:EntityId" pos="-500,40,0" flags="0" EntityGUID="{18626F3D-2830-4758-B220-15E385BDFFE0}" EntityGUID_64="4758283018626F3D">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="9" Class="Entity:EntityId" pos="-550,110,0" flags="0" EntityGUID="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" EntityGUID_64="4403D38C10498B71">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="10" Class="Entity:EntityId" pos="-550,-80,0" flags="0" EntityGUID="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" EntityGUID_64="42D19DEAA90467D9">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="12" Class="Entity:EntityId" pos="-480,180,0" flags="0" EntityGUID="{4C5010C0-C1A9-4D11-940F-7744F4FC3143}" EntityGUID_64="4D11C1A94C5010C0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="13" Class="Entity:EntityId" pos="-510,250,0" flags="0" EntityGUID="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" EntityGUID_64="4B0E75A98AF897E0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="17" Class="Entity:EntityInfo" pos="-160,-280,0" flags="0" EntityGUID="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" EntityGUID_64="4403D38C10498B71">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="18" Class="Mission:GameTokenSet" pos="260,-290,0" flags="1">
+       <Inputs gametoken_Token="GettingStarted_GT.3P_CameraID" TokenValue=""/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="2" portIn="Controller_Ref_Box_Pitch" portOut="Id" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Awesome_Sphere" portOut="Id" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="5" portIn="Call" portOut="output" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="5" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="8" portIn="Robot_Head" portOut="Id" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="9" portIn="Camera_Rig" portOut="Id" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="10" portIn="Controller_Ref_Box_Move" portOut="Id" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="12" portIn="Robot_Body" portOut="Id" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="13" portIn="Head_Tilt_Parent" portOut="Id" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="17" portIn="Activate" portOut="Id" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="17" portIn="TokenValue" portOut="Id" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{18626F3D-2830-4758-B220-15E385BDFFE0}" Name="robot_head1" HideOrder="0" Parent="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Pos="0,0,1.5" FloorNumber="-1" Rotate="2.9802322e-008,0,0,1" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/CharacterModels/R0-B/robot_head.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="1.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="65535" Material="samplesproject/objects/charactermodels/r0-b/robot" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="1"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="1000" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering />
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="1" bFixedDamping="0" max_time_step="0.01" sleep_speed="0.01" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

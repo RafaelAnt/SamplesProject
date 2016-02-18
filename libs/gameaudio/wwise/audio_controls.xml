@@ -1,0 +1,13 @@
+<ATLConfig atl_name="audio_controls">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Stop_town_amb_loop">
+   <WwiseEvent wwise_name="Stop_town_amb_loop"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_town_amb_loop">
+   <WwiseEvent wwise_name="Play_town_amb_loop"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_cannon_shot">
+   <WwiseEvent wwise_name="Play_cannon_shot"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

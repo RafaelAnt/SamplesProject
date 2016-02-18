@@ -1,0 +1,2328 @@
+<ObjectLayer>
+ <Layer Name="Logic" GUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{341F7705-968A-421D-BBAE-6CC47F3E5E7C}" Name="Shape7b" HideOrder="0" Pos="986.13043,1007.9778,50.145145" FloorNumber="-1" Rotate="0.5,0,0,-0.86602545" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="0" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.75170898,-1.1341553,0"/>
+     <Point Pos="0.78710938,-3.8965454,0"/>
+     <Point Pos="-1.5756836,-2.5031128,0"/>
+     <Point Pos="-2.2215576,-1.2984924,0"/>
+     <Point Pos="-1.4493408,0.061431885,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{C87515E5-1355-4453-A168-F4BAA39C888A}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{B5277915-D763-4221-B032-80F56308126F}" Name="AreaTrigger8b" HideOrder="0" Pos="997.26678,1002.0764,50.501858" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{53E70E1D-35F5-4A79-9970-97B2E6BA3AEF}" Name="DoorParent_7" HideOrder="0" Pos="982.9599,1005.926,50.049999" FloorNumber="-1" Rotate="0.96592581,0,0,0.25881904" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{CBCB6A26-E879-4E06-9CB6-0AEFA781BB16}" Name="DoorParent_4" HideOrder="0" Pos="1013.652,1011.794,50.049999" FloorNumber="-1" Rotate="0.70710683,0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{47EBDE27-DACA-4ED7-9B54-71B5D8CBB794}" Name="DoorParent_2" HideOrder="0" Pos="1003.388,982.28003,50.049999" FloorNumber="-1" Rotate="0.2588191,0,0,0.96592581" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{534EA429-CE7E-4B28-AA35-7700F6D88BB5}" Name="DoorParent_9" HideOrder="0" Pos="987.38831,996.13641,50.049999" FloorNumber="-1" Rotate="0.25881907,0,0,0.96592581" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{02F37E2A-D669-466A-80E2-A4DB31E91072}" Name="_Door_Sample" HideOrder="0" Parent="{7457C1B0-920C-40C0-BAD3-24F813A3E8B7}" Pos="-3.0517578e-005,0.00012207031,-7.6293945e-006" FloorNumber="-1" Rotate="1,0,0,-2.9802319e-008" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 05" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="4" Class="Movement:MoveEntityTo" pos="490,230,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="20" Class="Movement:MoveEntityTo" pos="490,420,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="29" Class="Game:Start" pos="-250,110,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="30" Class="Debug:DisplayMessage" pos="-150,420,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="4" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="31" Class="Math:Equal" pos="210,220,0" flags="0">
+       <Inputs A="0" B="3"/>
+      </Node>
+      <Node Id="54" Name="Proximity trigger with the entity property OnlyPlayer disabled.  " Class="_commentbox" pos="-280,-0.1115129,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1000" Height="640"/>
+       <NodeSize Width="1000" Height="665.11157"/>
+      </Node>
+      <Node Id="57" Name="." Class="_commentbox" pos="-260,69.888428,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="960" Height="550"/>
+       <NodeSize Width="960" Height="575.11157"/>
+      </Node>
+      <Node Id="59" Name="The trigger configuration in this example is the same as example 2 \n but the flowgraph logic uses the &quot;IsInside&quot;&quot; port instead of &quot;Enter&quot;." Class="_comment" pos="-260,40,0" flags="0"/>
+      <Node Id="60" Name="Inside port provides an entity count. " Class="_comment" pos="-60,120,0" flags="0"/>
+      <Node Id="62" Name="Math:Equal only fire OnTrue when the \n number of entities is equal to the value specified. " Class="_comment" pos="150,170,0" flags="0"/>
+      <Node Id="64" Name="Re-enable the Show port link to see entity count." Class="_comment" pos="-150,500,0" flags="0"/>
+      <Node Id="65" Class="entity:ProximityTrigger" pos="-60,150,0" flags="0" EntityGUID="{AC8DE652-E97D-407D-B3FC-BE55BABF0F06}" EntityGUID_64="407DE97DAC8DE652">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="20" nodeOut="4" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="29" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="31" portIn="Start" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="65" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="65" portIn="Stop" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="30" nodeOut="65" portIn="Show" portOut="NrOfEntitiesInside" enabled="0"/>
+      <Edge nodeIn="30" nodeOut="65" portIn="message" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="65" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="65" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C5A4F336-A06D-437B-BE9D-8EEF8132C36F}" Name="_Door_Sample" HideOrder="0" Parent="{6395FA49-6347-47D9-BA4D-5572CD283B8E}" Pos="-0.00024414063,6.1035156e-005,0" FloorNumber="-1" Rotate="1,0,0,5.9604645e-008" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 03" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="3" Class="entity:ProximityTrigger" pos="-190,-90,0" flags="0" EntityGUID="{39F9728E-5347-4420-9205-4D20A1C3E6DB}" EntityGUID_64="4420534739F9728E">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="4" Class="Movement:MoveEntityTo" pos="30,-90,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="20" Class="Movement:MoveEntityTo" pos="30,110,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="29" Class="Game:Start" pos="-380,-90,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="54" Name="Proximity trigger with the entity property OnlyPlayer unchecked (off)." Class="_commentbox" pos="-410,-200,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="670" Height="490"/>
+       <NodeSize Width="670" Height="515"/>
+      </Node>
+      <Node Id="57" Name="." Class="_commentbox" pos="-390,-130,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="630" Height="400"/>
+       <NodeSize Width="630" Height="425"/>
+      </Node>
+      <Node Id="58" Name="This trigger configuration allows only one entity at a time to activate it. \n The first entity must leave before it can be triggered again. " Class="_comment" pos="-390,-160,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="3" portIn="Start" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="3" portIn="Stop" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="4" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="29" portIn="Enable" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{BFD7043A-3B7B-A41B-2D32-2FD00C2118EE}" Name="Hex_Plate_2m_redtri" HideOrder="0" Pos="985.39258,1009.2376,49.653999" FloorNumber="-1" Rotate="0.70710677,2.2923448e-017,-1.0581121e-017,0.70710677" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_redtri.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{2B67E43A-2BCB-4E86-A723-EA50F32B0BA2}" Name="_Door_Sample" HideOrder="0" Parent="{47EBDE27-DACA-4ED7-9B54-71B5D8CBB794}" Pos="3.0517578e-005,0.00012207031,-3.8146973e-006" FloorNumber="-1" Rotate="1,0,0,1.4901161e-008" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 02" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="3" Class="entity:ProximityTrigger" pos="-260,10,0" flags="0" EntityGUID="{44F75FBF-C5B9-4180-9FF6-A854A3AD76A6}" EntityGUID_64="4180C5B944F75FBF">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="4" Class="Movement:MoveEntityTo" pos="-50,10,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="20" Class="Movement:MoveEntityTo" pos="-50,200,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="29" Class="Game:Start" pos="-450,10,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="54" Name="Proximity trigger with the entity property OnlyPlayer unchecked (off)." Class="_commentbox" pos="-490,-100,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="670" Height="490"/>
+       <NodeSize Width="670" Height="515"/>
+      </Node>
+      <Node Id="56" Name="If none of the trigger entity properties are set \n it is important to understand that any entity can successfully activate the trigger. " Class="_comment" pos="-470,-60,0" flags="0"/>
+      <Node Id="57" Name="." Class="_commentbox" pos="-470,-30,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="630" Height="400"/>
+       <NodeSize Width="630" Height="425"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="3" portIn="Start" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="3" portIn="Stop" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="4" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="29" portIn="Enable" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="AreaBox" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{49348D3B-7719-4DE2-A435-1C82FD5A706F}" Name="AreaBox_8" HideOrder="0" Pos="992.21002,1002.4315,50" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710683" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Width="4" Length="2.4" Height="4" GroupId="0" Priority="0" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" BoxMin="-2,-1.2,0" BoxMax="2,1.2,4">
+    <Entities>
+     <Entity Id="{3EEC64AC-D07D-4657-969A-F23447E76BDD}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{217A393F-875C-42E1-830B-7FD002FAE64B}" Name="Hex_Plate_2m_red" HideOrder="0" Pos="981,997.11322,49.689999" FloorNumber="-1" Rotate="0.5,-2.3691305e-017,-8.7273378e-018,-0.86602539" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_red.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{F4C12242-E062-45E7-B547-23B2B2F83FBB}" Name="Shape8a" HideOrder="0" Pos="995.04962,999.34076,50.025501" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.93048096,-0.51654053,0"/>
+     <Point Pos="1.9588013,0.051940918,0"/>
+     <Point Pos="2.022583,1.3060913,0"/>
+     <Point Pos="1.0485229,1.8914795,0"/>
+     <Point Pos="-0.097900391,1.2955933,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{3C8F2BA9-D66E-49F7-968C-5DB3F348983E}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C0785443-7FB6-4461-8036-21053056294F}" Name="_Door_Sample" HideOrder="0" Parent="{CBCB6A26-E879-4E06-9CB6-0AEFA781BB16}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 04" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="3" Class="entity:ProximityTrigger" pos="130,-70,0" flags="0" EntityGUID="{91B938FF-D0CB-4E86-A683-647C23F169BA}" EntityGUID_64="4E86D0CB91B938FF">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="4" Class="Movement:MoveEntityTo" pos="350,-80,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="20" Class="Movement:MoveEntityTo" pos="350,120,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="29" Class="Game:Start" pos="-70,-70,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="54" Name="Proximity trigger with OnlySelectedEntity string assigned. " Class="_commentbox" pos="-100,-190,0" flags="1">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="670" Height="490"/>
+       <NodeSize Width="670" Height="515"/>
+      </Node>
+      <Node Id="57" Name="." Class="_commentbox" pos="-80,-120,0" flags="1">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="630" Height="400"/>
+       <NodeSize Width="630" Height="425"/>
+      </Node>
+      <Node Id="60" Name="This trigger only activates when the sphere above the door enters \n and ignores all other entities. " Class="_comment" pos="-80,-150,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="3" portIn="Start" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="3" portIn="Stop" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="4" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="29" portIn="Enable" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{9D112745-C65B-4AD9-A75F-2DFA08BB8D3C}" Name="Elev_Hatch" HideOrder="0" Parent="{9AB78877-EA94-49CA-8ED0-3C6A9FE93353}" FloorNumber="-1" Rotate="1,-8.1506029e-009,1.7886256e-009,2.558015e-008" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="levels/samples/trigger_sample/geometry/elev_hatch.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{6621B647-CAD4-4A54-838B-DD88A3590B8F}" Name="ElevatorRigidBody" HideOrder="0" Pos="1000,1000,49.900002" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="levels/samples/trigger_sample/geometry/elevator.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+    <FlowGraph Description="" Group="Example 10" enabled="0" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="8" Class="Interpolate:Float" pos="457,499.88208,0" flags="0" InHideMask="63" OutHideMask="3">
+       <Inputs StartValue="0" EndValue="5" Time="2" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="33" Class="entity:ProximityTrigger" pos="-223,429.88208,0" flags="0" EntityGUID="{E66B9169-B1F3-45F6-9E6A-7BA1AFD303EE}" EntityGUID_64="45F6B1F3E66B9169">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="35" Class="Interpolate:Float" pos="487,879.88208,0" flags="0" InHideMask="63" OutHideMask="3">
+       <Inputs StartValue="0" EndValue="15" Time="2" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="38" Class="Movement:MoveEntityTo" pos="637,819.88208,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="1" EaseInDistance="1" EaseOutDistance="0" CoordSys="1"/>
+      </Node>
+      <Node Id="47" Name="Going_Down" Class="_comment" pos="637,709.88208,0" flags="0"/>
+      <Node Id="50" Class="Logic:Gate" pos="277,459.88208,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="52" Class="Logic:Gate" pos="307,859.88208,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="75" Class="Material:EntityMaterialParams" pos="750,1670,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Slot="0" SubMtlId="7" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="76" Class="Game:Start" pos="100,1660,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="80" Class="Logic:Any" pos="360,1690,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="94" Class="Game:Start" pos="-453,479.88208,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="95" Class="Movement:MoveEntityTo" pos="637,379.88208,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,20" DynamicDestination="1" ValueType="0" Value="0.5" EaseInDistance="5" EaseOutDistance="0" CoordSys="1"/>
+      </Node>
+      <Node Id="97" Class="Entity:EntityPos" pos="637,739.88208,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{5CCF8ABF-39EC-4FA2-B044-12725D1BC04A}" EntityGUID_64="4FA239EC5CCF8ABF">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="98" Class="Entity:EntityPos" pos="627,299.88208,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{88C26DEC-3F86-46B0-ADB9-C5B5BEB773A5}" EntityGUID_64="46B03F8688C26DEC">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="101" Name="Resets_material_to_original_value" Class="_comment" pos="360,1660,0" flags="0"/>
+      <Node Id="104" Class="Vec3:EqualVec3" pos="-503,739.88208,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="105" Class="Logic:IfCondition" pos="-173,739.88208,0" flags="0">
+       <Inputs Condition="0"/>
+      </Node>
+      <Node Id="115" Name="Going_Up" Class="_comment" pos="627,269.88208,0" flags="0"/>
+      <Node Id="118" Class="Logic:Any" pos="167,919.88208,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="120" Class="Logic:All" pos="-43,1029.8821,0" flags="0" InHideMask="127" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="122" Class="Logic:Any" pos="167,829.88208,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="123" Name="Checks_if_Current_Position_is_=_to_Final_Position" Class="_comment" pos="-503,709.88208,0" flags="0"/>
+      <Node Id="124" Class="Movement:RotateEntityTo" pos="1890,210,0" flags="0" EntityGUID="{9D112745-C65B-4AD9-A75F-2DFA08BB8D3C}" EntityGUID_64="4AD9C65B9D112745">
+       <Inputs entityId="0" Destination="-100,0,0" DynamicUpdate="0" ValueType="0" Value="10" CoordSys="0"/>
+      </Node>
+      <Node Id="125" Class="Movement:RotateEntityTo" pos="1900,380,0" flags="0" EntityGUID="{E25DB5D3-9F1D-4ABC-BB0C-B98400711261}" EntityGUID_64="4ABC9F1DE25DB5D3">
+       <Inputs entityId="0" Destination="-100,0,0" DynamicUpdate="1" ValueType="0" Value="10" CoordSys="0"/>
+      </Node>
+      <Node Id="126" Class="Movement:RotateEntityTo" pos="1900,540,0" flags="0" EntityGUID="{257015C4-8973-4667-9AA6-A5CCBF7A3E3C}" EntityGUID_64="46678973257015C4">
+       <Inputs entityId="0" Destination="-100,0,0" DynamicUpdate="1" ValueType="0" Value="10" CoordSys="0"/>
+      </Node>
+      <Node Id="127" Name="Rotate_Hatch_Open" Class="_comment" pos="1890,180,0" flags="0"/>
+      <Node Id="128" Class="Interpolate:Float" pos="1480,360,0" flags="0">
+       <Inputs StartValue="0" EndValue="100" Time="0.1" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="129" Class="Movement:RotateEntityTo" pos="1910,860,0" flags="0" EntityGUID="{9D112745-C65B-4AD9-A75F-2DFA08BB8D3C}" EntityGUID_64="4AD9C65B9D112745">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Value="10" CoordSys="0"/>
+      </Node>
+      <Node Id="130" Class="Movement:RotateEntityTo" pos="1910,1030,0" flags="0" EntityGUID="{E25DB5D3-9F1D-4ABC-BB0C-B98400711261}" EntityGUID_64="4ABC9F1DE25DB5D3">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Value="10" CoordSys="0"/>
+      </Node>
+      <Node Id="131" Class="Movement:RotateEntityTo" pos="1920,1200,0" flags="0" EntityGUID="{257015C4-8973-4667-9AA6-A5CCBF7A3E3C}" EntityGUID_64="46678973257015C4">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Value="10" CoordSys="0"/>
+      </Node>
+      <Node Id="132" Name="Rotate_Hatch_Close" Class="_comment" pos="1910,830,0" flags="0"/>
+      <Node Id="133" Class="Interpolate:Float" pos="1500,1170,0" flags="0">
+       <Inputs StartValue="0" EndValue="100" Time="0.8" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="144" Class="Interpolate:SmoothFloat" pos="1680,230,0" flags="0">
+       <Inputs InitialValue="0" TargetValue="0" Time="1"/>
+      </Node>
+      <Node Id="145" Class="Interpolate:SmoothFloat" pos="1690,1040,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs InitialValue="0" TargetValue="0" Time="5"/>
+      </Node>
+      <Node Id="146" Class="Math:SetNumber" pos="1340,1070,0" flags="0" InHideMask="3" OutHideMask="1">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="147" Class="Math:SetNumber" pos="1300,270,0" flags="0" InHideMask="3" OutHideMask="1">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="148" Name="Rotates_Hatch" Class="_commentbox" pos="990,104.84746,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1260" Height="1310"/>
+       <NodeSize Width="1260" Height="1360.3229"/>
+      </Node>
+      <Node Id="149" Name="Moves_Elevator" Class="_commentbox" pos="-563,102.55419,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1470" Height="1290"/>
+       <NodeSize Width="1470" Height="1340.3229"/>
+      </Node>
+      <Node Id="157" Class="Logic:Any" pos="1080,240,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="158" Class="Logic:Any" pos="1070,900,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="159" Class="Logic:Any" pos="1030,1140,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="160" Class="Logic:Any" pos="1060,570,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="162" Class="Logic:Any" pos="-173,1049.8821,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="163" Name="If_elevator_is_not_at_top_and_player_leaves" Class="_comment" pos="-163,929.88208,0" flags="0"/>
+      <Node Id="164" Class="Logic:Any" pos="167,579.88208,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="166" Class="Logic:Any" pos="357,969.88208,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="167" Class="Math:SetNumber" pos="480,1760,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="168" Class="Material:EntityMaterialParams" pos="750,1980,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Slot="0" SubMtlId="7" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="169" Class="Math:SetNumber" pos="470,2000,0" flags="0">
+       <Inputs In="29"/>
+      </Node>
+      <Node Id="170" Name="Handles_glow_for_elevator_material_on_enter_and_exit" Class="_commentbox" pos="0,1546.467,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1260" Height="680"/>
+       <NodeSize Width="1260" Height="730.32288"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="95" nodeOut="8" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="147" nodeOut="8" portIn="Activate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="33" portIn="In" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="33" portIn="Open" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="33" portIn="In3" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="95" nodeOut="33" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="33" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="33" portIn="In" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="33" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="122" nodeOut="33" portIn="In1" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="169" nodeOut="33" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="35" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="146" nodeOut="35" portIn="Activate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="158" nodeOut="38" portIn="In1" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="166" nodeOut="38" portIn="In2" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="50" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="95" nodeOut="50" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="159" nodeOut="50" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="35" nodeOut="52" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="52" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="160" nodeOut="52" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="162" nodeOut="52" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="76" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="76" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="167" nodeOut="80" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="94" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="162" nodeOut="94" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="164" nodeOut="94" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="166" nodeOut="94" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="95" portIn="A" portOut="Current" enabled="1"/>
+      <Edge nodeIn="118" nodeOut="95" portIn="In1" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="157" nodeOut="95" portIn="In1" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="164" nodeOut="95" portIn="In2" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="97" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="95" nodeOut="98" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="98" portIn="B" portOut="pos" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="104" portIn="Condition" portOut="out" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="105" portIn="In1" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="162" nodeOut="105" portIn="In2" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="118" portIn="Open" portOut="Out" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="120" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="118" nodeOut="120" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="122" nodeOut="120" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="122" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="144" nodeOut="128" portIn="Activate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="144" nodeOut="128" portIn="TargetValue" portOut="Value" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="133" portIn="TargetValue" portOut="Value" enabled="1"/>
+      <Edge nodeIn="124" nodeOut="144" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="144" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="126" nodeOut="144" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="145" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="145" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="145" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="146" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="146" portIn="StartValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="146" portIn="InitialValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="128" nodeOut="147" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="128" nodeOut="147" portIn="StartValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="144" nodeOut="147" portIn="InitialValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="124" nodeOut="157" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="157" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="126" nodeOut="157" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="158" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="158" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="158" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="159" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="130" nodeOut="159" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="159" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="124" nodeOut="160" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="160" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="126" nodeOut="160" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="162" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="164" portIn="Close" portOut="Out" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="166" portIn="Close" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="167" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="168" nodeOut="169" portIn="ValueFloat" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{497F1A49-BA8D-462C-90B8-150891B4E709}" Name="_Door_Sample" HideOrder="0" Parent="{534EA429-CE7E-4B28-AA35-7700F6D88BB5}" Pos="-3.0517578e-005,-0.00012207031,-3.8146973e-006" FloorNumber="-1" Rotate="1,0,0,1.4901161e-008" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 09" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="53" Class="Movement:MoveEntityTo" pos="190,1590,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="54" Class="Movement:MoveEntityTo" pos="190,1830,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="55" Class="Game:Start" pos="-940,350,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="56" Class="entity:AreaTrigger" pos="-940,520,0" flags="0" EntityGUID="{7CD120E4-5F8B-4593-8D33-E505DE4F1E81}" EntityGUID_64="45935F8B7CD120E4">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="57" Class="entity:AreaTrigger" pos="-940,710,0" flags="0" EntityGUID="{79353D87-21B5-4752-9AFD-B46758AAAB2F}" EntityGUID_64="475221B579353D87">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="58" Class="Math:Equal" pos="-690,600,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="61" Class="Math:Equal" pos="-690,790,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="67" Class="entity:AreaTrigger" pos="-940,910,0" flags="0" EntityGUID="{E86056B8-09FF-4632-9308-29D00B885A5E}" EntityGUID_64="463209FFE86056B8">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="68" Class="Math:Equal" pos="-690,990,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="75" Class="Material:EntityMaterialParams" pos="1450,780,0" flags="0" EntityGUID="{217A393F-875C-42E1-830B-7FD002FAE64B}" EntityGUID_64="42E1875C217A393F">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="76" Class="Game:Start" pos="650,500,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="77" Class="Math:SetColor" pos="640,1230,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="78" Class="Math:SetColor" pos="1070,610,0" flags="0">
+       <Inputs color_In="0.617207,0.0116122,0.0116122"/>
+      </Node>
+      <Node Id="79" Class="Logic:Any" pos="1190,930,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="80" Class="Logic:Any" pos="850,560,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="84" Name="Requires_player_to_enter_each_trigger_in_sequence" Class="_commentbox" pos="-990,173.01375,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1560" Height="1280"/>
+       <NodeSize Width="1560" Height="1321.9863"/>
+      </Node>
+      <Node Id="85" Name="Changes_material_colors_on_each_object_for_player_feedback._" Class="_commentbox" pos="610,372.43768,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1100" Height="1080"/>
+       <NodeSize Width="1100" Height="1121.9863"/>
+      </Node>
+      <Node Id="86" Class="Material:EntityMaterialParams" pos="1450,960,0" flags="0" EntityGUID="{2F476D5A-3B9D-4BE7-968B-A0F43D4F6685}" EntityGUID_64="4BE73B9D2F476D5A">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="87" Class="Math:SetColor" pos="670,1310,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="89" Class="Logic:Any" pos="1260,1090,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="96" Class="Material:EntityMaterialParams" pos="1450,1140,0" flags="0" EntityGUID="{6F3A79F4-A0FA-442B-9A1D-C5BC61B4372A}" EntityGUID_64="442BA0FA6F3A79F4">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="97" Class="Math:SetColor" pos="700,1390,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="99" Class="Logic:Any" pos="1330,1250,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="102" Class="Math:SetColor" pos="650,840,0" flags="0">
+       <Inputs color_In="0.00477695,0.327778,0.00477695"/>
+      </Node>
+      <Node Id="104" Class="Math:SetNumber" pos="1070,550,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="105" Class="Math:SetNumber" pos="800,1100,0" flags="0">
+       <Inputs In="2.5"/>
+      </Node>
+      <Node Id="106" Class="Logic:Any" pos="1080,790,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="109" Class="entity:AreaTrigger" pos="-840,1610,0" flags="0" EntityGUID="{B9C590F2-D719-4DCD-965B-78590CB6CA46}" EntityGUID_64="4DCDD719B9C590F2">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="118" Name="Puzzle Triggers" Class="_commentbox" pos="-960,432.37866,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="480" Height="610"/>
+       <NodeSize Width="480" Height="651.98633"/>
+      </Node>
+      <Node Id="119" Name="Trigger door to open from inside" Class="_commentbox" pos="-880,1522.5557,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="330" Height="220"/>
+       <NodeSize Width="470.98633" Height="261.98633"/>
+      </Node>
+      <Node Id="120" Name="If the number of entities \n inside is equal to 1, \n then activate true. " Class="_comment" pos="-690,540,0" flags="0"/>
+      <Node Id="121" Name="." Class="_commentbox" pos="-710,483.05841,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="210" Height="540"/>
+       <NodeSize Width="210" Height="581.98633"/>
+      </Node>
+      <Node Id="132" Name="Materials original color and glow value." Class="_comment" pos="1070,520,0" flags="0"/>
+      <Node Id="136" Name="It&apos;s Green &amp; Glows!" Class="_commentbox" pos="630,678.01428,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="400" Height="450"/>
+       <NodeSize Width="400" Height="491.98633"/>
+      </Node>
+      <Node Id="138" Name="It&apos;s Yellow" Class="_commentbox" pos="630,1158.0144,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="250" Height="260"/>
+       <NodeSize Width="250" Height="301.98633"/>
+      </Node>
+      <Node Id="141" Class="Math:SetColor" pos="650,1010,0" flags="0">
+       <Inputs color_In="0.00477695,0.327778,0.00477695"/>
+      </Node>
+      <Node Id="142" Class="Math:SetColor" pos="650,930,0" flags="0">
+       <Inputs color_In="0.00477695,0.327778,0.00477695"/>
+      </Node>
+      <Node Id="149" Name="On &quot;&quot;Game Start&quot; or &quot;&quot;On trigger leave&quot; then reset the material. " Class="_comment" pos="650,470,0" flags="0"/>
+      <Node Id="150" Name="Reset material state" Class="_commentbox" pos="630,412.43756,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="720" Height="220"/>
+       <NodeSize Width="720" Height="261.98633"/>
+      </Node>
+      <Node Id="151" Name="Set A to Green" Class="_comment" pos="650,820,0" flags="0"/>
+      <Node Id="152" Name="Set Glow float for A, B, &amp; C" Class="_comment" pos="800,1080,0" flags="0"/>
+      <Node Id="155" Name="Change Material" Class="_commentbox" pos="1050,678.01453,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="630" Height="630"/>
+       <NodeSize Width="630" Height="671.98633"/>
+      </Node>
+      <Node Id="158" Name="." Class="_commentbox" pos="1060,698.01422,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="210" Height="120"/>
+       <NodeSize Width="210" Height="161.98631"/>
+      </Node>
+      <Node Id="159" Name="." Class="_commentbox" pos="1110,838.01428,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="310" Height="450"/>
+       <NodeSize Width="310" Height="491.98633"/>
+      </Node>
+      <Node Id="206" Name="Set color for A" Class="_comment" pos="640,1210,0" flags="0"/>
+      <Node Id="208" Name="Set color for C" Class="_comment" pos="700,1370,0" flags="0"/>
+      <Node Id="212" Name="A" Class="_comment" pos="1450,760,0" flags="0"/>
+      <Node Id="213" Name="B" Class="_comment" pos="1450,940,0" flags="0"/>
+      <Node Id="214" Name="C" Class="_comment" pos="1450,1120,0" flags="0"/>
+      <Node Id="227" Name="Open Door" Class="_comment" pos="190,1570,0" flags="0"/>
+      <Node Id="228" Name="Close Door" Class="_comment" pos="190,1810,0" flags="0"/>
+      <Node Id="234" Name="." Class="_commentbox" pos="-860,1542.5557,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="280" Height="180"/>
+       <NodeSize Width="280" Height="221.98631"/>
+      </Node>
+      <Node Id="256" Class="Mission:GameTokenSet" pos="-710,340,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" TokenValue="1"/>
+      </Node>
+      <Node Id="261" Class="Mission:GameTokenModify" pos="-70,580,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" Operation="0" TokenType="1" OtherValue="2"/>
+      </Node>
+      <Node Id="329" Class="Mission:GameTokenModify" pos="-70,970,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" Operation="0" TokenType="1" OtherValue="3"/>
+      </Node>
+      <Node Id="334" Class="Mission:GameTokenCheck" pos="-440,580,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" CompareValue="1"/>
+      </Node>
+      <Node Id="335" Class="Mission:GameTokenCheck" pos="-440,780,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" CompareValue="3"/>
+      </Node>
+      <Node Id="337" Class="Mission:GameTokenCheck" pos="-440,970,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" CompareValue="2"/>
+      </Node>
+      <Node Id="338" Class="Mission:GameTokenSet" pos="320,1210,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" TokenValue="1"/>
+      </Node>
+      <Node Id="340" Class="Logic:Any" pos="60,1830,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="342" Class="Mission:GameTokenModify" pos="-70,780,0" flags="0">
+       <Inputs gametoken_Token="CurrentValue" Operation="0" TokenType="1" OtherValue="1"/>
+      </Node>
+      <Node Id="344" Class="Time:Delay" pos="430,1720,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="5" resetOnInput="0"/>
+      </Node>
+      <Node Id="347" Name="Open and close the door" Class="_commentbox" pos="-20,1493.2085,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="570" Height="520"/>
+       <NodeSize Width="570" Height="561.98633"/>
+      </Node>
+      <Node Id="348" Name="If true then increment value to 2" Class="_comment" pos="-70,550,0" flags="0"/>
+      <Node Id="371" Class="Logic:Any" pos="60,1690,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="379" Class="Logic:All" pos="-80,1200,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="381" Class="Logic:Any" pos="-360,1170,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="382" Class="Time:Delay" pos="200,1230,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="385" Class="Logic:All" pos="-80,1360,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="387" Class="Logic:Any" pos="90,1230,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="390" Name="If True, False, False" Class="_comment" pos="-80,1170,0" flags="0"/>
+      <Node Id="392" Name="If True, True, False" Class="_comment" pos="-80,1330,0" flags="0"/>
+      <Node Id="393" Name="Then reset token back to 1." Class="_comment" pos="320,1180,0" flags="0"/>
+      <Node Id="395" Name="Set graph token to it&apos;s start value" Class="_commentbox" pos="-960,273.01361,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1050" Height="120"/>
+       <NodeSize Width="1050" Height="161.98631"/>
+      </Node>
+      <Node Id="396" Name="Glow inputs for A, B, &amp; C" Class="_comment" pos="1080,760,0" flags="0"/>
+      <Node Id="397" Name="Color inputs for A" Class="_comment" pos="1130,900,0" flags="0"/>
+      <Node Id="398" Name="Color inputs for B" Class="_comment" pos="1200,1060,0" flags="0"/>
+      <Node Id="399" Name="Color inputs for C" Class="_comment" pos="1270,1220,0" flags="0"/>
+      <Node Id="400" Name="Set color for B" Class="_comment" pos="670,1290,0" flags="0"/>
+      <Node Id="402" Name="Handles reset logic for fail states" Class="_commentbox" pos="-390,1092.5222,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="930" Height="330"/>
+       <NodeSize Width="930" Height="371.98633"/>
+      </Node>
+      <Node Id="403" Name="." Class="_commentbox" pos="-460,433.01721,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="660" Height="610"/>
+       <NodeSize Width="660" Height="651.98633"/>
+      </Node>
+      <Node Id="404" Name="." Class="_commentbox" pos="-450,473.16498,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="640" Height="180"/>
+       <NodeSize Width="640" Height="221.98631"/>
+      </Node>
+      <Node Id="405" Name="." Class="_commentbox" pos="-450,673.05194,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="640" Height="170"/>
+       <NodeSize Width="640" Height="211.98631"/>
+      </Node>
+      <Node Id="406" Name="If true then set token value back to 1. " Class="_comment" pos="-70,750,0" flags="0"/>
+      <Node Id="407" Name="If true then set token value to 3. " Class="_comment" pos="-70,940,0" flags="0"/>
+      <Node Id="408" Name="." Class="_commentbox" pos="0,1513.0144,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="530" Height="480"/>
+       <NodeSize Width="530" Height="521.98633"/>
+      </Node>
+      <Node Id="411" Name="Note this section is slightly different \n than the previous examples. Any of the \n plates can be in a green state. This is done to provide \n &quot;clue&quot; feedback on the correct order of the puzzle." Class="_comment" pos="650,730,0" flags="0"/>
+      <Node Id="412" Name="Set B to Green" Class="_comment" pos="650,910,0" flags="0"/>
+      <Node Id="413" Name="Set C to Green" Class="_comment" pos="650,990,0" flags="0"/>
+      <Node Id="415" Name="." Class="_commentbox" pos="-450,863.27887,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="640" Height="170"/>
+       <NodeSize Width="640" Height="211.98631"/>
+      </Node>
+      <Node Id="416" Name="If Trigger A has been entered, \n then check to see if the token value is 1." Class="_comment" pos="-440,530,0" flags="0"/>
+      <Node Id="417" Name="If Trigger C has been entered, \n then check to see if the token value is 2. " Class="_comment" pos="-440,920,0" flags="0"/>
+      <Node Id="418" Name="If Trigger B has been entered, \n then check to see if the token value is 3." Class="_comment" pos="-440,730,0" flags="0"/>
+      <Node Id="419" Name="An example of how triggers can be used to create sequence puzzles. \n In this case the player must enter the triggers in the correct order; A, C, then B. " Class="_comment" pos="-960,240,0" flags="0"/>
+      <Node Id="420" Name="Mission:GameTokens can be used like a local (graph token)or global variable (game token). \n In this case a graph token is being used (local variable) since \n the information the token contains is not needed in \n other graphs or levels. To create a graph token go to the \n tools tab on the Flowgraph window and select &quot;edit graph token&quot;." Class="_comment" pos="-480,330,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="54" nodeOut="53" portIn="Stop" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="340" nodeOut="53" portIn="In0" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="344" nodeOut="53" portIn="in" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="54" portIn="In3" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="54" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="256" nodeOut="55" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="55" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="57" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="57" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="334" nodeOut="58" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="335" nodeOut="61" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="67" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="67" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="68" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="76" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="77" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="78" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="78" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="78" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="79" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="80" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="80" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="87" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="86" nodeOut="89" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="97" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="96" nodeOut="99" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="104" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="105" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="86" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="96" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="109" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="109" portIn="In9" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="371" nodeOut="109" portIn="In0" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="141" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="142" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="261" portIn="Set" portOut="Result" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="329" portIn="Set" portOut="Result" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="334" portIn="Set" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="261" nodeOut="334" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="379" nodeOut="334" portIn="In0" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="385" nodeOut="334" portIn="In0" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="87" nodeOut="335" portIn="Set" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="342" nodeOut="335" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="371" nodeOut="335" portIn="In1" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="379" nodeOut="335" portIn="In1" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="385" nodeOut="335" portIn="In1" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="97" nodeOut="337" portIn="Set" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="329" nodeOut="337" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="379" nodeOut="337" portIn="In2" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="385" nodeOut="337" portIn="In2" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="338" portIn="In4" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="338" portIn="In1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="340" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="342" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="342" portIn="Set" portOut="Result" enabled="1"/>
+      <Edge nodeIn="340" nodeOut="344" portIn="In1" portOut="out" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="371" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="379" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="379" nodeOut="381" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="385" nodeOut="381" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="338" nodeOut="382" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="385" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="382" nodeOut="387" portIn="in" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="CurrentValue" Type="1"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{6395FA49-6347-47D9-BA4D-5572CD283B8E}" Name="DoorParent_3" HideOrder="0" Pos="998.95978,992.06921,50.049999" FloorNumber="-1" Rotate="0.96592581,0,0,0.25881904" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{AC8DE652-E97D-407D-B3FC-BE55BABF0F06}" Name="ProximityTrigger5" HideOrder="0" Parent="{7457C1B0-920C-40C0-BAD3-24F813A3E8B7}" Pos="3.0576477,0.25915527,1.9499969" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="6" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{EF20B454-3128-6A2A-14F2-593BAE88F3D9}" Name="Hex_Plate_2m_redtri_99_100_100" HideOrder="0" Pos="983.31409,1008.0376,49.653999" FloorNumber="-1" Rotate="0.96592581,2.0625244e-017,1.4561729e-017,-0.25881904" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="levels/samples/trigger_sample/geometry/hex_plate_2m_redtri.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{05D52258-F2FC-46CB-98D7-5E5FA2064BF9}" Name="sphere_ex_7" HideOrder="0" Parent="{53E70E1D-35F5-4A79-9970-97B2E6BA3AEF}" Pos="0.00019999999,0.44999999,3.4000001" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 07" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="246.60178,139.61069,0" flags="1" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="20,140,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-20,-140.30042,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="540"/>
+       <NodeSize Width="750" Height="565.30035"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="0,-90.300323,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="470"/>
+       <NodeSize Width="710" Height="495.30035"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="0,-100,0" flags="0"/>
+      <Node Id="65" Name="Note:_Area_triggers_can&apos;t_detect_geom_entity_but_proximity_triggers_can." Class="_comment" pos="220,-50,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In1" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In0" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{F9562D59-7F07-4B13-B924-C40056811AF5}" Name="AreaTrigger1" HideOrder="0" Pos="1010.9,993.49994,75.640076" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{2F476D5A-3B9D-4BE7-968B-A0F43D4F6685}" Name="Hex_Plate_2m_red" HideOrder="0" Pos="982.5,992.78314,49.689999" FloorNumber="-1" Rotate="0.5,-2.3691305e-017,-8.7273378e-018,-0.86602539" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_red.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{A5CD375B-7DF1-4115-92ED-872F8C51F181}" Name="Hex_Plate_2m_red" HideOrder="0" Pos="997,1002.3094,49.689999" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_red.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C5741A62-0872-457B-8390-F74C03D382CC}" Name="sphere_ex_01" HideOrder="0" Parent="{1A5A2067-5C1E-40F3-8134-92F13AD46D4D}" Pos="0.00019999999,0.44999999,3.4000001" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 01" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,0,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="250,100,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="30,100,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-20,-100,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="480"/>
+       <NodeSize Width="750" Height="505"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="0,-49.955505,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="410"/>
+       <NodeSize Width="710" Height="435"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="0,-60,0" flags="0"/>
+      <Node Id="54" Name="Putting this flowgraph inside the sphere is done intentionally \n so when the sphere is copied and used on another door \n the new copy has the same behavior." Class="_comment" pos="20,300,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="AreaBox" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{F9EB3462-40EE-4359-8E7F-FCA6B047E0AB}" Name="AreaBox_9" HideOrder="0" Pos="985.94727,998.6308,50" FloorNumber="-1" Rotate="0.96592581,0,0,-0.25881898" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Width="4" Length="2.4" Height="4" GroupId="0" Priority="0" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" BoxMin="-2,-1.2,0" BoxMax="2,1.2,4">
+    <Entities>
+     <Entity Id="{B9C590F2-D719-4DCD-965B-78590CB6CA46}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{1A5A2067-5C1E-40F3-8134-92F13AD46D4D}" Name="DoorParent_01" HideOrder="0" Pos="1009.652,991.0097,50.049999" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="AreaBox" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{0B481168-BFC8-4593-8D6B-7468EAD5FD78}" Name="AreaBox_7" HideOrder="0" Pos="985.86798,1006.041,50" FloorNumber="-1" Rotate="0.96592581,0,0,0.25881904" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Width="4" Length="2.4" Height="4" GroupId="0" Priority="0" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" BoxMin="-2,-1.2,0" BoxMax="2,1.2,4">
+    <Entities>
+     <Entity Id="{B7D186BC-629A-4015-8296-86ABFD0903F4}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{E66B9169-B1F3-45F6-9E6A-7BA1AFD303EE}" Name="ProximityTrigger6" HideOrder="0" Parent="{6621B647-CAD4-4A54-838B-DD88A3590B8F}" Pos="0,0,1.9000015" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="2" DimY="2" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{7758A96D-3347-4B87-ABB5-284311FF59D9}" Name="Shape9b" HideOrder="0" Pos="981.52972,992.05469,50.025501" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.93048096,-0.51654053,0"/>
+     <Point Pos="1.9588013,0.051940918,0"/>
+     <Point Pos="2.022583,1.3060913,0"/>
+     <Point Pos="1.0485229,1.8914795,0"/>
+     <Point Pos="-0.097900391,1.2955933,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{79353D87-21B5-4752-9AFD-B46758AAAB2F}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{0B9BDC6E-6E6A-458A-A4F4-2F3911021303}" Name="DoorParent_8" HideOrder="0" Pos="993.65179,1004.866,50.049999" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{BE9DE96E-CBF8-47FD-B743-0D27415313ED}" Name="sphere_ex_5a" HideOrder="0" Parent="{7457C1B0-920C-40C0-BAD3-24F813A3E8B7}" Pos="-0.37475586,0.44995117,3.3999939" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 05" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="246.60178,139.61069,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="-3.3982239,139.61069,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-30,-120,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="500"/>
+       <NodeSize Width="750" Height="525"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="-10,-70,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="430"/>
+       <NodeSize Width="710" Height="455"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="-10,-80,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Prefab" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{D431A870-CBCB-4F72-ABF4-07F685BACC99}" Name="Sphere_Controller1" HideOrder="0" Pos="1020.3928,981.18781,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" MatLayersMask="0" PrefabGUID="{93573FEF-0FD4-4F6C-8D2C-E862C4A09762}" PrefabName="Character_Controllers.Sphere_Controller"/>
+   <Object Type="AreaBox" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{F89C0271-53D4-4CB4-869E-F0AD47D9D63C}" Name="AreaBox_06" HideOrder="0" Pos="1006.0286,1012.4427,50" FloorNumber="-1" Rotate="0.96592581,0,0,0.25881904" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Width="4" Length="3" Height="4" GroupId="0" Priority="0" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" BoxMin="-2,-1.5,0" BoxMax="2,1.5,4">
+    <Entities>
+     <Entity Id="{36C3A5CB-3955-4AC0-84AB-6E2153FD7303}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{5470FA73-03D6-41BA-B645-079D6FFCC2DA}" Name="Shape7a" HideOrder="0" Pos="984.08264,1011.7686,50.145912" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="0" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.66815186,-1.1989746,0"/>
+     <Point Pos="0.62573242,-3.871582,0"/>
+     <Point Pos="-1.5957031,-2.5147095,0"/>
+     <Point Pos="-2.284729,-1.3543091,0"/>
+     <Point Pos="-1.5476685,-0.068664551,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{D199FCCC-2FBC-4F46-9B2A-CDBB8BC45951}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{86D21174-8EC3-96E5-B436-0A9F404B21DF}" Name="_Door_Sample_01" HideOrder="0" Parent="{1A5A2067-5C1E-40F3-8134-92F13AD46D4D}" Pos="6.1035156e-005,-0.00024414063,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+    <FlowGraph Description="" Group="Example 01" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="3" Class="entity:ProximityTrigger" pos="-170,100,0" flags="1" EntityGUID="{53455275-B8E3-40E0-A698-6D91CD8B33DF}" EntityGUID_64="40E0B8E353455275">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="4" Class="Movement:MoveEntityTo" pos="150,90,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="2" CoordSys="0"/>
+      </Node>
+      <Node Id="20" Class="Movement:MoveEntityTo" pos="150,280,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="2" CoordSys="0"/>
+      </Node>
+      <Node Id="29" Class="Game:Start" pos="-370,30,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Proximity trigger with the entity property set to OnlyPlayer" Class="_commentbox" pos="-430,-69.999863,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="830" Height="540"/>
+       <NodeSize Width="830" Height="565"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="-400,-19.969345,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="770" Height="470"/>
+       <NodeSize Width="770" Height="495"/>
+      </Node>
+      <Node Id="54" Name="On enter trigger area open the door &amp; \n on leave trigger area close the door. " Class="_comment" pos="-170,50,0" flags="0"/>
+      <Node Id="56" Name="Note the Door is linked (parented) to a tag point. \n This ensures that no matter how the door is placed in the world \n that it will always open -4 units relative \n to its parent. " Class="_comment" pos="-370,380,0" flags="0"/>
+      <Node Id="57" Name="By default a proximity trigger can only be activated by the player. " Class="_comment" pos="-400,-30,0" flags="0"/>
+      <Node Id="59" Name="This is a comment box" Class="_commentbox" pos="-490,-470,0" flags="0">
+       <Inputs TextSize="1" Color="0.577581,1,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="0"/>
+       <ResizeBorder X="0" Y="0" Width="1050" Height="260"/>
+       <NodeSize Width="1050" Height="285"/>
+      </Node>
+      <Node Id="60" Name="Use the Flow Graph Scripting Editor to take advantage of these sample sets that highlight the \nfundamentals of specific systems, objects, or concepts within the Lumberyard engine. \n  \nEach sample set begins with a simple script event, and then alternative solutions or variations of the \ntheme are built on that idea. \n  \nWe hope to showcase different types of game nodes and approaches to solving scripting ideas through \nthe progression of samples. " Class="_commentbox" pos="-450,-409.79565,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="0" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="300" Height="100"/>
+       <NodeSize Width="916" Height="293"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="3" portIn="Start" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="3" portIn="Stop" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="4" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="29" portIn="Enable" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{53455275-B8E3-40E0-A698-6D91CD8B33DF}" Name="ProximityTrigger_Example_01" HideOrder="0" Parent="{1A5A2067-5C1E-40F3-8134-92F13AD46D4D}" Pos="3.0002441,0.39978027,2" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="3.5" DimY="6" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="CameraTarget" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{9AB78877-EA94-49CA-8ED0-3C6A9FE93353}" Name="HatchParent2" HideOrder="0" Pos="1011.03,998.31732,62.707199" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C4AC4E79-7E21-4EEF-B0C1-D1893F4DBB1D}" Name="FlowgraphEntity1" HideOrder="0" Pos="985.17798,986.25439,50.000099" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity"/>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{59EA8D84-4B67-43D7-88F1-98F52DB4D1B4}" Name="Shape8c" HideOrder="0" Pos="995.08588,1003.9392,50.025501" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.93048096,-0.51654053,0"/>
+     <Point Pos="1.9588013,0.051940918,0"/>
+     <Point Pos="2.022583,1.3060913,0"/>
+     <Point Pos="1.0485229,1.8914795,0"/>
+     <Point Pos="-0.097900391,1.2955933,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{5C350EF3-B337-43CB-8B11-5C3CBB103474}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{79353D87-21B5-4752-9AFD-B46758AAAB2F}" Name="AreaTrigger9b" HideOrder="0" Pos="981.53271,989.95953,50.78685" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{4C02EF87-15F1-475D-9A30-9AA7D0B52D8D}" Name="Shape9c" HideOrder="0" Pos="985.96069,992.93439,50.025501" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.93048096,-0.51654053,0"/>
+     <Point Pos="1.9588013,0.051940918,0"/>
+     <Point Pos="2.022583,1.3060913,0"/>
+     <Point Pos="1.0485229,1.8914795,0"/>
+     <Point Pos="-0.097900391,1.2955933,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{E86056B8-09FF-4632-9308-29D00B885A5E}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{39F9728E-5347-4420-9205-4D20A1C3E6DB}" Name="ProximityTrigger3" HideOrder="0" Parent="{6395FA49-6347-47D9-BA4D-5572CD283B8E}" Pos="3.0825195,0.37997437,1.9500008" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="3.5" DimY="6" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="1" bOnlyPlayer="0" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{7FE61097-C99C-4C78-9C41-818902C1C977}" Name="Flowgraph 2" HideOrder="0" Pos="1014.4,994.99994,75.640076" FloorNumber="-1" Rotate="1,0,0,-5.1658017e-008" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="Example 11" enabled="0" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:AreaTrigger" pos="-740,-390,0" flags="0" EntityGUID="{F9562D59-7F07-4B13-B924-C40056811AF5}" EntityGUID_64="4B137F07F9562D59">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="4" Class="entity:ProximityTrigger" pos="-730,-170,0" flags="0" EntityGUID="{F2128FFB-9A7A-450A-BB51-F1DC68E4A6E1}" EntityGUID_64="450A9A7AF2128FFB">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="7" Class="Game:Start" pos="-1340,-630,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="8" Class="Logic:Any" pos="-900,-400,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="9" Class="Logic:Any" pos="-1000,-290,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="10" Class="Logic:Any" pos="-1050,-140,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="11" Class="Debug:DisplayMessage" pos="140,-640,0" flags="0">
+       <Inputs entityId="0" message="Area Trigger is ON but Prox trigger is OFF" DisplayTime="70.3" posX="300" posY="200" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="13" Class="Logic:Any" pos="-90,-600,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="15" Class="Debug:DisplayMessage" pos="140,-440,0" flags="0">
+       <Inputs entityId="0" message="Area Trigger is OFF but Prox trigger is ON" DisplayTime="70.3" posX="300" posY="200" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="17" Class="Time:Delay" pos="-340,-400,0" flags="0">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="18" Class="Debug:DisplayMessage" pos="130,-90,0" flags="0">
+       <Inputs entityId="0" message="Proximity Trigger is ON but area trigger is OFF" DisplayTime="70.3" posX="300" posY="200" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="19" Class="Logic:Any" pos="-70,-400,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="20" Class="Debug:DisplayMessage" pos="130,110,0" flags="0">
+       <Inputs entityId="0" message="Proximity Trigger is OFF but area trigger is ON" DisplayTime="70.3" posX="300" posY="200" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="21" Class="Time:Delay" pos="-420,130,0" flags="0">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="22" Class="Logic:Any" pos="-140,140,0" flags="0" InHideMask="1019" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="29" Name="ES_DrawProximityTriggers=1_" Class="_comment" pos="-1340,-700,0" flags="0"/>
+      <Node Id="30" Name="ES_DrawAreas=1" Class="_comment" pos="-1340,-670,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="2" portIn="Enable" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="2" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="2" portIn="Show" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="2" portIn="Show" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="2" portIn="in" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="2" portIn="In2" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="4" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="4" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="4" portIn="Show" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="4" portIn="Hide" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="4" portIn="Show" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="4" portIn="in" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="7" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="7" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="7" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="8" portIn="Disable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="8" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="9" portIn="Enable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="10" portIn="Disable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="11" portIn="In3" portOut="Show" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="13" portIn="Hide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="17" portIn="In1" portOut="out" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="18" portIn="In2" portOut="Show" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="19" portIn="Hide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="21" portIn="In1" portOut="out" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="22" portIn="Hide" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C3CD0899-65BD-4454-BBDC-87CF2E48A64E}" Name="sphere_ex_5b" HideOrder="0" Parent="{7457C1B0-920C-40C0-BAD3-24F813A3E8B7}" Pos="7.2498474,0.44958496,3.3999786" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 05" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="246.60178,139.61069,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="-3.3982239,139.61069,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-40,-120,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="500"/>
+       <NodeSize Width="750" Height="525"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="-20,-70,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="430"/>
+       <NodeSize Width="710" Height="455"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="-20,-80,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{14B7A8A0-0253-43ED-B5CA-9ADC8AEA069C}" Name="sphere_ex_8" HideOrder="0" Parent="{0B9BDC6E-6E6A-458A-A4F4-2F3911021303}" Pos="0.00019999999,0.44999999,3.4000001" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 08" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="260,130,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="10,140,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-30,-110.03139,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="490"/>
+       <NodeSize Width="750" Height="515.09558"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="-10,-60.031113,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="420"/>
+       <NodeSize Width="710" Height="445.09561"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="-10,-70,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In0" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{F1AED0A0-AE3A-4DD7-9068-DFA0F67268F5}" Name="_Door_Sample" HideOrder="0" Parent="{0B9BDC6E-6E6A-458A-A4F4-2F3911021303}" Pos="6.1035156e-005,-0.00012207031,0" FloorNumber="-1" Rotate="1,0,0,-3.5527137e-015" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 08" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="53" Class="Movement:MoveEntityTo" pos="480,970,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="54" Class="Movement:MoveEntityTo" pos="480,1170,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="55" Class="Game:Start" pos="190,810,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="56" Class="entity:AreaTrigger" pos="-290,280,0" flags="0" EntityGUID="{3C8F2BA9-D66E-49F7-968C-5DB3F348983E}" EntityGUID_64="49F7D66E3C8F2BA9">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="57" Class="entity:AreaTrigger" pos="-290,500,0" flags="0" EntityGUID="{5C350EF3-B337-43CB-8B11-5C3CBB103474}" EntityGUID_64="43CBB3375C350EF3">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="58" Class="Math:Equal" pos="-50,280,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="61" Class="Math:Equal" pos="-60,500,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="67" Class="entity:AreaTrigger" pos="-290,700,0" flags="0" EntityGUID="{B5277915-D763-4221-B032-80F56308126F}" EntityGUID_64="4221D763B5277915">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="68" Class="Math:Equal" pos="-60,700,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="70" Class="Logic:All" pos="560,630,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="71" Class="Logic:All" pos="210,300,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="74" Class="Time:Delay" pos="910,380,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="75" Class="Material:EntityMaterialParams" pos="1480,590,0" flags="0" EntityGUID="{33AE5CB7-CD35-4277-A9ED-8AADC2FA5744}" EntityGUID_64="4277CD3533AE5CB7">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="76" Class="Game:Start" pos="800,280,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="77" Class="Math:SetColor" pos="790,770,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="78" Class="Math:SetColor" pos="1220,330,0" flags="0">
+       <Inputs color_In="0.617207,0.0116122,0.0116122"/>
+      </Node>
+      <Node Id="79" Class="Logic:Any" pos="1190,700,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="80" Class="Logic:Any" pos="1050,330,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="84" Name="Requires_player_to_enter_each_trigger_in_any_order" Class="_commentbox" pos="-380,60.075294,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1110" Height="820"/>
+       <NodeSize Width="1110" Height="845"/>
+      </Node>
+      <Node Id="85" Name="Changes_material_colors_on_each_object_for_player_feedback._" Class="_commentbox" pos="760,159.49323,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="970" Height="960"/>
+       <NodeSize Width="970" Height="985"/>
+      </Node>
+      <Node Id="86" Class="Material:EntityMaterialParams" pos="1480,770,0" flags="0" EntityGUID="{5ABB13E5-C5DD-4A54-8B18-FFCE70BBBCB6}" EntityGUID_64="4A54C5DD5ABB13E5">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="87" Class="Math:SetColor" pos="820,850,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="89" Class="Logic:Any" pos="1260,860,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="96" Class="Material:EntityMaterialParams" pos="1480,950,0" flags="0" EntityGUID="{A5CD375B-7DF1-4115-92ED-872F8C51F181}" EntityGUID_64="41157DF1A5CD375B">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="97" Class="Math:SetColor" pos="850,930,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="99" Class="Logic:Any" pos="1340,1020,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="102" Class="Math:SetColor" pos="790,540,0" flags="0">
+       <Inputs color_In="0.00477695,0.327778,0.00477695"/>
+      </Node>
+      <Node Id="104" Class="Math:SetNumber" pos="1220,390,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="105" Class="Math:SetNumber" pos="840,630,0" flags="0">
+       <Inputs In="2.5"/>
+      </Node>
+      <Node Id="106" Class="Logic:Any" pos="1090,550,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="109" Class="entity:AreaTrigger" pos="-330,970,0" flags="0" EntityGUID="{3EEC64AC-D07D-4657-969A-F23447E76BDD}" EntityGUID_64="4657D07D3EEC64AC">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="110" Class="Logic:Any" pos="230,970,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="112" Class="Logic:Any" pos="800,380,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="113" Class="Logic:Any" pos="340,500,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="115" Class="Logic:Any" pos="370,810,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="118" Name="Puzzle Triggers" Class="_commentbox" pos="-340,159.35193,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="500" Height="700"/>
+       <NodeSize Width="500" Height="725"/>
+      </Node>
+      <Node Id="119" Name="Trigger door to open from inside" Class="_commentbox" pos="-380,909.99982,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="540" Height="230"/>
+       <NodeSize Width="540" Height="255"/>
+      </Node>
+      <Node Id="120" Name="If the number of entities \n inside is equal to 1, \n then activate true. " Class="_comment" pos="-50,220,0" flags="0"/>
+      <Node Id="121" Name="." Class="_commentbox" pos="-80,179.36902,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="220" Height="640"/>
+       <NodeSize Width="220" Height="665"/>
+      </Node>
+      <Node Id="128" Name="Open and close the door" Class="_commentbox" pos="190,910.18811,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="540" Height="450"/>
+       <NodeSize Width="540" Height="475"/>
+      </Node>
+      <Node Id="129" Name="." Class="_commentbox" pos="180,159.54813,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="520" Height="700"/>
+       <NodeSize Width="520" Height="725"/>
+      </Node>
+      <Node Id="132" Name="Materials original color and glow value." Class="_comment" pos="1220,300,0" flags="0"/>
+      <Node Id="136" Name="It&apos;s Green &amp; Glows!" Class="_commentbox" pos="780,460.00012,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="250" Height="210"/>
+       <NodeSize Width="250" Height="235"/>
+      </Node>
+      <Node Id="138" Name="It&apos;s Yellow" Class="_commentbox" pos="780,710.104,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="250" Height="260"/>
+       <NodeSize Width="250" Height="285"/>
+      </Node>
+      <Node Id="149" Name="On &quot;&quot;Game Start&quot; or &quot;&quot;On trigger leave&quot; then reset the material. " Class="_comment" pos="800,250,0" flags="0"/>
+      <Node Id="150" Name="Reset material state" Class="_commentbox" pos="780,200.10391,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="720" Height="220"/>
+       <NodeSize Width="720" Height="245"/>
+      </Node>
+      <Node Id="151" Name="Set color to Green" Class="_comment" pos="790,510,0" flags="0"/>
+      <Node Id="152" Name="Set Glow float" Class="_comment" pos="840,600,0" flags="0"/>
+      <Node Id="155" Name="Change Material" Class="_commentbox" pos="1060,460.10446,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="650" Height="630"/>
+       <NodeSize Width="650" Height="655"/>
+      </Node>
+      <Node Id="158" Name="." Class="_commentbox" pos="1070,480.104,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="190" Height="120"/>
+       <NodeSize Width="190" Height="145"/>
+      </Node>
+      <Node Id="159" Name="." Class="_commentbox" pos="1120,620.104,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="310" Height="450"/>
+       <NodeSize Width="310" Height="475"/>
+      </Node>
+      <Node Id="206" Name="Set color for A" Class="_comment" pos="790,750,0" flags="0"/>
+      <Node Id="208" Name="Set color for C" Class="_comment" pos="850,910,0" flags="0"/>
+      <Node Id="209" Name="A" Class="_comment" pos="1480,570,0" flags="0"/>
+      <Node Id="210" Name="B" Class="_comment" pos="1480,750,0" flags="0"/>
+      <Node Id="211" Name="C" Class="_comment" pos="1480,930,0" flags="0"/>
+      <Node Id="216" Name="Glow inputs for A, B, &amp; C" Class="_comment" pos="1080,520,0" flags="0"/>
+      <Node Id="222" Name="Color inputs for A" Class="_comment" pos="1130,670,0" flags="0"/>
+      <Node Id="225" Name="Color inputs for B" Class="_comment" pos="1200,830,0" flags="0"/>
+      <Node Id="226" Name="Color inputs for C" Class="_comment" pos="1270,990,0" flags="0"/>
+      <Node Id="228" Name="Set color for B" Class="_comment" pos="820,830,0" flags="0"/>
+      <Node Id="229" Name="Change color to green if all inputs are activated." Class="_comment" pos="210,270,0" flags="0"/>
+      <Node Id="230" Name="Inputs for Reset Logic:All" Class="_comment" pos="340,470,0" flags="0"/>
+      <Node Id="231" Name="." Class="_commentbox" pos="210,590.00336,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="460" Height="120"/>
+       <NodeSize Width="460" Height="145"/>
+      </Node>
+      <Node Id="232" Name="This extra Logic:All ensures the yellow \n color doesn&apos;t reset until all plates \n have been exited. This subtle difference \n changes the players expectations \n on how to open the door." Class="_comment" pos="230,630,0" flags="0"/>
+      <Node Id="233" Name="At first glance this example looks similar to example 7. However, the subtle difference in example 8 \n is the timing of when the plates change and revert their material colors.  " Class="_comment" pos="-340,100,0" flags="0"/>
+      <Node Id="234" Name="." Class="_commentbox" pos="-360,929.99982,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="280" Height="180"/>
+       <NodeSize Width="280" Height="205"/>
+      </Node>
+      <Node Id="235" Name="." Class="_commentbox" pos="210,930.30481,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="490" Height="410"/>
+       <NodeSize Width="490" Height="435"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="54" nodeOut="53" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="115" nodeOut="54" portIn="In1" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="113" nodeOut="55" portIn="In3" portOut="output" enabled="1"/>
+      <Edge nodeIn="115" nodeOut="55" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="70" nodeOut="56" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="57" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="57" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="70" nodeOut="57" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="58" portIn="In1" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="58" portIn="Set" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="61" portIn="In2" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="87" nodeOut="61" portIn="Set" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="67" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="67" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="70" nodeOut="67" portIn="In3" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="68" portIn="In3" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="97" nodeOut="68" portIn="Set" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="112" nodeOut="70" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="113" nodeOut="70" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="71" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="71" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="71" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="74" portIn="Stop" portOut="out" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="74" portIn="In2" portOut="out" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="76" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="77" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="78" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="78" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="78" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="79" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="80" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="80" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="87" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="86" nodeOut="89" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="97" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="96" nodeOut="99" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="104" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="105" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="86" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="96" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="109" portIn="In2" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="112" nodeOut="109" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="113" nodeOut="109" portIn="In2" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="110" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="110" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="112" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="113" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="70" nodeOut="115" portIn="Reset" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C5926AA2-8AA1-42BC-AEBD-FD4D0A7A9CD3}" Name="Shape3" HideOrder="0" Pos="1022.8643,1000.5832,62.640076" FloorNumber="-1" Rotate="1,0,0,-5.1658017e-008" ColorRGB="1967187" Width="0" Height="5" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-3.8662109,2.2290649,-0.0036277771"/>
+     <Point Pos="-3.6784668,6.8435059,0.053009033"/>
+     <Point Pos="-8.1245117,9.2271118,0"/>
+     <Point Pos="-11.702332,6.8582153,0.012897491"/>
+     <Point Pos="-15.92749,9.2456665,0.019119263"/>
+     <Point Pos="-15.832092,13.830261,0.012359619"/>
+     <Point Pos="-11.875,16.088135,0"/>
+     <Point Pos="-7.9096069,13.811646,0.013317108"/>
+     <Point Pos="-3.8021851,16.043579,0.012504578"/>
+     <Point Pos="0.075500488,13.803223,0"/>
+     <Point Pos="0.073486328,9.1380005,0"/>
+     <Point Pos="4.0155029,6.8615723,0"/>
+     <Point Pos="3.9834595,2.4848022,-0.013771057"/>
+    </Points>
+    <Entities>
+     <Entity Id="{F9562D59-7F07-4B13-B924-C40056811AF5}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Side7="0" Side8="0" Side9="0" Side10="0" Side11="0" Side12="0" Side13="0" Side14="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="CameraTarget" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{6D43B0A3-4DFD-436C-B354-263495F39956}" Name="HatchParent1" HideOrder="0" Pos="1002.922,998.28992,62.707199" FloorNumber="-1" Rotate="0.86602539,0,0,-0.5" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{3C8F2BA9-D66E-49F7-968C-5DB3F348983E}" Name="AreaTrigger8a" HideOrder="0" Pos="996.0202,1000.4979,50.10746" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{9DBCA8A9-5756-41B8-AB40-37D50F73A898}" Name="sphere_ex_3" HideOrder="0" Parent="{6395FA49-6347-47D9-BA4D-5572CD283B8E}" Pos="0.00012207031,0.45007324,3.4000015" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 03" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="460,0,0" flags="1" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="240,30,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="30,10,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-10,-90,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="470"/>
+       <NodeSize Width="750" Height="495"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="10,-40,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="400"/>
+       <NodeSize Width="710" Height="425"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="10,-50,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{3EEC64AC-D07D-4657-969A-F23447E76BDD}" Name="AreaTrigger8" HideOrder="0" Pos="989.94873,1002.1693,50.384285" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{CF64B3AC-71AF-4558-A397-D62DD47EF6EA}" Name="sphere_ex_6" HideOrder="0" Parent="{086EF6CD-FCA9-4363-B9C9-E71FDA94A617}" Pos="0.00019999999,0.44999999,3.4000001" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 06" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="250,130,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="10,130,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-40,-110,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="490"/>
+       <NodeSize Width="750" Height="515"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="-20,-60,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="420"/>
+       <NodeSize Width="710" Height="445"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="-20,-70,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{7457C1B0-920C-40C0-BAD3-24F813A3E8B7}" Name="DoorParent_5" HideOrder="0" Pos="1007.388,1003.065,50.049999" FloorNumber="-1" Rotate="0.25881907,0,0,0.96592581" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{33AE5CB7-CD35-4277-A9ED-8AADC2FA5744}" Name="Hex_Plate_2m_red" HideOrder="0" Pos="996,1000.0053,49.689999" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_red.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{E86056B8-09FF-4632-9308-29D00B885A5E}" Name="AreaTrigger9c" HideOrder="0" Pos="985.73633,990.03674,51.229282" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{AD8A67B9-70D7-4483-B359-3E7A047000D9}" Name="sphere_ex_9" HideOrder="0" Parent="{534EA429-CE7E-4B28-AA35-7700F6D88BB5}" Pos="0.00019999999,0.44999999,3.4000001" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 09" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="450,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,190,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="240,110,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="0,110,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-40,-110,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="490"/>
+       <NodeSize Width="750" Height="515"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="-20,-60,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="420"/>
+       <NodeSize Width="710" Height="445"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="-20,-70,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{B7D186BC-629A-4015-8296-86ABFD0903F4}" Name="AreaTrigger7d" HideOrder="0" Pos="986.52472,1004.4109,50.384285" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{AFE823BE-C10A-4F66-B002-B8B3B140C1F0}" Name="sphere_ex_4" HideOrder="0" Parent="{CBCB6A26-E879-4E06-9CB6-0AEFA781BB16}" Pos="0.00019999999,0.44999999,3.4000001" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 04" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="410,40,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="410,240,0" flags="1" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="240,160,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="30,160,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="-20,-60,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="490"/>
+       <NodeSize Width="745" Height="515"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="0,-10,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="670" Height="420"/>
+       <NodeSize Width="670" Height="445"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="0,-20,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{44F75FBF-C5B9-4180-9FF6-A854A3AD76A6}" Name="ProximityTrigger2" HideOrder="0" Parent="{47EBDE27-DACA-4ED7-9B54-71B5D8CBB794}" Pos="2.7999001,0.40000001,2" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="3.5" DimY="6" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{5CCF8ABF-39EC-4FA2-B044-12725D1BC04A}" Name="TagElevBot" HideOrder="0" Pos="1000,1000,49.900002" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{0ECCA2C1-4F54-475D-BDC2-23F56588BB06}" Name="_Start_00" HideOrder="0" Pos="1014.475,980.888,50.905003" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-370,-10,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Debug:ConsoleVariable" pos="-110,-10,0" flags="0">
+       <Inputs CVar="es_DrawProximityTriggers" Value="0"/>
+      </Node>
+      <Node Id="3" Class="Debug:ConsoleVariable" pos="-110,90,0" flags="0">
+       <Inputs CVar="es_DrawAreas" Value="0"/>
+      </Node>
+      <Node Id="4" Name="Trigger Debug Parameters" Class="_commentbox" pos="-400,-110.00002,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="600" Height="290"/>
+       <NodeSize Width="600" Height="315"/>
+      </Node>
+      <Node Id="5" Name="." Class="_commentbox" pos="-380,-49.999996,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="560" Height="210"/>
+       <NodeSize Width="560" Height="235"/>
+      </Node>
+      <Node Id="6" Name="Set the value to 1 to draw the trigger volumes while playing." Class="_comment" pos="-380,-70,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{257015C4-8973-4667-9AA6-A5CCBF7A3E3C}" Name="Elev_Hatch_99_100_100" HideOrder="0" Parent="{3F661CF8-3EAC-42FA-A015-B46D394CD051}" FloorNumber="-1" Rotate="1,-8.3519339e-008,-7.2201814e-008,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="levels/samples/trigger_sample/geometry/elev_hatch.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{36C3A5CB-3955-4AC0-84AB-6E2153FD7303}" Name="AreaTrigger_06" HideOrder="0" Pos="1005.7237,1013.7314,55.06562" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{32090CCC-C5CD-4B16-9CD0-5BA663B3F6AE}" Name="Shape1" HideOrder="0" Pos="1018.8579,975.21887,62.640072" FloorNumber="-1" Rotate="0.99144489,0,0,0.13052616" ColorRGB="2234880" Width="0" Height="5" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="1.1345215,4.5457764,0"/>
+     <Point Pos="5.5439453,5.6467285,0"/>
+     <Point Pos="6.8288574,10.018188,0"/>
+     <Point Pos="3.6849365,13.033325,0"/>
+     <Point Pos="-0.74645996,12.012817,0"/>
+     <Point Pos="-4.0010986,15.438721,0"/>
+     <Point Pos="-8.6308594,14.169556,0"/>
+     <Point Pos="-11.764648,17.336975,0.35991287"/>
+     <Point Pos="-13.016724,13.01178,0.16575623"/>
+     <Point Pos="-17.352295,11.761108,0.13597488"/>
+     <Point Pos="-14.125732,8.3728638,0.10857773"/>
+     <Point Pos="-15.23999,4.1066895,0"/>
+     <Point Pos="-11.975464,0.98699951,0"/>
+     <Point Pos="-7.5928955,2.2955933,0"/>
+     <Point Pos="-4.5046387,-1.03479,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{F9562D59-7F07-4B13-B924-C40056811AF5}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Side7="0" Side8="0" Side9="0" Side10="0" Side11="0" Side12="0" Side13="0" Side14="0" Side15="0" Side16="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{D199FCCC-2FBC-4F46-9B2A-CDBB8BC45951}" Name="AreaTrigger7a" HideOrder="0" Pos="981.4566,1011.0616,50.186554" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{086EF6CD-FCA9-4363-B9C9-E71FDA94A617}" Name="DoorParent_6" HideOrder="0" Pos="1002.96,1012.854,50.049999" FloorNumber="-1" Rotate="0.96592581,0,0,0.25881904" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{457F7FD3-0622-4B90-9FD2-28884B912E3F}" Name="Shape9a" HideOrder="0" Pos="980.04742,996.40063,50.025501" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.93048096,-0.51654053,0"/>
+     <Point Pos="1.9588013,0.051940918,0"/>
+     <Point Pos="2.022583,1.3060913,0"/>
+     <Point Pos="1.0485229,1.8914795,0"/>
+     <Point Pos="-0.097900391,1.2955933,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{7CD120E4-5F8B-4593-8D33-E505DE4F1E81}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{E25DB5D3-9F1D-4ABC-BB0C-B98400711261}" Name="Elev_Hatch1" HideOrder="0" Parent="{6D43B0A3-4DFD-436C-B354-263495F39956}" FloorNumber="-1" Rotate="1,1.8242609e-008,-1.0047782e-007,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="levels/samples/trigger_sample/geometry/elev_hatch.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{910E1EDF-3E95-4E6E-BFC2-9C2E053E252B}" Name="Shape_06" HideOrder="0" Pos="1002.0956,1012.6462,50" FloorNumber="-1" Rotate="0.96592581,0,0,0.25881904" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="4,0,0"/>
+     <Point Pos="6.9033203,0.10580444,-3.8146973e-006"/>
+     <Point Pos="7.9680176,2.0758362,-3.8146973e-006"/>
+     <Point Pos="5.6973877,6.0327759,0"/>
+     <Point Pos="2.8994141,6.093689,0"/>
+     <Point Pos="1.057373,6.0486145,0"/>
+     <Point Pos="-1.1717529,2.0738831,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{36C3A5CB-3955-4AC0-84AB-6E2153FD7303}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Side7="0" Side8="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{678C95E1-6624-FB03-F843-A5EB97D81EA6}" Name="Hex_Plate_2m_redtri" HideOrder="0" Pos="983.31409,1010.4376,49.653999" FloorNumber="-1" Rotate="0.25881904,-2.2982049e-018,2.514285e-017,-0.96592581" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_redtri.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{7CD120E4-5F8B-4593-8D33-E505DE4F1E81}" Name="AreaTrigger9a" HideOrder="0" Pos="978.11096,996.27979,50.663998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{5ABB13E5-C5DD-4A54-8B18-FFCE70BBBCB6}" Name="Hex_Plate_2m_red" HideOrder="0" Pos="996,1004.6135,49.689999" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_red.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{C87515E5-1355-4453-A168-F4BAA39C888A}" Name="AreaTrigger7b" HideOrder="0" Pos="986.28711,1010.748,50.26614" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{8040C9E9-10A0-4713-8449-CEAE9480BC07}" Name="_Door_Sample" HideOrder="0" Parent="{086EF6CD-FCA9-4363-B9C9-E71FDA94A617}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 06" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="54" Name="Default Area Trigger using Area Shape and Area Box as the detection volumes. " Class="_commentbox" pos="-140,-189.93571,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="890" Height="510"/>
+       <NodeSize Width="890" Height="535"/>
+      </Node>
+      <Node Id="57" Name="." Class="_commentbox" pos="-120,-119.93571,0" flags="1">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="850" Height="420"/>
+       <NodeSize Width="850" Height="445"/>
+      </Node>
+      <Node Id="67" Class="Movement:MoveEntityTo" pos="500,-70,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="68" Class="Movement:MoveEntityTo" pos="500,130,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="69" Class="Game:Start" pos="-100,-70,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="70" Class="entity:AreaTrigger" pos="130,0,0" flags="0" EntityGUID="{36C3A5CB-3955-4AC0-84AB-6E2153FD7303}" EntityGUID_64="4AC0395536C3A5CB">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="72" Name="One major distinction between proximity triggers and area triggers is that multiple detection volumes can be linked to the same Area Trigger." Class="_comment" pos="-120,-140,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="68" nodeOut="67" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="70" nodeOut="69" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="70" portIn="Start" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="70" portIn="Stop" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="70" portIn="Stop" portOut="Enter" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{195AC3EB-5E4F-4337-8D9C-E418FDA0C00D}" Name="_Door_Sample" HideOrder="0" Parent="{53E70E1D-35F5-4A79-9970-97B2E6BA3AEF}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/_Door_Sample.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 07" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="53" Class="Movement:MoveEntityTo" pos="370,890,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-4,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="54" Class="Movement:MoveEntityTo" pos="370,1080,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="1" EaseOutDistance="1" CoordSys="0"/>
+      </Node>
+      <Node Id="55" Class="Game:Start" pos="60,680,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="56" Class="entity:AreaTrigger" pos="-410,210,0" flags="0" EntityGUID="{C87515E5-1355-4453-A168-F4BAA39C888A}" EntityGUID_64="44531355C87515E5">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="57" Class="entity:AreaTrigger" pos="-410,0,0" flags="0" EntityGUID="{D199FCCC-2FBC-4F46-9B2A-CDBB8BC45951}" EntityGUID_64="4F462FBCD199FCCC">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="58" Class="Math:Equal" pos="-190,210,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="61" Class="Math:Equal" pos="-190,0,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="63" Class="Logic:All" pos="70,20,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="64" Class="Logic:Any" pos="260,150,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="66" Class="entity:AreaTrigger" pos="-410,420,0" flags="0" EntityGUID="{D645EFF0-BA20-469D-B869-54213057D6F3}" EntityGUID_64="469DBA20D645EFF0">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="67" Class="Math:Equal" pos="-190,420,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="69" Class="Debug:DisplayMessage" pos="-410,660,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="3" posX="70" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="71" Class="Material:EntityMaterialParams" pos="1510,410,0" flags="0" EntityGUID="{678C95E1-6624-FB03-F843-A5EB97D81EA6}" EntityGUID_64="FB036624678C95E1">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="72" Class="Game:Start" pos="700,10,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="76" Class="Math:SetColor" pos="690,590,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="77" Class="Math:SetColor" pos="1120,60,0" flags="0">
+       <Inputs color_In="0.617207,0.0116122,0.0116122"/>
+      </Node>
+      <Node Id="78" Class="Logic:Any" pos="1180,560,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="79" Class="Logic:Any" pos="950,70,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="84" Name="Requires_player_to_be_in_all_three_triggers_at_the_same_time._" Class="_commentbox" pos="-470,-229.28819,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1070" Height="1000"/>
+       <NodeSize Width="1070" Height="1034.5099"/>
+      </Node>
+      <Node Id="85" Name="Changes_material_colors_on_each_object_for_player_feedback._" Class="_commentbox" pos="650,-109.94798,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1110" Height="1040"/>
+       <NodeSize Width="1110" Height="1074.5099"/>
+      </Node>
+      <Node Id="86" Class="Material:EntityMaterialParams" pos="1510,590,0" flags="0" EntityGUID="{BFD7043A-3B7B-A41B-2D32-2FD00C2118EE}" EntityGUID_64="A41B3B7BBFD7043A">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="87" Class="Math:SetColor" pos="730,680,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="89" Class="Logic:Any" pos="1280,680,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="96" Class="Material:EntityMaterialParams" pos="1510,770,0" flags="0" EntityGUID="{EF20B454-3128-6A2A-14F2-593BAE88F3D9}" EntityGUID_64="6A2A3128EF20B454">
+       <Inputs entityId="0" Slot="0" SubMtlId="3" ParamFloat="glow" ValueFloat="0" ParamColor="diffuse" color_ValueColor="0,0,0"/>
+      </Node>
+      <Node Id="97" Class="Math:SetColor" pos="770,770,0" flags="0">
+       <Inputs color_In="1,0.533276,0"/>
+      </Node>
+      <Node Id="99" Class="Logic:Any" pos="1370,840,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="102" Class="Math:SetColor" pos="700,320,0" flags="0">
+       <Inputs color_In="0.00477695,0.327778,0.00477695"/>
+      </Node>
+      <Node Id="104" Class="Math:SetNumber" pos="1120,120,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="105" Class="Math:SetNumber" pos="760,380,0" flags="0">
+       <Inputs In="2.5"/>
+      </Node>
+      <Node Id="106" Class="Logic:Any" pos="980,300,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="107" Class="entity:AreaTrigger" pos="-410,890,0" flags="0" EntityGUID="{B7D186BC-629A-4015-8296-86ABFD0903F4}" EntityGUID_64="4015629AB7D186BC">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="108" Class="Logic:Any" pos="-70,900,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="110" Class="Logic:Any" pos="700,90,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="111" Class="Time:Delay" pos="810,90,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="0.5" resetOnInput="0"/>
+      </Node>
+      <Node Id="113" Name="Puzzle triggers" Class="_commentbox" pos="-430,-119.44232,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="860"/>
+       <NodeSize Width="440" Height="894.50995"/>
+      </Node>
+      <Node Id="114" Name="." Class="_commentbox" pos="50,-119.44232,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="510" Height="860"/>
+       <NodeSize Width="510" Height="894.50995"/>
+      </Node>
+      <Node Id="118" Name="An example of how triggers can be used to create simple puzzle logic. \n For instance, in a co-operative multiplayer game this method could be used to set up a puzzle that requires three players to stand in each trigger in order to activate a door. \n In this particular case the trigger areas are overlapping requiring the player to stand within the overlap. " Class="_comment" pos="-450,-180,0" flags="0"/>
+      <Node Id="120" Name="If the number of entities \n inside is equal to 1, \n then activate true. " Class="_comment" pos="-190,-60,0" flags="0"/>
+      <Node Id="123" Name="Enable the show port link to see a \n debug count of the number of entities inside." Class="_comment" pos="-410,620,0" flags="0"/>
+      <Node Id="124" Name="." Class="_commentbox" pos="-200,-109.50281,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="190" Height="640"/>
+       <NodeSize Width="190" Height="674.50995"/>
+      </Node>
+      <Node Id="125" Name="Reset Logic:All if any of these events occur. " Class="_comment" pos="260,120,0" flags="0"/>
+      <Node Id="126" Name="When using Logic:All it is very important \n to known when the node should be reset. \n It is good practice to reset the node on game start. \n Switching between game and editor mode \n does not automatically reset flowgraph logic state." Class="_comment" pos="210,650,0" flags="0"/>
+      <Node Id="127" Name="Trigger door to open from inside" Class="_commentbox" pos="-470,820.49023,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="330" Height="220"/>
+       <NodeSize Width="387.50992" Height="254.50993"/>
+      </Node>
+      <Node Id="128" Name="Open and close the door" Class="_commentbox" pos="-110,810.49042,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="430"/>
+       <NodeSize Width="710" Height="464.50992"/>
+      </Node>
+      <Node Id="130" Name="Note that the same events that trigger the Logic:All \n to reset are also used to stop the door \n and close it. Doing something like this can \n add a timing challenge to the puzzle. \n Leaving too soon and the door will \n be closed before the player can get to it. " Class="_comment" pos="-50,1130,0" flags="0"/>
+      <Node Id="131" Name="Reset material state" Class="_commentbox" pos="680,-69.509102,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="720" Height="220"/>
+       <NodeSize Width="720" Height="254.50993"/>
+      </Node>
+      <Node Id="132" Name="Materials original color and glow value." Class="_comment" pos="1120,30,0" flags="0"/>
+      <Node Id="134" Name="Logic:All only activates the out port \n when ALL incoming ports have been triggered. \n In this case the door will not open until \n all three triggers have an entity count of 1." Class="_comment" pos="70,-60,0" flags="0"/>
+      <Node Id="136" Name="It&apos;s Green &amp; Glows!" Class="_commentbox" pos="680,200.49092,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="250" Height="210"/>
+       <NodeSize Width="250" Height="244.50993"/>
+      </Node>
+      <Node Id="137" Name="If Logic:All is true then change \n the material color to green \n and make it glow!" Class="_comment" pos="700,250,0" flags="0"/>
+      <Node Id="138" Name="It&apos;s Yellow" Class="_commentbox" pos="680,450.49136,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="250" Height="350"/>
+       <NodeSize Width="250" Height="384.50992"/>
+      </Node>
+      <Node Id="142" Name="Change Material" Class="_commentbox" pos="940,200.4912,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="710"/>
+       <NodeSize Width="800" Height="744.50995"/>
+      </Node>
+      <Node Id="144" Name="While all three plates can be \n green at the same time, they \n can also be yellow at different times. \n So three different Logic:Any are used." Class="_comment" pos="1040,440,0" flags="0"/>
+      <Node Id="145" Name="." Class="_commentbox" pos="1020,390.49084,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="500"/>
+       <NodeSize Width="440" Height="534.50995"/>
+      </Node>
+      <Node Id="146" Name="." Class="_commentbox" pos="970,220.49059,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="390" Height="140"/>
+       <NodeSize Width="390" Height="174.50993"/>
+      </Node>
+      <Node Id="148" Name="Change color to yellow to \n provide feedback that the player \n has entered the trigger." Class="_comment" pos="690,500,0" flags="0"/>
+      <Node Id="149" Name="On &quot;&quot;Game Start&quot; or &quot;&quot;On trigger leave&quot; then reset the material. " Class="_comment" pos="700,-20,0" flags="0"/>
+      <Node Id="206" Name="Set color for A" Class="_comment" pos="690,570,0" flags="0"/>
+      <Node Id="208" Name="Set color for C" Class="_comment" pos="770,750,0" flags="0"/>
+      <Node Id="209" Name="A" Class="_comment" pos="1510,390,0" flags="0"/>
+      <Node Id="210" Name="B" Class="_comment" pos="1510,570,0" flags="0"/>
+      <Node Id="211" Name="C" Class="_comment" pos="1510,750,0" flags="0"/>
+      <Node Id="216" Name="Glow inputs for A, B, &amp; C" Class="_comment" pos="980,270,0" flags="0"/>
+      <Node Id="222" Name="Color inputs for A" Class="_comment" pos="1120,530,0" flags="0"/>
+      <Node Id="225" Name="Color inputs for B" Class="_comment" pos="1220,650,0" flags="0"/>
+      <Node Id="226" Name="Color inputs for C" Class="_comment" pos="1310,810,0" flags="0"/>
+      <Node Id="227" Name="All three plates always \n glow at the same time. \n So the same Logic:Any is shared. " Class="_comment" pos="1110,330,0" flags="0"/>
+      <Node Id="228" Name="Set color for B" Class="_comment" pos="730,660,0" flags="0"/>
+      <Node Id="229" Name="." Class="_commentbox" pos="-450,840.49005,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="280" Height="180"/>
+       <NodeSize Width="280" Height="214.50993"/>
+      </Node>
+      <Node Id="230" Name="." Class="_commentbox" pos="-90,840.49042,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="670" Height="390"/>
+       <NodeSize Width="670" Height="424.50992"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="54" nodeOut="53" portIn="Start" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="55" portIn="In5" portOut="output" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="56" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="56" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="87" nodeOut="56" portIn="Set" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="56" portIn="In2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="57" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="57" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="57" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="57" portIn="Set" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="57" portIn="In1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="58" portIn="In1" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="61" portIn="In0" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="63" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="63" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="108" nodeOut="63" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="64" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="64" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="66" portIn="In3" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="66" portIn="A" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="66" portIn="Activate" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="66" portIn="Show" portOut="Enter" enabled="0"/>
+      <Edge nodeIn="69" nodeOut="66" portIn="message" portOut="NrOfEntitiesInside" enabled="1"/>
+      <Edge nodeIn="97" nodeOut="66" portIn="Set" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="66" portIn="In3" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="67" portIn="In2" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="72" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="76" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="77" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="77" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="77" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="78" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="79" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="79" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="87" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="86" nodeOut="89" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="97" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="96" nodeOut="99" portIn="color_ValueColor" portOut="Out" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="102" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="104" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="105" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="86" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="96" nodeOut="106" portIn="ValueFloat" portOut="Out" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="107" portIn="In4" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="108" nodeOut="107" portIn="In2" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="108" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="108" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="111" nodeOut="110" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="111" portIn="In2" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{88C26DEC-3F86-46B0-ADB9-C5B5BEB773A5}" Name="TagElevTop" HideOrder="0" Pos="1006.984,995.96301,62.607201" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{A15A8CF0-F024-4F6F-86F4-5B9E4D20B126}" Name="sphere_ex_2" HideOrder="0" Parent="{47EBDE27-DACA-4ED7-9B54-71B5D8CBB794}" Pos="0.00018310547,0.44995117,3.3999901" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" Scale="0.2,0.2,0.2" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/chrome" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Example 02" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="25" Class="Movement:MoveEntityTo" pos="460,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="-0.7,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="35" Class="Movement:MoveEntityTo" pos="460,170,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="8,0.45,3.4" DynamicDestination="1" ValueType="0" Value="2" EaseInDistance="0" EaseOutDistance="3" CoordSys="0"/>
+      </Node>
+      <Node Id="37" Class="Logic:Any" pos="300,110,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="38" Class="Game:Start" pos="110,110,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Moves the Chrome Sphere GeomEntity back and forth through the trigger volumes. " Class="_commentbox" pos="70,-110,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="670" Height="470"/>
+       <NodeSize Width="745" Height="495"/>
+      </Node>
+      <Node Id="52" Name="." Class="_commentbox" pos="90,-60,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="630" Height="400"/>
+       <NodeSize Width="630" Height="425"/>
+      </Node>
+      <Node Id="53" Name="These sphere are used to demonstrate how the various trigger configurations react to entity types. " Class="_comment" pos="90,-70,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="35" nodeOut="25" portIn="Start" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="35" portIn="In2" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="37" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="38" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{D645EFF0-BA20-469D-B869-54213057D6F3}" Name="AreaTrigger7c" HideOrder="0" Pos="981.61652,1008.059,50.186554" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{B9C590F2-D719-4DCD-965B-78590CB6CA46}" Name="AreaTrigger9" HideOrder="0" Pos="986.73016,999.98682,50.384285" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{5C350EF3-B337-43CB-8B11-5C3CBB103474}" Name="AreaTrigger8c" HideOrder="0" Pos="995.84924,1003.8704,50.486469" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{6F3A79F4-A0FA-442B-9A1D-C5BC61B4372A}" Name="Hex_Plate_2m_red" HideOrder="0" Pos="987,993.64917,49.689999" FloorNumber="-1" Rotate="0.5,-2.3691305e-017,-8.7273395e-018,-0.86602539" ColorRGB="65535" Material="levels/samples/trigger_sample/geometry/mastermat" MatLayersMask="0" Geometry="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_2m_red.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{8FB22FF5-1281-41CF-8FB9-FB4E269F13FA}" Name="Shape8b" HideOrder="0" Pos="996.07306,1001.6223,50.025501" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.93048096,-0.51654053,0"/>
+     <Point Pos="1.9588013,0.051940918,0"/>
+     <Point Pos="2.022583,1.3060913,0"/>
+     <Point Pos="1.0485229,1.8914795,0"/>
+     <Point Pos="-0.097900391,1.2955933,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{B5277915-D763-4221-B032-80F56308126F}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="CameraTarget" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{3F661CF8-3EAC-42FA-A015-B46D394CD051}" Name="HatchParent3" HideOrder="0" Pos="1007,991.28168,62.707199" FloorNumber="-1" Rotate="0.86602539,0,0,0.5" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{F2128FFB-9A7A-450A-BB51-F1DC68E4A6E1}" Name="ProximityTrigger1" HideOrder="0" Pos="994.96741,998.05115,65.169868" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="1691392" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="7" DimY="7" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{91B938FF-D0CB-4E86-A683-647C23F169BA}" Name="ProximityTrigger4" HideOrder="0" Pos="1014.0941,1008.75,52" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="6" DimY="4" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="sphere_ex_4" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Shape" Layer="Logic" LayerGUID="{696FAE1C-2010-4CBA-BB68-D497A257245F}" Id="{60936CFF-0407-40CB-B5C6-0A4237C47097}" Name="Shape7c" HideOrder="0" Pos="981.80878,1008.0621,50.145912" FloorNumber="-1" Rotate="0.49999997,0,0,0.86602539" ColorRGB="16763904" Width="0" Height="4" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="0" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.67111206,-1.1773682,0"/>
+     <Point Pos="0.70852661,-3.8936768,0"/>
+     <Point Pos="-1.5596008,-2.4820557,0"/>
+     <Point Pos="-2.2479248,-1.2487793,0"/>
+     <Point Pos="-1.4978027,0.00390625,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{D645EFF0-BA20-469D-B869-54213057D6F3}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Roof="0" Floor="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

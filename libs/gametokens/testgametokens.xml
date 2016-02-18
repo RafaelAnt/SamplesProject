@@ -1,0 +1,6 @@
+<GameTokensLibrary Name="TestGameTokens">
+ <GameToken Name="TestGroup.playerNameUI" Type="String" Value="" LocalOnly="0"/>
+ <GameToken Name="TestGroup.chatQueueARN" Type="String" Value="" LocalOnly="0"/>
+ <GameToken Name="TestGroup.chatQueueName" Type="String" Value="" LocalOnly="0"/>
+ <GameToken Name="TestGroup.playerName" Type="Bool" Value="false" LocalOnly="1"/>
+</GameTokensLibrary>

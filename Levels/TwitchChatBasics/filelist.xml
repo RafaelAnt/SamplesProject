@@ -1,0 +1,6 @@
+<download name="twitchchatbasics" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="171854" md5="81671ddd20870d0ab35e00a0583b8125"/>
+ </files>
+</download>

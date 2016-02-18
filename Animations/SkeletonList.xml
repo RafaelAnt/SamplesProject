@@ -1,0 +1,4 @@
+<SkeletonList>
+ <Skeleton name="chicken_skel" file="Objects/CharacterModels/Chicken/chicken_skeleton.chr"/>
+ <Skeleton name="biped_skeleton" file="Objects/Tutorials/Biped/biped_skeleton.chr"/>
+</SkeletonList>

@@ -1,0 +1,41 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="Red" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="0.93011099,0.0021246891,0.0021246891" Specular="0.06124606,0.06124606,0.06124606" Emissive="0,0,0" Opacity="1" Shininess="230" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/twitchchatbasics/white.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Yellow" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="0.98225069,0.73046088,0.0085681258" Specular="0.064803272,0.064803272,0.064803272" Emissive="0,0,0" Opacity="1" Shininess="230" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/twitchchatbasics/white.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Blue" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="0.001214108,0.034339812,0.87962252" Specular="0.06124606,0.06124606,0.06124606" Emissive="0,0,0" Opacity="1" Shininess="230" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/twitchchatbasics/white.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Green" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="0.010960096,0.97344542,0.00060705398" Specular="0.06124606,0.06124606,0.06124606" Emissive="0,0,0" Opacity="1" Shininess="230" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/twitchchatbasics/white.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Orange" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="0.98225069,0.24228115,0.00030352699" Specular="0.06124606,0.06124606,0.06124606" Emissive="0,0,0" Opacity="1" Shininess="230" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/twitchchatbasics/white.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Violet" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="0.21586053,0.0069954107,0.96468639" Specular="0.06124606,0.06124606,0.06124606" Emissive="0,0,0" Opacity="1" Shininess="230" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/twitchchatbasics/white.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

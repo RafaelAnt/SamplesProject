@@ -1,0 +1,9 @@
+<ObjectLayer>
+ <Layer Name="Camera" GUID="{CBA2284A-3725-4654-A04C-239BAF0B3644}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Camera" Layer="Camera" LayerGUID="{CBA2284A-3725-4654-A04C-239BAF0B3644}" Id="{54132667-7367-4A50-BFF9-23DFD86080A0}" Name="Camera1" HideOrder="0" Pos="1049.9999,1034.0005,49.999996" FloorNumber="-1" Rotate="1,-7.4505788e-009,-7.4505788e-009,-7.4505797e-009" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

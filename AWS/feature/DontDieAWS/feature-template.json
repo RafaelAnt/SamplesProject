@@ -1,0 +1,468 @@
+{
+    "Metadata": {
+        "CloudCanvas": {
+            "Id": "$Id$"
+        }
+    },
+
+
+    "AWSTemplateFormatVersion": "2010-09-09",
+
+    "Parameters": {
+
+        "ProjectResourceHandler": {
+            "Type": "String",
+            "Description": "Service token of the custom resource handler."
+        },
+
+        "ConfigurationBucket": {
+            "Type": "String",
+            "Description": "Bucket that contains configuration data."
+        },
+
+        "ConfigurationKey": {
+            "Type": "String",
+            "Description": "Location in the configuration bucket of configuration data."
+        },
+
+        "ReadCapacityUnits": {
+            "Type": "Number",
+            "Default": "20",
+            "Description": "Number of game state reads per second."
+        },
+
+        "WriteCapacityUnits": {
+            "Type": "Number",
+            "Default": "20",
+            "Description": "Number of game state writes per second."
+        }
+    },
+
+    "Resources": {
+
+        "MainBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": { },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "s3:*",
+                            "ResourceSuffix": "*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "s3:*",
+                            "ResourceSuffix": "*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "PlayerTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "PlayerID",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "PlayerID",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "ItemTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "Name",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "Name",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "AchievementsTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "Name",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "Name",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "DailyGiftTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "Date",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "Date",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*",
+                            "ResourceSuffix": "*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "GameDataLUTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "CachedItemName",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "CachedItemName",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "MessageOfTheDayTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "Date",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "Date",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*",
+                            "ResourceSuffix": "*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "MissionTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "Name",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "Name",
+                        "KeyType": "HASH"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "ScoreTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "playerId",
+                        "AttributeType": "S"
+                    },
+                    {
+                        "AttributeName": "timestamp",
+                        "AttributeType": "S"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "playerId",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "timestamp",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": { "Ref": "ReadCapacityUnits" },
+                    "WriteCapacityUnits": { "Ref": "WriteCapacityUnits" }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "FunctionAccess": [
+                        {
+                            "FunctionName": "DontDieMain",
+                            "Action": "dynamodb:*"
+                        },
+                        {
+                            "FunctionName": "DontDieUpdateGameDataLU",
+                            "Action": "dynamodb:*"
+                        }
+                    ]
+                }
+            }
+        },
+
+        "DontDieMainConfiguration": {
+            "Type": "Custom::LambdaConfiguration",
+            "Properties": {
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "ConfigurationBucket": { "Ref": "ConfigurationBucket" },
+                "ConfigurationKey": { "Ref": "ConfigurationKey" },
+                "FunctionName": "DontDieMain",
+                "Runtime": "nodejs",
+                "Settings": {
+                    "ItemTable": { "Ref": "ItemTable" },
+                    "AchievementsTable": { "Ref": "AchievementsTable" },
+                    "DailyGiftTable": { "Ref": "DailyGiftTable" },
+                    "GameDataLUTable": { "Ref": "GameDataLUTable" },
+                    "MessageOfTheDayTable": { "Ref": "MessageOfTheDayTable" },
+                    "MissionTable": { "Ref": "MissionTable" },
+                    "ScoreTable": { "Ref": "ScoreTable" },
+                    "MainBucket": { "Ref": "MainBucket" },
+                    "PlayerTable": { "Ref": "PlayerTable" }
+                }
+            }
+        },
+
+        "DontDieMain": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "apps/dont-die-main/app.handler",
+                "Role": { "Fn::GetAtt": [ "DontDieMainConfiguration", "Role" ] },
+                "Runtime": { "Fn::GetAtt": [ "DontDieMainConfiguration", "Runtime" ] },
+                "Timeout": 10,
+                "Code": {
+                    "S3Bucket": { "Fn::GetAtt": [ "DontDieMainConfiguration", "ConfigurationBucket" ] },
+                    "S3Key": { "Fn::GetAtt": [ "DontDieMainConfiguration", "ConfigurationKey" ] }
+                }
+            },
+            "Metadata": {
+                "CloudCanvas": {
+                    "PlayerAccess": {
+                        "Action": "lambda:InvokeFunction"
+                    }
+                }
+            }
+        },
+
+
+        "DontDieUpdateGameDataLUConfiguration": {
+            "Type": "Custom::LambdaConfiguration",
+            "Properties": {
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "ConfigurationBucket": { "Ref": "ConfigurationBucket" },
+                "ConfigurationKey": { "Ref": "ConfigurationKey" },
+                "FunctionName": "DontDieUpdateGameDataLU",
+                "Runtime": "nodejs",
+                "Settings": {
+                    "ItemTable": { "Ref": "ItemTable" },
+                    "AchievementsTable": { "Ref": "AchievementsTable" },
+                    "DailyGiftTable": { "Ref": "DailyGiftTable" },
+                    "GameDataLUTable": { "Ref": "GameDataLUTable" },
+                    "MessageOfTheDayTable": { "Ref": "MessageOfTheDayTable" },
+                    "MissionTable": { "Ref": "MissionTable" },
+                    "ScoreTable": { "Ref": "ScoreTable" },
+                    "MainBucket": { "Ref": "MainBucket" },
+                    "PlayerTable": { "Ref": "PlayerTable" }
+                }
+            }
+        },
+
+        "DontDieUpdateGameDataLU": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "apps/dont-die-update-game-data-lu/app.handler",
+                "Role": { "Fn::GetAtt": [ "DontDieUpdateGameDataLUConfiguration", "Role" ] },
+                "Runtime": { "Fn::GetAtt": [ "DontDieUpdateGameDataLUConfiguration", "Runtime" ] },
+                "Timeout": 60,
+                "Code": {
+                    "S3Bucket": { "Fn::GetAtt": [ "DontDieUpdateGameDataLUConfiguration", "ConfigurationBucket" ] },
+                    "S3Key": { "Fn::GetAtt": [ "DontDieUpdateGameDataLUConfiguration", "ConfigurationKey" ] }
+                }
+            }
+        },
+
+        "PlayerAccess": {
+            "Type": "Custom::PlayerAccess",
+            "Properties": {
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "ConfigurationBucket": { "Ref": "ConfigurationBucket" },
+                "ConfigurationKey": { "Ref": "ConfigurationKey" },
+                "FeatureStack": { "Ref": "AWS::StackId" }
+            },
+            "DependsOn": "DontDieMain"
+        },
+
+        "PopulateTables": {
+            "Type": "Custom::PopulateTables",
+            "Properties": {
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "AchievementsTable": { "Ref": "AchievementsTable" },
+                "DailyGiftTable": { "Ref": "DailyGiftTable" },
+                "ItemTable": { "Ref": "ItemTable" },
+                "MessageOfTheDayTable": { "Ref": "MessageOfTheDayTable" },
+                "MissionTable": { "Ref": "MissionTable" },
+                "GameDataLUTable": { "Ref": "GameDataLUTable" }
+            }
+        }
+
+    }
+
+}

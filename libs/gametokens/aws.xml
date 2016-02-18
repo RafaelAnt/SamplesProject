@@ -1,0 +1,4 @@
+<GameTokensLibrary Name="AWS">
+ <GameToken Name="Cognito.identityID" Type="String" Value="" Description="Authenticated Cognito ID" LocalOnly="0"/>
+ <GameToken Name="General.Username" Type="String" Value="" Description="System Login" LocalOnly="1"/>
+</GameTokensLibrary>

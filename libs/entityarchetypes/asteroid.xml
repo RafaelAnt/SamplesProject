@@ -1,0 +1,30 @@
+<EntityPrototypeLibrary Name="Asteroid">
+ <EntityPrototype Name="Asteroid" Id="{A6205C82-767A-466F-BCD0-1E7361459D2C}" Library="Asteroid" Class="BasicEntity" Description="">
+  <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="levels/samples/dont_die/geometry/rombdodecha_phys.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics Density="-1" Mass="200" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+    <CollisionFiltering>
+     <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+     <collisionType bT_Asteroid="1" bT_Shield="0" bT_Ship="0"/>
+    </CollisionFiltering>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="AsteroidNoCollide" Id="{C35BCDF7-E70F-433C-9337-879A79FF25AC}" Library="Asteroid" Class="BasicEntity" Description="">
+  <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="levels/samples/dont_die/geometry/rombdodecha_phys.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics Density="-1" Mass="1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+    <CollisionFiltering>
+     <collisionIgnore bT_Asteroid="1" bT_Shield="1" bT_Ship="1"/>
+     <collisionType bT_Asteroid="1" bT_Shield="0" bT_Ship="0"/>
+    </CollisionFiltering>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

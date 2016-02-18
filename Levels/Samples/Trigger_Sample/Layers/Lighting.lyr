@@ -1,0 +1,14 @@
+<ObjectLayer>
+ <Layer Name="Lighting" GUID="{741AA852-2C16-48F7-AC20-4F524BBBE7CD}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="EnvironmentProbe" Layer="Lighting" LayerGUID="{741AA852-2C16-48F7-AC20-4F524BBBE7CD}" Id="{9361684B-F606-4690-8968-E80752A0F073}" Name="EnvironmentProbe1" HideOrder="0" Pos="1024,1066.5,90" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="EnvironmentLight">
+    <Properties bActive="1" BoxSizeX="1000" BoxSizeY="1000" BoxSizeZ="200" _bCheapLight="0" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1.5" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" fAttenuationFalloffMax="0.3" _texture_deferred_cubemap="" bIgnoresVisAreas="0" SortPriority="0"/>
+     <OptionsAdvanced texture_deferred_cubemap="levels/samples/trigger_sample/cubemaps/environmentprobe1_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10" vFadeDimensionsBottom="0" vFadeDimensionsFar="0" vFadeDimensionsLeft="0" vFadeDimensionsNear="0" vFadeDimensionsRight="0" vFadeDimensionsTop="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

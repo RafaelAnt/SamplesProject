@@ -1,0 +1,420 @@
+<ObjectLayer>
+ <Layer Name="Logic" GUID="{CB9D4B19-6075-4DB9-86A0-54C758C4F8AB}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="1044720">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{CB9D4B19-6075-4DB9-86A0-54C758C4F8AB}" Id="{BFECEA56-D394-4EDA-AC0B-31D5F39D4345}" Name="FlowgraphEntity1" HideOrder="0" Pos="518.16339,497.83932,32.000099" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="8" Class="Math:SetNumber" pos="1115,525,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="10" Class="Math:SetNumber" pos="1115,745,0" flags="0">
+       <Inputs In="1000"/>
+      </Node>
+      <Node Id="11" Class="Debug:InputKey" pos="885,695,0" flags="0">
+       <Inputs entityId="0" Key="7" NonDevMode="0"/>
+      </Node>
+      <Node Id="12" Class="Debug:InputKey" pos="885,555,0" flags="0">
+       <Inputs entityId="0" Key="6" NonDevMode="0"/>
+      </Node>
+      <Node Id="31" Class="Game:Start" pos="-2250,-320,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="34" Class="Camera:View" pos="-555,-1015,0" flags="0" EntityGUID="{C6F68791-9170-4863-A930-CACC7AAC35D9}" EntityGUID_64="48639170C6F68791">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="36" Class="String:SetString" pos="-1850,-70,0" flags="0">
+       <Inputs In="lumberyardbot"/>
+      </Node>
+      <Node Id="37" Class="Twitch:ChatPlay:Channel" pos="-840,410,0" flags="0">
+       <Inputs Channel=""/>
+      </Node>
+      <Node Id="38" Class="Game:Stop" pos="-2475,-805,0" flags="0">
+       <Inputs TriggerInGame="1" TriggerInEditor="1"/>
+      </Node>
+      <Node Id="39" Class="Twitch:ChatPlay:DisconnectAll" pos="-2075,-795,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="41" Class="Logic:Any" pos="5,415,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="42" Class="Game:Start" pos="-755,-1055,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="43" Name="Camera at Start\n" Class="_blackbox" pos="-800,-1100,0" flags="0">
+       <Inputs TextSize="1" DisplayFilled="1" Color="0.318547,0.658375,0.973445" SortPriority="16"/>
+       <BlackBoxChildren Node0="34" Node1="42"/>
+      </Node>
+      <Node Id="44" Name="Disconnect everything when leaving level\n" Class="_blackbox" pos="-2520,-850,0" flags="0">
+       <Inputs TextSize="1" DisplayFilled="1" Color="0.991102,0.262251,0.262251" SortPriority="16"/>
+       <BlackBoxChildren Node0="38" Node1="39"/>
+      </Node>
+      <Node Id="48" Class="Logic:Any" pos="-315,395,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="61" Class="Actor:LocalPlayer" pos="1465,5,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="74" Class="Logic:OR" pos="-165,485,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="75" Class="Logic:OR" pos="145,475,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="76" Class="Debug:DisplayMessage" pos="355,385,0" flags="0">
+       <Inputs entityId="0" message="Disconnected" DisplayTime="0" posX="30" posY="85" fontSize="2" clr_Color="0.991102,0.651406,0.0202886" centered="0"/>
+      </Node>
+      <Node Id="77" Class="Game:Start" pos="-505,485,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="78" Class="Actor:LocalPlayer" pos="-1785,875,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="79" Class="Game:Start" pos="-1985,875,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="80" Name="Message: Disconnected\n" Class="_blackbox" pos="-550,340,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="41" Node1="48" Node2="74" Node3="75" Node4="76" Node5="77"/>
+      </Node>
+      <Node Id="82" Name="Displays message in MP mode" Class="_blackbox" pos="-2030,830,0" flags="0">
+       <Inputs TextSize="1" DisplayFilled="1" Color="0.947307,1,0.401978" SortPriority="16"/>
+       <BlackBoxChildren Node0="78" Node1="79"/>
+      </Node>
+      <Node Id="90" Class="Debug:InputKey" pos="-2155,455,0" flags="0">
+       <Inputs entityId="0" Key="1" NonDevMode="0"/>
+      </Node>
+      <Node Id="91" Class="Debug:InputKey" pos="-1660,670,0" flags="0">
+       <Inputs entityId="0" Key="2" NonDevMode="0"/>
+      </Node>
+      <Node Id="92" Class="Logic:Any" pos="-1620,200,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="93" Name="Press 2 to connect to service" Class="_comment" pos="-1660,630,0" flags="0"/>
+      <Node Id="94" Name="Press 1 to disconnect from service" Class="_comment" pos="-2180,570,0" flags="0"/>
+      <Node Id="118" Class="entity:TagPoint" pos="-400,-380,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{5BBDC322-A76F-4DB3-80BD-4AE25E1932E2}" EntityGUID_64="4DB3A76F5BBDC322">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="119" Class="Physics:ActionImpulse" pos="450,-500,0" flags="0">
+       <Inputs entityId="0" Impulse="0,-750,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="120" Class="Twitch:API:GET" pos="1365,185,0" flags="0">
+       <Inputs Channel="" API_Key="104"/>
+      </Node>
+      <Node Id="139" Class="Time:Delay" pos="1035,255,0" flags="0">
+       <Inputs delay="5" resetOnInput="0"/>
+      </Node>
+      <Node Id="140" Class="Logic:Any" pos="1045,135,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="141" Class="Game:Start" pos="825,75,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="145" Class="Debug:DisplayMessage" pos="1915,215,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="125" posY="125" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="146" Class="Debug:DisplayMessage" pos="1915,15,0" flags="0">
+       <Inputs entityId="0" message="Viewers" DisplayTime="0" posX="30" posY="125" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="153" Class="Math:BooleanFrom" pos="-505,665,0" flags="0">
+       <Inputs Value="0"/>
+      </Node>
+      <Node Id="154" Class="Debug:DisplayMessage" pos="-205,655,0" flags="0">
+       <Inputs entityId="0" message="Connected" DisplayTime="0" posX="30" posY="85" fontSize="2" clr_Color="0.00518152,0.955974,0" centered="0"/>
+      </Node>
+      <Node Id="155" Class="Math:BooleanFrom" pos="-505,915,0" flags="0">
+       <Inputs Value="0"/>
+      </Node>
+      <Node Id="156" Class="Math:BooleanFrom" pos="-505,1205,0" flags="0">
+       <Inputs Value="0"/>
+      </Node>
+      <Node Id="157" Class="Debug:DisplayMessage" pos="-205,915,0" flags="0">
+       <Inputs entityId="0" message="Connecting" DisplayTime="0" posX="30" posY="85" fontSize="2" clr_Color="0.955974,0.752942,0" centered="0"/>
+      </Node>
+      <Node Id="158" Class="Debug:DisplayMessage" pos="-185,1185,0" flags="0">
+       <Inputs entityId="0" message="Error" DisplayTime="0" posX="30" posY="85" fontSize="2" clr_Color="1,0.0152085,0.0152085" centered="0"/>
+      </Node>
+      <Node Id="159" Name="Connection Message: Error" Class="_blackbox" pos="-550,1140,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="156" Node1="158"/>
+      </Node>
+      <Node Id="160" Name="Connection Message: Connecting" Class="_blackbox" pos="-550,870,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="155" Node1="157"/>
+      </Node>
+      <Node Id="161" Name="Connection Message: Connected" Class="_blackbox" pos="-550,610,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="153" Node1="154"/>
+      </Node>
+      <Node Id="165" Name="In = twitch channel name\nshould be all lowercase" Class="_comment" pos="-1890,20,0" flags="0"/>
+      <Node Id="166" Class="Debug:InputKey" pos="-1560,-850,0" flags="0">
+       <Inputs entityId="0" Key="t" NonDevMode="0"/>
+      </Node>
+      <Node Id="168" Name="Debug input for ball spawn" Class="_blackbox" pos="-1605,-895,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,0.456411,0.00477695" SortPriority="16"/>
+       <BlackBoxChildren Node0="166"/>
+      </Node>
+      <Node Id="171" Class="Vec3:ToVec3" pos="255,-505,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="172" Class="Math:Random" pos="0,-440,0" flags="0">
+       <Inputs Min="-20" Max="500"/>
+      </Node>
+      <Node Id="173" Class="Math:Random" pos="-5,-545,0" flags="0">
+       <Inputs Min="-250" Max="-1000"/>
+      </Node>
+      <Node Id="175" Name="Enter keyword you want chat users\n to enter to trigger event . In this\nexample chat users enter the \ncolors: &apos;red,yellow, blue,\ngreen, orange, violet&apos;\n" Class="_comment" pos="-1340,130,0" flags="0"/>
+      <Node Id="176" Name="This node connects the chat\nchannel" Class="_comment" pos="-850,360,0" flags="0"/>
+      <Node Id="177" Name="Use these debug input to test connect\n to your chat channel.  Pressing 1 or 2 on\n your keyboard \nwill display the current \nconnection status to the chat channel" Class="_comment" pos="-2060,640,0" flags="0"/>
+      <Node Id="178" Name="This is the script that spawns the balls to appear\nin the scene" Class="_comment" pos="310,-210,0" flags="0"/>
+      <Node Id="179" Name="This sets the level at start to look through the placed camera\n" Class="_comment" pos="-800,-800,0" flags="0"/>
+      <Node Id="180" Name="Simple debug option to test that the ball spawn function works\npressing t on the keyboard will spawn\na ball to appear in the level" Class="_comment" pos="-1290,-850,0" flags="0"/>
+      <Node Id="181" Name="This disconnects the chat room from the level when exiting game mode" Class="_comment" pos="-2160,-740,0" flags="0"/>
+      <Node Id="182" Name="Enter Twitch Channel Name HERE" Class="_commentbox" pos="-1940,-174.96954,0" flags="0">
+       <Inputs TextSize="1" Color="0.921582,1,0.000910581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="330" Height="120"/>
+       <NodeSize Width="798.71478" Height="186.71477"/>
+      </Node>
+      <Node Id="183" Name="Debug commands to connect\nand disconnect service" Class="_blackbox" pos="-2200,410,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,0.456411,0.00477695" SortPriority="16"/>
+       <BlackBoxChildren Node0="90" Node1="91"/>
+      </Node>
+      <Node Id="187" Name="Show_viewer_count_in_UI" Class="_comment" pos="1910,-30,0" flags="0"/>
+      <Node Id="188" Name="Enter Keywords HERE" Class="_commentbox" pos="-1340,-624.96735,0" flags="0">
+       <Inputs TextSize="1" Color="0.806952,0.982251,0.0295568" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="230" Height="670"/>
+       <NodeSize Width="513.71478" Height="736.71478"/>
+      </Node>
+      <Node Id="189" Class="Game:Start" pos="-295,-1055,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="190" Class="UI:Canvas:Load" pos="-85,-1055,0" flags="0">
+       <Inputs CanvasPathname="Levels\TwitchChatBasics\UI\title.xml"/>
+      </Node>
+      <Node Id="191" Name="UI Title" Class="_blackbox" pos="-340,-1100,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="0.158961,0.527115,0.991102" SortPriority="16"/>
+       <BlackBoxChildren Node0="189" Node1="190"/>
+      </Node>
+      <Node Id="193" Name="Store_new_viewer_count" Class="_comment" pos="1450,-20,0" flags="0"/>
+      <Node Id="194" Name="Periodic_update" Class="_comment" pos="1040,220,0" flags="0"/>
+      <Node Id="195" Name="Initial_query" Class="_comment" pos="1040,100,0" flags="0"/>
+      <Node Id="196" Name="API_query" Class="_comment" pos="1360,150,0" flags="0"/>
+      <Node Id="197" Name="Press_6_for_0_viewers" Class="_comment" pos="860,520,0" flags="1"/>
+      <Node Id="198" Name="Press_7_for_1000_viewers" Class="_comment" pos="850,660,0" flags="0"/>
+      <Node Id="199" Class="Logic:Any" pos="1705,165,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="227" Class="Logic:Blocker" pos="2005,575,0" flags="0">
+       <Inputs Block="0"/>
+      </Node>
+      <Node Id="229" Class="Logic:Any" pos="1325,645,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="230" Class="Logic:Any" pos="1335,515,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="231" Name="Override_real_viewers_as_long_as_button_is_pressed" Class="_comment" pos="850,810,0" flags="0"/>
+      <Node Id="238" Class="Logic:SelectCondition" pos="1795,565,0" flags="0">
+       <Inputs Condition="0"/>
+      </Node>
+      <Node Id="239" Class="Math:SetNumber" pos="1465,515,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="240" Class="Math:SetNumber" pos="1465,645,0" flags="0">
+       <Inputs In="1"/>
+      </Node>
+      <Node Id="241" Class="Logic:Any" pos="1665,515,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="290" Class="Game:Start" pos="1215,55,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="291" Name="Debug commands to add player count" Class="_blackbox" pos="840,470,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,0.456411,0.00477695" SortPriority="16"/>
+       <BlackBoxChildren Node0="8" Node1="10" Node2="11" Node3="12" Node4="227" Node5="229" Node6="230" Node7="238" Node8="239" Node9="240" Node10="241"/>
+      </Node>
+      <Node Id="292" Name="Player Count" Class="_blackbox" pos="780,-40,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="61" Node1="120" Node2="139" Node3="140" Node4="141" Node5="145" Node6="146" Node7="199" Node8="290"/>
+      </Node>
+      <Node Id="294" Class="Entity:SpawnArchetype" pos="-240,-510,0" flags="0">
+       <Inputs Archetype="level.twchchatball" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+      </Node>
+      <Node Id="298" Class="Twitch:ChatPlay:Keyword" pos="-1310,-540,0" flags="0">
+       <Inputs Channel="" Keyword="red" Reset="0"/>
+      </Node>
+      <Node Id="299" Class="Logic:Any" pos="-480,-520,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="303" Class="String:SetString" pos="-840,-590,0" flags="0">
+       <Inputs In="level.redball"/>
+      </Node>
+      <Node Id="304" Class="String:SetString" pos="-840,-350,0" flags="0">
+       <Inputs In="level.blueball"/>
+      </Node>
+      <Node Id="305" Class="String:SetString" pos="-840,-470,0" flags="0">
+       <Inputs In="level.yellowball"/>
+      </Node>
+      <Node Id="306" Class="String:SetString" pos="-840,-530,0" flags="0">
+       <Inputs In="level.orangeball"/>
+      </Node>
+      <Node Id="307" Class="String:SetString" pos="-840,-410,0" flags="0">
+       <Inputs In="level.greenball"/>
+      </Node>
+      <Node Id="308" Class="String:SetString" pos="-840,-290,0" flags="0">
+       <Inputs In="level.violetball"/>
+      </Node>
+      <Node Id="309" Class="Twitch:ChatPlay:Keyword" pos="-1310,-320,0" flags="0">
+       <Inputs Channel="" Keyword="yellow" Reset="0"/>
+      </Node>
+      <Node Id="310" Class="Twitch:ChatPlay:Keyword" pos="-1310,-100,0" flags="0">
+       <Inputs Channel="" Keyword="blue" Reset="0"/>
+      </Node>
+      <Node Id="311" Class="Twitch:ChatPlay:Keyword" pos="-1310,-430,0" flags="0">
+       <Inputs Channel="" Keyword="orange" Reset="0"/>
+      </Node>
+      <Node Id="312" Class="Twitch:ChatPlay:Keyword" pos="-1310,-210,0" flags="0">
+       <Inputs Channel="" Keyword="green" Reset="0"/>
+      </Node>
+      <Node Id="313" Class="Twitch:ChatPlay:Keyword" pos="-1310,10,0" flags="0">
+       <Inputs Channel="" Keyword="violet" Reset="0"/>
+      </Node>
+      <Node Id="314" Class="Logic:Any" pos="-1010,-720,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="317" Name="Twitch Chat Node Set" Class="_commentbox" pos="-2290,-694.96631,0" flags="0">
+       <Inputs TextSize="1" Color="0.571125,0.47932,0.768151" DisplayFilled="1" DisplayBox="1" SortPriority="1"/>
+       <ResizeBorder X="0" Y="0" Width="1340" Height="1010"/>
+       <NodeSize Width="1340" Height="1076.7147"/>
+      </Node>
+      <Node Id="318" Name="Ball Spawning script" Class="_commentbox" pos="-860,-704.96869,0" flags="0">
+       <Inputs TextSize="1" Color="0.577581,0.637597,0.846873" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1510" Height="480"/>
+       <NodeSize Width="1510" Height="546.71478"/>
+      </Node>
+      <Node Id="319" Name="Channel Connect" Class="_commentbox" pos="-900,205.18265,0" flags="0">
+       <Inputs TextSize="1" Color="1,0.973445,0.496933" DisplayFilled="1" DisplayBox="1" SortPriority="1"/>
+       <ResizeBorder X="0" Y="0" Width="1540" Height="1140"/>
+       <NodeSize Width="1540" Height="1206.7147"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="199" nodeOut="8" portIn="In7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="199" nodeOut="10" portIn="In8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="11" portIn="Activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="229" nodeOut="11" portIn="In2" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="230" nodeOut="11" portIn="In2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="12" portIn="Activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="229" nodeOut="12" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="230" nodeOut="12" portIn="In1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="31" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="90" nodeOut="31" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="91" nodeOut="31" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="31" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="309" nodeOut="31" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="310" nodeOut="31" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="311" nodeOut="31" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="312" nodeOut="31" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="313" nodeOut="31" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="92" nodeOut="36" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="309" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="310" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="311" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="312" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="313" nodeOut="36" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="37" portIn="In2" portOut="Error" enabled="1"/>
+      <Edge nodeIn="48" nodeOut="37" portIn="In1" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="48" nodeOut="37" portIn="In2" portOut="Connecting" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="37" portIn="A" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="37" portIn="B" portOut="Connecting" enabled="1"/>
+      <Edge nodeIn="153" nodeOut="37" portIn="Value" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="155" nodeOut="37" portIn="Value" portOut="Connecting" enabled="1"/>
+      <Edge nodeIn="156" nodeOut="37" portIn="Value" portOut="Error" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="38" portIn="DisconnectAll" portOut="Output" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="41" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="42" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="48" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="61" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="146" nodeOut="61" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="74" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="74" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="75" portIn="Show" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="75" portIn="Hide" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="78" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="154" nodeOut="78" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="157" nodeOut="78" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="158" nodeOut="78" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="79" portIn="update" portOut="output" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="90" portIn="Disconnect" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="92" nodeOut="91" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="92" portIn="Connect" portOut="Out" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="118" portIn="Pos" portOut="pos" enabled="1"/>
+      <Edge nodeIn="199" nodeOut="120" portIn="In0" portOut="Output" enabled="1"/>
+      <Edge nodeIn="227" nodeOut="120" portIn="In" portOut="Output" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="139" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="140" nodeOut="139" portIn="In1" portOut="out" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="140" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="141" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="141" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="140" nodeOut="141" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="154" nodeOut="153" portIn="Hide" portOut="False" enabled="1"/>
+      <Edge nodeIn="154" nodeOut="153" portIn="Show" portOut="True" enabled="1"/>
+      <Edge nodeIn="157" nodeOut="155" portIn="Hide" portOut="False" enabled="1"/>
+      <Edge nodeIn="157" nodeOut="155" portIn="Show" portOut="True" enabled="1"/>
+      <Edge nodeIn="158" nodeOut="156" portIn="Hide" portOut="False" enabled="1"/>
+      <Edge nodeIn="158" nodeOut="156" portIn="Show" portOut="True" enabled="1"/>
+      <Edge nodeIn="314" nodeOut="166" portIn="In0" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="119" nodeOut="171" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="119" nodeOut="171" portIn="Impulse" portOut="Result" enabled="1"/>
+      <Edge nodeIn="171" nodeOut="172" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="171" nodeOut="173" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="190" nodeOut="189" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="199" portIn="Show" portOut="Out" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="199" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="199" nodeOut="227" portIn="In9" portOut="Out" enabled="1"/>
+      <Edge nodeIn="240" nodeOut="229" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="239" nodeOut="230" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="227" nodeOut="238" portIn="Block" portOut="Out" enabled="1"/>
+      <Edge nodeIn="238" nodeOut="239" portIn="InFalse" portOut="Out" enabled="1"/>
+      <Edge nodeIn="241" nodeOut="239" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="238" nodeOut="240" portIn="InTrue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="241" nodeOut="240" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="238" nodeOut="241" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="238" nodeOut="241" portIn="Condition" portOut="Out" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="290" portIn="update" portOut="output" enabled="1"/>
+      <Edge nodeIn="146" nodeOut="290" portIn="Show" portOut="output" enabled="1"/>
+      <Edge nodeIn="119" nodeOut="294" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="172" nodeOut="294" portIn="Generate" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="173" nodeOut="294" portIn="Generate" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="314" nodeOut="298" portIn="In1" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="299" portIn="Archetype" portOut="Out" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="299" portIn="Spawn" portOut="Out" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="303" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="304" portIn="In4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="305" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="306" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="307" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="308" portIn="In5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="305" nodeOut="309" portIn="Set" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="304" nodeOut="310" portIn="Set" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="306" nodeOut="311" portIn="Set" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="307" nodeOut="312" portIn="Set" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="308" nodeOut="313" portIn="Set" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="303" nodeOut="314" portIn="Set" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="EnvironmentProbe" Layer="Logic" LayerGUID="{CB9D4B19-6075-4DB9-86A0-54C758C4F8AB}" Id="{B36FC096-361B-454F-81C9-DC62E48C9D68}" Name="EnvironmentProbe1" HideOrder="0" Pos="518.98926,524.20868,43.618305" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="EnvironmentLight">
+    <Properties bActive="1" BoxSizeX="25" BoxSizeY="25" BoxSizeZ="25" _bCheapLight="0" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" fAttenuationFalloffMax="0.3" _texture_deferred_cubemap="" bIgnoresVisAreas="0" SortPriority="0"/>
+     <OptionsAdvanced texture_deferred_cubemap="Textures/cubemaps/twitchchatbasics/environmentprobe1_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10" vFadeDimensionsBottom="0" vFadeDimensionsFar="0" vFadeDimensionsLeft="0" vFadeDimensionsNear="0" vFadeDimensionsRight="0" vFadeDimensionsTop="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,1599 @@
+<ObjectLayer>
+ <Layer Name="Logic" GUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{BC277202-ADDC-4034-8FBE-D107332F9C23}" Name="RabbitMove_3" HideOrder="0" Pos="1034.9999,1053,50.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{0DA85909-E96E-4E78-8735-3ADB7B91B44F}" Name="01_First_Person_POV" HideOrder="0" Pos="970,1013,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="670" Name="Simple first person pov" Class="_commentbox" pos="900,40,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="480" Height="150"/>
+       <NodeSize Width="480" Height="175"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="920,100.00005,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="70"/>
+       <NodeSize Width="440" Height="95"/>
+      </Node>
+      <Node Id="675" Name="The camera is parented (link object in the editor) to the capsule \n and inherits both position and rotation." Class="_comment" pos="940,140,0" flags="0"/>
+      <Node Id="677" Name="No flowgraph required. " Class="_comment" pos="910,80,0" flags="0"/>
+     </Nodes>
+     <Edges />
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{4A087127-2FFF-4FA3-BCB4-07BC511C2B8A}" Name="WindArea1" HideOrder="0" Pos="975,1004.5,71.01162" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="WindArea">
+    <Properties bActive="1" AirDensity="0.1" AirResistance="0.1" bEllipsoidal="1" FalloffInner="0" Speed="3">
+     <Dir x="50" y="-100" z="0"/>
+     <Size x="200" y="200" z="70"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{DA8A2C32-087B-42FB-96EB-46F665E3AC2F}" Name="RabbitMove_2" HideOrder="0" Pos="1034.9999,953,50.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{4C937332-7A28-495A-B946-E16ECF0AB62E}" Name="RabbitMove_4" HideOrder="0" Pos="964.99994,1053,50.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{51C03E39-2DBD-4CD8-AA4D-E761536F69DB}" Name="04_Top_Down" HideOrder="0" Pos="970,1005,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="54" Class="Entity:EntityId" pos="540,760,0" flags="0" InHideMask="1" OutHideMask="1" EntityGUID="{D81071D8-4B0D-4FCB-9294-D3211AD653B0}" EntityGUID_64="4FCB4B0DD81071D8">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="244" Class="Movement:MoveEntityTo" pos="1360,450,0" flags="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="1" Value="0.0001" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="263" Class="Entity:GetPos" pos="560,460,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0" CoordSys="0"/>
+      </Node>
+      <Node Id="273" Class="Time:Time" pos="290,460,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="284" Name="Tells_the_camera_to_move_the_destination" Class="_comment" pos="1360,420,0" flags="0"/>
+      <Node Id="285" Name="Gets_the_target_position_everyframe" Class="_comment" pos="430,430,0" flags="0"/>
+      <Node Id="298" Class="Vec3:FromVec3" pos="860,480,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="299" Class="Vec3:ToVec3" pos="1140,480,0" flags="0">
+       <Inputs x="0" y="0" z="60"/>
+      </Node>
+      <Node Id="337" Class="Movement:RotateEntityTo" pos="1360,750,0" flags="0" EntityGUID="{D81071D8-4B0D-4FCB-9294-D3211AD653B0}" EntityGUID_64="4FCB4B0DD81071D8">
+       <Inputs entityId="0" Destination="-90,0,0" DynamicUpdate="1" ValueType="1" Value="0.1" CoordSys="0"/>
+      </Node>
+      <Node Id="340" Name="Rotates_Camera_To_Face_Down_on_Start" Class="_comment" pos="1360,720,0" flags="0"/>
+      <Node Id="345" Class="Game:Start" pos="1150,850,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="346" Class="Math:Add" pos="1000,540,0" flags="0">
+       <Inputs A="0" B="20"/>
+      </Node>
+      <Node Id="347" Name="Sets_camera offset distance" Class="_comment" pos="950,450,0" flags="0"/>
+      <Node Id="670" Name="Top Down" Class="_commentbox" pos="270,359.27213,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1400" Height="550"/>
+       <NodeSize Width="1400" Height="575.16864"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="280,379.86383,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="260"/>
+       <NodeSize Width="1370" Height="285.16864"/>
+      </Node>
+      <Node Id="675" Name="Breaking out the entity Id makes it easy to change entities. \nThis method can be handy in complex graphs ensuring all nodes\nare updated without having to manually change each node." Class="_comment" pos="290,830,0" flags="0"/>
+      <Node Id="676" Name="." Class="_commentbox" pos="280,679.31451,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="210"/>
+       <NodeSize Width="1370" Height="235.16864"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="244" nodeOut="54" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="54" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="263" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="263" nodeOut="273" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="298" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="298" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="298" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="298" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Destination" portOut="Result" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Start" portOut="Result" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="345" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="346" portIn="z" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{D414E747-31B8-4E0E-BB17-7D19DB89960D}" Name="RabbitMove_01" HideOrder="0" Pos="965,953,50.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{1C09214A-3D2E-444C-BB33-D60D4AC53984}" Name="10_Character_Controller" HideOrder="0" Pos="970,979,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="202" Class="Math:Mul" pos="1950,-490,0" flags="0">
+       <Inputs A="0" B="0.01111"/>
+      </Node>
+      <Node Id="204" Class="Math:Mul" pos="2510,-510,0" flags="0">
+       <Inputs A="0" B="100"/>
+      </Node>
+      <Node Id="209" Class="Math:Add" pos="2640,-510,0" flags="0">
+       <Inputs A="0" B="60"/>
+      </Node>
+      <Node Id="210" Class="Math:Clamp" pos="2780,-510,0" flags="0">
+       <Inputs In="0" Min="60" Max="70"/>
+      </Node>
+      <Node Id="211" Class="Interpolate:SmoothFloat" pos="2940,-510,0" flags="0">
+       <Inputs InitialValue="60" TargetValue="0" Time="0.5"/>
+      </Node>
+      <Node Id="212" Class="Entity:GetPos" pos="1730,-310,0" flags="0" EntityGUID="{F9513F6F-03CC-4182-823D-89166C4224CB}" EntityGUID_64="418203CCF9513F6F">
+       <Inputs entityId="0" CoordSys="0"/>
+      </Node>
+      <Node Id="214" Class="Entity:EntityPos" pos="3270,-290,0" flags="0" EntityGUID="{F9513F6F-03CC-4182-823D-89166C4224CB}" EntityGUID_64="418203CCF9513F6F">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="0"/>
+      </Node>
+      <Node Id="215" Class="Vec3:ToVec3" pos="2720,-280,0" flags="0">
+       <Inputs x="0" y="0" z="6"/>
+      </Node>
+      <Node Id="216" Class="Vec3:FromVec3" pos="1950,-290,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="217" Class="Math:Mul" pos="2130,-330,0" flags="0">
+       <Inputs A="0" B="-6"/>
+      </Node>
+      <Node Id="220" Class="Math:Calculate" pos="2290,-330,0" flags="0">
+       <Inputs Operation="0" A="0" B="0"/>
+      </Node>
+      <Node Id="221" Class="Interpolate:SmoothFloat" pos="2470,-330,0" flags="0">
+       <Inputs InitialValue="0" TargetValue="0" Time="0.2"/>
+      </Node>
+      <Node Id="222" Class="Math:Calculate" pos="2290,-190,0" flags="0">
+       <Inputs Operation="0" A="0" B="0"/>
+      </Node>
+      <Node Id="223" Class="Interpolate:SmoothFloat" pos="2470,-190,0" flags="0">
+       <Inputs InitialValue="0" TargetValue="0" Time="0.2"/>
+      </Node>
+      <Node Id="224" Class="Math:Mul" pos="2140,-190,0" flags="0">
+       <Inputs A="0" B="2"/>
+      </Node>
+      <Node Id="226" Name="Updates_Chase_Cam_POS_and fov based on velocity" Class="_commentbox" pos="1670,-618.40247,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1820" Height="520"/>
+       <NodeSize Width="1820" Height="570.29797"/>
+      </Node>
+      <Node Id="670" Name="Controller" Class="_commentbox" pos="250,-619.89734,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="2330"/>
+       <NodeSize Width="1370" Height="2380.2981"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="270,-445.85583,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
+       <NodeSize Width="1220" Height="220.298"/>
+      </Node>
+      <Node Id="684" Class="Game:Start" pos="-120,-80,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="685" Class="Actor:LocalPlayer" pos="790,1280,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="688" Class="Entity:GetPos" pos="290,990,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="689" Class="Entity:EntityPos" pos="990,1290,0" flags="0">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="690" Class="Time:Time" pos="-90,1120,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="691" Class="Physics:ActionImpulse" pos="1300,-370,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="695" Class="Vec3:AddVec3" pos="750,1010,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0.7"/>
+      </Node>
+      <Node Id="704" Class="Vec3:ScaleVec3" pos="1140,-290,0" flags="0">
+       <Inputs vector="0,0,0" scale="160"/>
+      </Node>
+      <Node Id="717" Class="Vec3:ToVec3" pos="1020,680,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="719" Class="Entity:GetPos" pos="1020,720,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{CE472CB0-1451-4102-A8DF-1562E260E22F}" EntityGUID_64="41021451CE472CB0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="723" Class="Vec3:SubVec3" pos="1250,720,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="733" Class="Entity:EntityPos" pos="1400,650,0" flags="0" EntityGUID="{CE472CB0-1451-4102-A8DF-1562E260E22F}" EntityGUID_64="41021451CE472CB0">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="735" Class="Math:Mul" pos="850,680,0" flags="0">
+       <Inputs A="0" B="0.1"/>
+      </Node>
+      <Node Id="736" Class="Entity:GetPos" pos="730,-550,0" flags="0" EntityGUID="{CE472CB0-1451-4102-A8DF-1562E260E22F}" EntityGUID_64="41021451CE472CB0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="746" Class="Math:Mul" pos="850,840,0" flags="0">
+       <Inputs A="0" B="0.1"/>
+      </Node>
+      <Node Id="747" Class="Logic:Any" pos="610,-530,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="750" Class="Vec3:ScaleVec3" pos="1140,-90,0" flags="0">
+       <Inputs vector="0,0,0" scale="-100"/>
+      </Node>
+      <Node Id="751" Class="Physics:ActionImpulse" pos="1300,-170,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="752" Class="Vec3:ScaleVec3" pos="1140,110,0" flags="0">
+       <Inputs vector="0,0,0" scale="100"/>
+      </Node>
+      <Node Id="753" Class="Vec3:ScaleVec3" pos="1140,310,0" flags="0">
+       <Inputs vector="0,0,0" scale="-100"/>
+      </Node>
+      <Node Id="754" Class="Physics:ActionImpulse" pos="1300,30,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="755" Class="Physics:ActionImpulse" pos="1300,230,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="756" Name="Forward" Class="_comment" pos="270,-410,0" flags="0"/>
+      <Node Id="757" Name="." Class="_commentbox" pos="270,-245.85564,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
+       <NodeSize Width="1220" Height="220.298"/>
+      </Node>
+      <Node Id="758" Name="." Class="_commentbox" pos="270,-45.856251,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
+       <NodeSize Width="1220" Height="220.298"/>
+      </Node>
+      <Node Id="759" Name="." Class="_commentbox" pos="270,154.14427,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
+       <NodeSize Width="1220" Height="220.298"/>
+      </Node>
+      <Node Id="760" Name="Backward" Class="_comment" pos="270,-210,0" flags="0"/>
+      <Node Id="761" Name="Strafe Right" Class="_comment" pos="270,-10,0" flags="0"/>
+      <Node Id="762" Name="Strafe Left" Class="_comment" pos="270,190,0" flags="0"/>
+      <Node Id="763" Name="." Class="_commentbox" pos="270,584.15137,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1320" Height="310"/>
+       <NodeSize Width="1320" Height="360.298"/>
+      </Node>
+      <Node Id="764" Name="Mouse rotate yaw" Class="_comment" pos="280,650,0" flags="0"/>
+      <Node Id="765" Name="Mouse rotate pitch" Class="_comment" pos="280,780,0" flags="0"/>
+      <Node Id="770" Class="Entity:GetPos" pos="290,1290,0" flags="0" EntityGUID="{CE472CB0-1451-4102-A8DF-1562E260E22F}" EntityGUID_64="41021451CE472CB0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="774" Name="scale input" Class="_comment" pos="850,660,0" flags="0"/>
+      <Node Id="775" Name="scale input" Class="_comment" pos="850,820,0" flags="0"/>
+      <Node Id="776" Class="Entity:EntityPos" pos="1400,800,0" flags="0" EntityGUID="{0049BC28-7909-427A-96FC-3F9AF63A0169}" EntityGUID_64="427A79090049BC28">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="777" Class="Vec3:ToVec3" pos="1020,840,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="778" Class="Vec3:SubVec3" pos="1250,790,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="779" Class="Entity:GetPos" pos="1020,780,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{0049BC28-7909-427A-96FC-3F9AF63A0169}" EntityGUID_64="427A79090049BC28">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="780" Name="add offset" Class="_comment" pos="740,980,0" flags="0"/>
+      <Node Id="784" Name="." Class="_commentbox" pos="270,914.15125,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="950" Height="240"/>
+       <NodeSize Width="950" Height="290.298"/>
+      </Node>
+      <Node Id="786" Name="." Class="_commentbox" pos="270,1184.1525,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="950" Height="240"/>
+       <NodeSize Width="950" Height="290.298"/>
+      </Node>
+      <Node Id="789" Name="The sphere&apos;s transform is constantly rotating but\nwe don&apos;t want the ref box to inherit the transform." Class="_comment" pos="300,1150,0" flags="0"/>
+      <Node Id="790" Name="Set refbox pos to the sphere pos." Class="_comment" pos="970,980,0" flags="0"/>
+      <Node Id="791" Name="Set the player position to be same as the ref box." Class="_comment" pos="790,1250,0" flags="0"/>
+      <Node Id="793" Class="Physics:ActionImpulse" pos="1300,440,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" Impulse="0,0,2000" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="794" Name="." Class="_commentbox" pos="270,344.14536,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1220" Height="220"/>
+       <NodeSize Width="1220" Height="270.298"/>
+      </Node>
+      <Node Id="796" Class="Physics:Dynamics" pos="300,530,0" flags="0" InHideMask="7" OutHideMask="31" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="799" Class="Vec3:FromVec3" pos="450,540,0" flags="0" InHideMask="1" OutHideMask="7">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="801" Class="Math:InRange" pos="900,450,0" flags="0">
+       <Inputs In="0" Min="-0.5" Max="0.5"/>
+      </Node>
+      <Node Id="804" Name="Jump" Class="_comment" pos="270,390,0" flags="0"/>
+      <Node Id="805" Name="If the vertical velocity is out of \n range then don&apos;t allow jumping." Class="_comment" pos="850,410,0" flags="0"/>
+      <Node Id="806" Class="Entity:EntityPos" pos="980,1010,0" flags="0" EntityGUID="{CE472CB0-1451-4102-A8DF-1562E260E22F}" EntityGUID_64="41021451CE472CB0">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="875" Class="Input:ActionHandler" pos="290,-380,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveforward"/>
+      </Node>
+      <Node Id="876" Class="Input:ActionHandler" pos="290,-180,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveback"/>
+      </Node>
+      <Node Id="883" Class="Input:ActionHandler" pos="290,20,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveright"/>
+      </Node>
+      <Node Id="884" Class="Input:ActionHandler" pos="290,220,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveleft"/>
+      </Node>
+      <Node Id="885" Class="Input:ActionHandler" pos="290,420,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="jump"/>
+      </Node>
+      <Node Id="886" Class="Input:ActionHandler" pos="290,680,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="rotateyaw"/>
+      </Node>
+      <Node Id="887" Class="Input:ActionHandler" pos="290,810,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="rotatepitch"/>
+      </Node>
+      <Node Id="888" Class="Vec3:AddVec3" pos="700,1620,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,90"/>
+      </Node>
+      <Node Id="891" Name="." Class="_commentbox" pos="270,1454.9117,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1320" Height="220"/>
+       <NodeSize Width="1320" Height="270.298"/>
+      </Node>
+      <Node Id="892" Name="Set Robot body pos to match sphere" Class="_comment" pos="830,1520,0" flags="0"/>
+      <Node Id="893" Name="interpolate and smooth rotation \n to add some delay in body." Class="_comment" pos="1050,1580,0" flags="0"/>
+      <Node Id="895" Class="Entity:EntityPos" pos="1380,1550,0" flags="0" EntityGUID="{E52B20B2-D407-4DF5-B22B-ACD66659A320}" EntityGUID_64="4DF5D407E52B20B2">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,50" CoordSys="0"/>
+      </Node>
+      <Node Id="896" Class="Vec3:AddVec3" pos="840,1550,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="897" Class="Interpolate:SmoothVec3" pos="1060,1620,0" flags="0">
+       <Inputs InitialValue="0,0,0" TargetValue="0,0,0" Time="0.2"/>
+      </Node>
+      <Node Id="899" Name="Deceleration" Class="_commentbox" pos="1680,671.59082,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="770" Height="250"/>
+       <NodeSize Width="770" Height="300.298"/>
+      </Node>
+      <Node Id="900" Name="." Class="_commentbox" pos="1710,701.59058,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="200"/>
+       <NodeSize Width="710" Height="250.298"/>
+      </Node>
+      <Node Id="904" Class="Physics:ActionImpulse" pos="2240,790,0" flags="0" EntityGUID="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" EntityGUID_64="487AD6612EB64374">
+       <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="906" Class="Vec3:ScaleVec3" pos="2080,800,0" flags="0">
+       <Inputs vector="0,0,0" scale="-6"/>
+      </Node>
+      <Node Id="923" Class="Vec3:FromVec3" pos="1750,800,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="924" Class="Vec3:ToVec3" pos="1920,800,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="925" Name="Split X,Y,Z and don&apos;t apply deceleration to Z. " Class="_comment" pos="1750,770,0" flags="0"/>
+      <Node Id="950" Class="Vec3:AddVec3" pos="550,1630,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,90"/>
+      </Node>
+      <Node Id="951" Class="Vec3:FromVec3" pos="270,1550,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="952" Class="Vec3:ToVec3" pos="420,1630,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="956" Class="Interpolate:Vec3" pos="2510,250,0" flags="0">
+       <Inputs StartValue="0,0,0" EndValue="1,1,1" Time="0.2" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="957" Class="Logic:Any" pos="2200,230,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="958" Class="Entity:EntityPos" pos="2750,220,0" flags="0" EntityGUID="{AED6E41F-4C84-4EFA-A1F1-F2934630A2DF}" EntityGUID_64="4EFA4C84AED6E41F">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="0"/>
+      </Node>
+      <Node Id="960" Class="Vec3:AddVec3" pos="2340,230,0" flags="0">
+       <Inputs A="0,15,0" B="0,0,0"/>
+      </Node>
+      <Node Id="962" Class="Entity:GetPos" pos="1720,330,0" flags="0" EntityGUID="{AED6E41F-4C84-4EFA-A1F1-F2934630A2DF}" EntityGUID_64="4EFA4C84AED6E41F">
+       <Inputs entityId="0" CoordSys="0"/>
+      </Node>
+      <Node Id="966" Class="Vec3:FromVec3" pos="1710,530,0" flags="0" InHideMask="1" OutHideMask="7">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="967" Class="Vec3:ToVec3" pos="1850,530,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs x="0" y="0" z="90"/>
+      </Node>
+      <Node Id="968" Class="Vec3:ClampVec3" pos="1980,530,0" flags="0">
+       <Inputs In="0,0,0" Min="-10,0,0" Max="10,0,0"/>
+      </Node>
+      <Node Id="972" Class="Vec3:SetVec3" pos="1840,170,0" flags="0">
+       <Inputs In="0,0,0"/>
+      </Node>
+      <Node Id="973" Class="Vec3:SetVec3" pos="1950,110,0" flags="0">
+       <Inputs In="0,15,0"/>
+      </Node>
+      <Node Id="974" Class="Logic:Any" pos="2200,340,0" flags="1" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="975" Class="Vec3:SetVec3" pos="1940,290,0" flags="0">
+       <Inputs In="0,-15,0"/>
+      </Node>
+      <Node Id="976" Class="Logic:Any" pos="1730,170,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="977" Name="Head Lean and Pitch" Class="_commentbox" pos="1670,-18.402447,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1330" Height="600"/>
+       <NodeSize Width="1330" Height="650.29797"/>
+      </Node>
+      <Node Id="978" Name="." Class="_commentbox" pos="1690,21.597456,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1290" Height="540"/>
+       <NodeSize Width="1290" Height="590.29797"/>
+      </Node>
+      <Node Id="981" Name="Body Lean" Class="_comment" pos="420,1590,0" flags="0"/>
+      <Node Id="983" Class="Vec3:NormalizeVec3" pos="1710,-490,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="985" Class="Logic:Any" pos="2730,-180,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="986" Class="Interpolate:SmoothVec3" pos="2880,-180,0" flags="0">
+       <Inputs InitialValue="0,0,0" TargetValue="0,0,0" Time="0.5"/>
+      </Node>
+      <Node Id="987" Class="Vec3:ScaleVec3" pos="3100,-180,0" flags="0">
+       <Inputs vector="0,0,0" scale="0.1"/>
+      </Node>
+      <Node Id="990" Name="Turn vec3 velocity into magnitude" Class="_comment" pos="1700,-520,0" flags="0"/>
+      <Node Id="991" Name="Normalize Range" Class="_comment" pos="1950,-520,0" flags="0"/>
+      <Node Id="992" Name="get body roll angles" Class="_comment" pos="2700,-200,0" flags="0"/>
+      <Node Id="995" Name="Smooth and scale camera roll" Class="_comment" pos="2980,-210,0" flags="0"/>
+      <Node Id="996" Name="Pull the camera back based on velocity" Class="_comment" pos="2140,-360,0" flags="0"/>
+      <Node Id="997" Name="Raise the camera up based on velocity" Class="_comment" pos="2140,-220,0" flags="0"/>
+      <Node Id="998" Name="Combine floats back into vec3 and set camera position" Class="_comment" pos="2710,-310,0" flags="0"/>
+      <Node Id="999" Name="." Class="_commentbox" pos="1700,-418.4072,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1770" Height="290"/>
+       <NodeSize Width="1770" Height="340.298"/>
+      </Node>
+      <Node Id="1000" Name="." Class="_commentbox" pos="2490,-575.10571,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="980" Height="140"/>
+       <NodeSize Width="980" Height="190.298"/>
+      </Node>
+      <Node Id="1001" Name="Change FOV based on velocity" Class="_comment" pos="2510,-550,0" flags="0"/>
+      <Node Id="1002" Name="." Class="_commentbox" pos="1700,-548.40967,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="400" Height="90"/>
+       <NodeSize Width="400" Height="140.298"/>
+      </Node>
+      <Node Id="1003" Name="Combine all the vec3 so the head pos takes into account pitch, yaw, and lean. " Class="_comment" pos="2200,200,0" flags="0"/>
+      <Node Id="1005" Name="On start &amp; strafe stop\nreset head lean to zero. " Class="_comment" pos="1700,120,0" flags="0"/>
+      <Node Id="1008" Name="On strafe left lean left. " Class="_comment" pos="1940,260,0" flags="0"/>
+      <Node Id="1009" Name="On strafe right lean right. " Class="_comment" pos="1950,80,0" flags="0"/>
+      <Node Id="1010" Name="Pitch head forward and backwards &amp; clamp min max angle." Class="_comment" pos="1710,500,0" flags="0"/>
+      <Node Id="1011" Class="Mission:GameTokenSet" pos="3140,-510,0" flags="0">
+       <Inputs gametoken_Token="Level.Robot_Cam_Dynamic_Fov" TokenValue=""/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="204" nodeOut="202" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="204" nodeOut="202" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="217" nodeOut="202" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="217" nodeOut="202" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="220" nodeOut="202" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="222" nodeOut="202" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="224" nodeOut="202" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="224" nodeOut="202" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="987" nodeOut="202" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="209" nodeOut="204" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="209" nodeOut="204" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="210" nodeOut="209" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="211" nodeOut="210" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="211" nodeOut="210" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1011" nodeOut="211" portIn="Activate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="1011" nodeOut="211" portIn="TokenValue" portOut="Value" enabled="1"/>
+      <Edge nodeIn="216" nodeOut="212" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="214" nodeOut="215" portIn="pos" portOut="Result" enabled="1"/>
+      <Edge nodeIn="220" nodeOut="216" portIn="B" portOut="y" enabled="1"/>
+      <Edge nodeIn="222" nodeOut="216" portIn="B" portOut="z" enabled="1"/>
+      <Edge nodeIn="220" nodeOut="217" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="221" nodeOut="220" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="221" nodeOut="220" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="215" nodeOut="221" portIn="y" portOut="Value" enabled="1"/>
+      <Edge nodeIn="223" nodeOut="222" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="223" nodeOut="222" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="215" nodeOut="223" portIn="z" portOut="Value" enabled="1"/>
+      <Edge nodeIn="222" nodeOut="224" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="212" nodeOut="684" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="876" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="884" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="886" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="887" nodeOut="684" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="976" nodeOut="684" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="689" nodeOut="685" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="695" nodeOut="688" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="695" nodeOut="688" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="896" nodeOut="688" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="896" nodeOut="688" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="688" nodeOut="690" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="690" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="962" nodeOut="690" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="806" nodeOut="695" portIn="pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="691" nodeOut="704" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="723" nodeOut="717" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="723" nodeOut="717" portIn="B" portOut="Result" enabled="1"/>
+      <Edge nodeIn="723" nodeOut="719" portIn="A" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="733" nodeOut="723" portIn="rotate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="717" nodeOut="735" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="719" nodeOut="735" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="704" nodeOut="736" portIn="vector" portOut="FwdDir" enabled="1"/>
+      <Edge nodeIn="750" nodeOut="736" portIn="vector" portOut="FwdDir" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="736" portIn="vector" portOut="RightDir" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="736" portIn="vector" portOut="RightDir" enabled="1"/>
+      <Edge nodeIn="777" nodeOut="746" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="779" nodeOut="746" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="736" nodeOut="747" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="752" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="753" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="689" nodeOut="770" portIn="pos" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="689" nodeOut="770" portIn="rotate" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="770" portIn="A" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="950" nodeOut="770" portIn="Activate" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="777" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="777" portIn="B" portOut="Result" enabled="1"/>
+      <Edge nodeIn="776" nodeOut="778" portIn="rotate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="966" nodeOut="778" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="779" portIn="A" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="796" portIn="vec3" portOut="Velocity" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="796" portIn="vec3" portOut="Velocity" enabled="1"/>
+      <Edge nodeIn="983" nodeOut="796" portIn="vector" portOut="Velocity" enabled="1"/>
+      <Edge nodeIn="801" nodeOut="799" portIn="In" portOut="z" enabled="1"/>
+      <Edge nodeIn="793" nodeOut="801" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="691" nodeOut="875" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="875" portIn="In0" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="876" portIn="In1" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="876" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="883" portIn="In2" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="883" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="973" nodeOut="883" portIn="Set" portOut="ActionPressed" enabled="1"/>
+      <Edge nodeIn="976" nodeOut="883" portIn="In0" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="884" portIn="In3" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="884" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="975" nodeOut="884" portIn="Set" portOut="ActionPressed" enabled="1"/>
+      <Edge nodeIn="976" nodeOut="884" portIn="In9" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="801" nodeOut="885" portIn="Activate" portOut="ActionPressed" enabled="1"/>
+      <Edge nodeIn="735" nodeOut="886" portIn="A" portOut="ActionInvoked" enabled="1"/>
+      <Edge nodeIn="735" nodeOut="886" portIn="Activate" portOut="ActionInvoked" enabled="1"/>
+      <Edge nodeIn="746" nodeOut="887" portIn="A" portOut="ActionInvoked" enabled="1"/>
+      <Edge nodeIn="746" nodeOut="887" portIn="Activate" portOut="ActionInvoked" enabled="1"/>
+      <Edge nodeIn="897" nodeOut="888" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="897" nodeOut="888" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="895" nodeOut="896" portIn="pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="895" nodeOut="897" portIn="rotate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="906" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="906" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="924" nodeOut="923" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="924" nodeOut="923" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="924" portIn="vector" portOut="Result" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="950" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="950" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="952" nodeOut="951" portIn="x" portOut="y" enabled="1"/>
+      <Edge nodeIn="950" nodeOut="952" portIn="A" portOut="Result" enabled="1"/>
+      <Edge nodeIn="951" nodeOut="956" portIn="vec3" portOut="Value" enabled="1"/>
+      <Edge nodeIn="958" nodeOut="956" portIn="rotate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="960" nodeOut="957" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="956" nodeOut="960" portIn="EndValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="956" nodeOut="960" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="956" nodeOut="962" portIn="StartValue" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="967" nodeOut="966" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="968" nodeOut="967" portIn="In" portOut="Result" enabled="1"/>
+      <Edge nodeIn="957" nodeOut="968" portIn="In4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="960" nodeOut="968" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="957" nodeOut="972" portIn="In9" portOut="Out" enabled="1"/>
+      <Edge nodeIn="974" nodeOut="972" portIn="In4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="985" nodeOut="972" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="957" nodeOut="973" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="974" nodeOut="973" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="985" nodeOut="973" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="960" nodeOut="974" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="957" nodeOut="975" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="974" nodeOut="975" portIn="In9" portOut="Out" enabled="1"/>
+      <Edge nodeIn="985" nodeOut="975" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="972" nodeOut="976" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="202" nodeOut="983" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="202" nodeOut="983" portIn="Activate" portOut="length" enabled="1"/>
+      <Edge nodeIn="986" nodeOut="985" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="986" nodeOut="985" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="987" nodeOut="986" portIn="vector" portOut="Value" enabled="1"/>
+      <Edge nodeIn="214" nodeOut="987" portIn="rotate" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{E8485659-550F-48D3-B3FE-FAA52F131A9C}" Name="05_Side_Scroller" HideOrder="0" Pos="970,1000,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="54" Class="Entity:EntityId" pos="170,1710,0" flags="0" InHideMask="1" OutHideMask="1" EntityGUID="{5FE42AEA-1979-466E-8785-C85CCA6EC0BB}" EntityGUID_64="466E19795FE42AEA">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="244" Class="Movement:MoveEntityTo" pos="960,1410,0" flags="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="1" Value="0.1" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="337" Class="Movement:RotateEntityTo" pos="970,1700,0" flags="0">
+       <Inputs entityId="0" Destination="-15,0,270" DynamicUpdate="1" ValueType="1" Value="0.1" CoordSys="0"/>
+      </Node>
+      <Node Id="346" Class="Math:Add" pos="599.36273,1487.5387,0" flags="0">
+       <Inputs A="0" B="4.5"/>
+      </Node>
+      <Node Id="347" Name="Sets_camera offset distance" Class="_comment" pos="549.36273,1397.5387,0" flags="0"/>
+      <Node Id="362" Class="Entity:EntityPos" pos="160,1190,0" flags="0" EntityGUID="{719B3CF4-1B1E-4369-BF2B-C97D420D7DD3}" EntityGUID_64="43691B1E719B3CF4">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="371" Class="Vec3:FromVec3" pos="380,1210,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="373" Class="Math:Add" pos="530,1210,0" flags="0">
+       <Inputs A="0" B="-10"/>
+      </Node>
+      <Node Id="376" Class="Entity:GetPos" pos="159.36273,1407.5387,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0" CoordSys="0"/>
+      </Node>
+      <Node Id="377" Class="Time:Time" pos="-110.63727,1407.5387,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="378" Name="Tells_the_camera_to_move_the_destination" Class="_comment" pos="959.36273,1367.5387,0" flags="0"/>
+      <Node Id="379" Name="Gets_the_target_position_everyframe" Class="_comment" pos="29.362732,1377.5387,0" flags="0"/>
+      <Node Id="380" Class="Vec3:FromVec3" pos="459.36273,1427.5387,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="381" Class="Vec3:ToVec3" pos="739.36273,1427.5387,0" flags="0">
+       <Inputs x="0" y="0" z="60"/>
+      </Node>
+      <Node Id="384" Class="Game:Start" pos="749.36273,1797.5387,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="670" Name="Side Scroller" Class="_commentbox" pos="-140,1099.9529,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1400" Height="750"/>
+       <NodeSize Width="1400" Height="775.19159"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="-120.63727,1327.3809,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="260"/>
+       <NodeSize Width="1370" Height="285.19162"/>
+      </Node>
+      <Node Id="676" Name="." Class="_commentbox" pos="-120.63727,1626.8306,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="210"/>
+       <NodeSize Width="1370" Height="235.1916"/>
+      </Node>
+      <Node Id="677" Name="." Class="_commentbox" pos="130,1149.2937,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="520" Height="160"/>
+       <NodeSize Width="520" Height="185.1916"/>
+      </Node>
+      <Node Id="679" Name="In this example the camera remains at \na fixed offset distance on the x axis." Class="_comment" pos="120,1140,0" flags="0"/>
+      <Node Id="680" Name="Rotates camera to face horizontally on start. " Class="_comment" pos="940,1670,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="244" nodeOut="54" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="54" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="346" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="371" nodeOut="362" portIn="vec3" portOut="pos" enabled="1"/>
+      <Edge nodeIn="373" nodeOut="371" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="373" nodeOut="371" portIn="Activate" portOut="x" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="373" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="380" nodeOut="376" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="376" nodeOut="377" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="380" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="380" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="380" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="381" portIn="Destination" portOut="Result" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="381" portIn="Start" portOut="Result" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="384" portIn="Start" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Camera" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{AE2B1B5D-3908-4F50-9C6C-5D6034AF6BB8}" Name="01_Camera_Parented_to_Mover3" HideOrder="0" Parent="{6D15B2F6-8187-44CA-AC43-938BB3C74167}" Pos="0,-0.46466064,1.2000008" FloorNumber="-1" Rotate="4.3711388e-008,-9.9180909e-016,-7.4505806e-009,1" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{67D57A6B-418C-4D2D-9EAF-965AC3477E25}" Name="08_Chase" HideOrder="0" Pos="970,988,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="31" Class="Entity:EntityFaceAt" pos="1690,1630,0" flags="0" EntityGUID="{C302A7B1-8174-4379-A077-71FC94308EC4}" EntityGUID_64="43798174C302A7B1">
+       <Inputs entityId="0" target="0" pos="0,0,0" FwdDir="0" ReferenceVec="0,0,1"/>
+      </Node>
+      <Node Id="32" Class="Entity:EntityId" pos="1510,1630,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="33" Class="Game:Start" pos="1330,1680,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="670" Name="Chase Camera" Class="_commentbox" pos="1250,1250.0945,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="850" Height="540"/>
+       <NodeSize Width="850" Height="565"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="1280,1570.094,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="640" Height="200"/>
+       <NodeSize Width="640" Height="225"/>
+      </Node>
+      <Node Id="676" Name="Make the camera track the target. " Class="_comment" pos="1280,1570,0" flags="0"/>
+      <Node Id="8086" Class="Movement:MoveEntityTo" pos="1750,1370,0" flags="0" EntityGUID="{C302A7B1-8174-4379-A077-71FC94308EC4}" EntityGUID_64="43798174C302A7B1">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="40" EaseInDistance="5" EaseOutDistance="5" CoordSys="0"/>
+      </Node>
+      <Node Id="8087" Class="Time:Time" pos="1290,1370,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="8088" Class="Entity:GetPos" pos="1480,1370,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="8089" Name="." Class="_commentbox" pos="1280,1280.0942,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="250"/>
+       <NodeSize Width="800" Height="275"/>
+      </Node>
+      <Node Id="8090" Name="Get the targets position every frame and move to it. " Class="_comment" pos="1270,1290,0" flags="0"/>
+      <Node Id="8092" Name="Decreasing the speed the camera moves to the\ntarget increase the distance between them. " Class="_comment" pos="1750,1330,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="31" nodeOut="32" portIn="target" portOut="Id" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="33" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="8086" nodeOut="8087" portIn="Start" portOut="tick" enabled="1"/>
+      <Edge nodeIn="8088" nodeOut="8087" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="8086" nodeOut="8088" portIn="Destination" portOut="Pos" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{C4E82376-F90F-4459-98F3-E2ACF9826B92}" Name="06_Parented_Tracking + Dynamic_Zoom" HideOrder="0" Pos="970,996,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="31" Class="Entity:EntityFaceAt" pos="1980,820,0" flags="0" EntityGUID="{91221C65-EC83-4FDB-9018-0948845F620D}" EntityGUID_64="4FDBEC8391221C65">
+       <Inputs entityId="0" target="0" pos="0,0,0" FwdDir="0" ReferenceVec="0,0,1"/>
+      </Node>
+      <Node Id="32" Class="Entity:EntityId" pos="1810,830,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="33" Class="Game:Start" pos="1650,880,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="614" Class="Time:Time" pos="1642.561,1153.8317,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="615" Class="Entity:GetPos" pos="1832.561,1153.8317,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="620" Class="Entity:EntityPos" pos="1830,1380,0" flags="0" EntityGUID="{6A316A2E-0CB3-4F03-96C1-06FB8A7DF5D1}" EntityGUID_64="4F030CB36A316A2E">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="621" Class="Vec3:SubVec3" pos="2250,1390,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="628" Class="Vec3:MagnitudeVec3" pos="2390,1500,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="633" Class="Math:Clamp" pos="2960,1810,0" flags="0">
+       <Inputs In="0" Min="50" Max="110"/>
+      </Node>
+      <Node Id="642" Class="Math:Reciprocal" pos="2570,1610,0" flags="0">
+       <Inputs A="0"/>
+      </Node>
+      <Node Id="643" Class="Math:Mul" pos="2770,1690,0" flags="0">
+       <Inputs A="0" B="1000"/>
+      </Node>
+      <Node Id="644" Class="Interpolate:SmoothFloat" pos="3130,1910,0" flags="0">
+       <Inputs InitialValue="0" TargetValue="0" Time="0.5"/>
+      </Node>
+      <Node Id="648" Name="Parent Tracking" Class="_commentbox" pos="1590,712.69885,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2130" Height="1400"/>
+       <NodeSize Width="2130" Height="1441.7799"/>
+      </Node>
+      <Node Id="651" Name="At_start_get_the_position_" Class="_comment" pos="1830,1350,0" flags="0"/>
+      <Node Id="660" Name="This_camera_is_fixed_in_place_and_its_position_never_changes." Class="_comment" pos="1750,1520,0" flags="0"/>
+      <Node Id="661" Name="Basause_the_position_never_changes,_entity_position_is_used_instead_of_entity_get_position._" Class="_comment" pos="1750,1540,0" flags="0"/>
+      <Node Id="662" Name="Get_the_distance_between_the_two_entities" Class="_comment" pos="2250,1360,0" flags="0"/>
+      <Node Id="663" Name="Turn_the_vec3__into_a_length" Class="_comment" pos="2390,1470,0" flags="0"/>
+      <Node Id="664" Name="Need_FOV_to_get_wider_as_the_sphere_gets_closer." Class="_comment" pos="2570,1580,0" flags="0"/>
+      <Node Id="665" Name="Adjust_output_to_be_in_a_usable_range" Class="_comment" pos="2770,1660,0" flags="0"/>
+      <Node Id="666" Name="Clamp_range_to_prevent_crazy_fov_" Class="_comment" pos="2950,1780,0" flags="0"/>
+      <Node Id="667" Name="Smooth_to_prevent_jarring_fov_changes" Class="_comment" pos="3130,1880,0" flags="0"/>
+      <Node Id="668" Name="Continuously_gets_the_position_of_the_sphere the camera is tracking" Class="_comment" pos="1832.561,1123.8317,0" flags="0"/>
+      <Node Id="671" Name="." Class="_commentbox" pos="1620,743.22015,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="580" Height="200"/>
+       <NodeSize Width="580" Height="241.77989"/>
+      </Node>
+      <Node Id="676" Name="Make the camera track the target. " Class="_comment" pos="1610,770,0" flags="0"/>
+      <Node Id="680" Name="Changes the camera fov dynamically based on the\ndistance between the camera and the entity it is tracking. " Class="_comment" pos="1620,1000,0" flags="0"/>
+      <Node Id="681" Class="Mission:GameTokenSet" pos="3340,2010,0" flags="0">
+       <Inputs gametoken_Token="Level.Dynamic_Fov_ex1" TokenValue=""/>
+      </Node>
+      <Node Id="682" Name="." Class="_commentbox" pos="1620,972.57721,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2070" Height="1100"/>
+       <NodeSize Width="2070" Height="1141.7799"/>
+      </Node>
+      <Node Id="683" Name="Set the value to a token to be used in another graph. " Class="_comment" pos="3340,1980,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="31" nodeOut="32" portIn="target" portOut="Id" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="33" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="615" nodeOut="614" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="621" nodeOut="615" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="621" nodeOut="615" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="621" nodeOut="620" portIn="A" portOut="pos" enabled="1"/>
+      <Edge nodeIn="628" nodeOut="621" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="642" nodeOut="628" portIn="A" portOut="Length" enabled="1"/>
+      <Edge nodeIn="642" nodeOut="628" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="644" nodeOut="633" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="644" nodeOut="633" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="643" nodeOut="642" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="643" nodeOut="642" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="633" nodeOut="643" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="681" nodeOut="644" portIn="Activate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="681" nodeOut="644" portIn="TokenValue" portOut="Value" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Camera" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{14F3147A-B6C0-48E8-992E-503C59F7BCC1}" Name="02_Camera_Parented_to_Mover" HideOrder="0" Parent="{6D15B2F6-8187-44CA-AC43-938BB3C74167}" Pos="0,6,2.5" FloorNumber="-1" Rotate="-4.3337433e-008,5.7054814e-009,0.1305262,-0.99144489" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{BA9C2386-604A-4C2E-BF73-608773A3D609}" Name="TagPoint2" HideOrder="0" Parent="{6D15B2F6-8187-44CA-AC43-938BB3C74167}" Pos="-0.80000001,0,1.3751" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{882A818E-AF2B-4341-BB73-FF08D9036834}" Name="Rabbit" HideOrder="0" Pos="965,1006,50.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint">
+    <FlowGraph Description="" Group="Physics" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="345" Class="Game:Start" pos="-190,250,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="350" Class="Movement:MoveEntityTo" pos="368,-70,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="25" EaseInDistance="2" EaseOutDistance="0" CoordSys="1"/>
+      </Node>
+      <Node Id="352" Class="Movement:MoveEntityTo" pos="380,150,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,-60,0" DynamicDestination="1" ValueType="0" Value="25" EaseInDistance="1" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="353" Class="Logic:Any" pos="10,250,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="354" Class="Movement:MoveEntityTo" pos="370,350,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,-60,0" DynamicDestination="1" ValueType="0" Value="25" EaseInDistance="1" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="355" Class="Movement:MoveEntityTo" pos="370,540,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,-60,0" DynamicDestination="1" ValueType="0" Value="25" EaseInDistance="1" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="356" Class="Entity:EntityPos" pos="238,-71,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{D414E747-31B8-4E0E-BB17-7D19DB89960D}" EntityGUID_64="4E0E31B8D414E747">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="357" Class="Entity:EntityPos" pos="230,150,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{DA8A2C32-087B-42FB-96EB-46F665E3AC2F}" EntityGUID_64="42FB087BDA8A2C32">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="358" Class="Entity:EntityPos" pos="240,350,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{BC277202-ADDC-4034-8FBE-D107332F9C23}" EntityGUID_64="4034ADDCBC277202">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="359" Class="Entity:EntityPos" pos="240,540,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{4C937332-7A28-495A-B946-E16ECF0AB62E}" EntityGUID_64="495A7A284C937332">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="670" Name="Move the Rabbit" Class="_commentbox" pos="-230,-159.83531,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="840" Height="880"/>
+       <NodeSize Width="840" Height="905.04156"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="-210,-140.04102,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="840"/>
+       <NodeSize Width="800" Height="865.04156"/>
+      </Node>
+      <Node Id="672" Name="Move rabbit to the first tagpoint" Class="_comment" pos="240,-100,0" flags="0"/>
+      <Node Id="673" Name="When the destination is reached move to the second. " Class="_comment" pos="230,120,0" flags="0"/>
+      <Node Id="674" Name="Loop the sequence. " Class="_comment" pos="10,230,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="353" nodeOut="345" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="352" nodeOut="350" portIn="Start" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="354" nodeOut="352" portIn="Start" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="353" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="355" nodeOut="354" portIn="Start" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="353" nodeOut="355" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="356" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="352" nodeOut="357" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="354" nodeOut="358" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="355" nodeOut="359" portIn="Destination" portOut="pos" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{24B4CEA1-66CB-425F-9BC4-70403D2AF867}" Name="09_Top_Down_Player" HideOrder="0" Pos="970,984,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="244" Class="Movement:MoveEntityTo" pos="1390,350,0" flags="0" EntityGUID="{528D3A2B-8683-401C-9033-EA4923723797}" EntityGUID_64="401C8683528D3A2B">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="1" Value="0.1" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="263" Class="Entity:GetPos" pos="130,360,0" flags="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="273" Class="Time:Time" pos="-240,360,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="284" Name="Tells_the_camera_to_move_the_destination" Class="_comment" pos="1390,320,0" flags="0"/>
+      <Node Id="285" Name="Gets_the_target_position_everyframe" Class="_comment" pos="130,330,0" flags="0"/>
+      <Node Id="293" Class="Actor:LocalPlayer" pos="-50,360,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="298" Class="Vec3:FromVec3" pos="940,370,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="299" Class="Vec3:ToVec3" pos="1190,370,0" flags="0">
+       <Inputs x="0" y="0" z="60"/>
+      </Node>
+      <Node Id="329" Class="Vec3:AddVec3" pos="780,370,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="330" Class="Math:AnglesToDir" pos="390,400,0" flags="0">
+       <Inputs Angles="0,0,0"/>
+      </Node>
+      <Node Id="331" Class="Vec3:ScaleVec3" pos="570,400,0" flags="0">
+       <Inputs vector="0,0,0" scale="3"/>
+      </Node>
+      <Node Id="333" Class="Debug:Draw:Sphere" pos="980,160,0" flags="0">
+       <Inputs Pos="0,0,0" Radius="0.05" Color="0,0,0" Time="0.5"/>
+      </Node>
+      <Node Id="337" Class="Movement:RotateEntityTo" pos="-40,20,0" flags="0" EntityGUID="{528D3A2B-8683-401C-9033-EA4923723797}" EntityGUID_64="401C8683528D3A2B">
+       <Inputs entityId="0" Destination="-90,0,0" DynamicUpdate="1" ValueType="1" Value="0.1" CoordSys="0"/>
+      </Node>
+      <Node Id="340" Name="Rotates_Camera_To_Face_Down_on_Start" Class="_comment" pos="-270,-50,0" flags="0"/>
+      <Node Id="343" Name="Draws_the_virtual_position_the_camera_is_following" Class="_comment" pos="950,130,0" flags="0"/>
+      <Node Id="345" Class="Game:Start" pos="-250,120,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="346" Class="Math:Add" pos="1080,490,0" flags="0">
+       <Inputs A="0" B="15"/>
+      </Node>
+      <Node Id="670" Name="Top down player" Class="_commentbox" pos="-300,-110.04267,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2030" Height="750"/>
+       <NodeSize Width="2030" Height="784.64368"/>
+      </Node>
+      <Node Id="671" Name="Get the player entity id" Class="_comment" pos="-90,330,0" flags="0"/>
+      <Node Id="672" Name="." Class="_commentbox" pos="-270,-69.444115,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="520" Height="260"/>
+       <NodeSize Width="520" Height="294.64371"/>
+      </Node>
+      <Node Id="673" Name="." Class="_commentbox" pos="-270,275.54755,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1950" Height="330"/>
+       <NodeSize Width="1950" Height="364.64371"/>
+      </Node>
+      <Node Id="674" Name="Sets the camera offset z \nheight relative to the player." Class="_comment" pos="1040,450,0" flags="0"/>
+      <Node Id="675" Name="Create a virual position for the camera to follow based on players facing. " Class="_comment" pos="-270,290,0" flags="0"/>
+      <Node Id="678" Name="Changes the distance\noffset in front of \nthe player. " Class="_comment" pos="550,330,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="329" nodeOut="263" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="330" nodeOut="263" portIn="Angles" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="263" nodeOut="273" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="263" nodeOut="293" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="298" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="298" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="298" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="298" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Destination" portOut="Result" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Start" portOut="Result" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="329" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="333" nodeOut="329" portIn="Draw" portOut="Out" enabled="0"/>
+      <Edge nodeIn="333" nodeOut="329" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="331" nodeOut="330" portIn="vector" portOut="Dir" enabled="1"/>
+      <Edge nodeIn="329" nodeOut="331" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="329" nodeOut="331" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="345" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="346" portIn="z" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{BEB47EA9-96E0-4B97-99B9-0B77F158D4E6}" Name="07_Tracking + Dynamic_Zoom" HideOrder="0" Pos="970,992,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="244" Class="Movement:MoveEntityTo" pos="1900,220,0" flags="0" EntityGUID="{3EA23D57-C3B8-4854-95F9-7BAE95403344}" EntityGUID_64="4854C3B83EA23D57">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="1" Value="0.1" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="284" Name="Tells_the_camera_to_move_the_destination_at_start" Class="_comment" pos="1870,190,0" flags="0"/>
+      <Node Id="298" Class="Vec3:FromVec3" pos="1310,250,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="299" Class="Vec3:ToVec3" pos="1650,250,0" flags="0">
+       <Inputs x="0" y="0" z="51"/>
+      </Node>
+      <Node Id="345" Class="Game:Start" pos="860,350,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="350" Class="Math:Add" pos="1490,220,0" flags="0">
+       <Inputs A="0" B="20"/>
+      </Node>
+      <Node Id="354" Class="Entity:GetPos" pos="1050,230,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="362" Class="Entity:EntityFaceAt" pos="1030,-30,0" flags="0" EntityGUID="{3EA23D57-C3B8-4854-95F9-7BAE95403344}" EntityGUID_64="4854C3B83EA23D57">
+       <Inputs entityId="0" target="0" pos="0,0,0" FwdDir="2" ReferenceVec="0,0,1"/>
+      </Node>
+      <Node Id="365" Class="Entity:EntityId" pos="860,-30,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="366" Class="Math:Add" pos="1490,300,0" flags="0">
+       <Inputs A="0" B="10"/>
+      </Node>
+      <Node Id="614" Class="Time:Time" pos="850,810,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="615" Class="Entity:GetPos" pos="1040,810,0" flags="0" EntityGUID="{05D57414-2377-4A1D-AEE7-ED04605C242B}" EntityGUID_64="4A1D237705D57414">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="645" Class="Math:Clamp" pos="2010,630,0" flags="0">
+       <Inputs In="0" Min="10" Max="120"/>
+      </Node>
+      <Node Id="646" Class="Interpolate:SmoothFloat" pos="2150,630,0" flags="0">
+       <Inputs InitialValue="0" TargetValue="0" Time="0.5"/>
+      </Node>
+      <Node Id="650" Name="This_function_changes_the_field_of_view_based_on_the_distance_of_the_object_it_is_tracking" Class="_comment" pos="1470,590,0" flags="0"/>
+      <Node Id="652" Class="Vec3:SubVec3" pos="1300,630,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="653" Class="Vec3:MagnitudeVec3" pos="1470,630,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="654" Class="Math:Reciprocal" pos="1660,630,0" flags="0">
+       <Inputs A="0"/>
+      </Node>
+      <Node Id="655" Class="Math:Mul" pos="1840,630,0" flags="0">
+       <Inputs A="0" B="1000"/>
+      </Node>
+      <Node Id="657" Class="Entity:GetPos" pos="990,570,0" flags="0" EntityGUID="{3EA23D57-C3B8-4854-95F9-7BAE95403344}" EntityGUID_64="4854C3B83EA23D57">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="659" Class="Time:Delay" pos="850,570,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="668" Name="Continuously_gets_the_position_of_the_sphere the camera is tracking" Class="_comment" pos="850,780,0" flags="0"/>
+      <Node Id="669" Name="This_camera_is_placed_dynamicly_so_we_need_to_get_the_position_after_game_start,_but_not_every_frame." Class="_comment" pos="850,540,0" flags="0"/>
+      <Node Id="670" Name="Tracking" Class="_commentbox" pos="770,-140.0563,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1980" Height="1090"/>
+       <NodeSize Width="1980" Height="1124.5851"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="840,-110.14558,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="430" Height="200"/>
+       <NodeSize Width="430" Height="234.58511"/>
+      </Node>
+      <Node Id="672" Name="." Class="_commentbox" pos="840,129.93854,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1420" Height="260"/>
+       <NodeSize Width="1420" Height="294.58511"/>
+      </Node>
+      <Node Id="674" Name="Camera world position is assinged on start." Class="_comment" pos="830,150,0" flags="0"/>
+      <Node Id="675" Name="Defines the camera offset relative to the entity it is tracking." Class="_comment" pos="1350,190,0" flags="0"/>
+      <Node Id="676" Name="Make the camera track the target. " Class="_comment" pos="840,-90,0" flags="0"/>
+      <Node Id="677" Class="Mission:GameTokenSet" pos="2410,630,0" flags="0">
+       <Inputs gametoken_Token="Level.Dynamic_Fov_ex2" TokenValue=""/>
+      </Node>
+      <Node Id="678" Name="." Class="_commentbox" pos="840,430.07394,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1880" Height="490"/>
+       <NodeSize Width="1880" Height="524.58514"/>
+      </Node>
+      <Node Id="680" Name="Changes the camera fov dynamically based on the\ndistance between the camera and the entity it is tracking. " Class="_comment" pos="830,450,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="299" nodeOut="298" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="298" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="298" portIn="Activate" portOut="y" enabled="1"/>
+      <Edge nodeIn="366" nodeOut="298" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="366" nodeOut="298" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Destination" portOut="Result" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Start" portOut="Result" enabled="1"/>
+      <Edge nodeIn="354" nodeOut="345" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="362" nodeOut="345" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="659" nodeOut="345" portIn="in" portOut="output" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="350" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="354" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="362" nodeOut="365" portIn="target" portOut="Id" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="366" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="615" nodeOut="614" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="652" nodeOut="615" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="652" nodeOut="615" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="646" nodeOut="645" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="646" nodeOut="645" portIn="TargetValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="677" nodeOut="646" portIn="Activate" portOut="Value" enabled="1"/>
+      <Edge nodeIn="677" nodeOut="646" portIn="TokenValue" portOut="Value" enabled="1"/>
+      <Edge nodeIn="653" nodeOut="652" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="654" nodeOut="653" portIn="A" portOut="Length" enabled="1"/>
+      <Edge nodeIn="654" nodeOut="653" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="655" nodeOut="654" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="655" nodeOut="654" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="645" nodeOut="655" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="652" nodeOut="657" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="657" nodeOut="659" portIn="Get" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{C302A7B1-8174-4379-A077-71FC94308EC4}" Name="TagPoint1" HideOrder="0" Pos="972.98248,987.99988,54.999996" FloorNumber="-1" Rotate="-4.3711388e-008,0,-0,-1" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{257F9ABE-AFD0-479E-BD10-F576CBF489E2}" Name="02_Third_Person_POV" HideOrder="0" Pos="970,1012,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="670" Name="Simple Third Person POV" Class="_commentbox" pos="900,30,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="610" Height="170"/>
+       <NodeSize Width="610" Height="195"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="920,100.00006,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="560" Height="90"/>
+       <NodeSize Width="560" Height="115"/>
+      </Node>
+      <Node Id="676" Name="No flowgraph required." Class="_comment" pos="920,80,0" flags="0"/>
+      <Node Id="681" Name="Like example 1, the camera is parented (link object in the editor) to the capsule \n and inherits both position and rotation. The only difference \n is the offset distance and rotation of the camera." Class="_comment" pos="950,140,0" flags="0"/>
+     </Nodes>
+     <Edges />
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{33A20FC7-2D49-4364-86B0-2D39C20FD639}" Name="03_Third_Person_Shoulder_POV" HideOrder="0" Pos="970,1011,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="345" Class="Game:Start" pos="690,200,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="369" Class="Movement:RotateEntityTo" pos="1090,100,0" flags="0" EntityGUID="{BA9C2386-604A-4C2E-BF73-608773A3D609}" EntityGUID_64="4C2E604ABA9C2386">
+       <Inputs entityId="0" Destination="90,0,0" DynamicUpdate="1" ValueType="1" Value="5" CoordSys="2"/>
+      </Node>
+      <Node Id="370" Class="Movement:RotateEntityTo" pos="1090,250,0" flags="1" EntityGUID="{BA9C2386-604A-4C2E-BF73-608773A3D609}" EntityGUID_64="4C2E604ABA9C2386">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Value="5" CoordSys="0"/>
+      </Node>
+      <Node Id="371" Class="Logic:Any" pos="910,200,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="670" Name="Simple over the shoulder Third Person POV" Class="_commentbox" pos="650,10.000178,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="450"/>
+       <NodeSize Width="750" Height="475"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="670,30.0002,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="700" Height="410"/>
+       <NodeSize Width="700" Height="435"/>
+      </Node>
+      <Node Id="673" Name="In this example a look target is parented to the capsule, \n the camera is parented to the look target, \n and the look target is being rotated. " Class="_comment" pos="690,60,0" flags="0"/>
+      <Node Id="674" Name="Rotates the look target back and forth." Class="_comment" pos="1090,70,0" flags="0"/>
+      <Node Id="677" Name="Even though the look target is inherting the capsules position and rotation,\nthe look target can be manipulated independantly only affecting its child. " Class="_comment" pos="880,410,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="371" nodeOut="345" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="370" nodeOut="369" portIn="Start" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="371" nodeOut="370" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="369" nodeOut="371" portIn="Start" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{B9029BD5-7C6B-4B57-AC95-AF0871A8E643}" Name="00_Start" HideOrder="0" Pos="970,1014,51" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="13" Class="Camera:View" pos="2010,-560,0" flags="0" EntityGUID="{64A31AE3-0DF1-4B58-981E-9833B46212AE}" EntityGUID_64="4B580DF164A31AE3">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="1" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="15" Class="Debug:InputKey" pos="1270,-580,0" flags="0">
+       <Inputs entityId="0" Key="6" NonDevMode="1"/>
+      </Node>
+      <Node Id="37" Class="Camera:View" pos="2280,1960,0" flags="0" EntityGUID="{528D3A2B-8683-401C-9033-EA4923723797}" EntityGUID_64="401C8683528D3A2B">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="39" Class="Camera:View" pos="2280,910,0" flags="0" EntityGUID="{D81071D8-4B0D-4FCB-9294-D3211AD653B0}" EntityGUID_64="4FCB4B0DD81071D8">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="40" Class="Camera:View" pos="2280,1120,0" flags="0" EntityGUID="{5FE42AEA-1979-466E-8785-C85CCA6EC0BB}" EntityGUID_64="466E19795FE42AEA">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="100" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="41" Class="Debug:InputKey" pos="130,490,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs entityId="0" Key="5" NonDevMode="0"/>
+      </Node>
+      <Node Id="42" Class="Logic:Sequencer" pos="1920,470,0" flags="0">
+       <Inputs Closed="0" Reverse="0"/>
+      </Node>
+      <Node Id="50" Class="Camera:View" pos="2270,1530,0" flags="0" EntityGUID="{3EA23D57-C3B8-4854-95F9-7BAE95403344}" EntityGUID_64="4854C3B83EA23D57">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="51" Class="Camera:View" pos="2280,490,0" flags="0" EntityGUID="{14F3147A-B6C0-48E8-992E-503C59F7BCC1}" EntityGUID_64="48E8B6C014F3147A">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="52" Class="Camera:View" pos="2280,700,0" flags="0" EntityGUID="{C5E837EC-6D82-445C-9D20-1D7210EF603E}" EntityGUID_64="445C6D82C5E837EC">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="1" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="0" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="53" Class="Camera:View" pos="2280,1330,0" flags="0" EntityGUID="{6A316A2E-0CB3-4F03-96C1-06FB8A7DF5D1}" EntityGUID_64="4F030CB36A316A2E">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="120" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="54" Class="Camera:View" pos="2280,1750,0" flags="0" EntityGUID="{B7B2DF1B-29B2-4883-98FE-BB3135BB0705}" EntityGUID_64="488329B2B7B2DF1B">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="105" Class="Interpolate:Float" pos="1800,-560,0" flags="0">
+       <Inputs StartValue="90" EndValue="20" Time="20" UpdateFrequency="0"/>
+      </Node>
+      <Node Id="111" Class="Logic:Sequencer" pos="1560,-560,0" flags="0">
+       <Inputs Closed="0" Reverse="0"/>
+      </Node>
+      <Node Id="112" Class="Camera:View" pos="2020,-340,0" flags="0" EntityGUID="{096B7F91-FA8E-44BF-B9F6-86DBB78329BA}" EntityGUID_64="44BFFA8E096B7F91">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="80" Blend="1" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="349" Class="Debug:ConsoleVariable" pos="-160,530,0" flags="0">
+       <Inputs CVar="r_motionblur" Value="0"/>
+      </Node>
+      <Node Id="458" Class="Debug:DisplayMessage" pos="560,510,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Press 5 to cycle basic camera demo" DisplayTime="5" posX="75" posY="75" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="459" Class="Debug:DisplayMessage" pos="710,510,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Press 6 to cycle balloon cameras" DisplayTime="5" posX="75" posY="100" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="467" Class="Debug:DisplayMessage" pos="410,510,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Camera Demo Selection" DisplayTime="5" posX="50" posY="50" fontSize="2" clr_Color="0.577581,0.577581,0.577581" centered="0"/>
+      </Node>
+      <Node Id="600" Class="Logic:Any" pos="280,510,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="601" Class="Debug:InputKey" pos="130,550,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs entityId="0" Key="6" NonDevMode="0"/>
+      </Node>
+      <Node Id="603" Class="Game:Start" pos="-150,280,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="604" Class="Debug:InputKey" pos="1650,470,0" flags="0">
+       <Inputs entityId="0" Key="5" NonDevMode="1"/>
+      </Node>
+      <Node Id="612" Class="Camera:View" pos="2020,-120,0" flags="0" EntityGUID="{FEB715E8-6BD4-4AEB-BEB4-388D81452139}" EntityGUID_64="4AEB6BD4FEB715E8">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="20" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="647" Name="Cycles_through_basic_cameras" Class="_commentbox" pos="1230,180.32486,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2700" Height="2220"/>
+       <NodeSize Width="2700" Height="2245"/>
+      </Node>
+      <Node Id="670" Name="Demo Controls &amp; UI" Class="_commentbox" pos="-190,185.26865,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1330" Height="470"/>
+       <NodeSize Width="1330" Height="495"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="-170,215.26685,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1290" Height="420"/>
+       <NodeSize Width="1290" Height="445"/>
+      </Node>
+      <Node Id="674" Name="Turn off motion blur" Class="_comment" pos="-160,500,0" flags="0"/>
+      <Node Id="679" Class="Mission:GameToken" pos="1270,1590,0" flags="0">
+       <Inputs gametoken_Token="Level.Dynamic_Fov_ex2" CompareValue=""/>
+      </Node>
+      <Node Id="680" Class="Mission:GameTokenGet" pos="1270,1660,0" flags="0">
+       <Inputs gametoken_Token="Level.Dynamic_Fov_ex2"/>
+      </Node>
+      <Node Id="682" Class="Mission:GameToken" pos="1260,1370,0" flags="0">
+       <Inputs gametoken_Token="Level.Dynamic_Fov_ex1" CompareValue=""/>
+      </Node>
+      <Node Id="683" Class="Mission:GameTokenGet" pos="1260,1450,0" flags="0">
+       <Inputs gametoken_Token="Level.Dynamic_Fov_ex1"/>
+      </Node>
+      <Node Id="684" Class="Camera:View" pos="2280,280,0" flags="0" EntityGUID="{AE2B1B5D-3908-4F50-9C6C-5D6034AF6BB8}" EntityGUID_64="4F503908AE2B1B5D">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="1" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="0" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="685" Class="String:SetString" pos="2600,290,0" flags="0">
+       <Inputs In="01. First Person POV"/>
+      </Node>
+      <Node Id="686" Class="Debug:DisplayMessage" pos="3730,390,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Camera Demo Selection" DisplayTime="5" posX="50" posY="600" fontSize="4" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="687" Name="." Class="_commentbox" pos="1640,239.55197,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="890" Height="2130"/>
+       <NodeSize Width="890" Height="2155"/>
+      </Node>
+      <Node Id="688" Name="." Class="_commentbox" pos="2590,245.09955,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="490" Height="2130"/>
+       <NodeSize Width="490" Height="2155"/>
+      </Node>
+      <Node Id="689" Name="Display text feedback as to which camera is active." Class="_comment" pos="2590,240,0" flags="0"/>
+      <Node Id="690" Name="." Class="_commentbox" pos="1250,1289.6206,0" flags="0">
+       <Inputs TextSize="1" Color="0.351533,0.351533,0.351533" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1250" Height="430"/>
+       <NodeSize Width="1250" Height="455"/>
+      </Node>
+      <Node Id="691" Name="Gets the fov float that is calculated in another flowgraph" Class="_comment" pos="1270,1340,0" flags="0"/>
+      <Node Id="692" Class="Logic:Any" pos="2890,310,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="693" Class="String:SetString" pos="2610,490,0" flags="0">
+       <Inputs In="02. Third Person POV"/>
+      </Node>
+      <Node Id="694" Class="String:SetString" pos="2610,720,0" flags="0">
+       <Inputs In="03. Third Person Shoulder POV"/>
+      </Node>
+      <Node Id="695" Class="String:SetString" pos="2620,930,0" flags="0">
+       <Inputs In="04. Top Down"/>
+      </Node>
+      <Node Id="696" Class="String:SetString" pos="2620,1130,0" flags="0">
+       <Inputs In="05. Side Scroller"/>
+      </Node>
+      <Node Id="697" Class="String:SetString" pos="2620,1550,0" flags="0">
+       <Inputs In="07. Tracking + Dynamic Zoom"/>
+      </Node>
+      <Node Id="698" Class="String:SetString" pos="2610,1330,0" flags="0">
+       <Inputs In="06. Parented Tracking + Dynamic Zoom"/>
+      </Node>
+      <Node Id="699" Class="String:SetString" pos="2640.2109,1797.0641,0" flags="0">
+       <Inputs In="08. Chase"/>
+      </Node>
+      <Node Id="700" Class="String:SetString" pos="2640,2030,0" flags="0">
+       <Inputs In="09. Top Down Player"/>
+      </Node>
+      <Node Id="701" Name="Cycle Cameras" Class="_comment" pos="1640,240,0" flags="0"/>
+      <Node Id="704" Name="Zoom in over 20 seconds" Class="_comment" pos="1800,-590,0" flags="0"/>
+      <Node Id="705" Name="Dynamic fly by" Class="_comment" pos="1800,-610,0" flags="0"/>
+      <Node Id="706" Class="String:SetString" pos="2290,-560,0" flags="0">
+       <Inputs In="Dynamic fly by "/>
+      </Node>
+      <Node Id="708" Class="Logic:Any" pos="2540,-340,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="709" Class="String:SetString" pos="2290,-320,0" flags="0">
+       <Inputs In="Bottom of balloon"/>
+      </Node>
+      <Node Id="710" Class="String:SetString" pos="2280,-100,0" flags="0">
+       <Inputs In="Long distance tracking"/>
+      </Node>
+      <Node Id="712" Name="Change message on cycle camera" Class="_comment" pos="2270,-610,0" flags="0"/>
+      <Node Id="714" Class="Logic:Any" pos="2990,310,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="715" Name="Cycle through balloon cameras" Class="_commentbox" pos="1220,-710.45709,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1470" Height="790"/>
+       <NodeSize Width="1470" Height="815"/>
+      </Node>
+      <Node Id="716" Name="." Class="_commentbox" pos="1260,-660.45709,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="960" Height="720"/>
+       <NodeSize Width="960" Height="745"/>
+      </Node>
+      <Node Id="717" Name="." Class="_commentbox" pos="2250,-660.45709,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="390" Height="720"/>
+       <NodeSize Width="390" Height="745"/>
+      </Node>
+      <Node Id="718" Class="UI:Canvas:Load" pos="3140,290,0" flags="0">
+       <Inputs CanvasPathname="Levels\Samples\Camera_Sample\UI\cameraid.xml"/>
+      </Node>
+      <Node Id="719" Class="UI:Text:SetText" pos="3730,290,0" flags="0">
+       <Inputs CanvasID="0" ElementID="3" Value=""/>
+      </Node>
+      <Node Id="722" Class="UI:Canvas:Load" pos="40,280,0" flags="0">
+       <Inputs CanvasPathname="Levels\Samples\Camera_Sample\UI\controls.xml"/>
+      </Node>
+      <Node Id="727" Class="String:SetString" pos="600,320,0" flags="0">
+       <Inputs In="Press 5 to cycle basic camera demo."/>
+      </Node>
+      <Node Id="728" Class="String:SetString" pos="600,370,0" flags="0">
+       <Inputs In="Press 6 to cycle balloon cameras."/>
+      </Node>
+      <Node Id="729" Class="UI:Text:SetText" pos="980,350,0" flags="0">
+       <Inputs CanvasID="0" ElementID="5" Value=""/>
+      </Node>
+      <Node Id="730" Class="UI:Text:SetText" pos="980,430,0" flags="0">
+       <Inputs CanvasID="0" ElementID="4" Value=""/>
+      </Node>
+      <Node Id="731" Name="." Class="_commentbox" pos="3100,250.24222,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="790" Height="210"/>
+       <NodeSize Width="790" Height="235"/>
+      </Node>
+      <Node Id="732" Class="Camera:View" pos="2280,2170,0" flags="0" EntityGUID="{F9513F6F-03CC-4182-823D-89166C4224CB}" EntityGUID_64="418203CCF9513F6F">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="733" Class="Logic:Any" pos="2160,2190,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="734" Class="Debug:InputKey" pos="1760,2190,0" flags="1">
+       <Inputs entityId="0" Key="7" NonDevMode="1"/>
+      </Node>
+      <Node Id="735" Class="String:SetString" pos="2620,2220,0" flags="0">
+       <Inputs In="10. Simple Character Controller"/>
+      </Node>
+      <Node Id="736" Class="Camera:View" pos="1280,770,0" flags="0" EntityGUID="{628E62B1-ED8C-46EB-B358-976BF9911B56}" EntityGUID_64="46EBED8C628E62B1">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="737" Name="Set start Cam" Class="_comment" pos="1280,740,0" flags="0"/>
+      <Node Id="738" Class="String:SetString" pos="600,420,0" flags="0">
+       <Inputs In="Press 7 to use character controller."/>
+      </Node>
+      <Node Id="739" Class="UI:Text:SetText" pos="980,510,0" flags="0">
+       <Inputs CanvasID="0" ElementID="6" Value=""/>
+      </Node>
+      <Node Id="740" Class="Time:TimeOfDay" pos="40,390,0" flags="0" InHideMask="127" OutHideMask="3">
+       <Inputs Time="15.55" ForceUpdate="0" Speed="1"/>
+      </Node>
+      <Node Id="742" Class="Debug:DisplayMessage" pos="1690,1360,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="743" Class="Debug:DisplayMessage" pos="1670,1540,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="100" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="744" Class="Mission:GameToken" pos="1270,2190,0" flags="0">
+       <Inputs gametoken_Token="Level.Robot_Cam_Dynamic_Fov" CompareValue=""/>
+      </Node>
+      <Node Id="745" Class="Mission:GameTokenGet" pos="1270,2260,0" flags="0">
+       <Inputs gametoken_Token="Level.Robot_Cam_Dynamic_Fov"/>
+      </Node>
+      <Node Id="746" Name="." Class="_commentbox" pos="1250,2129.5247,0" flags="0">
+       <Inputs TextSize="1" Color="0.351533,0.351533,0.351533" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1230" Height="220"/>
+       <NodeSize Width="1230" Height="245"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="111" nodeOut="15" portIn="In" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="600" nodeOut="41" portIn="In2" portOut="Pressed" enabled="0"/>
+      <Edge nodeIn="37" nodeOut="42" portIn="Enable" portOut="Out8" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="42" portIn="Enable" portOut="Out3" enabled="1"/>
+      <Edge nodeIn="40" nodeOut="42" portIn="Enable" portOut="Out4" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="42" portIn="Enable" portOut="Out6" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="42" portIn="Enable" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="42" portIn="Enable" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="42" portIn="Enable" portOut="Out5" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="42" portIn="Enable" portOut="Out7" enabled="1"/>
+      <Edge nodeIn="684" nodeOut="42" portIn="Enable" portOut="Out0" enabled="1"/>
+      <Edge nodeIn="685" nodeOut="42" portIn="Set" portOut="Out0" enabled="1"/>
+      <Edge nodeIn="693" nodeOut="42" portIn="Set" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="694" nodeOut="42" portIn="Set" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="695" nodeOut="42" portIn="Set" portOut="Out3" enabled="1"/>
+      <Edge nodeIn="696" nodeOut="42" portIn="Set" portOut="Out4" enabled="1"/>
+      <Edge nodeIn="697" nodeOut="42" portIn="Set" portOut="Out6" enabled="1"/>
+      <Edge nodeIn="698" nodeOut="42" portIn="Set" portOut="Out5" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="42" portIn="Set" portOut="Out7" enabled="1"/>
+      <Edge nodeIn="700" nodeOut="42" portIn="Set" portOut="Out8" enabled="1"/>
+      <Edge nodeIn="733" nodeOut="42" portIn="In0" portOut="Out9" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="105" portIn="FOV" portOut="Value" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="111" portIn="Enable" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="111" portIn="Start" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="112" nodeOut="111" portIn="Enable" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="612" nodeOut="111" portIn="Enable" portOut="Out3" enabled="1"/>
+      <Edge nodeIn="706" nodeOut="111" portIn="Set" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="709" nodeOut="111" portIn="Set" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="710" nodeOut="111" portIn="Set" portOut="Out3" enabled="1"/>
+      <Edge nodeIn="458" nodeOut="600" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="459" nodeOut="600" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="467" nodeOut="600" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="600" nodeOut="601" portIn="In3" portOut="Pressed" enabled="0"/>
+      <Edge nodeIn="349" nodeOut="603" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="600" nodeOut="603" portIn="In1" portOut="output" enabled="0"/>
+      <Edge nodeIn="722" nodeOut="603" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="736" nodeOut="603" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="740" nodeOut="603" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="42" nodeOut="604" portIn="In" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="680" nodeOut="679" portIn="Activate" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="743" nodeOut="679" portIn="Show" portOut="TokenValue" enabled="0"/>
+      <Edge nodeIn="743" nodeOut="679" portIn="message" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="680" portIn="FOV" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="683" nodeOut="682" portIn="Activate" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="742" nodeOut="682" portIn="Show" portOut="TokenValue" enabled="0"/>
+      <Edge nodeIn="742" nodeOut="682" portIn="message" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="683" portIn="FOV" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="685" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="714" nodeOut="692" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="693" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="694" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="695" portIn="In3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="696" portIn="In4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="697" portIn="In5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="698" portIn="In6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="699" portIn="In7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="700" portIn="In8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="708" nodeOut="706" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="714" nodeOut="708" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="708" nodeOut="709" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="708" nodeOut="710" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="686" nodeOut="714" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="686" nodeOut="714" portIn="message" portOut="Out" enabled="0"/>
+      <Edge nodeIn="718" nodeOut="714" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="719" nodeOut="714" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="719" nodeOut="718" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="719" nodeOut="718" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="727" nodeOut="722" portIn="Set" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="728" nodeOut="722" portIn="Set" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="729" nodeOut="722" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="729" nodeOut="722" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="730" nodeOut="722" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="730" nodeOut="722" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="738" nodeOut="722" portIn="Set" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="739" nodeOut="722" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="739" nodeOut="722" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="729" nodeOut="727" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="730" nodeOut="728" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="732" nodeOut="733" portIn="Enable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="735" nodeOut="733" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="733" nodeOut="734" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="735" portIn="In9" portOut="Out" enabled="1"/>
+      <Edge nodeIn="739" nodeOut="738" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="745" nodeOut="744" portIn="Activate" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="732" nodeOut="745" portIn="FOV" portOut="OutValue" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Camera" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{C5E837EC-6D82-445C-9D20-1D7210EF603E}" Name="03_Camera_Parented_to_LookTarget" HideOrder="0" Parent="{BA9C2386-604A-4C2E-BF73-608773A3D609}" Pos="0,6,0" FloorNumber="-1" Rotate="2.9802322e-008,0,0,1" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{6D15B2F6-8187-44CA-AC43-938BB3C74167}" Name="Mover_Capsule" HideOrder="0" Pos="964.99744,1021.6658,50.554882" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/camera_sample/geometry/capsule" MatLayersMask="0" Geometry="objects/default/primitive_capsule.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Physics" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="378" Class="Movement:MoveEntityTo" pos="-120,1040,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,-60,0" DynamicDestination="1" ValueType="0" Value="23" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="379" Class="Time:Time" pos="-590,1040,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="380" Class="Entity:GetPos" pos="-370,1040,0" flags="0" EntityGUID="{882A818E-AF2B-4341-BB73-FF08D9036834}" EntityGUID_64="4341AF2B882A818E">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="381" Class="Game:Start" pos="-570,1270,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="383" Class="Logic:Any" pos="-240,1260,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="385" Class="Entity:EntityId" pos="-530,1390,0" flags="0" EntityGUID="{882A818E-AF2B-4341-BB73-FF08D9036834}" EntityGUID_64="4341AF2B882A818E">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="391" Class="Entity:EntityFaceAt" pos="-370,1390,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" target="0" pos="0,0,0" FwdDir="3" ReferenceVec="0,0,1"/>
+      </Node>
+      <Node Id="670" Name="Move the capsule" Class="_commentbox" pos="-630,950,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="740" Height="580"/>
+       <NodeSize Width="740" Height="605"/>
+      </Node>
+      <Node Id="671" Name="." Class="_commentbox" pos="-600,990.05725,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="690" Height="330"/>
+       <NodeSize Width="690" Height="355"/>
+      </Node>
+      <Node Id="673" Name="In case the capsule catches\nthe rabbit loop the MoveEntityTo." Class="_comment" pos="-150,1260,0" flags="0"/>
+      <Node Id="674" Name="Move the capsule to the rabbit." Class="_comment" pos="-610,1000,0" flags="0"/>
+      <Node Id="675" Name="." Class="_commentbox" pos="-590,1350.0001,0" flags="0">
+       <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="160"/>
+       <NodeSize Width="440" Height="185"/>
+      </Node>
+      <Node Id="676" Name="Make the capsule always face the rabbit. " Class="_comment" pos="-600,1360,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="383" nodeOut="378" portIn="In0" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="380" nodeOut="379" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="378" nodeOut="380" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="383" nodeOut="381" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="391" nodeOut="381" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="378" nodeOut="383" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="391" nodeOut="385" portIn="target" portOut="Id" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

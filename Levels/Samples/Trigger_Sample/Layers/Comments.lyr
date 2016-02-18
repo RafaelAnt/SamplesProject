@@ -1,0 +1,45 @@
+<ObjectLayer>
+ <Layer Name="Comments" GUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{30D7B34D-F3BC-469E-B60F-E042A61ECDBA}" Name="Comment8" HideOrder="0" Pos="1002.4464,1017.6833,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 6 Area Triggers - All both areas use the same trigger "/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{B5100766-EB9F-43A7-9158-1AF3124C0B16}" Name="Comment2" HideOrder="0" Pos="1047,1018,49.640076" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="2" Text="Proximity Trigger"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{4BCE316A-45F7-4478-B58E-59B56AED1E21}" Name="Comment1" HideOrder="0" Pos="1013.3749,988.125,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 1 Proximity Trigger - Player Only - On Enter / On leave"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{EC51637A-4AE3-40F9-A381-53802E381878}" Name="Comment3" HideOrder="0" Pos="1062,1018,49.640076" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="2" Text="Area Shape Trigger 2"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{10AE8481-37C7-4907-B271-BB73DB486F72}" Name="Comment1" HideOrder="0" Pos="1034,1018,49.640076" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="2" Text="Area Shape Trigger 1"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{994A4B83-71C1-47AF-8F7F-0AF7484C640A}" Name="Comment13" HideOrder="0" Pos="1003.662,1002.875,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 5 Proximity Trigger - Req three entities inside"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{6A53AE84-D1CB-4197-8E90-A32408B48450}" Name="Comment7" HideOrder="0" Pos="999.99988,1000,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 10 Proximity Trigger linked to mover - Player Only "/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{CD981389-1240-4EFE-84F0-234B82064F45}" Name="Comment6" HideOrder="0" Pos="1017.7499,1008.875,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 4 Proximity Trigger - Only Select Entity - On Enter / On leave"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{B5015A93-9AA3-440B-9D4B-4A297350A68A}" Name="Comment9" HideOrder="0" Pos="982.1524,1011.8008,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 7 Area Triggers - Need to be all three trigger volumes at the same time. "/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{AE98DF95-CDC7-47FF-A2F8-34CB567C5E26}" Name="Comment5" HideOrder="0" Pos="999.62494,995.5,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 3 Proximity Trigger - One Entity at a Time - On Enter / On leave"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{227E47AB-2CFF-4A80-9D57-6024F9D637BF}" Name="Comment11" HideOrder="0" Pos="996.29144,1002.2964,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 8 Area Triggers - Must step inside all triggers in any order. "/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{40CFE0C4-FE30-484B-9549-0957A2F80FFD}" Name="Comment2" HideOrder="0" Pos="998.12494,979.125,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 2 Proximity Trigger - Any Entity - On Enter / On leave"/>
+   </Object>
+   <Object Type="Comment" Layer="Comments" LayerGUID="{BAC66D8B-21E0-4D2E-B36D-A6422E4F81F5}" Id="{EA8C66F9-12E6-4C03-8A2F-EF261CEDF525}" Name="Comment12" HideOrder="0" Pos="979.72925,991.52472,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="41215" EntityClass="Comment">
+    <Properties nCharsPerLine="30" clrDiffuse="1,0.5,0" bFixed="0" bHidden="0" fMaxDist="100" fSize="1.2" Text="Ex. 9 Area Triggers correct sequence"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

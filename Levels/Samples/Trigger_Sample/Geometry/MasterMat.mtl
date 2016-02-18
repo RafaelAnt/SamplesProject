@@ -1,0 +1,53 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="SUDCColorG12" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.0047785169,0.33060738,0.0047785169" Specular="0.03189604,0.03189604,0.03189604" Emissive="0,0,0" Opacity="1" Shininess="204" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SUDCColorI02" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.022140503,0.022140503,1" Specular="0.03189604,0.03189604,0.03189604" Emissive="0,0,0" Opacity="1" Shininess="210" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SUDCColorD01" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,0.53705293,0" Specular="0.03189604,0.03189604,0.03189604" Emissive="0,0,0" Opacity="1" Shininess="203" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SUDCColorA07" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.61914259,0.011730466,0.011730466" Specular="0.03189604,0.03189604,0.03189604" Emissive="0,0,0" Opacity="1" Shininess="212" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SUDCColorD10" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.063010022,0.086500466,0.17144112" Specular="0.057805438,0.057805438,0.057805438" Emissive="0,0,0" Opacity="1" Shininess="232" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SUDCColorH13" MtlFlags="542850" Shader="Glass" GenMask="10" StringGenMask="%BILINEAR_FP16" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.036889456,0.32777813,0.32777813" Specular="0.015996294,0.057805438,0.049706571" Emissive="0,0,0" Opacity="0.1" Shininess="243" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams BumpMapTile="1" TintColor="0.04518621,0.11953845,0.11193243" TintCloudiness="1" BackLightScale="1" BumpScale="0.1" IndirectColor="0.24620135,0.24620135,0.24620135"/>
+  </Material>
+  <Material Name="SUDCColor001" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.28744087,0.28744087,0.28744087" Specular="0.25415212,0.25415212,0.25415212" Emissive="0,0,0" Opacity="1" Shininess="143" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Movers_Sample/Geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SubMtl8" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.063010022,0.086500466,0.17144112" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="10" GlowAmount="10" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="levels/samples/movers_sample/geometry/textures/playup_nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

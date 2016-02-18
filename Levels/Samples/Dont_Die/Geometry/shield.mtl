@@ -1,0 +1,13 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="shield" MtlFlags="524418" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0.37626216,0.81484669,0.81484669" Opacity="0.5" Shininess="35" GlowAmount="0.25" AlphaTest="0.02" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/dont_die/geometry/textures/hexgrid_alpha.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="12" TexMod_UOscillatorType="2" TexMod_UOscillatorRate="0.1" TexMod_UOscillatorAmplitude="1" TileV="9" TexMod_VOscillatorType="2" TexMod_VOscillatorRate="0.1" TexMod_VOscillatorPhase="1" TexMod_VOscillatorAmplitude="1"/>
+    </Texture>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

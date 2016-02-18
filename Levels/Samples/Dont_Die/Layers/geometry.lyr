@@ -1,0 +1,82 @@
+<ObjectLayer>
+ <Layer Name="Geometry" GUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{4F843A05-AE0F-4BE6-9D3D-A4A17C6E7B36}" Name="Back_Kill_Plane" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="99.354492,-2.2888184e-005,-0.00024414063" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="198" DimZ="198" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{A4FE590E-D43D-46D5-BC41-A872F722B17E}" Name="Bottom_Kill_Plane" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="-0.64550781,100,-0.00024414063" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="200" DimY="1" DimZ="200" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{896D5D40-5D7D-4DE8-BC2B-8E6E67B20617}" Name="Left_Kill_Plane" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="-0.64550781,-1.1444092e-005,99.999756" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="198" DimY="198" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="CameraTarget" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{97D3BF41-5B2A-401D-B35A-235ADCE50AEC}" Name="RefBox" HideOrder="0" Pos="1050,1050,65" FloorNumber="-1" Rotate="-0.5,0.50000006,0.49999994,-0.5" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{59B7FA4D-EBAA-4CE1-9B4E-23B97AC2E08A}" Name="Right_Kill_Plane" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="-0.64526367,1.1444092e-005,-100.00024" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="198" DimY="198" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Name="PhysShip" HideOrder="0" Pos="1050,1050,50" FloorNumber="-1" Rotate="-0.49999994,0.50000006,0.5,-0.5" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/dont_die/geometry/physcollider.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="1" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="1"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{0D8E5690-4250-438F-8EE9-F110F8DAA2A1}" Name="Front_Kill_Plane" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="-100,0,-0.00019999999" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="198" DimZ="198" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="CameraTarget" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{567C2B93-8A0D-4A56-973D-69B80A36578C}" Name="Thruster" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="0,1,0" FloorNumber="-1" Rotate="0.49999994,0.50000006,0.5,-0.5" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="GeomEntity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{6CAE46AD-B135-4537-83DE-EC74257F6E08}" Name="ShipVisual" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" FloorNumber="-1" Rotate="0.50000006,-0.49999988,-0.50000006,0.49999997" ColorRGB="65535" MatLayersMask="0" Geometry="Levels/Samples/Dont_Die/Geometry/ship.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{EBEEB1B5-BE10-466B-B5CC-788EC42F4AD2}" Name="Awesomeship" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="0,3.8146973e-006,0.00012207031" FloorNumber="-1" Rotate="0.5,-0.5,-0.5,0.49999997" ColorRGB="65535" MatLayersMask="0" Geometry="Levels/Samples/Dont_Die/Geometry/awesomeship.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{BD7099B9-3781-42C4-A74B-61EC5AFBAFD9}" Name="Killme" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="-0.19995117,0.099998474,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="10" DimY="10" DimZ="10" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{C50B66C3-5EF4-4B66-8906-CB0D61E4CDFF}" Name="Top_Kill_Plane" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="-0.64550781,-100,-0.00024414063" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="200" DimY="1" DimZ="200" bEnabled="0" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{9C0837C8-1FDE-400F-B036-8A0B32A67A5F}" Name="Destroy" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="7,-7,-1" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="5000" DimY="5000" DimZ="5000" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="1" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{430B55D3-11A3-4E0E-BAAA-26D88B39302C}" Name="Recyle_Detector" HideOrder="0" Parent="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" Pos="0,-10,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="100" DimY="100" DimZ="100" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="Aster*" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Geometry" LayerGUID="{F599F18C-26FD-48E1-A605-DC75D06B5DFA}" Id="{BBE087E8-7356-414F-AEA1-AE79F529A8F9}" Name="GravitySphere2" HideOrder="0" Pos="1050,1050,56" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GravitySphere">
+    <Properties bActive="1" Damping="0" bEllipsoidal="1" FalloffInner="0" Radius="50000" bUniform="1">
+     <Gravity x="0" y="0" z="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

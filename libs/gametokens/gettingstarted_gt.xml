@@ -1,0 +1,3 @@
+<GameTokensLibrary Name="GettingStarted_GT">
+ <GameToken Name="3P_CameraID" Type="Bool" Value="false" LocalOnly="1"/>
+</GameTokensLibrary>

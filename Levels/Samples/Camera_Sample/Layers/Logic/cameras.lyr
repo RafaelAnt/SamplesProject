@@ -1,0 +1,83 @@
+<ObjectLayer>
+ <Layer Name="Cameras" GUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}">
+  <LayerObjects>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{B7B2DF1B-29B2-4883-98FE-BB3135BB0705}" Name="Chase_Cam" HideOrder="0" Parent="{C302A7B1-8174-4379-A077-71FC94308EC4}" Pos="-2.0126953,-0.052062988,1.242527" FloorNumber="-1" Rotate="0.70105743,-0.09229596,0.092295952,-0.70105737" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="CameraTarget" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{AED6E41F-4C84-4EFA-A1F1-F2934630A2DF}" Name="HeadTiltParent" HideOrder="0" Parent="{CE472CB0-1451-4102-A8DF-1562E260E22F}" Pos="-0.00012207031,0.00012207031,-1" FloorNumber="-1" Rotate="1,0,0,5.165802e-008" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="CameraTarget" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{0049BC28-7909-427A-96FC-3F9AF63A0169}" Name="Controller_Ref_Box_Pitch" HideOrder="0" Parent="{CE472CB0-1451-4102-A8DF-1562E260E22F}" Pos="-0.00048828125,0.00048828125,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{528D3A2B-8683-401C-9033-EA4923723797}" Name="Cam Player Top Down" HideOrder="0" Pos="975,984,55" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{6A316A2E-0CB3-4F03-96C1-06FB8A7DF5D1}" Name="04_Parented_Tracking" HideOrder="0" Parent="{3FF5C4F6-6AAF-4368-9623-C238AF3CEE5C}" LookAt="{3FF5C4F6-6AAF-4368-9623-C238AF3CEE5C}" Pos="-6,0,3" FloorNumber="-1" Rotate="0.688191,-0.16245985,0.16245985,-0.688191" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{3EA23D57-C3B8-4854-95F9-7BAE95403344}" Name="Cam Tracking Physics Sphere" HideOrder="0" Pos="975,992,55" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{91221C65-EC83-4FDB-9018-0948845F620D}" Name="Capsule Tracker" HideOrder="0" Pos="979.91058,1010.5187,50.905132" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="levels/samples/camera_sample/geometry/capsule" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_capsule.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{F9513F6F-03CC-4182-823D-89166C4224CB}" Name="Camera Controller Rig" HideOrder="0" Parent="{0049BC28-7909-427A-96FC-3F9AF63A0169}" Pos="0,-3.826355,0.98480225" FloorNumber="-1" Rotate="0.99619472,-0.087155744,0,0" ColorRGB="16776960" FOV="1.0472" NearZ="0.2" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{2EB64374-D661-487A-AB1D-C9BE5A2D3886}" Name="Awesome_Sphere" HideOrder="0" Pos="961,981,51" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="65535" Material="objects/charactermodels/r0-b/robot" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="1"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="1000" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+       <collisionType bT_Asteroid="0" bT_Shield="0" bT_Ship="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0.8" bFixedDamping="0" max_time_step="0.01" sleep_speed="0.01" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="CameraTarget" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{CE472CB0-1451-4102-A8DF-1562E260E22F}" Name="Controller_Ref_Box_Move" HideOrder="0" Pos="972.02411,979.8678,55.092529" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{628E62B1-ED8C-46EB-B358-976BF9911B56}" Name="Start_Camera" HideOrder="0" LookAt="{9223FCFB-7041-4EF4-8CCF-85088CDFDD52}" Pos="1046.0541,879.38312,89.122398" FloorNumber="-1" Rotate="0.95271701,-0.064088158,-0.019935381,0.29635391" ColorRGB="16776960" FOV="1.0472" NearZ="0.2" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{E52B20B2-D407-4DF5-B22B-ACD66659A320}" Name="robot_body1" HideOrder="0" Pos="971.99994,980,52.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/CharacterModels/R0-B/robot_body.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="GeomEntity" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{7E42F0BB-65E0-40B2-AFB5-C28FDF5E93C2}" Name="robot_head1" HideOrder="0" Parent="{AED6E41F-4C84-4EFA-A1F1-F2934630A2DF}" Pos="-0.00061035156,0.00061035156,1.5" FloorNumber="-1" Rotate="8.1460335e-008,0,0,1" ColorRGB="65535" MatLayersMask="0" Geometry="objects/charactermodels/r0-b/robot_head.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{D81071D8-4B0D-4FCB-9294-D3211AD653B0}" Name="01_Camera_Top_Down" HideOrder="0" Pos="975,1005,55" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{64A31AE3-0DF1-4B58-981E-9833B46212AE}" Name="Dynamic Balloon Flyby" HideOrder="0" Pos="990.53094,1062.582,51.321342" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Camera" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{5FE42AEA-1979-466E-8785-C85CCA6EC0BB}" Name="02_Side_Scroller" HideOrder="0" Pos="975,1000,55" FloorNumber="-1" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="CameraTarget" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{3FF5C4F6-6AAF-4368-9623-C238AF3CEE5C}" Name="04_Parented_Tracking Target" HideOrder="0" Parent="{91221C65-EC83-4FDB-9018-0948845F620D}" Pos="1,0,2" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="CameraTarget" Layer="Cameras" LayerGUID="{D15460A1-0D81-42E0-B176-D74F8602FE52}" Id="{9223FCFB-7041-4EF4-8CCF-85088CDFDD52}" Name="Start_Camera Target" HideOrder="0" Pos="961.76611,1001.758,69.040085" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,42 @@
+<ObjectLayer>
+ <Layer Name="Ui" GUID="{6E773743-D07F-4DA9-B4BB-F9E290A3332F}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Ui" LayerGUID="{6E773743-D07F-4DA9-B4BB-F9E290A3332F}" Id="{D1B68448-3DCF-4445-A1D0-7C80AF3A5728}" Name="UiDemoFlowGraph" HideOrder="0" Pos="1329.9999,1887,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="UiDemoFlowGraph" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-1190,-130,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="UI:Canvas:Load" pos="-990,-210,0" flags="1">
+       <Inputs CanvasPathname="Canvases/SampleUiDemo.uicanvas"/>
+      </Node>
+      <Node Id="3" Class="UI:Canvas:ActionListener" pos="-490,-240,0" flags="0">
+       <Inputs CanvasID="0" ActionName="PlayGame"/>
+      </Node>
+      <Node Id="4" Class="UI:Fader:Animation" pos="-170,-200,0" flags="0">
+       <Inputs CanvasID="0" ElementID="2" StartValue="1" TargetValue="0" Speed="1"/>
+      </Node>
+      <Node Id="5" Class="UI:Canvas:Unload" pos="100,-40,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="6" Class="Input:MouseCursor" pos="-100,110,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="1" portIn="Show" portOut="output" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="2" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="2" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="3" portIn="Hide" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="4" portIn="Activate" portOut="OnComplete" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

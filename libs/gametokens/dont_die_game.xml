@@ -1,0 +1,4 @@
+<GameTokensLibrary Name="Dont_Die_Game">
+ <GameToken Name="PlayerDead" Type="Bool" Value="false" LocalOnly="1"/>
+ <GameToken Name="ResetGame" Type="Bool" Value="false" LocalOnly="1"/>
+</GameTokensLibrary>

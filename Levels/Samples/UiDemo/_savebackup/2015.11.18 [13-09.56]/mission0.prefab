@@ -1,0 +1,6 @@
+<ObjectStream version="1">
+	<LYLevelEntityContainerComponent::EntityGroup version="1" type="{0A7DD014-B302-4808-8DD7-30E4FE732B4D}">
+		<AZStd::vector name="Entities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
+	</LYLevelEntityContainerComponent::EntityGroup>
+</ObjectStream>
+

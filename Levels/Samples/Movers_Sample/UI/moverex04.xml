@@ -1,0 +1,162 @@
+<ObjectStream version="1">
+	<Entity type="{75651658-8663-478D-9090-2432DFCAFA44}">
+		<uint64 name="Id" value="13068524952641572454" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+		<AZStd::string name="Name" value="C:/ChristoDesktop/lyengine/branches/gems/dev/RPGSample/Levels/Samples/Movers_Sample/UI/moverex04.xml" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+		<bool name="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+		<AZStd::vector name="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+			<UiCanvas name="element" version="1" type="{50B8CF6C-B19A-4D86-AFE9-96EFB820D422}">
+				<Entity name="RootElement" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+					<uint64 name="Id" value="13068524956936539750" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+					<AZStd::string name="Name" value="_root" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+					<bool name="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+					<AZStd::vector name="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+						<UiElement name="element" version="1" type="{4A97D63E-CE7A-45B6-AAE4-102DB4334688}">
+							<uint name="Id" value="1" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+							<AZStd::vector name="Children" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+								<Entity name="element" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+									<uint64 name="Id" value="13068524961231507046" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									<AZStd::string name="Name" value="Image" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+									<bool name="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<AZStd::vector name="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+										<UiElement name="element" version="1" type="{4A97D63E-CE7A-45B6-AAE4-102DB4334688}">
+											<uint name="Id" value="2" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+											<AZStd::vector name="Children" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+												<Entity name="element" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+													<uint64 name="Id" value="13068524965526474342" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<AZStd::string name="Name" value="Text" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<bool name="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<AZStd::vector name="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+														<UiElement name="element" version="1" type="{4A97D63E-CE7A-45B6-AAE4-102DB4334688}">
+															<uint name="Id" value="3" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+															<AZStd::vector name="Children" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
+															<bool name="IsVisibleInEditor" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+															<bool name="IsSelectableInEditor" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+															<bool name="IsSelectedInEditor" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+															<bool name="IsExpandedInEditor" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+														</UiElement>
+														<UiTransform2d name="element" version="1" type="{2751A5A5-3291-4A4D-9FC0-9CB0EB8D1DE6}">
+															<Anchors name="Anchors" type="{65D4346C-FB16-4CB0-9BDC-1185B122C4A9}">
+																<float name="left" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="top" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="right" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="bottom" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															</Anchors>
+															<Offsets name="Offsets" type="{F681BA9D-245C-4630-B20E-05DD752FAD57}">
+																<float name="left" value="17.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="top" value="-25.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="right" value="167.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="bottom" value="25.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															</Offsets>
+															<Vec2 name="Pivot" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+																<float name="x" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="y" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															</Vec2>
+															<float name="Rotation" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															<Vec2 name="Scale" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+																<float name="x" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="y" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															</Vec2>
+															<bool name="ScaleToDevice" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+														</UiTransform2d>
+														<UiText name="element" version="1" type="{5B3FB2A7-5DC4-4033-A970-001CEC85B6C4}">
+															<CryStringTChar name="Text" value="Example 4 - Rotation" type="{835199FB-292B-4DB3-BC7C-366E356300FA}"/>
+															<ColorF name="Color" type="{63782551-A309-463B-A301-3A360800DF1E}">
+																<float name="r" value="0.5843138" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="g" value="0.9607844" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="b" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+																<float name="a" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															</ColorF>
+															<float name="FontSize" value="32.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+															<int name="TextHAlignment" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<int name="TextVAlignment" value="1" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<CryStringTChar name="FontFileName" value="default" type="{835199FB-292B-4DB3-BC7C-366E356300FA}"/>
+															<uint name="EffectIndex" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</UiText>
+													</AZStd::vector>
+												</Entity>
+											</AZStd::vector>
+											<bool name="IsVisibleInEditor" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<bool name="IsSelectableInEditor" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<bool name="IsSelectedInEditor" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<bool name="IsExpandedInEditor" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										</UiElement>
+										<UiTransform2d name="element" version="1" type="{2751A5A5-3291-4A4D-9FC0-9CB0EB8D1DE6}">
+											<Anchors name="Anchors" type="{65D4346C-FB16-4CB0-9BDC-1185B122C4A9}">
+												<float name="left" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="top" value="0.0500000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="right" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="bottom" value="0.0500000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											</Anchors>
+											<Offsets name="Offsets" type="{F681BA9D-245C-4630-B20E-05DD752FAD57}">
+												<float name="left" value="15.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="top" value="-25.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="right" value="340.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="bottom" value="25.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											</Offsets>
+											<Vec2 name="Pivot" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+												<float name="x" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="y" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											</Vec2>
+											<float name="Rotation" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Vec2 name="Scale" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+												<float name="x" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="y" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											</Vec2>
+											<bool name="ScaleToDevice" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										</UiTransform2d>
+										<UiImage name="element" version="1" type="{BDBEFD23-DBB4-4726-A32D-4FEAC24E51F6}">
+											<CryStringTChar name="SpritePath" value="" type="{835199FB-292B-4DB3-BC7C-366E356300FA}"/>
+											<ColorF name="Color" type="{63782551-A309-463B-A301-3A360800DF1E}">
+												<float name="r" value="0.1294118" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="g" value="0.1686275" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="b" value="0.2235294" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<float name="a" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											</ColorF>
+											<int name="ImageType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+											<int name="BlendMode" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+										</UiImage>
+									</AZStd::vector>
+								</Entity>
+							</AZStd::vector>
+							<bool name="IsVisibleInEditor" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+							<bool name="IsSelectableInEditor" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+							<bool name="IsSelectedInEditor" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+							<bool name="IsExpandedInEditor" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+						</UiElement>
+						<UiTransform2d name="element" version="1" type="{2751A5A5-3291-4A4D-9FC0-9CB0EB8D1DE6}">
+							<Anchors name="Anchors" type="{65D4346C-FB16-4CB0-9BDC-1185B122C4A9}">
+								<float name="left" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="top" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="right" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="bottom" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+							</Anchors>
+							<Offsets name="Offsets" type="{F681BA9D-245C-4630-B20E-05DD752FAD57}">
+								<float name="left" value="-50.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="top" value="-50.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="right" value="50.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="bottom" value="50.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+							</Offsets>
+							<Vec2 name="Pivot" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+								<float name="x" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="y" value="0.5000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+							</Vec2>
+							<float name="Rotation" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+							<Vec2 name="Scale" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+								<float name="x" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								<float name="y" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+							</Vec2>
+							<bool name="ScaleToDevice" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+						</UiTransform2d>
+					</AZStd::vector>
+				</Entity>
+				<uint name="LastElement" value="4" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+				<int name="DrawOrder" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+				<Vec2 name="CanvasSize" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
+					<float name="x" value="1001.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+					<float name="y" value="789.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+				</Vec2>
+			</UiCanvas>
+		</AZStd::vector>
+	</Entity>
+</ObjectStream>
+

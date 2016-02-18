@@ -1,0 +1,14 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="241000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="" MatTemplate="" Diffuse="0.29613829,0.29613829,0.29613829" Specular="1,1,1" Emissive="0,0,0" Opacity="1" Shininess="221" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="levels/samples/movers_sample/geometry/textures/hexgrid_02.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.5" OffsetU="0.18000001" TileV="0.57999998" OffsetV="0.95999998"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="levels/samples/movers_sample/geometry/textures/hexgrid_02normal.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.5" OffsetU="0.18000001" TileV="0.57999998" OffsetV="0.95999998"/>
+  </Texture>
+  <Texture Map="Specular" File="levels/samples/movers_sample/geometry/textures/hexgrid_02spec.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="1" TileU="0.5" OffsetU="0.18000001" TileV="0.57999998" OffsetV="0.95999998"/>
+  </Texture>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="1" BlendFactor="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

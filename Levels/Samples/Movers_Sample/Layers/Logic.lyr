@@ -1,0 +1,244 @@
+<ObjectLayer>
+ <Layer Name="Logic" GUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{10310963-BE62-44A2-85FE-BD206F2FFDD2}" Name="Example 11" HideOrder="0" Pos="980.125,1007.5,50.125" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="287" Class="Movement:MoveEntityTo" pos="-3460,9090,0" flags="0" EntityGUID="{622839EB-6FF4-46AF-AE9A-1AC3F000EA44}" EntityGUID_64="46AF6FF4622839EB">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="40" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="288" Class="Vec3:SubVec3" pos="-3710,9120,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0.1"/>
+      </Node>
+      <Node Id="289" Class="Debug:InputKey" pos="-4040,8820,0" flags="0">
+       <Inputs entityId="0" Key="j" NonDevMode="1"/>
+      </Node>
+      <Node Id="290" Class="Movement:MoveEntityTo" pos="-3450,8690,0" flags="0" EntityGUID="{622839EB-6FF4-46AF-AE9A-1AC3F000EA44}" EntityGUID_64="46AF6FF4622839EB">
+       <Inputs entityId="0" Destination="0,-0.1,0" DynamicDestination="1" ValueType="0" Value="40" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="291" Class="Vec3:AddVec3" pos="-3700,8720,0" flags="0">
+       <Inputs A="0,0,0" B="0,-0.1,0"/>
+      </Node>
+      <Node Id="292" Class="Debug:InputKey" pos="-4040,9660,0" flags="0">
+       <Inputs entityId="0" Key="l" NonDevMode="1"/>
+      </Node>
+      <Node Id="293" Class="Movement:MoveEntityTo" pos="-3460,9520,0" flags="0" EntityGUID="{622839EB-6FF4-46AF-AE9A-1AC3F000EA44}" EntityGUID_64="46AF6FF4622839EB">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="40" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="294" Class="Vec3:SubVec3" pos="-3710,9550,0" flags="0">
+       <Inputs A="0,0,0" B="0,-0.1,0"/>
+      </Node>
+      <Node Id="295" Class="Game:Start" pos="-4870,8710,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="296" Class="Debug:InputKey" pos="-4040,9230,0" flags="0">
+       <Inputs entityId="0" Key="k" NonDevMode="1"/>
+      </Node>
+      <Node Id="297" Class="Debug:InputKey" pos="-4040,10070,0" flags="0">
+       <Inputs entityId="0" Key="i" NonDevMode="1"/>
+      </Node>
+      <Node Id="298" Class="Movement:MoveEntityTo" pos="-3460,9940,0" flags="0" EntityGUID="{622839EB-6FF4-46AF-AE9A-1AC3F000EA44}" EntityGUID_64="46AF6FF4622839EB">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="40" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="299" Class="Vec3:AddVec3" pos="-3710,9970,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0.1"/>
+      </Node>
+      <Node Id="303" Class="Movement:MoveEntityTo" pos="-4370,8640,0" flags="0" EntityGUID="{783BE473-7B94-4CF3-8F1C-DE6D3B759C4C}" EntityGUID_64="4CF37B94783BE473">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="1" Value="0.3" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="304" Class="Entity:GetPos" pos="-4640,8650,0" flags="0" EntityGUID="{622839EB-6FF4-46AF-AE9A-1AC3F000EA44}" EntityGUID_64="46AF6FF4622839EB">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="305" Class="Time:Time" pos="-5020,8600,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="308" Class="Logic:Any" pos="-3700,8830,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="309" Class="Logic:Any" pos="-3710,9230,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="310" Class="Logic:Any" pos="-3710,9660,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="311" Class="Logic:Any" pos="-3710,10080,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="312" Name="Tells_the_chaser_to_move_to_target" Class="_comment" pos="-4370,8610,0" flags="0"/>
+      <Node Id="318" Name="Example_11:_Moves_target_based_on_key_press_input_and_sets_another_object_to_blend_to_its_destination" Class="_commentbox" pos="-5070,8460.1689,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="0"/>
+       <ResizeBorder X="0" Y="0" Width="1930" Height="1850"/>
+       <NodeSize Width="1930" Height="1875.0327"/>
+      </Node>
+      <Node Id="321" Class="Entity:GetPos" pos="-4950,9010,0" flags="0" EntityGUID="{D23C5648-1593-4F64-9F62-0DFA58EF3C0A}" EntityGUID_64="4F641593D23C5648">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="325" Class="Entity:GetPos" pos="-5020,9220,0" flags="0" EntityGUID="{622839EB-6FF4-46AF-AE9A-1AC3F000EA44}" EntityGUID_64="46AF6FF4622839EB">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="327" Class="Vec3:SubVec3" pos="-4690,9100,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="330" Class="Vec3:FromVec3" pos="-4520,9210,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="334" Class="Logic:Any" pos="-3700,8930,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="339" Class="Logic:Any" pos="-3710,9340,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="340" Class="Logic:Any" pos="-3710,9770,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="341" Class="Logic:Any" pos="-3710,10190,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="344" Name="Left_Check" Class="_comment" pos="-4280,8910,0" flags="0"/>
+      <Node Id="345" Name="Right_Check" Class="_comment" pos="-4280,9740,0" flags="0"/>
+      <Node Id="346" Name="Up_Check" Class="_comment" pos="-4280,10160,0" flags="0"/>
+      <Node Id="347" Name="Down_Check" Class="_comment" pos="-4280,9300,0" flags="0"/>
+      <Node Id="349" Class="Math:Less" pos="-4280,8940,0" flags="0">
+       <Inputs A="0" B="2.5"/>
+      </Node>
+      <Node Id="350" Class="Math:Less" pos="-4280,9770,0" flags="0">
+       <Inputs A="0" B="-2.5"/>
+      </Node>
+      <Node Id="351" Class="Math:Less" pos="-4280,10190,0" flags="0">
+       <Inputs A="0" B="-1.2"/>
+      </Node>
+      <Node Id="352" Class="Math:Less" pos="-4280,9330,0" flags="0">
+       <Inputs A="0" B="1.6"/>
+      </Node>
+      <Node Id="356" Name="Defines the entity to move." Class="_comment" pos="-4640,8610,0" flags="0"/>
+      <Node Id="358" Name="Key Events" Class="_commentbox" pos="-4070,8570.0088,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="240" Height="1710"/>
+       <NodeSize Width="240" Height="1735.0327"/>
+      </Node>
+      <Node Id="362" Name="Keyboard Movement Controls" Class="_comment" pos="-4050,8610,0" flags="0"/>
+      <Node Id="363" Name="Range Check" Class="_commentbox" pos="-5040,8830.1689,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="930" Height="1450"/>
+       <NodeSize Width="930" Height="1475.0327"/>
+      </Node>
+      <Node Id="366" Name="Entities" Class="_commentbox" pos="-4660,8565.0781,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="550" Height="250"/>
+       <NodeSize Width="550" Height="275.03268"/>
+      </Node>
+      <Node Id="367" Name="Movement Vector" Class="_commentbox" pos="-3790,8569.9736,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="610" Height="1710"/>
+       <NodeSize Width="610" Height="1735.0327"/>
+      </Node>
+      <Node Id="368" Name="Manage Start Events" Class="_comment" pos="-3700,8800,0" flags="0"/>
+      <Node Id="369" Name="Manage Stop Events" Class="_comment" pos="-3700,8900,0" flags="0"/>
+      <Node Id="370" Name="Updates and modifies move direction" Class="_comment" pos="-3700,8690,0" flags="0"/>
+      <Node Id="371" Name="Move Left" Class="_commentbox" pos="-4060,8639.9707,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="840" Height="340"/>
+       <NodeSize Width="840" Height="365.03268"/>
+      </Node>
+      <Node Id="372" Name="Move Down" Class="_commentbox" pos="-4060,9029.3477,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="840" Height="360"/>
+       <NodeSize Width="840" Height="385.03268"/>
+      </Node>
+      <Node Id="375" Name="Left" Class="_comment" pos="-4040,8790,0" flags="0"/>
+      <Node Id="376" Name="Down" Class="_comment" pos="-4040,9200,0" flags="0"/>
+      <Node Id="377" Name="Right" Class="_comment" pos="-4040,9630,0" flags="0"/>
+      <Node Id="378" Name="Up" Class="_comment" pos="-4040,10040,0" flags="0"/>
+      <Node Id="379" Name="Manage Start Events" Class="_comment" pos="-3710,9200,0" flags="0"/>
+      <Node Id="380" Name="Manage Stop Events" Class="_comment" pos="-3710,9310,0" flags="0"/>
+      <Node Id="381" Name="Updates and modifies move direction" Class="_comment" pos="-3710,9090,0" flags="0"/>
+      <Node Id="382" Name="Move Right" Class="_commentbox" pos="-4060,9459.5371,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="840" Height="360"/>
+       <NodeSize Width="840" Height="385.03268"/>
+      </Node>
+      <Node Id="383" Name="Manage Start Events" Class="_comment" pos="-3710,9630,0" flags="0"/>
+      <Node Id="384" Name="Manage Stop Events" Class="_comment" pos="-3710,9740,0" flags="0"/>
+      <Node Id="385" Name="Updates and modifies move direction" Class="_comment" pos="-3710,9520,0" flags="0"/>
+      <Node Id="386" Name="Move Up" Class="_commentbox" pos="-4060,9879.9707,0" flags="0">
+       <Inputs TextSize="1" Color="0.456411,0.456411,0.456411" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="840" Height="360"/>
+       <NodeSize Width="840" Height="385.03268"/>
+      </Node>
+      <Node Id="387" Name="Manage Start Events" Class="_comment" pos="-3710,10050,0" flags="0"/>
+      <Node Id="388" Name="Manage Stop Events" Class="_comment" pos="-3710,10160,0" flags="0"/>
+      <Node Id="389" Name="Updates and modifies move direction" Class="_comment" pos="-3710,9940,0" flags="0"/>
+      <Node Id="390" Name="Events" Class="_commentbox" pos="-5040,8560.1133,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="360" Height="210"/>
+       <NodeSize Width="360" Height="235.03268"/>
+      </Node>
+      <Node Id="391" Name="Every tick get the position of the target " Class="_comment" pos="-5020,9190,0" flags="0"/>
+      <Node Id="393" Name="Gets the tag point position at the start \n and uses it as a reference point to measure distance." Class="_comment" pos="-4950,8970,0" flags="0"/>
+      <Node Id="394" Name="Substract the distance \n between the target and \n reference point" Class="_comment" pos="-4690,9040,0" flags="0"/>
+      <Node Id="395" Name="Split the vector into \n y &amp; z to compare each axis" Class="_comment" pos="-4520,9160,0" flags="0"/>
+      <Node Id="399" Name="Interpolated movers don&apos;t collide with the world. \n To fake collision the range check simply turns off the movement in the MoveEntityTo node." Class="_comment" pos="-5020,8870,0" flags="0"/>
+      <Node Id="400" Name="This example puts the pieces together from the previous examples. Once you know how to interpolate one entity to another all sorts of possibilities are opened for gameplay programming. " Class="_comment" pos="-5040,8500,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="309" nodeOut="287" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="287" nodeOut="288" portIn="Destination" portOut="Out" enabled="1"/>
+      <Edge nodeIn="308" nodeOut="289" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="334" nodeOut="289" portIn="In2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="308" nodeOut="290" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="290" nodeOut="291" portIn="Destination" portOut="Out" enabled="1"/>
+      <Edge nodeIn="310" nodeOut="292" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="340" nodeOut="292" portIn="In1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="310" nodeOut="293" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="293" nodeOut="294" portIn="Destination" portOut="Out" enabled="1"/>
+      <Edge nodeIn="321" nodeOut="295" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="309" nodeOut="296" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="339" nodeOut="296" portIn="In1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="311" nodeOut="297" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="341" nodeOut="297" portIn="In1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="311" nodeOut="298" portIn="In2" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="299" portIn="Destination" portOut="Out" enabled="1"/>
+      <Edge nodeIn="288" nodeOut="304" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="288" nodeOut="304" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="291" nodeOut="304" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="291" nodeOut="304" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="304" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="304" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="304" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="304" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="303" nodeOut="304" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="303" nodeOut="304" portIn="Start" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="304" nodeOut="305" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="325" nodeOut="305" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="290" nodeOut="308" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="287" nodeOut="309" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="293" nodeOut="310" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="311" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="327" nodeOut="321" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="327" nodeOut="325" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="327" nodeOut="325" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="330" nodeOut="327" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="349" nodeOut="330" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="349" nodeOut="330" portIn="Activate" portOut="y" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="330" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="330" portIn="Activate" portOut="y" enabled="1"/>
+      <Edge nodeIn="351" nodeOut="330" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="351" nodeOut="330" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="352" nodeOut="330" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="352" nodeOut="330" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="290" nodeOut="334" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="287" nodeOut="339" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="293" nodeOut="340" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="341" portIn="Stop" portOut="Out" enabled="1"/>
+      <Edge nodeIn="334" nodeOut="349" portIn="In1" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="340" nodeOut="350" portIn="In2" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="341" nodeOut="351" portIn="In2" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="339" nodeOut="352" portIn="In2" portOut="OnFalse" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="{3E0D6D4D-53F5-4354-B505-1779338F671B}" Id="{3CC2218B-747A-4AF2-A012-6B26D8365C37}" Name="TagPoint42" HideOrder="0" Pos="984,1000,51.525002" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

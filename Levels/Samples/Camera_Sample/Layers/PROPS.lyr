@@ -1,0 +1,294 @@
+<ObjectLayer>
+ <Layer Name="PROPS" GUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FullName="PROPS" External="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="0" IsDefaultColor="1">
+  <LayerObjects>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{567026C5-64A8-1353-118C-FBA1EC28BC46}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="927.782372130541, 1050.98379585542, 50.0" Rotate="0.707106781186817, -0.0, -0.0, 0.707106781186278" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{934401D5-DFB7-212C-223D-AD28881FE0FF}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1059.04514500031, 1067.38424901218, 50.0" Rotate="0.546101961014787, -0.0, -0.0, 0.837718716620206" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{A4B943B8-1720-6A9A-5D2F-176A0427E755}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.33731224602, 1051.49426962919, 50.0" Rotate="0.59482278675168, -0.0, -0.0, 0.803856860616967" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{B8061E64-DBF8-6BB3-338F-7B06D1202CE3}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1201.51472774752, 1051.60811073738, 50.3" Rotate="0.707106781186817, -0.0, -0.0, 0.707106781186278" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{6AB8F113-3421-C6C3-6320-65F71574FF28}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="862.902846312962, 1068.32008961734, 50.0" Rotate="0.707106781186817, -0.0, -0.0, 0.707106781186278" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{07F575B5-3BFA-F2EF-29C8-B95A73D82E28}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1203.85495390806, 953.079352435385, 50.4" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{E267CEAA-F160-8403-0EF0-1111F7A74B95}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1203.85495390806, 1006.44935243538, 50.4" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{8D7CCCF8-9908-6D9F-126B-D81283F5CB5E}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1203.85495390806, 1052.82935243538, 50.4" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{7B2335F2-867C-3C70-D467-CCFFDA1DE0FB}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1065.10999999999, 1168.64189532726, 50.0" Rotate="0.707106781186561, -0.0, -0.0, -0.707106781186534" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{6CA49671-A190-5BE4-BCAE-682721994FFD}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="933.945092052942, 1168.64189532726, 50.0" Rotate="0.707106781186561, -0.0, -0.0, -0.707106781186534" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{A72449FE-9260-0E68-075C-D462E5D1D135}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1136.09476452882, 1066.88696059116, 50.4" Rotate="0.707106781186817, -0.0, -0.0, 0.707106781186278" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{B3AFC4A4-A300-4D16-FA84-99646517DF71}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="862.152846312957, 838.875451359075, 50.3" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{61458C80-63F6-A206-FC70-F34B8A419F85}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="927.57280953166, 823.596601505335, 50.4" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{6D4600AD-99FE-F1A3-D2AC-955C1B809A41}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1021.39026181445, 838.9892924674, 50.0" Rotate="0.803856860617173, -0.0, -0.0, -0.594822786751401" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{45452B54-7A2C-829B-5594-3B585BFBB481}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1135.88520192993, 839.499766241216, 50.0" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{4B7E706E-4BCF-988B-211E-D99FB3E04A2A}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1005.18254602647, 1168.64189532726, 50.0" Rotate="0.707106781186561, -0.0, -0.0, -0.707106781186534" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{45DFCBAD-D010-475D-74F3-1C227472E537}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1125.03745397352, 1168.64189532726, 50.0" Rotate="0.707106781186561, -0.0, -0.0, -0.707106781186534" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{0580103B-C3B3-8A45-F85C-C9DE83034EAA}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1004.62242906018, 938.983191861501, 50.0" Rotate="0.837718716620395, -0.0, -0.0, -0.546101961014496" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{08B6D05E-28CB-E0FB-2A3B-82B8F1D3C3CC}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1135.88520192993, 955.38364501835, 50.0" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{8AB99D52-30FE-96FD-29AA-AA88C28F6541}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1063.33026181445, 954.873171244534, 50.0" Rotate="0.803856860617173, -0.0, -0.0, -0.594822786751401" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{DDFE5CEC-2DED-5AF2-A4C0-F63A7F1B2406}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="927.57280953166, 939.480480282469, 50.4" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{79A02672-0AF4-0320-AD80-F832E4FEAE4C}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1200.76472774752, 938.047351256475, 50.0" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{73683E15-33B0-38E7-09F4-5E4368DB4A5F}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="862.152846312957, 954.759330136209, 50.3" Rotate="0.707106781186523, -0.0, -0.0, -0.707106781186572" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{E4848584-6392-B190-D905-7FB8B3EA94F9}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1203.20352491729, 1120.43964431965, 50.26" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{2EB39E80-BE3D-4DF2-3BDF-C7C162034E9F}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1203.20352491729, 1067.06964431965, 50.26" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{723B9C81-CF7D-9886-2A5D-760B805E1D34}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1203.20352491729, 1166.81964431965, 50.26" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{DD9671A5-36CE-924C-B5BB-6415152BFCF1}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1047.75962483596, 999.859352435389, 50.4" Rotate="9.87312328832055e-013, -0.0, -0.0, -1.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{F0D2EE2D-B602-1E11-3230-B634A6A81557}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1047.75962483586, 1051.20935243539, 50.4" Rotate="9.87312328832055e-013, -0.0, -0.0, -1.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{834420DE-3B8A-B36E-72C2-FC756518144D}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1047.75962483604, 955.515997556344, 50.4" Rotate="9.87312328832055e-013, -0.0, -0.0, -1.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{0D88A193-14DB-0DFF-4617-4B8533F4544D}" name="PowerLine" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1184.96490794704, 1168.64189532726, 50.0" Rotate="0.707106781186561, -0.0, -0.0, -0.707106781186534" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/PowerLine.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{62014D11-3AB5-6731-3546-FF650DB77F37}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="951.367890143066, 1006.44935246784, 50.4" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{33BE944D-799F-A711-B0DE-95AA79C1DDD1}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="951.367890143066, 953.079352467843, 50.4" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{BBE76F9E-CDB7-62A8-3675-D910A4DC29BF}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="951.367890143066, 1052.82935246784, 50.4" Rotate="1.0, -0.0, -0.0, -0.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{0164FACE-A9D1-6FA6-D6D8-A7740BA8958C}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1048.61009161029, 885.463857735852, 50.4450281419153" Rotate="-4.23032700986601e-013, -0.0, -0.0, -1.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{2B88A1E3-B5E7-ADFA-B88F-0002310A68B6}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1048.61009161034, 938.833857735852, 50.4450281419153" Rotate="-4.23032700986601e-013, -0.0, -0.0, -1.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="GeomEntity" Layer="PROPS" Id="{D54418C5-1C60-9692-6655-01D9E29E8867}" name="StreetLamp" LayerGUID="{3F49C619-A134-1701-EE6F-BB3F8503724F}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1048.61009161025, 839.083857735852, 50.4450281419153" Rotate="-4.23032700986601e-013, -0.0, -0.0, -1.0" Scale="1.0, 1.0, 1.0" ColorRGB="65535" MatLayersMask="0" Geometry="Objects/StyleTown/Architecture/Props/StreetLamp.cgf"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="GeomEntity">
+					<Properties esFaction="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		</LayerObjects>
+	</Layer>
+</ObjectLayer>

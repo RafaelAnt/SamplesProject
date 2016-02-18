@@ -1,0 +1,29 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="DarkGreySolid" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0.43415368,0.43415368,0.43415368" Emissive="0,0,0" Opacity="1" Shininess="132" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Dont_Die/Geometry/textures/DarkGreySolid.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="nomaterial" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0.057805438,0.057805438,0.057805438" Emissive="0,0,0" Opacity="1" Shininess="135" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Dont_Die/Geometry/textures/nomaterial.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="orangesolid" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0.2269659,0.043735035,0.043735035" Emissive="0,0,0" Opacity="1" Shininess="112" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Dont_Die/Geometry/textures/orangesolid.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tealsolid" MtlFlags="524416" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.83999997,0.83999997,0.83999997" Specular="0,0,0" Emissive="0,0,0" Opacity="1" GlowAmount="4" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Levels/Samples/Dont_Die/Geometry/textures/tealsolid.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,42 @@
+{
+    "GemListFormatVersion" : 2,
+    "Gems" : 
+    [
+        {
+            "Path" : "Gems/AWS",
+            "Uuid" : "0945e21b7ae848ac80b4ec1f34c459cc",
+            "Version" : "0.1.0",
+            "_comment" : "AWS"
+        },
+        {
+            "Path" : "Gems/CameraFramework",
+            "Uuid" : "54f2763fe191432fa681ce4a354eedf5",
+            "Version" : "0.1.0",
+            "_comment" : "CameraFramework"
+        },
+        {
+            "Path" : "Gems/UiBasics",
+            "Uuid" : "6bb61c9e547043f0afc5019d6d460b78",
+            "Version" : "0.1.0",
+            "_comment" : "UiBasics"
+        },
+        {
+            "Path" : "Gems/UiDemo",
+            "Uuid" : "f90e86a4975549aa9809dc4ebcb3bffb",
+            "Version" : "0.1.0",
+            "_comment" : "UiDemo"
+        },
+        {
+            "Path" : "Gems/PhysicsEntities",
+            "Uuid" : "99ea531451fc4f64a5a9fe8f385e8a76",
+            "Version" : "0.1.0",
+            "_comment" : "PhysicsEntities"
+        },
+        {
+            "Path" : "Gems/UserLoginDefault",
+            "Uuid" : "c9c25313197f489a8e9e8e6037fc62eb",
+            "Version" : "0.1.0",
+            "_comment" : "UserLoginDefault"
+        }
+    ]
+}

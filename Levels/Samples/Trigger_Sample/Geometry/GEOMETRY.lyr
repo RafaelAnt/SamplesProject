@@ -1,0 +1,686 @@
+<ObjectLayer>
+ <Layer Name="GEOMETRY" GUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FullName="GEOMETRY" External="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="0" IsDefaultColor="1">
+  <LayerObjects>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1D951894-78A4-7F95-10DB-AA69F91C16E7}" name="TriangleWedge" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="992.022800792659, 990.775559605881, 50.091649891987" Rotate="0.965925825808812, 2.77030275523935e-009, -1.03389105581631e-008, 0.258819046894862" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/TriangleWedge.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{3D487298-E47A-D815-3874-6C7444605EB5}" name="TriangleWedge" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000903153625, 1011.51049310741, 50.0899999028332" Rotate="0.707106781186589, 1.31092132712694e-008, 7.56860787589839e-009, -0.707106781186506" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/TriangleWedge.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{04FE478F-983E-CFEA-D1A7-982B2C9C14FC}" name="TriangleWedge_m100_m99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1011.96883106338, 997.709637294575, 50.0899999009279" Rotate="-0.258819045102417, -5.61755430981548e-017, 1.51372156544966e-008, -0.965925826289096" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/TriangleWedge_m100_m99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4368B4B5-7700-C23D-BE8D-505B949E175A}" name="Hex_Colume" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="977.999999940452, 1003.46410152537, 53.7033844910002" Rotate="0.707106781186548, -0.0, -0.0, -0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Colume.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{59C9CA90-8A72-B858-4524-1D3AAF8E52FD}" name="Hex_Colume" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.000000078033, 1010.39230483498, 53.7033844915639" Rotate="0.707106781186548, -0.0, -0.0, -0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Colume.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A1563395-2363-D0D7-4FF5-F6356AD9E935}" name="Hex_Colume" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.000000078067, 989.607694985534, 53.7033844915639" Rotate="0.707106781186548, -0.0, -0.0, -0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Colume.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F4E8B019-0333-3B56-EAA8-018A715EE49C}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1010.98376901259, 1012.1337266591, 62.8071966489065" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{CC1657E9-4F96-2E1C-255F-FAB461D247E2}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1018.98376870998, 998.277319931397, 62.8071951171242" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BDC15366-42A6-50A9-1D0B-41BB42CB5E70}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1022.98376870997, 1005.20552316169, 62.8071952203623" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4FA8C702-8821-DCFE-9D09-4FF0B74CF327}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1018.98376870994, 1012.13372639195, 62.8071952203623" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{2DDAECAF-0F13-F3C1-03E3-2C6B4E65C84D}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1006.98376906994, 1005.2055233325, 62.8071966324246" Rotate="-3.7251099614037e-009, 0.500000000001382, -0.866025403783641, 6.45207991972897e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1A19D37F-E461-839A-D6BC-E203BD8570A1}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.983768442526, 1005.20552306001, 62.8071949278667" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D96FC015-027E-BD90-8C81-B1B95FC85678}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="986.983768880927, 998.277320052583, 62.8071966324247" Rotate="-2.10734234886636e-008, -0.866025403783675, -0.500000000001321, 3.6500240099967e-008" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{85DC4B02-95B5-2A9F-8F33-41A73C6D813B}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1018.98376909, 984.420913518151, 62.8071966489065" Rotate="6.26599466816938e-014, 1.94289028407732e-016, -1.0, 3.46944777912205e-018" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{50B2B35B-5BF2-3BB3-73BD-88806950DBB5}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1014.98376904774, 977.492710286023, 62.8071967477857" Rotate="4.62923532994656e-009, 0.500000000001382, -0.866025403783641, -8.01807115044669e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{147432BB-3F0A-67C8-9F58-D45E2F93161C}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="990.983768815197, 991.349116748375, 62.8071966489065" Rotate="2.57932146566426e-014, -0.866025403783641, -0.500000000001382, -4.49059620210426e-014" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4B951CA3-4847-0980-CC0C-69E3291A08FE}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1014.98376864735, 991.349116559074, 62.8071952203327" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{E35C59E4-87AC-9AA2-B5F0-06A6CB863251}" name="Hex_Plate_8m_Glass_m100_100_m100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1002.98376901981, 984.420913492437, 62.8071966324246" Rotate="1.42620117787336e-008, 0.500000000001382, -0.86602540378364, -2.47025290603636e-008" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass_m100_100_m100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F2934B21-6EF8-DEC1-42A3-F04BF4F432D2}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1006.98376895111, 977.492710209408, 62.8071966489065" Rotate="-2.1822470289784e-009, 0.500000000001382, -0.86602540378364, 3.7797625685432e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{EBCE5D2A-AFBC-D505-88E2-73339277CD8E}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="990.983768487185, 1005.2055231782, 62.8071952368153" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BFADD64D-0F93-1535-CEFA-CCD236425309}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.983768911323, 991.349116835015, 62.8071967477857" Rotate="-1.05367048823811e-008, -0.866025403783641, -0.500000000001382, 1.82501078295118e-008" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{AF4EFAE1-BBB3-B85A-0311-CF16D17A9697}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.0000000458, 1009.23760438634, 49.6499998022405" Rotate="0.500000000001382, -9.51322421445216e-041, -8.99457846093548e-040, -0.866025403783641" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{B48F6F60-0E61-9477-0F24-DE9DEB4C100A}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.00000005733, 1009.23760436635, 49.6499997857586" Rotate="0.500000000001382, -9.51322421445216e-041, -8.99457846093548e-040, -0.866025403783641" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7065FC62-3BD4-0484-E2E3-35205E58577E}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1012.00000009194, 1002.30940115608, 49.6499999011197" Rotate="0.500000000001382, -9.51322421445216e-041, -8.99457846093548e-040, -0.866025403783641" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{25C66448-52A3-6EF8-04E1-724DFBCD1D05}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1012.00000002272, 1016.16580761663, 49.6499997857586" Rotate="-0.499999999998619, 4.13590306280478e-025, -2.48154183765842e-024, -0.866025403785236" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{02B77E67-F1BB-DE9E-BD93-64B963F07664}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1016.0000001374, 1009.23760438636, 49.6499998022405" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{E4947BB1-795C-D2F9-3388-144D1AC0C9DC}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.99999999999, 1016.16580769592, 49.6499998022405" Rotate="-0.499999999998619, 4.13590306280478e-025, -2.48154183765842e-024, -0.866025403785236" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{94C4AEB3-13DB-3BF8-B7E8-F757E2A67EB2}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1004.00000000003, 1002.30940107674, 49.6499998022405" Rotate="0.500000000001382, -9.51322421445216e-041, -8.99457846093548e-040, -0.866025403783641" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D03D80AB-E6D8-A251-8A74-8C40CC8B9507}" name="Hex_10m_Rimlight" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.00000004584, 1009.23760438644, 53.6633845740493" Rotate="0.866025403785195, -0.0, -0.0, -0.499999999998691" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_10m_Rimlight.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7704DC20-9FB1-78AC-214D-1AC1F4998997}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1012.00000006888, 1002.30940112844, 50.0499998722797" Rotate="-0.499999998295918, -0.499999998094037, -0.500000007056073, -0.499999996553972" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4547A8F0-7AE7-2C46-7319-C2102FDA676A}" name="RombDodecha_Half_8m_99_m100_m100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.00000001034, 1009.23760438016, 50.0499998722797" Rotate="0.683012698055831, 0.683012707049976, -0.18301269671357, -0.183012702139455" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m_99_m100_m100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{5A743853-1F89-2EF8-EE70-B66692452D35}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1012.00000005818, 1016.16580765042, 50.0499998722797" Rotate="0.183012699759912, 0.183012708955939, -0.683012703769643, -0.683012698693427" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{43F03184-3C25-A1EF-6C0F-EFEBFD001636}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.00000005823, 995.381197800924, 50.0499998722797" Rotate="0.183012699758822, 0.183012708954849, -0.683012703769936, -0.683012698693719" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{AA3A6B0F-AB9A-B931-1F01-FD7597B047AF}" name="Hex_10m_Rimlight" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1004.00000004573, 988.452994536848, 53.6633845740493" Rotate="0.866025403784481, -0.0, 0.0, 0.499999999999927" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_10m_Rimlight.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{AA2A016C-CAC9-9B4A-FDD0-5C229EF3627B}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1012.00000013742, 988.452994536861, 49.6499998022405" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D0429A3D-B527-096C-554F-B423D926571B}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1000.00000000004, 981.52479122727, 49.6499998022405" Rotate="0.499999999999999, 2.35587342510494e-024, -8.82591206835091e-025, -0.866025403784439" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1445440F-B262-8DBD-87D8-9C88B5AE089D}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.999999999939, 995.381197846547, 49.6499998022405" Rotate="-0.499999999998619, 4.13590306280478e-025, -2.48154183765842e-024, -0.866025403785236" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{1A3280E1-B4E6-8F84-737E-CD58D32F0088}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.00000002277, 995.381197807076, 49.6499999011197" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{C7C9FDE0-56BE-ACAC-A7CB-832E6E9BF012}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.00000005736, 981.524791326555, 49.6499997857586" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{9940601F-C1A2-1A26-712E-2A6701E257E3}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1004.00000004583, 988.452994536861, 49.6499998022405" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{48CD403A-28A6-0B32-6E24-27FA23B8DD28}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.00000005736, 988.45299451689, 49.6499997857586" Rotate="0.499999999999999, 2.35587342510494e-024, -8.82591206835091e-025, -0.866025403784439" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{516AE8DB-25D6-6067-3D20-7A1D33DBB59D}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.00000006889, 981.52479127895, 50.0499998722797" Rotate="-0.499999998296716, -0.499999998094834, -0.500000007055275, -0.499999996553174" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{FBA6DAC8-B385-DBED-36CD-7A0231297BEE}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000000010368, 988.452994530708, 50.0499998722797" Rotate="0.683012698055538, 0.683012707049684, -0.183012696714661, -0.183012702140545" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{63971B72-C4F1-FFB5-6821-3DFBC3D54399}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="979.999999872991, 1002.30940107057, 50.0499998722797" Rotate="0.683012698055538, 0.683012707049684, -0.183012696714661, -0.183012702140545" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A28D3B76-919B-5170-7436-0C43FB9D9CAC}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.999999931513, 995.381197818816, 50.0499998722797" Rotate="-0.499999998296716, -0.499999998094834, -0.500000007055275, -0.499999996553174" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{135EF02F-E35A-ECE4-0A9A-C4D37F33BCC1}" name="RombDodecha_Half_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.999999920856, 1009.23760434079, 50.0499998722797" Rotate="0.183012699758822, 0.183012708954849, -0.683012703769936, -0.683012698693719" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/RombDodecha_Half_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{760BF2C4-F635-06A4-2C22-CB8A2CA51B8B}" name="Hex_10m_Rimlight" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.999999908349, 1002.30940107671, 53.6633845740493" Rotate="0.866025403784481, -0.0, 0.0, 0.499999999999927" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_10m_Rimlight.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{E6360E07-92F9-EA27-3A86-1D07D0818773}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="996.000000000038, 1002.30940107673, 49.6499998022405" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{25A39E0E-7ACA-40C6-8962-B6E09A9FDA98}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.999999862661, 995.381197767136, 49.6499998022405" Rotate="0.499999999999999, 2.35587342510494e-024, -8.82591206835091e-025, -0.866025403784439" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{4E1DE03D-93CF-8188-6E04-DFBC4AB4E393}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.999999862561, 1009.23760438641, 49.6499998022405" Rotate="-0.499999999998619, 4.13590306280478e-025, -2.48154183765842e-024, -0.866025403785236" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A8E03A8B-242B-39B3-087C-3D16383CC75B}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.999999885394, 1009.23760434694, 49.6499999011197" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BFC9461A-ACD1-D2C5-5462-D00AD639BAC7}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="991.999999919983, 995.381197866421, 49.6499997857586" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{BFE013E1-4A8C-8671-67BF-0571CA2B9F18}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.999999908453, 1002.30940107673, 49.6499998022405" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{26136EF2-EB2D-A111-824A-A1EB1E6DCBC1}" name="Hex_Plate_8m" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="979.999999919983, 1002.30940105676, 49.6499997857586" Rotate="0.499999999999999, 2.35587342510494e-024, -8.82591206835091e-025, -0.866025403784439" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F4221751-0826-E271-BBA4-9EB878635287}" name="Hex_DoorWay" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1014.00000005153, 1012.70170599388, 50.0499997939996" Rotate="5.55111512312578e-017, -0.0, -0.0, -1.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{61DC50AE-1F3C-4911-EE68-017100B6B3B5}" name="Hex_DoorWay_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1002.00000004948, 1012.70170601025, 50.0499997939996" Rotate="0.866025403785236, -0.0, -0.0, -0.499999999998619" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{162A1BD5-E80D-693D-AEAA-77DD61449CDE}" name="Hex_DoorWay_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1008.00000003631, 1002.30940115486, 50.0499997939996" Rotate="0.866025403784439, -0.0, 0.0, 0.499999999999999" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{8ACF9457-0B37-C468-EEF9-37EFB96962B7}" name="Hex_DoorWay" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1010.0000000516, 991.917096144409, 50.0499997939996" Rotate="5.55111512312578e-017, -0.0, -0.0, -1.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{57B6D43E-8679-92AA-AB90-7E2692117F59}" name="Hex_DoorWay_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1004.00000003638, 981.524791305387, 50.0499997939996" Rotate="0.866025403784439, -0.0, 0.0, 0.499999999999999" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{CB43F791-9F87-3FA1-A25A-5BCD42893977}" name="Hex_DoorWay_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.00000004951, 991.917096160767, 50.0499997939996" Rotate="0.866025403785236, -0.0, -0.0, -0.499999999998619" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A7E387E8-7B00-7046-D541-064060F68B30}" name="Hex_DoorWay" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.999999914218, 1005.77350268427, 50.0499997939996" Rotate="5.55111512312578e-017, -0.0, -0.0, -1.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F135ED07-CC7A-B0D3-19F7-7C5D5C8A7C55}" name="Hex_DoorWay_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.999999898998, 995.381197845254, 50.0499997939996" Rotate="0.866025403784439, -0.0, 0.0, 0.499999999999999" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{102648CD-A610-FFC2-6D1E-60B56787E9F5}" name="Hex_DoorWay_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="981.999999912133, 1005.77350270063, 50.0499997939996" Rotate="0.866025403785236, -0.0, -0.0, -0.499999999998619" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_DoorWay_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{45C0BDE2-F275-F0AD-04F5-42EF31C2F87E}" name="01" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1010.0200001041, 990.195005888667, 52.0322670434453" Rotate="0.707106781186548, -0.0, 0.0, 0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/01.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D55EBBA2-3F33-A8C6-0906-64AFBC82D8FD}" name="04" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1014.02000010403, 1010.97961573814, 52.0322670434453" Rotate="0.707106781186548, -0.0, 0.0, 0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/04.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{846BF07D-9E6A-F2AF-1738-5E6551D5D308}" name="06" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.48137393231, 1013.58007169167, 52.0322670434453" Rotate="0.25881904510407, -0.0, -0.0, -0.965925826288653" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/06.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{EEB4B663-2F3E-8CDC-B29A-386E89CB6F7C}" name="02" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1002.49862610104, 982.368515879716, 52.0322670434453" Rotate="0.965925826289066, -0.0, -0.0, -0.258819045102528" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/02.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{8A885097-6DD6-2806-1AB1-1E5E7A2050DB}" name="05" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1006.49862610098, 1003.15312572919, 52.0322670434453" Rotate="0.965925826289069, -0.0, -0.0, -0.25881904510252" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/05.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{927B80D3-EFF3-A013-118B-818A161BB1E2}" name="07" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.481373794962, 1006.65186838205, 52.0322670434453" Rotate="0.25881904510406, -0.0, -0.0, -0.965925826288656" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/07.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{19015A1E-6E15-F6AA-F2F4-FE5B6049DCF7}" name="09" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="986.498625963665, 996.224922419582, 52.0322670434453" Rotate="0.965925826289069, -0.0, -0.0, -0.25881904510252" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/09.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{9D75333D-7255-E8B5-315A-1BC10EE3676B}" name="03" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.481373932339, 992.795461842185, 52.0322670434453" Rotate="0.258819045104065, -0.0, -0.0, -0.965925826288655" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/03.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{DB9BC42E-2B7F-5E2E-7851-3A6B4A3CD6AA}" name="08" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.019999966719, 1004.05141242853, 52.0322670434453" Rotate="0.707106781186548, -0.0, 0.0, 0.707106781186547" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/08.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{892755BA-9740-C797-419F-7FA25C77A477}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="994.983768880084, 998.277320051148, 62.8071962969358" Rotate="2.57932146566426e-014, -0.866025403783641, -0.500000000001382, -4.49059620210426e-014" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A44CF3A2-9704-2E62-F006-740D64816379}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1014.98376870996, 1005.20552316166, 62.8071951171242" Rotate="-3.72528190338345e-009, -0.49999999999874, -0.866025403785166, -6.45237765021919e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7271B283-BDE7-85CA-D464-A6DBCF3F05D7}" name="Hex_Plate_8m_Glass" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1010.98376901867, 984.420913493121, 62.8071965402357" Rotate="-2.18224702897841e-009, 0.500000000001382, -0.866025403783641, 3.7797625685432e-009" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/Hex_Plate_8m_Glass.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{D60401FB-85D5-DCF8-9ECF-22BC80EF9CFB}" name="PlayUpGrp0" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="998.983768640136, 986.730314688047, 62.407194893626" Rotate="1.0, -0.0, -0.0, -0.0" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/PlayUpGrp0.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{F8298B41-715F-C2DD-6B09-628EC944E1D4}" name="01_m100_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1009.08277326428, 991.089800995752, 52.0356078883558" Rotate="0.686102687806116, -0.171064612821147, 0.171064612970911, -0.686102687806051" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/01_m100_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{E9BEF685-A0FC-64FB-F386-B02BF773C24D}" name="04" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1013.08304721784, 1012.11806833864, 52.0360256334052" Rotate="0.686102675464507, -0.17106461597313, 0.171064609818928, -0.68610270014766" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/04.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{84EC9250-5299-9C2D-9847-D08F5E6A4C85}" name="08" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="993.051681174762, 1005.08539310056, 52.0649779029563" Rotate="0.695085554566083, -0.165840238472855, 0.17567536845929, -0.677119821046113" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/08.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{DF4AFCE4-F26D-08DB-B3DF-5E660BE71E3F}" name="06_100_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.05365763279, 1012.25050004226, 52.0350706193054" Rotate="0.937233702864204, -0.233678606904321, -0.0626139940092668, 0.251131006936451" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/06_100_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{65001ABB-E546-A67C-8955-8FEB8EAE520B}" name="07_99_100_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="983.220089018617, 1005.41911906973, 52.0360237439861" Rotate="0.937233701147974, -0.233678606904307, -0.0626139940093183, 0.251131013341512" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/07_99_100_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{7DE6E9CD-C936-4A66-ABD6-F4607A22ABDF}" name="03_100_99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="999.05921433267, 991.469098340823, 52.0350706224961" Rotate="0.937233701147955, -0.233678606904312, -0.0626139940093004, 0.251131013341582" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/03_100_99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{19DF5604-AF2B-95F4-C221-2E8031793631}" name="09_m100_m99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="987.864415678154, 996.519012900607, 52.035070621461" Rotate="-0.251131013339576, 0.0626139940090547, 0.233678606904377, -0.937233701148492" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/09_m100_m99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{A5DD3D4B-E4D7-9BA2-A9C8-D425A348C158}" name="02" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1003.8918612956, 982.646016176321, 52.0360234904518" Rotate="-0.251131020324247, 0.0626139922675808, 0.233678607371004, -0.937233699276955" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/02.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		<Object Type="Entity" Layer="GEOMETRY" Id="{315D5C98-FB1F-51D7-B852-D7A40F8415A7}" name="05_m100_m99_100" LayerGUID="{EA829106-04AA-8607-B09F-238D7F55C05A}" FloorNumber="-1" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" Pos="1007.8587104161, 1003.45049765318, 52.0350706223115" Rotate="-0.251131013342504, 0.0626139940083247, 0.233678606904573, -0.937233701147708" ColorRGB="65535" MatLayersMask="0"  OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+					<Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="Levels/Samples/Trigger_Sample/Geometry/05_m100_m99_100.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+						<Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+						<Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+							<vOffset x="0" y="0" z="0"/>
+						</Interest>
+</Properties>
+				</Object>
+		</LayerObjects>
+	</Layer>
+</ObjectLayer>

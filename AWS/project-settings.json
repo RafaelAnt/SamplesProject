@@ -1,0 +1,16 @@
+{
+    "deployment": {
+        "*": {
+            "feature": {
+                "DontDieAWS": {
+                    "parameter": {
+                        "WriteCapacityUnits": 2, 
+                        "ReadCapacityUnits": 2
+                    }
+                }
+            }
+        }
+    }, 
+    "DefaultDeployment": "DontDieDeployment", 
+    "ReleaseDeployment": "DontDieDeployment"
+}

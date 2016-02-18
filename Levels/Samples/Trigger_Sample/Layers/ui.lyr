@@ -1,0 +1,198 @@
+<ObjectLayer>
+ <Layer Name="UI" GUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{CDC86113-1764-4641-9794-E0A8D3294D73}" Name="PTrigger-UIDisplay06" HideOrder="0" Parent="{8E330D9D-2261-454D-8961-07DBB14E8F53}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="7" DimY="5.5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{3EA44146-6D03-45BF-9188-281AC52CE99C}" Name="PTrigger-UIDisplay07" HideOrder="0" Parent="{93E34B88-084A-435D-9BD8-68BB4B7CAE20}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="9" DimY="5.5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{7465974A-8BF4-4254-A611-F68694EB3A21}" Name="PTrigger-UIDisplay02" HideOrder="0" Parent="{4E86B7E7-0816-422D-8703-E3844A45D6C0}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="9" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{937EA857-314A-4782-B83F-9B8A0201551A}" Name="TagPoint3" HideOrder="0" Pos="1004.4113,1003.1566,51.320183" FloorNumber="-1" Rotate="-0.49999994,0,0,0.86602545" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{4A4AA658-2257-455C-B8BB-CDC2E449203D}" Name="PTrigger-UIDisplay03" HideOrder="0" Parent="{ED8501B9-D40B-4105-B438-7424B24A3C9C}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="7" DimY="6" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{7B958359-A5A5-4A48-9134-04C3C4055633}" Name="PTrigger-UIDisplay01" HideOrder="0" Pos="1011.8727,987.90839,50.050003" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="9" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{40258981-493C-45D0-BD77-652AC443CD76}" Name="PTrigger-UIDisplay09" HideOrder="0" Parent="{812C45B5-AB40-40C4-B5E9-6880D4DA6B20}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="7" DimY="5.5" DimZ="4" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{C97DA485-F427-4046-8C23-B203579605B3}" Name="PTrigger-UIDisplay04" HideOrder="0" Pos="1016.4863,1008.4246,51.320183" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="9" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{93E34B88-084A-435D-9BD8-68BB4B7CAE20}" Name="TagPoint6" HideOrder="0" Pos="985.1557,1008.746,51.359165" FloorNumber="-1" Rotate="0.85716724,0,0,-0.51503813" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{8111D48C-9646-4749-9901-60CC09ABD604}" Name="PTrigger-UIDisplay05" HideOrder="0" Parent="{937EA857-314A-4782-B83F-9B8A0201551A}" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="7" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{8E330D9D-2261-454D-8961-07DBB14E8F53}" Name="TagPoint4" HideOrder="0" Pos="1006.7787,1012.8376,51.359165" FloorNumber="-1" Rotate="0.85716724,0,0,-0.51503813" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{812C45B5-AB40-40C4-B5E9-6880D4DA6B20}" Name="TagPoint5" HideOrder="0" Pos="984.5271,995.79486,51.320183" FloorNumber="-1" Rotate="-0.49999994,0,0,0.86602545" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{ED8501B9-D40B-4105-B438-7424B24A3C9C}" Name="TagPoint2" HideOrder="0" Pos="1002.165,991.71246,50.088985" FloorNumber="-1" Rotate="0.85716724,0,0,-0.51503813" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{34A1B0E3-4692-4F92-9647-C3BBACD21A1C}" Name="PTrigger-UIDisplay08" HideOrder="0" Pos="994.96552,1001.4358,51.320183" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="8421376" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="7" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{4E86B7E7-0816-422D-8703-E3844A45D6C0}" Name="TagPoint1" HideOrder="0" Pos="999.10248,980.91864,50.050003" FloorNumber="-1" Rotate="-0.49999994,0,0,0.86602545" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="UI" LayerGUID="{706639CE-F813-41DE-B642-46DE8F928A57}" Id="{A427B0FF-E161-4B8E-B5B7-9FBE89A547C1}" Name="UIflowgraphscript" HideOrder="0" Pos="1024.3967,992.03851,50.000099" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="UiDisplayScript" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="31" Class="Debug:InputKey" pos="1280,1080,0" flags="0">
+       <Inputs entityId="0" Key="0" NonDevMode="0"/>
+      </Node>
+      <Node Id="34" Class="Debug:InputKey" pos="1270,1480,0" flags="0">
+       <Inputs entityId="0" Key="-" NonDevMode="0"/>
+      </Node>
+      <Node Id="37" Class="entity:ProximityTrigger" pos="-110,-120,0" flags="0" EntityGUID="{7B958359-A5A5-4A48-9134-04C3C4055633}" EntityGUID_64="4A48A5A57B958359">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="39" Class="entity:ProximityTrigger" pos="-110,220,0" flags="0" EntityGUID="{7465974A-8BF4-4254-A611-F68694EB3A21}" EntityGUID_64="42548BF47465974A">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="41" Class="entity:ProximityTrigger" pos="-140,580,0" flags="0" EntityGUID="{4A4AA658-2257-455C-B8BB-CDC2E449203D}" EntityGUID_64="455C22574A4AA658">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="43" Class="entity:ProximityTrigger" pos="-140,980,0" flags="0" EntityGUID="{C97DA485-F427-4046-8C23-B203579605B3}" EntityGUID_64="4046F427C97DA485">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="45" Class="entity:ProximityTrigger" pos="-120,1390,0" flags="0" EntityGUID="{8111D48C-9646-4749-9901-60CC09ABD604}" EntityGUID_64="474996468111D48C">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="47" Class="entity:ProximityTrigger" pos="-120,1790,0" flags="0" EntityGUID="{CDC86113-1764-4641-9794-E0A8D3294D73}" EntityGUID_64="46411764CDC86113">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="49" Class="entity:ProximityTrigger" pos="1280,-120,0" flags="0" EntityGUID="{3EA44146-6D03-45BF-9188-281AC52CE99C}" EntityGUID_64="45BF6D033EA44146">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="51" Class="entity:ProximityTrigger" pos="1300,230,0" flags="0" EntityGUID="{34A1B0E3-4692-4F92-9647-C3BBACD21A1C}" EntityGUID_64="4F92469234A1B0E3">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="53" Class="entity:ProximityTrigger" pos="1320,620,0" flags="0" EntityGUID="{40258981-493C-45D0-BD77-652AC443CD76}" EntityGUID_64="45D0493C40258981">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="54" Class="UI:Canvas:Load" pos="70,-120,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx01.xml"/>
+      </Node>
+      <Node Id="55" Class="UI:Canvas:Unload" pos="660,-30,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="56" Class="UI:Canvas:Load" pos="80,220,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx02.xml"/>
+      </Node>
+      <Node Id="57" Class="UI:Canvas:Unload" pos="660,310,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="58" Class="UI:Canvas:Load" pos="60,580,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx03.xml"/>
+      </Node>
+      <Node Id="59" Class="UI:Canvas:Unload" pos="660,670,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="60" Class="UI:Canvas:Load" pos="60,980,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx04.xml"/>
+      </Node>
+      <Node Id="61" Class="UI:Canvas:Unload" pos="660,1070,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="62" Class="UI:Canvas:Load" pos="70,1390,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx05.xml"/>
+      </Node>
+      <Node Id="63" Class="UI:Canvas:Unload" pos="680,1480,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="64" Class="UI:Canvas:Load" pos="70,1790,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx06.xml"/>
+      </Node>
+      <Node Id="65" Class="UI:Canvas:Unload" pos="670,1880,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="66" Class="UI:Canvas:Load" pos="1480,-120,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx07.xml"/>
+      </Node>
+      <Node Id="67" Class="UI:Canvas:Unload" pos="2070,-20,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="68" Class="UI:Canvas:Load" pos="1490,230,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx08.xml"/>
+      </Node>
+      <Node Id="69" Class="UI:Canvas:Unload" pos="2120,320,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="70" Class="UI:Canvas:Load" pos="1520,620,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx09.xml"/>
+      </Node>
+      <Node Id="71" Class="UI:Canvas:Unload" pos="2130,720,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="72" Class="UI:Canvas:Load" pos="1520,1050,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx10.xml"/>
+      </Node>
+      <Node Id="73" Class="UI:Canvas:Unload" pos="2150,1120,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="74" Class="UI:Canvas:Load" pos="1490,1460,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Trigger_Sample/UI/triggerEx11.xml"/>
+      </Node>
+      <Node Id="75" Class="UI:Canvas:Unload" pos="2120,1520,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="72" nodeOut="31" portIn="Activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="31" portIn="Activate" portOut="Released" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="34" portIn="Activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="34" portIn="Activate" portOut="Released" enabled="1"/>
+      <Edge nodeIn="54" nodeOut="37" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="55" nodeOut="37" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="39" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="39" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="41" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="59" nodeOut="41" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="60" nodeOut="43" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="43" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="62" nodeOut="45" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="45" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="64" nodeOut="47" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="47" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="66" nodeOut="49" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="49" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="68" nodeOut="51" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="51" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="70" nodeOut="53" portIn="Activate" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="53" portIn="Activate" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="55" nodeOut="54" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="56" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="59" nodeOut="58" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="61" nodeOut="60" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="63" nodeOut="62" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="65" nodeOut="64" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="67" nodeOut="66" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="69" nodeOut="68" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="71" nodeOut="70" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="72" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="75" nodeOut="74" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,2581 @@
+<ObjectLayer>
+ <Layer Name="Logic" GUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{14DD4120-3A87-4956-9522-461B12977767}" Name="Kill Player" HideOrder="0" Pos="1057,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="575" Name="CleanUp_Asteroids_in_World &amp; reset ship pos" Class="_commentbox" pos="19780,-5355.7256,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1010" Height="540"/>
+       <NodeSize Width="1010" Height="592.72607"/>
+      </Node>
+      <Node Id="579" Class="entity:ProximityTrigger" pos="20360,-5220,0" flags="0" EntityGUID="{9C0837C8-1FDE-400F-B036-8A0B32A67A5F}" EntityGUID_64="400F1FDE9C0837C8">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="584" Class="Entity:BeamEntity" pos="20360,-4960,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0" Memo=""/>
+      </Node>
+      <Node Id="586" Class="Entity:EntityPos" pos="19860,-4970,0" flags="0" EntityGUID="{97D3BF41-5B2A-401D-B35A-235ADCE50AEC}" EntityGUID_64="401D5B2A97D3BF41">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="587" Class="Vec3:AddVec3" pos="20150,-4890,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="589" Class="Logic:Any" pos="19980,-5180,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="605" Name="Kill_player" Class="_commentbox" pos="19770,-5802.6084,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1000" Height="290"/>
+       <NodeSize Width="1000" Height="342.72607"/>
+      </Node>
+      <Node Id="612" Class="Entity:GetPos" pos="19810,-5650,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="616" Class="Time:Time" pos="19320,-5660,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="617" Class="Logic:Gate" pos="19600,-5640,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="621" Name="." Class="_commentbox" pos="19790,-5732.6079,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="960" Height="200"/>
+       <NodeSize Width="960" Height="252.72607"/>
+      </Node>
+      <Node Id="627" Name="Reset_ship_to_start_position" Class="_comment" pos="20360,-4990,0" flags="0"/>
+      <Node Id="628" Name="Set dead state once" Class="_comment" pos="20560,-5620,0" flags="0"/>
+      <Node Id="661" Class="Math:Abs" pos="20160,-5630,0" flags="0">
+       <Inputs A="0"/>
+      </Node>
+      <Node Id="662" Class="Vec3:FromVec3" pos="19980,-5630,0" flags="0" InHideMask="1" OutHideMask="7">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="663" Class="Math:InRange" pos="20340,-5630,0" flags="0">
+       <Inputs In="0" Min="89" Max="91"/>
+      </Node>
+      <Node Id="666" Name="Trigger when activated destroys all asteroid objects" Class="_comment" pos="20290,-5250,0" flags="0"/>
+      <Node Id="674" Class="Logic:Any" pos="19589.768,-5276.4609,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="678" Class="Logic:Once" pos="20610,-5590,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="724" Name="Reset World Router" Class="_comment" pos="19579.768,-5316.4609,0" flags="0"/>
+      <Node Id="725" Class="Time:Delay" pos="20130,-5140,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="850" Class="Mission:GameToken" pos="19110,-5540,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="870" Class="Mission:GameToken" pos="19110,-5290,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" CompareValue="1"/>
+      </Node>
+      <Node Id="871" Name="Reset World Token" Class="_commentbox" pos="19100,-5361.5767,0" flags="0">
+       <Inputs TextSize="1" Color="0.768151,0.590619,0.021219" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="130"/>
+       <NodeSize Width="440" Height="182.72607"/>
+      </Node>
+      <Node Id="873" Class="Mission:GameTokenSet" pos="20810,-5590,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" TokenValue="1"/>
+      </Node>
+      <Node Id="897" Class="Game:Start" pos="19560,-5150,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="898" Name="Dead State Token" Class="_commentbox" pos="19090,-5611.3516,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="130"/>
+       <NodeSize Width="440" Height="182.72607"/>
+      </Node>
+      <Node Id="899" Name="Dead State Token" Class="_commentbox" pos="20790,-5691.7256,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="450" Height="160"/>
+       <NodeSize Width="450" Height="212.72607"/>
+      </Node>
+      <Node Id="900" Name="When token is 1 player = dead" Class="_comment" pos="20800,-5620,0" flags="0"/>
+      <Node Id="910" Name="." Class="_commentbox" pos="19800,-5315.729,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="960" Height="480"/>
+       <NodeSize Width="960" Height="532.72607"/>
+      </Node>
+      <Node Id="911" Name="Test to see if the ship roll angle is not zero." Class="_comment" pos="19790,-5710,0" flags="0"/>
+      <Node Id="912" Name="If roll angle is not in this range \n then kill the player and \n set the dead state. " Class="_comment" pos="20300,-5710,0" flags="0"/>
+      <Node Id="913" Name="Only do this check if the player is alive. " Class="_comment" pos="19110,-5460,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="589" nodeOut="579" portIn="In0" portOut="Enable" enabled="1"/>
+      <Edge nodeIn="584" nodeOut="586" portIn="Position" portOut="pos" enabled="1"/>
+      <Edge nodeIn="587" nodeOut="586" portIn="A" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="587" nodeOut="586" portIn="Activate" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="584" nodeOut="587" portIn="Rotation" portOut="Out" enabled="1"/>
+      <Edge nodeIn="725" nodeOut="589" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="662" nodeOut="612" portIn="vec3" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="617" nodeOut="616" portIn="In" portOut="tick" enabled="1"/>
+      <Edge nodeIn="612" nodeOut="617" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="663" nodeOut="661" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="663" nodeOut="661" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="661" nodeOut="662" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="661" nodeOut="662" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="678" nodeOut="663" portIn="In0" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="579" nodeOut="674" portIn="Enable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="584" nodeOut="674" portIn="Beam" portOut="Out" enabled="1"/>
+      <Edge nodeIn="678" nodeOut="674" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="873" nodeOut="678" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="579" nodeOut="725" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="617" nodeOut="850" portIn="Open" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="617" nodeOut="850" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="674" nodeOut="870" portIn="In0" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="589" nodeOut="897" portIn="In1" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="CognitoIdentityID" Type="5"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{906F2C28-A4F2-4D57-AF30-88818FFD2143}" Name="Reset" HideOrder="0" Pos="1056,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="123" Name="Configure Token States" Class="_commentbox" pos="1130,2800.6057,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1890" Height="400"/>
+       <NodeSize Width="1890" Height="431.26178"/>
+      </Node>
+      <Node Id="424" Class="Debug:ConsoleVariable" pos="1730,3530,0" flags="0">
+       <Inputs CVar="r_MotionBlur" Value="0"/>
+      </Node>
+      <Node Id="425" Class="Game:Start" pos="1170,3360,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="489" Class="Debug:ConsoleVariable" pos="1730,3380,0" flags="0">
+       <Inputs CVar="es_DrawProximityTriggers" Value="0"/>
+      </Node>
+      <Node Id="583" Class="Debug:InputKey" pos="1200,3040,0" flags="0">
+       <Inputs entityId="0" Key="y" NonDevMode="1"/>
+      </Node>
+      <Node Id="681" Class="Game:Start" pos="1200,2930,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="682" Name="Reset once at start and on reset world input" Class="_comment" pos="1200,2900,0" flags="0"/>
+      <Node Id="683" Class="Mission:GameTokenSet" pos="2090,2930,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" TokenValue="1"/>
+      </Node>
+      <Node Id="685" Class="Logic:Any" pos="1450,2930,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="848" Class="Mission:GameTokenSet" pos="2550,2930,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" TokenValue="0"/>
+      </Node>
+      <Node Id="852" Class="Mission:GameTokenSet" pos="1610,2930,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" TokenValue="0"/>
+      </Node>
+      <Node Id="855" Name="At start set the reset world token to its default state of 0" Class="_comment" pos="1610,2900,0" flags="0"/>
+      <Node Id="857" Name="If Player Dead = 0, then player is alive" Class="_comment" pos="2550,2900,0" flags="0"/>
+      <Node Id="859" Name="Settings \ Debug" Class="_commentbox" pos="1130,3279.8191,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1010" Height="420"/>
+       <NodeSize Width="1010" Height="451.26178"/>
+      </Node>
+      <Node Id="860" Name="If Reset game = 1, then reset world" Class="_comment" pos="2090,2900,0" flags="0"/>
+      <Node Id="862" Class="Time:TimeOfDay" pos="1400,3530,0" flags="0">
+       <Inputs Time="1" ForceUpdate="0" Speed="1"/>
+      </Node>
+      <Node Id="910" Name="." Class="_commentbox" pos="1160,2831.4873,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1820" Height="340"/>
+       <NodeSize Width="1820" Height="371.26178"/>
+      </Node>
+      <Node Id="911" Name="." Class="_commentbox" pos="1150,3300.1665,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="960" Height="380"/>
+       <NodeSize Width="960" Height="411.26178"/>
+      </Node>
+      <Node Id="912" Name="Turn off motion blur" Class="_comment" pos="1730,3500,0" flags="0"/>
+      <Node Id="913" Name="Set value to 1 to see proximity triggers. " Class="_comment" pos="1730,3350,0" flags="0"/>
+      <Node Id="914" Name="Sets time of day" Class="_comment" pos="1400,3500,0" flags="1"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="424" nodeOut="425" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="489" nodeOut="425" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="862" nodeOut="425" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="685" nodeOut="583" portIn="In1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="685" nodeOut="681" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="848" nodeOut="683" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="852" nodeOut="685" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="683" nodeOut="852" portIn="Activate" portOut="OutValue" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="CognitoIdentityID" Type="5"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{F14C2C52-7955-4F9D-BC1A-77DCF34B8493}" Name="CloudCanvasSetup" HideOrder="0" Pos="1053,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="3" Class="Time:Timer" pos="2040,2770,0" flags="0">
+       <Inputs period="0.01" min="0" max="1000" paused="0"/>
+      </Node>
+      <Node Id="4" Class="Debug:DisplayMessage" pos="2790,2650,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="780" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="123" Name="Game Start" Class="_commentbox" pos="1460,2090.6135,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1450" Height="340"/>
+       <NodeSize Width="1450" Height="402.02487"/>
+      </Node>
+      <Node Id="126" Name="Message Of The Day" Class="_commentbox" pos="1460,2529.4309,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1640" Height="510"/>
+       <NodeSize Width="1640" Height="572.0249"/>
+      </Node>
+      <Node Id="140" Class="UI:Canvas:Load" pos="1820,2240,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/login.xml"/>
+      </Node>
+      <Node Id="141" Class="UI:Text:SetText" pos="2580,2340,0" flags="0">
+       <Inputs CanvasID="0" ElementID="2" Value=""/>
+      </Node>
+      <Node Id="571" Name="." Class="_commentbox" pos="1470,2559.4309,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1610" Height="450"/>
+       <NodeSize Width="1610" Height="512.0249"/>
+      </Node>
+      <Node Id="877" Class="Mission:GameToken" pos="1510,2640,0" flags="0">
+       <Inputs gametoken_Token="Level.AWS.Lambda Update" CompareValue=""/>
+      </Node>
+      <Node Id="996" Class="Mission:GameTokenSet" pos="2580,2230,0" flags="0">
+       <Inputs gametoken_Token="Level.CanvasID" TokenValue=""/>
+      </Node>
+      <Node Id="997" Class="Math:Counter" pos="2240,2770,0" flags="0">
+       <Inputs Max="10000"/>
+      </Node>
+      <Node Id="998" Class="Game:Start" pos="1740,2890,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1000" Class="AWS:Configuration:ApplyConfiguration" pos="1820,2360,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1001" Class="JSON:GetJsonValue" pos="1940,2640,0" flags="0">
+       <Inputs JSON="" Attribute="messageOfTheDay"/>
+      </Node>
+      <Node Id="1002" Class="JSON:GetJsonValue" pos="2350,2650,0" flags="0">
+       <Inputs JSON="" Attribute="message"/>
+      </Node>
+      <Node Id="1003" Name="." Class="_commentbox" pos="1500,2120.6135,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1380" Height="290"/>
+       <NodeSize Width="1380" Height="352.02487"/>
+      </Node>
+      <Node Id="1004" Class="Game:Start" pos="1580,2240,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1005" Class="Engine:Viewport" pos="2050,2940,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1008" Class="Math:Mul" pos="2240,2960,0" flags="0">
+       <Inputs A="0" B="0.5"/>
+      </Node>
+      <Node Id="1009" Class="Math:Add" pos="2480,2960,0" flags="0">
+       <Inputs A="0" B="319"/>
+      </Node>
+      <Node Id="1011" Name="Get viewport size" Class="_comment" pos="2040,2910,0" flags="0"/>
+      <Node Id="1012" Name="Find the center and then add the vertical offset. " Class="_comment" pos="2240,2930,0" flags="0"/>
+      <Node Id="1013" Name="Animate the msg of the day text \n from left to right. " Class="_comment" pos="2040,2720,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="997" nodeOut="3" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="140" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="140" portIn="Activate" portOut="OnLoad" enabled="0"/>
+      <Edge nodeIn="996" nodeOut="140" portIn="TokenValue" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="996" nodeOut="140" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="1001" nodeOut="877" portIn="JSON" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="997" portIn="posX" portOut="Count" enabled="1"/>
+      <Edge nodeIn="997" nodeOut="998" portIn="Reset" portOut="output" enabled="1"/>
+      <Edge nodeIn="1005" nodeOut="998" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="1002" nodeOut="1001" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="1002" portIn="Show" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="1002" portIn="message" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="140" nodeOut="1004" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="1000" nodeOut="1004" portIn="Apply" portOut="output" enabled="1"/>
+      <Edge nodeIn="1008" nodeOut="1005" portIn="A" portOut="height" enabled="1"/>
+      <Edge nodeIn="1008" nodeOut="1005" portIn="Activate" portOut="height" enabled="1"/>
+      <Edge nodeIn="1009" nodeOut="1008" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1009" nodeOut="1008" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="1009" portIn="posY" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="CognitoIdentityID" Type="5"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{4B686060-866B-4779-B1F2-743E21D08112}" Name="On Death Do..." HideOrder="0" Pos="1049,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="442" Class="Time:RealTime" pos="-3920,1430,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="499" Class="Math:Counter" pos="-3390,1430,0" flags="0">
+       <Inputs Max="0"/>
+      </Node>
+      <Node Id="592" Class="Image:FilterBlur" pos="-6070,3050,0" flags="0">
+       <Inputs entityId="0" Enable="0" Disable="1" FilterBlurring_Type="0" FilterBlurring_Amount="2"/>
+      </Node>
+      <Node Id="596" Class="Image:ColorCorrection" pos="-6070,3220,0" flags="0" InHideMask="2047">
+       <Inputs entityId="0" Enable="0" Disable="1" Global_User_ColorC="0" Global_User_ColorM="0" Global_User_ColorY="0" Global_User_ColorK="0" Global_User_Brightness="1" Global_User_Contrast="1" Global_User_Saturation="0" Global_User_ColorHue="0"/>
+      </Node>
+      <Node Id="622" Name="On Death UI" Class="_commentbox" pos="-6380,1357.2531,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2340" Height="650"/>
+       <NodeSize Width="2340" Height="815.45471"/>
+      </Node>
+      <Node Id="658" Class="Mission:GameTokenSet" pos="-4500,2460,0" flags="0">
+       <Inputs gametoken_Token="BestSurviveTime" TokenValue=""/>
+      </Node>
+      <Node Id="659" Class="Debug:DisplayMessage" pos="-3830,2400,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="test" DisplayTime="0" posX="760" posY="840" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="660" Class="String:Concat" pos="-4150,2460,0" flags="0">
+       <Inputs String1="Personal Best: " String2=""/>
+      </Node>
+      <Node Id="683" Class="UI:Canvas:Load" pos="-4940,1930,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/dead.xml"/>
+      </Node>
+      <Node Id="684" Class="UI:Canvas:Unload" pos="-4250,2050,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="687" Class="Time:Delay" pos="-6360,3120,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="0.1" resetOnInput="0"/>
+      </Node>
+      <Node Id="690" Class="Mission:GameTokenGet" pos="-4840,2460,0" flags="0">
+       <Inputs gametoken_Token="SurviveTime"/>
+      </Node>
+      <Node Id="692" Class="AWS:Primitive:LambdaInvoke" pos="-6010,1610,0" flags="0">
+       <Inputs FunctionName="DontDieAWS.DontDieMain" RequestBody="{ commands : [ &quot;endGame&quot; ] }"/>
+      </Node>
+      <Node Id="693" Class="Debug:DisplayMessage" pos="-5490,1990,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="600" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="697" Class="Mission:GameTokenGet" pos="-5600,2390,0" flags="0">
+       <Inputs gametoken_Token="SurviveTime"/>
+      </Node>
+      <Node Id="698" Name="Sets current survive time. " Class="_comment" pos="-5950,2370,0" flags="0"/>
+      <Node Id="699" Class="Logic:All" pos="-5240,2420,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="709" Class="Mission:GameTokenSet" pos="-5140,2750,0" flags="0">
+       <Inputs gametoken_Token="BestSurviveTime" TokenValue=""/>
+      </Node>
+      <Node Id="710" Name="Sets_initial_best_lap_value_to_compare_against" Class="_comment" pos="-5980,2720,0" flags="0"/>
+      <Node Id="714" Name="Personal Best?" Class="_commentbox" pos="-6030,2138.9368,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2490" Height="570"/>
+       <NodeSize Width="2490" Height="735.45471"/>
+      </Node>
+      <Node Id="717" Name="Is current survive time longer then best survive time?" Class="_comment" pos="-5300,2390,0" flags="0"/>
+      <Node Id="727" Class="Logic:Any" pos="-6360,3040,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="741" Class="Game:Start" pos="-4070,2390,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="765" Class="String:Concat" pos="-6010,1930,0" flags="0">
+       <Inputs String1="Survived for: " String2=""/>
+      </Node>
+      <Node Id="766" Class="String:Concat" pos="-5760,1930,0" flags="0">
+       <Inputs String1="Survived for: " String2=" seconds"/>
+      </Node>
+      <Node Id="782" Name="Game Over Man!" Class="_comment" pos="-4950,1890,0" flags="0"/>
+      <Node Id="784" Name="Tell Lambda that the player died. " Class="_comment" pos="-6310,1580,0" flags="0"/>
+      <Node Id="844" Class="UI:Text:SetText" pos="-4250,1930,0" flags="0">
+       <Inputs CanvasID="0" ElementID="4" Value=""/>
+      </Node>
+      <Node Id="851" Class="Mission:GameTokenSet" pos="-5950,2400,0" flags="0">
+       <Inputs gametoken_Token="SurviveTime" TokenValue=""/>
+      </Node>
+      <Node Id="855" Class="Mission:GameTokenGet" pos="-5630,2470,0" flags="0">
+       <Inputs gametoken_Token="BestSurviveTime"/>
+      </Node>
+      <Node Id="857" Class="Game:Start" pos="-5970,2770,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="858" Class="Math:Calculate" pos="-5550,2730,0" flags="0">
+       <Inputs Operation="0" A="0" B="0"/>
+      </Node>
+      <Node Id="859" Name="If_true_then_set_current_survive time to equal the best survive time. " Class="_comment" pos="-4840,2420,0" flags="0"/>
+      <Node Id="861" Class="Math:Less" pos="-5090,2530,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="862" Class="Mission:GameToken" pos="-5970,2550,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="863" Name="." Class="_commentbox" pos="-6000,2525.998,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1160" Height="160"/>
+       <NodeSize Width="1160" Height="325.45468"/>
+      </Node>
+      <Node Id="865" Name="." Class="_commentbox" pos="-6000,2188.9326,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2420" Height="300"/>
+       <NodeSize Width="2420" Height="465.45468"/>
+      </Node>
+      <Node Id="867" Name="Reset all when player dies" Class="_comment" pos="-5970,2520,0" flags="0"/>
+      <Node Id="874" Class="Mission:GameToken" pos="-7540,2330,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="878" Name="High Score Screen" Class="_commentbox" pos="-3980,1178.4403,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3260" Height="920"/>
+       <NodeSize Width="3260" Height="1085.4547"/>
+      </Node>
+      <Node Id="879" Class="UI:Canvas:Load" pos="-2960,1450,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/highscore.xml"/>
+      </Node>
+      <Node Id="880" Class="UI:Canvas:Unload" pos="-2310,1420,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="881" Class="Mission:GameToken" pos="-4450,1140,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" CompareValue="1"/>
+      </Node>
+      <Node Id="883" Class="Math:Equal" pos="-3180,1430,0" flags="0">
+       <Inputs A="0" B="5"/>
+      </Node>
+      <Node Id="886" Class="Logic:Gate" pos="-3650,1430,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="888" Class="Logic:Any" pos="-4560,1770,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="893" Class="UI:Text:SetText" pos="-960,1900,0" flags="0">
+       <Inputs CanvasID="0" ElementID="16" Value=""/>
+      </Node>
+      <Node Id="894" Class="UI:Text:SetText" pos="-950,2090,0" flags="0">
+       <Inputs CanvasID="0" ElementID="17" Value=""/>
+      </Node>
+      <Node Id="898" Class="Math:Add" pos="-1270,1510,0" flags="0">
+       <Inputs A="16" B="0"/>
+      </Node>
+      <Node Id="899" Class="Math:Counter" pos="-2030,1580,0" flags="0">
+       <Inputs Max="0"/>
+      </Node>
+      <Node Id="900" Class="Math:Mul" pos="-1480,1570,0" flags="0">
+       <Inputs A="2" B="0"/>
+      </Node>
+      <Node Id="901" Class="Math:Add" pos="-1270,1660,0" flags="0">
+       <Inputs A="17" B="0"/>
+      </Node>
+      <Node Id="905" Class="Math:Sub" pos="-1660,1570,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="906" Class="JSON:IterateJsonArray" pos="-2380,1790,0" flags="0">
+       <Inputs JsonArray=""/>
+      </Node>
+      <Node Id="907" Class="JSON:GetJsonValue" pos="-2670,1790,0" flags="0">
+       <Inputs JSON="" Attribute="scores"/>
+      </Node>
+      <Node Id="908" Class="JSON:GetJsonValue" pos="-2040,2110,0" flags="0">
+       <Inputs JSON="" Attribute="Username"/>
+      </Node>
+      <Node Id="909" Class="JSON:GetJsonValue" pos="-2040,1920,0" flags="0">
+       <Inputs JSON="" Attribute="Score"/>
+      </Node>
+      <Node Id="912" Class="Math:Less" pos="-1860,1520,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="922" Class="Logic:All" pos="-2920,2020,0" flags="0" InHideMask="224">
+       <Inputs />
+      </Node>
+      <Node Id="923" Class="AWS:Primitive:LambdaInvoke" pos="-3560,1780,0" flags="0">
+       <Inputs FunctionName="DontDieAWS.DontDieMain" RequestBody=""/>
+      </Node>
+      <Node Id="926" Class="JSON:GetJsonValue" pos="-6280,1930,0" flags="0">
+       <Inputs JSON="" Attribute="score"/>
+      </Node>
+      <Node Id="975" Class="Logic:Any" pos="-2780,2150,0" flags="0" InHideMask="1022">
+       <Inputs />
+      </Node>
+      <Node Id="981" Name="." Class="_commentbox" pos="-4980,1706.6576,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="910" Height="260"/>
+       <NodeSize Width="910" Height="425.45468"/>
+      </Node>
+      <Node Id="982" Name="Screen Fx" Class="_commentbox" pos="-6400,2826.8535,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="630" Height="340"/>
+       <NodeSize Width="630" Height="505.45468"/>
+      </Node>
+      <Node Id="983" Name="." Class="_commentbox" pos="-6380,2836.8535,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="590" Height="320"/>
+       <NodeSize Width="590" Height="485.45468"/>
+      </Node>
+      <Node Id="984" Name="." Class="_commentbox" pos="-6350,1705.6812,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="810" Height="150"/>
+       <NodeSize Width="810" Height="315.45468"/>
+      </Node>
+      <Node Id="985" Name="." Class="_commentbox" pos="-6350,1387.2516,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1620" Height="280"/>
+       <NodeSize Width="1620" Height="445.45468"/>
+      </Node>
+      <Node Id="987" Name="How long did player live for?" Class="_comment" pos="-6290,1890,0" flags="0"/>
+      <Node Id="988" Name="Make sure game over screen \n is cleaned up on reset" Class="_comment" pos="-4560,1720,0" flags="0"/>
+      <Node Id="989" Name="." Class="_commentbox" pos="-3940,1228.4402,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1820" Height="160"/>
+       <NodeSize Width="1820" Height="325.45468"/>
+      </Node>
+      <Node Id="990" Name="Timer counts to 5 then switches from game over to highscore table." Class="_comment" pos="-3940,1380,0" flags="0"/>
+      <Node Id="991" Name="Dead State Token" Class="_commentbox" pos="-7560,2109.2393,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="150"/>
+       <NodeSize Width="1038.4547" Height="315.45468"/>
+      </Node>
+      <Node Id="992" Name="Reset World Token" Class="_commentbox" pos="-4470,957.50366,0" flags="0">
+       <Inputs TextSize="1" Color="0.768151,0.590619,0.021219" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="120"/>
+       <NodeSize Width="1093.4547" Height="285.45468"/>
+      </Node>
+      <Node Id="994" Name="^" Class="_commentbox" pos="-6330,1395.6313,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="880" Height="180"/>
+       <NodeSize Width="880" Height="345.45468"/>
+      </Node>
+      <Node Id="996" Name="^" Class="_commentbox" pos="-6320,1745.6814,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="280" Height="100"/>
+       <NodeSize Width="280" Height="265.45468"/>
+      </Node>
+      <Node Id="998" Name="." Class="_commentbox" pos="-3950,1528.4398,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1830" Height="240"/>
+       <NodeSize Width="1830" Height="405.45468"/>
+      </Node>
+      <Node Id="999" Name="." Class="_commentbox" pos="-2070,1308.4398,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="280"/>
+       <NodeSize Width="990" Height="445.45468"/>
+      </Node>
+      <Node Id="1000" Name="Increment UI element table IDs" Class="_comment" pos="-2050,1490,0" flags="0"/>
+      <Node Id="1002" Name="Score Increment" Class="_comment" pos="-1290,1480,0" flags="0"/>
+      <Node Id="1003" Name="Need to synchronize element IDs with dynamo db table." Class="_comment" pos="-2030,1680,0" flags="0"/>
+      <Node Id="1004" Name="Player ID increment" Class="_comment" pos="-1290,1630,0" flags="0"/>
+      <Node Id="1005" Name="." Class="_commentbox" pos="-2080,1708.4399,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1320" Height="150"/>
+       <NodeSize Width="1320" Height="315.45468"/>
+      </Node>
+      <Node Id="1006" Name="." Class="_commentbox" pos="-2080,1898.4399,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1320" Height="150"/>
+       <NodeSize Width="1320" Height="315.45468"/>
+      </Node>
+      <Node Id="1007" Name="Get score value and populate table" Class="_comment" pos="-2040,1870,0" flags="0"/>
+      <Node Id="1008" Name="Get player Id and populate table" Class="_comment" pos="-2040,2060,0" flags="1"/>
+      <Node Id="1009" Name="^" Class="_commentbox" pos="-2060,1928.4398,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="300" Height="110"/>
+       <NodeSize Width="300" Height="275.45468"/>
+      </Node>
+      <Node Id="1010" Name="^" Class="_commentbox" pos="-2060,1738.4402,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="300" Height="100"/>
+       <NodeSize Width="300" Height="265.45468"/>
+      </Node>
+      <Node Id="1011" Name="^" Class="_commentbox" pos="-3920,1575.5466,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1770" Height="180"/>
+       <NodeSize Width="1770" Height="345.45468"/>
+      </Node>
+      <Node Id="1012" Name="." Class="_commentbox" pos="-2950,1808.4398,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="290" Height="240"/>
+       <NodeSize Width="290" Height="405.45468"/>
+      </Node>
+      <Node Id="1013" Name="Synchronize and loop the table population" Class="_comment" pos="-2940,1980,0" flags="0"/>
+      <Node Id="1014" Name="Get high score db table" Class="_comment" pos="-3880,1690,0" flags="0"/>
+      <Node Id="1027" Class="JSON:GetJsonValue" pos="-5420,1730,0" flags="0">
+       <Inputs JSON="" Attribute="player"/>
+      </Node>
+      <Node Id="1028" Class="JSON:GetJsonValue" pos="-5130,1750,0" flags="0">
+       <Inputs JSON="" Attribute="endGameInfo"/>
+      </Node>
+      <Node Id="1029" Class="JSON:GetJsonValue" pos="-3000,1800,0" flags="0">
+       <Inputs JSON="" Attribute="highScoreTable"/>
+      </Node>
+      <Node Id="1040" Name="Extract end game info" Class="_comment" pos="-5420,1700,0" flags="0"/>
+      <Node Id="1046" Class="Mission:GameTokenSet" pos="-5140,1610,0" flags="0">
+       <Inputs gametoken_Token="Level.AWS.Lambda Update" TokenValue=""/>
+      </Node>
+      <Node Id="1047" Class="JSON:SetJsonProperty" pos="-6310,1610,0" flags="0">
+       <Inputs JsonObject="" Name="commands" Value="[ &quot;endGame&quot; ]"/>
+      </Node>
+      <Node Id="1048" Class="JSON:SetJsonProperty" pos="-3900,1780,0" flags="0">
+       <Inputs JsonObject="" Name="commands" Value="[ &quot;getHighScoreTable&quot; ]"/>
+      </Node>
+      <Node Id="1049" Class="Mission:GameToken" pos="-7540,2570,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="0"/>
+      </Node>
+      <Node Id="1050" Name="Dead State Token" Class="_commentbox" pos="-7560,2349.2393,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="140"/>
+       <NodeSize Width="1038.4547" Height="305.45468"/>
+      </Node>
+      <Node Id="1051" Name="Check to see if the player is alive. " Class="_comment" pos="-7540,2300,0" flags="0"/>
+      <Node Id="1052" Name="Check to see if the player is dead." Class="_comment" pos="-7540,2540,0" flags="0"/>
+      <Node Id="1053" Name="Blur the screen on death." Class="_comment" pos="-6070,3020,0" flags="0"/>
+      <Node Id="1054" Name="Desaturate screen on death." Class="_comment" pos="-6070,3190,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="886" nodeOut="442" portIn="In" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="499" portIn="A" portOut="Count" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="499" portIn="Activate" portOut="Count" enabled="1"/>
+      <Edge nodeIn="660" nodeOut="658" portIn="Set" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="660" nodeOut="658" portIn="String2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="659" nodeOut="660" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="684" nodeOut="683" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="844" nodeOut="683" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="886" nodeOut="683" portIn="Open" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="592" nodeOut="687" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="596" nodeOut="687" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="658" nodeOut="690" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="658" nodeOut="690" portIn="TokenValue" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1027" nodeOut="692" portIn="JSON" portOut="ResponseBody" enabled="1"/>
+      <Edge nodeIn="1046" nodeOut="692" portIn="TokenValue" portOut="ResponseBody" enabled="1"/>
+      <Edge nodeIn="1046" nodeOut="692" portIn="Activate" portOut="Success" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="697" portIn="In1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="855" nodeOut="697" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="861" nodeOut="697" portIn="B" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="861" nodeOut="699" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="592" nodeOut="727" portIn="Enable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="596" nodeOut="727" portIn="Enable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="659" nodeOut="741" portIn="Show" portOut="output" enabled="0"/>
+      <Edge nodeIn="766" nodeOut="765" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="766" nodeOut="765" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="693" nodeOut="766" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="693" nodeOut="766" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="844" nodeOut="766" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="844" nodeOut="766" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="697" nodeOut="851" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="855" portIn="In2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="861" nodeOut="855" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="858" nodeOut="857" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="709" nodeOut="858" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="709" nodeOut="858" portIn="TokenValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="690" nodeOut="861" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="862" portIn="Reset" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="683" nodeOut="874" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="727" nodeOut="874" portIn="In0" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="1047" nodeOut="874" portIn="In" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="880" nodeOut="879" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="893" nodeOut="879" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="879" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="1048" nodeOut="879" portIn="In" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="499" nodeOut="881" portIn="Reset" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="880" nodeOut="881" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="886" nodeOut="881" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="883" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="883" portIn="In1" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="499" nodeOut="886" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="684" nodeOut="888" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="893" nodeOut="898" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="893" nodeOut="898" portIn="ElementID" portOut="Out" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="898" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="899" portIn="A" portOut="Count" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="899" portIn="A" portOut="Count" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="899" portIn="Activate" portOut="Count" enabled="1"/>
+      <Edge nodeIn="898" nodeOut="900" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="898" nodeOut="900" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="901" nodeOut="900" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="901" nodeOut="900" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="901" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="901" portIn="ElementID" portOut="Out" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="901" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="905" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="905" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="906" portIn="In" portOut="NextValue" enabled="1"/>
+      <Edge nodeIn="908" nodeOut="906" portIn="JSON" portOut="NextValue" enabled="1"/>
+      <Edge nodeIn="909" nodeOut="906" portIn="JSON" portOut="NextValue" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="907" portIn="Begin" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="907" portIn="JsonArray" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="908" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="893" nodeOut="909" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="912" portIn="Activate" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="922" portIn="Continue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="975" nodeOut="922" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="923" portIn="Reset" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1029" nodeOut="923" portIn="JSON" portOut="ResponseBody" enabled="1"/>
+      <Edge nodeIn="765" nodeOut="926" portIn="Set" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="765" nodeOut="926" portIn="String2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="851" nodeOut="926" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="851" nodeOut="926" portIn="TokenValue" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="975" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1028" nodeOut="1027" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="926" nodeOut="1028" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="907" nodeOut="1029" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="1047" portIn="Invoke" portOut="Out" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="1047" portIn="RequestBody" portOut="Out" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="1048" portIn="Invoke" portOut="Out" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="1048" portIn="RequestBody" portOut="Out" enabled="1"/>
+      <Edge nodeIn="687" nodeOut="1049" portIn="in" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="693" nodeOut="1049" portIn="Hide" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="1049" portIn="In0" portOut="OnTrue" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="BestSurviveTime" Type="2"/>
+      <Token Name="StartTime" Type="2"/>
+      <Token Name="SurviveTime" Type="2"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{56C65A92-90E1-409B-9227-6FEBF546C76C}" Name="UnlockNewShip" HideOrder="0" Pos="1058,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="859" Name="Enable disable ship models" Class="_commentbox" pos="-3430,2458.6963,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1930" Height="590"/>
+       <NodeSize Width="1930" Height="662.58093"/>
+      </Node>
+      <Node Id="872" Class="Game:Start" pos="-2240,2590,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="874" Class="entity:GeomEntity" pos="-1850,2620,0" flags="0" EntityGUID="{EBEEB1B5-BE10-466B-B5CC-788EC42F4AD2}" EntityGUID_64="466BBE10EBEEB1B5">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="876" Class="entity:GeomEntity" pos="-1850,2880,0" flags="0" EntityGUID="{6CAE46AD-B135-4537-83DE-EC74257F6E08}" EntityGUID_64="4537B1356CAE46AD">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="877" Class="Mission:GameToken" pos="-3370,2720,0" flags="0">
+       <Inputs gametoken_Token="Level.AWS.Lambda Update" CompareValue=""/>
+      </Node>
+      <Node Id="878" Class="JSON:GetJsonValue" pos="-2920,2720,0" flags="0">
+       <Inputs JSON="" Attribute="player"/>
+      </Node>
+      <Node Id="879" Class="JSON:GetJsonValue" pos="-2630,2720,0" flags="0">
+       <Inputs JSON="" Attribute="inventory"/>
+      </Node>
+      <Node Id="884" Class="Logic:Any" pos="-2030,2650,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="888" Class="Mission:GameTokenSet" pos="-2920,2880,0" flags="0">
+       <Inputs gametoken_Token="FoundShip" TokenValue="0"/>
+      </Node>
+      <Node Id="906" Class="JSON:IsValueInJsonArray" pos="-2310,2720,0" flags="0">
+       <Inputs JsonArray="" Value="FancyShip"/>
+      </Node>
+      <Node Id="911" Name="." Class="_commentbox" pos="-3400,2478.9751,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1860" Height="540"/>
+       <NodeSize Width="1860" Height="612.58093"/>
+      </Node>
+      <Node Id="1011" Name="^" Class="_commentbox" pos="-3390,2600.1023,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1320" Height="180"/>
+       <NodeSize Width="1320" Height="252.58095"/>
+      </Node>
+      <Node Id="1012" Name="Check to see if awesome ship is in the player&apos;s inventory. " Class="_comment" pos="-3050,2680,0" flags="0"/>
+      <Node Id="1013" Name="If awesome ship is in \n inventory then enable it. " Class="_comment" pos="-1850,2560,0" flags="0"/>
+      <Node Id="1015" Name="If awesome ship is not in inventory \n then enable the original model. " Class="_comment" pos="-1850,2830,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="884" nodeOut="872" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="877" portIn="JSON" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="877" portIn="Activate" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="878" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="879" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="879" portIn="JsonArray" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="884" portIn="Hide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="876" nodeOut="884" portIn="UnHide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="906" portIn="UnHide" portOut="True" enabled="1"/>
+      <Edge nodeIn="876" nodeOut="906" portIn="Hide" portOut="True" enabled="1"/>
+      <Edge nodeIn="884" nodeOut="906" portIn="In1" portOut="False" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="FoundShip" Type="6"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{28B6ACA0-C837-4EB3-A960-A24C14759146}" Name="SpaceDebris" HideOrder="0" Pos="1052,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="79" Class="Math:Counter" pos="-2170,1900,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs Max="0"/>
+      </Node>
+      <Node Id="84" Class="Math:Less" pos="-1980,1910,0" flags="0">
+       <Inputs A="0" B="1000"/>
+      </Node>
+      <Node Id="427" Name="Debris_Spawning" Class="_commentbox" pos="-2550,1254.2534,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3260" Height="1260"/>
+       <NodeSize Width="3260" Height="1478.0364"/>
+      </Node>
+      <Node Id="431" Class="Entity:GetPos" pos="-1520,1930,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="434" Class="Entity:SpawnArchetype" pos="-870,1940,0" flags="0">
+       <Inputs Archetype="Asteroid.Asteroid" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+      </Node>
+      <Node Id="435" Class="Math:Random" pos="-1290,2240,0" flags="0">
+       <Inputs Min="2" Max="15"/>
+      </Node>
+      <Node Id="436" Class="Vec3:ToVec3" pos="-1040,2020,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="438" Class="Vec3:AddVec3" pos="230,1700,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="440" Class="Math:Random" pos="-760,1610,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="-1" Max="1"/>
+      </Node>
+      <Node Id="442" Class="Time:RealTime" pos="-2470,1910,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="443" Class="Physics:ActionImpulse" pos="460,1960,0" flags="0">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="449" Class="Logic:Gate" pos="-1760,1950,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="451" Class="Entity:GetPos" pos="-460,2010,0" flags="0" InHideMask="7" OutHideMask="63">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="464" Class="Vec3:ToVec3" pos="-540,1700,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="465" Class="Math:Random" pos="-760,1790,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="-1" Max="1"/>
+      </Node>
+      <Node Id="466" Name="Spawn_location" Class="_commentbox" pos="-810,1333.5099,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1190" Height="300"/>
+       <NodeSize Width="1190" Height="518.03632"/>
+      </Node>
+      <Node Id="475" Name="." Class="_commentbox" pos="-1320,1972.9637,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="310" Height="150"/>
+       <NodeSize Width="310" Height="368.03632"/>
+      </Node>
+      <Node Id="477" Class="Game:Start" pos="-2470,2040,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="478" Name="Spawn_an_asteroid_every_second_until_1000_are_spawned." Class="_comment" pos="-2470,1870,0" flags="0"/>
+      <Node Id="479" Name="." Class="_commentbox" pos="-2510,1633.431,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="930" Height="270"/>
+       <NodeSize Width="930" Height="488.03632"/>
+      </Node>
+      <Node Id="480" Name="Reset_counter_on_start" Class="_comment" pos="-2470,2010,0" flags="0"/>
+      <Node Id="481" Name="X" Class="_comment" pos="-760,1580,0" flags="0"/>
+      <Node Id="482" Name="Z" Class="_comment" pos="-760,1770,0" flags="0"/>
+      <Node Id="498" Class="Time:Time" pos="-1160,1030,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="499" Class="Math:Counter" pos="-980,2600,0" flags="0">
+       <Inputs Max="0"/>
+      </Node>
+      <Node Id="500" Class="Debug:DisplayMessage" pos="-630,2580,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="750" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="528" Class="Vec3:NormalizeVec3" pos="-410,1700,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="529" Class="Vec3:ScaleVec3" pos="0,1710,0" flags="0">
+       <Inputs vector="0,0,0" scale="0"/>
+      </Node>
+      <Node Id="530" Class="Math:Random" pos="-220,1750,0" flags="0">
+       <Inputs Min="30" Max="45"/>
+      </Node>
+      <Node Id="532" Name="Count_how_many_astreroids_have_spawned._" Class="_comment" pos="-990,2560,0" flags="0"/>
+      <Node Id="533" Name="Recycle_System" Class="_commentbox" pos="-1350,2595.3623,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2770" Height="1330"/>
+       <NodeSize Width="2770" Height="1548.0364"/>
+      </Node>
+      <Node Id="534" Class="Debug:DisplayMessage" pos="600,3940,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="775" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="548" Class="entity:ProximityTrigger" pos="-1290,3530,0" flags="0" EntityGUID="{430B55D3-11A3-4E0E-BAAA-26D88B39302C}" EntityGUID_64="4E0E11A3430B55D3">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="549" Class="Math:Counter" pos="250,3950,0" flags="0">
+       <Inputs Max="0"/>
+      </Node>
+      <Node Id="551" Class="String:Concat" pos="-810,2600,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs String1="Debris Spawned    " String2="0"/>
+      </Node>
+      <Node Id="553" Class="String:Concat" pos="430,3960,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs String1="Debris Recycled   " String2="0"/>
+      </Node>
+      <Node Id="554" Class="Entity:BeamEntity" pos="-770,3520,0" flags="0">
+       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0" Memo="0"/>
+      </Node>
+      <Node Id="558" Class="Time:Delay" pos="-2170,1980,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="0.1" resetOnInput="0"/>
+      </Node>
+      <Node Id="560" Name="." Class="_commentbox" pos="-1010,2332.9636,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="580" Height="150"/>
+       <NodeSize Width="580" Height="368.03632"/>
+      </Node>
+      <Node Id="561" Name="." Class="_commentbox" pos="0,3655.3596,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="810" Height="170"/>
+       <NodeSize Width="810" Height="388.03632"/>
+      </Node>
+      <Node Id="562" Name="Count_how_many_astreroids_have_been_recycled" Class="_comment" pos="260,3900,0" flags="1"/>
+      <Node Id="564" Name="." Class="_commentbox" pos="-1310,3255.3608,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="860" Height="310"/>
+       <NodeSize Width="860" Height="528.03632"/>
+      </Node>
+      <Node Id="565" Class="Vec3:AddVec3" pos="810,3030,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="566" Class="Math:Random" pos="-230,2970,0" flags="0">
+       <Inputs Min="-1" Max="1"/>
+      </Node>
+      <Node Id="567" Class="Vec3:ToVec3" pos="0,3040,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="568" Class="Math:Random" pos="-230,3100,0" flags="0">
+       <Inputs Min="-1" Max="1"/>
+      </Node>
+      <Node Id="569" Name="Generate unique location to teleport the recycled asteroid to. " Class="_commentbox" pos="-280,2682.9634,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1410" Height="310"/>
+       <NodeSize Width="4776.0361" Height="528.03632"/>
+      </Node>
+      <Node Id="570" Name="X" Class="_comment" pos="-230,2950,0" flags="0"/>
+      <Node Id="571" Name="Z" Class="_comment" pos="-230,3070,0" flags="0"/>
+      <Node Id="572" Class="Vec3:NormalizeVec3" pos="140,3040,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="573" Class="Vec3:ScaleVec3" pos="610,3040,0" flags="0">
+       <Inputs vector="0,0,0" scale="0"/>
+      </Node>
+      <Node Id="574" Class="Math:Random" pos="350,3080,0" flags="0">
+       <Inputs Min="25" Max="30"/>
+      </Node>
+      <Node Id="575" Name="Same process as spawning but need unique random generator. If we don?t do this then respawn location is the same location as a new spawn. " Class="_comment" pos="-250,2910,0" flags="0"/>
+      <Node Id="576" Name="Teleports_debris_when_it_leaves_trigger" Class="_comment" pos="-800,3490,0" flags="0"/>
+      <Node Id="577" Class="Vec3:SubVec3" pos="-280,2020,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="586" Class="Vec3:NormalizeVec3" pos="-110,2000,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="587" Class="Vec3:ScaleVec3" pos="260,2000,0" flags="0">
+       <Inputs vector="0,0,0" scale="1"/>
+      </Node>
+      <Node Id="588" Class="Math:Random" pos="90,2050,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="0.5" Max="5"/>
+      </Node>
+      <Node Id="589" Class="Physics:ActionImpulse" pos="1150,3520,0" flags="0">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="597" Class="Debug:Draw:Sphere" pos="-280,4020,0" flags="0" InHideMask="31">
+       <Inputs Pos="0,0,0" Radius="0.1" Color="1,0,0" Time="5"/>
+      </Node>
+      <Node Id="606" Class="Logic:Any" pos="-1060,1710,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="611" Class="Vec3:ScaleVec3" pos="10,2220,0" flags="0">
+       <Inputs vector="0,0,0" scale="0"/>
+      </Node>
+      <Node Id="615" Class="Math:Power" pos="-160,2220,0" flags="0">
+       <Inputs Base="0" Power="3"/>
+      </Node>
+      <Node Id="620" Class="Math:Mul" pos="-310,2220,0" flags="0">
+       <Inputs A="0" B="4.5"/>
+      </Node>
+      <Node Id="621" Class="Math:Random" pos="-310,2510,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="1" Max="5"/>
+      </Node>
+      <Node Id="622" Class="Math:Random" pos="-310,2570,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="1" Max="5"/>
+      </Node>
+      <Node Id="623" Class="Math:Random" pos="-310,2630,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="1" Max="5"/>
+      </Node>
+      <Node Id="624" Name="Scale_the_impulse_force_based_on_size_of_\n_debris_spawned" Class="_comment" pos="-310,2160,0" flags="0"/>
+      <Node Id="625" Class="Vec3:ToVec3" pos="-150,2530,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="626" Class="Vec3:ScaleVec3" pos="70,2390,0" flags="0">
+       <Inputs vector="0,0,0" scale="0"/>
+      </Node>
+      <Node Id="627" Class="Math:Power" pos="-140,2390,0" flags="0">
+       <Inputs Base="0" Power="2"/>
+      </Node>
+      <Node Id="628" Class="Math:Mul" pos="-310,2380,0" flags="0">
+       <Inputs A="0" B="2"/>
+      </Node>
+      <Node Id="629" Class="Math:Random" pos="-760,1700,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="-0.02" Max="0.02"/>
+      </Node>
+      <Node Id="630" Name="Y_--_just_a_little_for_3d_--" Class="_comment" pos="-760,1670,0" flags="0"/>
+      <Node Id="631" Name="First_scaler" Class="_comment" pos="250,1960,0" flags="0"/>
+      <Node Id="632" Name="Scales_angular_impulse_based_on_size" Class="_comment" pos="-310,2350,0" flags="0"/>
+      <Node Id="633" Name="Generate_different_X,Y,Z_values" Class="_comment" pos="-310,2480,0" flags="0"/>
+      <Node Id="634" Name="." Class="_commentbox" pos="-340,2122.9907,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="780" Height="350"/>
+       <NodeSize Width="780" Height="568.03632"/>
+      </Node>
+      <Node Id="635" Name="." Class="_commentbox" pos="-340,1932.9889,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="500" Height="170"/>
+       <NodeSize Width="500" Height="388.03632"/>
+      </Node>
+      <Node Id="637" Name="Get_pos_of_ship_every_second" Class="_comment" pos="-1520,1890,0" flags="0"/>
+      <Node Id="639" Class="Entity:GetPos" pos="-130,3620,0" flags="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="641" Class="Vec3:SubVec3" pos="210,3440,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="642" Class="Vec3:NormalizeVec3" pos="370,3440,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="643" Class="Vec3:ScaleVec3" pos="790,3440,0" flags="0">
+       <Inputs vector="0,0,0" scale="1"/>
+      </Node>
+      <Node Id="644" Class="Math:Random" pos="590,3470,0" flags="0" InHideMask="7" OutHideMask="3">
+       <Inputs Min="3" Max="6"/>
+      </Node>
+      <Node Id="645" Class="Vec3:ScaleVec3" pos="940,3580,0" flags="0">
+       <Inputs vector="0,0,0" scale="0"/>
+      </Node>
+      <Node Id="646" Class="Math:Power" pos="770,3700,0" flags="0">
+       <Inputs Base="0" Power="3"/>
+      </Node>
+      <Node Id="647" Class="Math:Mul" pos="520,3690,0" flags="0">
+       <Inputs A="0" B="5"/>
+      </Node>
+      <Node Id="648" Class="Vec3:FromVec3" pos="220,3700,0" flags="0" InHideMask="1" OutHideMask="7">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="650" Class="Time:Time" pos="-790,3910,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="652" Class="Entity:GetPos" pos="-580,3910,0" flags="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="653" Class="Debug:Draw:Sphere" pos="-280,3930,0" flags="0" InHideMask="31">
+       <Inputs Pos="0,0,0" Radius="4" Color="1,1,0" Time="1"/>
+      </Node>
+      <Node Id="654" Class="Time:Delay" pos="230,2380,0" flags="0">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="656" Class="Entity:EntityId" pos="-1020,3650,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="659" Class="Entity:GetPos" pos="-130,3410,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="660" Name="Get_scale_of_entity" Class="_comment" pos="210,3670,0" flags="0"/>
+      <Node Id="662" Name="." Class="_commentbox" pos="-810,3655.3604,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="750" Height="240"/>
+       <NodeSize Width="750" Height="458.03632"/>
+      </Node>
+      <Node Id="664" Class="Mission:GameToken" pos="-3020,2340,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="666" Class="Logic:Any" pos="-1940,2030,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="667" Name="Cap Debris Spawned" Class="_comment" pos="-1980,1880,0" flags="0"/>
+      <Node Id="668" Class="Logic:Gate" pos="30,3920,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="669" Name="Check to see if the player is dead." Class="_comment" pos="-3020,2300,0" flags="0"/>
+      <Node Id="674" Class="Entity:GetPos" pos="-610,1040,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="676" Class="Vec3:AddVec3" pos="-70,1080,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="677" Class="Vec3:ScaleVec3" pos="-470,1220,0" flags="0">
+       <Inputs vector="0,0,0" scale="-4"/>
+      </Node>
+      <Node Id="678" Class="Debug:Draw:Sphere" pos="120,1080,0" flags="0" InHideMask="31">
+       <Inputs Pos="0,0,0" Radius="0.25" Color="0,1,0" Time="1"/>
+      </Node>
+      <Node Id="679" Class="Physics:Dynamics" pos="-990,1160,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="680" Class="Mission:GameToken" pos="-1730,1170,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="681" Class="Logic:Gate" pos="-880,1040,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="685" Class="Vec3:NormalizeVec3" pos="-690,1220,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="686" Name="Get velocity vector offset" Class="_commentbox" pos="-1220,763.29694,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1580" Height="360"/>
+       <NodeSize Width="1925.0364" Height="578.03632"/>
+      </Node>
+      <Node Id="687" Name="Use the output of this value to offset the asteroid spawning ring. " Class="_comment" pos="-610,1010,0" flags="0"/>
+      <Node Id="870" Name="Dead State Token" Class="_commentbox" pos="-3030,2072.9646,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="140"/>
+       <NodeSize Width="1366.0364" Height="358.03632"/>
+      </Node>
+      <Node Id="871" Name="Dead State Token" Class="_commentbox" pos="-1750,923.29669,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="140"/>
+       <NodeSize Width="1366.0364" Height="358.03632"/>
+      </Node>
+      <Node Id="874" Class="Vec3:ClampVec3" pos="-300,1210,0" flags="0">
+       <Inputs In="0,0,0" Min="-10,-10,-10" Max="8,8,8"/>
+      </Node>
+      <Node Id="875" Name="." Class="_commentbox" pos="-1190,773.29688,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1510" Height="330"/>
+       <NodeSize Width="1510" Height="548.03632"/>
+      </Node>
+      <Node Id="877" Class="Entity:EntityInfo" pos="-820,2970,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="878" Class="String:Compare" pos="-630,3040,0" flags="0">
+       <Inputs A="" B="Asteroid.Asteroid" IgnoreCase="1"/>
+      </Node>
+      <Node Id="879" Class="Entity:RemoveEntity" pos="-230,3240,0" flags="0">
+       <Inputs Entity="0"/>
+      </Node>
+      <Node Id="881" Name="Scale asteroids randomly" Class="_comment" pos="-1300,2200,0" flags="0"/>
+      <Node Id="882" Name="Debug recycle teleport location and vector. " Class="_comment" pos="-770,3870,0" flags="0"/>
+      <Node Id="883" Name="." Class="_commentbox" pos="-1540,1654.65,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2200" Height="270"/>
+       <NodeSize Width="2200" Height="488.03632"/>
+      </Node>
+      <Node Id="885" Name="Spawn the asteroid" Class="_comment" pos="-870.9964,1905.67,0" flags="0"/>
+      <Node Id="886" Name="Create a normalized vector by subtracting the asteroids position from that of the ship. " Class="_comment" pos="-460,1960,0" flags="0"/>
+      <Node Id="887" Name="If the player is dead then disable checks and if alive then re-enable them. " Class="_comment" pos="-1820,1260,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="84" nodeOut="79" portIn="A" portOut="Count" enabled="1"/>
+      <Edge nodeIn="84" nodeOut="79" portIn="Activate" portOut="Count" enabled="1"/>
+      <Edge nodeIn="666" nodeOut="84" portIn="In0" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="434" nodeOut="431" portIn="Spawn" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="435" nodeOut="431" portIn="Generate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="577" nodeOut="431" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="606" nodeOut="431" portIn="In1" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="434" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="451" nodeOut="434" portIn="Get" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="451" nodeOut="434" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="499" nodeOut="434" portIn="In" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="436" nodeOut="435" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="436" nodeOut="435" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="436" nodeOut="435" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="620" nodeOut="435" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="620" nodeOut="435" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="621" nodeOut="435" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="622" nodeOut="435" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="623" nodeOut="435" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="628" nodeOut="435" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="628" nodeOut="435" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="434" nodeOut="436" portIn="Rot" portOut="Result" enabled="1"/>
+      <Edge nodeIn="434" nodeOut="436" portIn="Scale" portOut="Result" enabled="1"/>
+      <Edge nodeIn="434" nodeOut="438" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="440" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="442" portIn="In" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="558" nodeOut="442" portIn="in" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="431" nodeOut="449" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="577" nodeOut="451" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="577" nodeOut="451" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="528" nodeOut="464" portIn="vector" portOut="Result" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="465" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="79" nodeOut="477" portIn="Reset" portOut="output" enabled="1"/>
+      <Edge nodeIn="681" nodeOut="498" portIn="In" portOut="tick" enabled="1"/>
+      <Edge nodeIn="551" nodeOut="499" portIn="Set" portOut="Count" enabled="1"/>
+      <Edge nodeIn="551" nodeOut="499" portIn="String2" portOut="Count" enabled="1"/>
+      <Edge nodeIn="529" nodeOut="528" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="528" portIn="Generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="438" nodeOut="529" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="438" nodeOut="529" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="529" nodeOut="530" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="656" nodeOut="548" portIn="entityId" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="534" nodeOut="549" portIn="Show" portOut="Count" enabled="0"/>
+      <Edge nodeIn="553" nodeOut="549" portIn="Set" portOut="Count" enabled="1"/>
+      <Edge nodeIn="553" nodeOut="549" portIn="String2" portOut="Count" enabled="1"/>
+      <Edge nodeIn="500" nodeOut="551" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="500" nodeOut="551" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="534" nodeOut="553" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="589" nodeOut="554" portIn="Activate" portOut="Done" enabled="1"/>
+      <Edge nodeIn="639" nodeOut="554" portIn="Get" portOut="Done" enabled="1"/>
+      <Edge nodeIn="653" nodeOut="554" portIn="Draw" portOut="Done" enabled="0"/>
+      <Edge nodeIn="659" nodeOut="554" portIn="Get" portOut="Done" enabled="1"/>
+      <Edge nodeIn="449" nodeOut="558" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="554" nodeOut="565" portIn="Beam" portOut="Out" enabled="1"/>
+      <Edge nodeIn="554" nodeOut="565" portIn="Position" portOut="Out" enabled="1"/>
+      <Edge nodeIn="653" nodeOut="565" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="567" nodeOut="566" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="572" nodeOut="567" portIn="vector" portOut="Result" enabled="1"/>
+      <Edge nodeIn="567" nodeOut="568" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="573" nodeOut="572" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="574" nodeOut="572" portIn="Generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="565" nodeOut="573" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="565" nodeOut="573" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="573" nodeOut="574" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="586" nodeOut="577" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="587" nodeOut="586" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="588" nodeOut="586" portIn="Generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="611" nodeOut="587" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="587" nodeOut="588" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="606" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="465" nodeOut="606" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="629" nodeOut="606" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="611" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="611" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="611" nodeOut="615" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="615" nodeOut="620" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="615" nodeOut="620" portIn="Base" portOut="Out" enabled="1"/>
+      <Edge nodeIn="625" nodeOut="621" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="625" nodeOut="622" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="625" nodeOut="623" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="626" nodeOut="625" portIn="vector" portOut="Result" enabled="1"/>
+      <Edge nodeIn="654" nodeOut="626" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="626" nodeOut="627" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="627" nodeOut="628" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="627" nodeOut="628" portIn="Base" portOut="Out" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="629" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="641" nodeOut="639" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="648" nodeOut="639" portIn="vec3" portOut="Scale" enabled="1"/>
+      <Edge nodeIn="642" nodeOut="641" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="643" nodeOut="642" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="644" nodeOut="642" portIn="Generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="645" nodeOut="643" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="643" nodeOut="644" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="589" nodeOut="645" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="645" nodeOut="646" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="646" nodeOut="647" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="646" nodeOut="647" portIn="Base" portOut="Out" enabled="1"/>
+      <Edge nodeIn="647" nodeOut="648" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="647" nodeOut="648" portIn="Activate" portOut="x" enabled="1"/>
+      <Edge nodeIn="652" nodeOut="650" portIn="Get" portOut="tick" enabled="0"/>
+      <Edge nodeIn="597" nodeOut="652" portIn="Draw" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="597" nodeOut="652" portIn="Pos" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="654" portIn="AngularImpulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="554" nodeOut="656" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="589" nodeOut="656" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="639" nodeOut="656" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="652" nodeOut="656" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="877" nodeOut="656" portIn="Get" portOut="Id" enabled="1"/>
+      <Edge nodeIn="877" nodeOut="656" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="656" portIn="Entity" portOut="Id" enabled="1"/>
+      <Edge nodeIn="641" nodeOut="659" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="641" nodeOut="659" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="449" nodeOut="664" portIn="Open" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="499" nodeOut="664" portIn="Reset" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="500" nodeOut="664" portIn="Hide" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="549" nodeOut="664" portIn="Reset" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="666" nodeOut="664" portIn="In1" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="668" nodeOut="664" portIn="Open" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="668" nodeOut="664" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="449" nodeOut="666" portIn="Close" portOut="Out" enabled="1"/>
+      <Edge nodeIn="549" nodeOut="668" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="676" nodeOut="674" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="676" nodeOut="674" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="438" nodeOut="676" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="565" nodeOut="676" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="678" nodeOut="676" portIn="Draw" portOut="Out" enabled="0"/>
+      <Edge nodeIn="678" nodeOut="676" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="677" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="685" nodeOut="679" portIn="vector" portOut="Velocity" enabled="1"/>
+      <Edge nodeIn="679" nodeOut="680" portIn="Enable" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="679" nodeOut="680" portIn="Disable" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="681" nodeOut="680" portIn="Open" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="681" nodeOut="680" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="674" nodeOut="681" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="677" nodeOut="685" portIn="scale" portOut="length" enabled="1"/>
+      <Edge nodeIn="677" nodeOut="685" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="676" nodeOut="874" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="877" portIn="A" portOut="Archetype" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="877" portIn="Compare" portOut="Archetype" enabled="1"/>
+      <Edge nodeIn="566" nodeOut="878" portIn="Generate" portOut="True" enabled="1"/>
+      <Edge nodeIn="568" nodeOut="878" portIn="Generate" portOut="True" enabled="1"/>
+      <Edge nodeIn="668" nodeOut="878" portIn="In" portOut="True" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="878" portIn="Activate" portOut="False" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{080129D2-592C-4609-9D67-CDA2A377FBFC}" Name="Camera" HideOrder="0" Pos="1055,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="6" Name="Game_Camera" Class="_commentbox" pos="970,2450.3623,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1390" Height="1010"/>
+       <NodeSize Width="1390" Height="1041.2135"/>
+      </Node>
+      <Node Id="244" Class="Movement:MoveEntityTo" pos="2030,3220,0" flags="0" EntityGUID="{54132667-7367-4A50-BFF9-23DFD86080A0}" EntityGUID_64="4A50736754132667">
+       <Inputs entityId="0" Destination="0,0,0" DynamicDestination="1" ValueType="1" Value="0.0001" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="263" Class="Entity:GetPos" pos="1230,3240,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="273" Class="Time:Time" pos="1000,3240,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="284" Name="Tells_the_camera_to_move_the_destination" Class="_comment" pos="1980,3190,0" flags="0"/>
+      <Node Id="285" Name="Gets_the_target_position_every frame" Class="_comment" pos="1200,3210,0" flags="0"/>
+      <Node Id="298" Class="Vec3:FromVec3" pos="1490,3260,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="299" Class="Vec3:ToVec3" pos="1860,3260,0" flags="0">
+       <Inputs x="0" y="0" z="60"/>
+      </Node>
+      <Node Id="337" Class="Movement:RotateEntityTo" pos="1240,2890,0" flags="0" EntityGUID="{54132667-7367-4A50-BFF9-23DFD86080A0}" EntityGUID_64="4A50736754132667">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Value="0.1" CoordSys="1"/>
+      </Node>
+      <Node Id="340" Name="Rotates_Camera" Class="_comment" pos="1240,2860,0" flags="0"/>
+      <Node Id="345" Class="Game:Start" pos="1010,2570,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="346" Class="Math:Add" pos="1690,3190,0" flags="0">
+       <Inputs A="0" B="-20"/>
+      </Node>
+      <Node Id="358" Class="Camera:View" pos="1240,2580,0" flags="0" EntityGUID="{54132667-7367-4A50-BFF9-23DFD86080A0}" EntityGUID_64="4A50736754132667">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="70" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="493" Name="Distance_from_ship_to_camera." Class="_comment" pos="1640,3160,0" flags="0"/>
+      <Node Id="494" Name="On Start Settings" Class="_commentbox" pos="990,2500.3628,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="530" Height="560"/>
+       <NodeSize Width="530" Height="591.21344"/>
+      </Node>
+      <Node Id="495" Name="Runtime" Class="_commentbox" pos="990,3114.0322,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1350" Height="330"/>
+       <NodeSize Width="1350" Height="361.21347"/>
+      </Node>
+      <Node Id="497" Name="On start enable ship camera" Class="_comment" pos="1240,2550,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="298" nodeOut="263" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="263" nodeOut="273" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="298" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="298" portIn="z" portOut="z" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="298" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="298" portIn="Activate" portOut="y" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Destination" portOut="Result" enabled="1"/>
+      <Edge nodeIn="244" nodeOut="299" portIn="Start" portOut="Result" enabled="1"/>
+      <Edge nodeIn="337" nodeOut="345" portIn="Start" portOut="output" enabled="1"/>
+      <Edge nodeIn="358" nodeOut="345" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="299" nodeOut="346" portIn="y" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{0CCDCFE0-80DD-4674-8267-0B4E193B9A5C}" Name="ShieldPowerUP" HideOrder="0" Pos="1047.9999,1050,49.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="5" Name="Shield System" Class="_commentbox" pos="-5350,-40.146812,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3070" Height="750"/>
+       <NodeSize Width="3070" Height="781.15778"/>
+      </Node>
+      <Node Id="7" Class="Entity:SpawnArchetype" pos="-4660,120,0" flags="0">
+       <Inputs Archetype="Level.Shield" Name="Shield" Pos="1050,1050,60" Rot="0,0,0" Scale="4,4,4"/>
+      </Node>
+      <Node Id="8" Class="Entity:GetPos" pos="-5270,120,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="10" Class="Material:EntityMaterialChange" pos="-4160,100,0" flags="0">
+       <Inputs entityId="0" mat_MaterialName="Levels/Samples/Dont_Die/Geometry/shield" SerializeChanges="0"/>
+      </Node>
+      <Node Id="98" Name="." Class="_commentbox" pos="-2970,21.670349,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="650" Height="410"/>
+       <NodeSize Width="650" Height="441.15778"/>
+      </Node>
+      <Node Id="562" Class="entity:ProximityTrigger" pos="-2060,110,0" flags="0" EntityGUID="{BD7099B9-3781-42C4-A74B-61EC5AFBAFD9}" EntityGUID_64="42C43781BD7099B9">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="603" Name="Is Debris in proximity trigger" Class="_comment" pos="-2060,80,0" flags="0"/>
+      <Node Id="609" Class="Entity:GetPos" pos="-1750,290,0" flags="0" InHideMask="7" OutHideMask="63">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="611" Class="Debug:Draw:Line" pos="-960,260,0" flags="0" InHideMask="127">
+       <Inputs Pos1="0,0,0" Pos2="0,0,0" Dir="0,0,0" Length="10" Color="0.7,0.7,0.7" Time="1.5"/>
+      </Node>
+      <Node Id="615" Class="Math:Power" pos="900,1620,0" flags="0">
+       <Inputs Base="0" Power="3"/>
+      </Node>
+      <Node Id="634" Class="Vec3:SubVec3" pos="-1570,230,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="635" Class="Vec3:MagnitudeVec3" pos="-1410,240,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="664" Class="Math:Less" pos="-1200,240,0" flags="0">
+       <Inputs A="0" B="8"/>
+      </Node>
+      <Node Id="817" Class="Time:Time" pos="-3210,160,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="836" Class="Entity:GetPos" pos="-2940,270,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="840" Class="Logic:Any" pos="-530,1700,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="852" Class="Debug:Draw:Sphere" pos="-2540,80,0" flags="0" InHideMask="31">
+       <Inputs Pos="0,0,0" Radius="8" Color="0,0,0" Time="0.1"/>
+      </Node>
+      <Node Id="858" Class="Entity:GetBounds" pos="-2100,1300,0" flags="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="867" Class="IntersectionTests:BoundingBoxVsSphere" pos="-1170,1230,0" flags="0">
+       <Inputs BoundsMin="0,0,0" BoundsMax="0,0,0" SphereCenter="0,0,0" SphereRadius="8"/>
+      </Node>
+      <Node Id="871" Name="Reset World Token" Class="_commentbox" pos="-6610,-190.13426,0" flags="0">
+       <Inputs TextSize="1" Color="0.768151,0.590619,0.021219" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="120"/>
+       <NodeSize Width="440" Height="151.15778"/>
+      </Node>
+      <Node Id="875" Class="Vec3:SubVec3" pos="-10,1290,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="876" Class="Vec3:NormalizeVec3" pos="130,1290,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="877" Class="Mission:GameToken" pos="-7800,200,0" flags="0">
+       <Inputs gametoken_Token="Level.AWS.Lambda Update" CompareValue=""/>
+      </Node>
+      <Node Id="878" Class="Vec3:ScaleVec3" pos="620,1030,0" flags="0">
+       <Inputs vector="0,0,0" scale="8"/>
+      </Node>
+      <Node Id="879" Class="Vec3:AddVec3" pos="1210,1020,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="881" Class="Vec3:DotVec3" pos="620,1230,0" flags="0">
+       <Inputs A="0,0,0" B="0,1,0"/>
+      </Node>
+      <Node Id="882" Class="Math:Abs" pos="780,1230,0" flags="0">
+       <Inputs A="0"/>
+      </Node>
+      <Node Id="883" Class="Math:Less" pos="930,1230,0" flags="0">
+       <Inputs A="0" B="0.9"/>
+      </Node>
+      <Node Id="885" Class="Vec3:CrossVec3" pos="1130,1210,0" flags="0">
+       <Inputs A="0,0,0" B="0,1,0"/>
+      </Node>
+      <Node Id="886" Class="Vec3:CrossVec3" pos="1130,1300,0" flags="0">
+       <Inputs A="0,0,0" B="1,0,0"/>
+      </Node>
+      <Node Id="887" Class="Vec3:RotateVec3OnAxis" pos="1630,1150,0" flags="0">
+       <Inputs Vector="0,0,0" Axis="0,0,0" Angle="45"/>
+      </Node>
+      <Node Id="888" Class="Logic:Any" pos="1290,1240,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="891" Class="Physics:ActionImpulse" pos="2170,1150,0" flags="0">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,-200,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="892" Class="Vec3:ScaleVec3" pos="1900,1220,0" flags="0">
+       <Inputs vector="0,0,0" scale="3000"/>
+      </Node>
+      <Node Id="893" Class="JSON:GetJsonValue" pos="-6870,-460,0" flags="0">
+       <Inputs JSON="" Attribute="mission"/>
+      </Node>
+      <Node Id="894" Class="Vec3:SubVec3" pos="-450,1480,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="895" Class="Vec3:MagnitudeVec3" pos="-280,1480,0" flags="0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="896" Name="Get mission status: Start, In Progress, Complete" Class="_comment" pos="-6540,-350,0" flags="0"/>
+      <Node Id="897" Class="JSON:GetJsonValue" pos="-6530,-600,0" flags="0">
+       <Inputs JSON="" Attribute="missionData"/>
+      </Node>
+      <Node Id="898" Class="JSON:GetJsonValue" pos="-6050,-600,0" flags="0">
+       <Inputs JSON="" Attribute="Description"/>
+      </Node>
+      <Node Id="899" Class="String:Compare" pos="-6050,-330,0" flags="0">
+       <Inputs A="" B="Complete" IgnoreCase="1"/>
+      </Node>
+      <Node Id="900" Class="Entity:SpawnArchetype" pos="1900,1080,0" flags="0" InHideMask="63" OutHideMask="7">
+       <Inputs Archetype="Asteroid.AsteroidNoCollide" Name="" Pos="0,0,0" Rot="0,0,0" Scale="5,5,5"/>
+      </Node>
+      <Node Id="901" Name="Calculate Spawn Point Close \nto the Shield&apos;s Surface" Class="_comment" pos="-10,1240,0" flags="0"/>
+      <Node Id="902" Name="Calculate a perpendicular axis to the vector ShieldCenter-&gt;Asteroid" Class="_comment" pos="600,1190,0" flags="0"/>
+      <Node Id="903" Class="JSON:GetJsonValue" pos="-6050,-410,0" flags="0">
+       <Inputs JSON="" Attribute="CompletionText"/>
+      </Node>
+      <Node Id="904" Class="Logic:All" pos="-5680,-330,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="905" Class="Vec3:RotateVec3OnAxis" pos="1630,1430,0" flags="0">
+       <Inputs Vector="0,0,0" Axis="0,0,0" Angle="135"/>
+      </Node>
+      <Node Id="906" Class="Physics:ActionImpulse" pos="2160,1420,0" flags="0">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,-200,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="907" Class="Vec3:ScaleVec3" pos="1920,1490,0" flags="0">
+       <Inputs vector="0,0,0" scale="3000"/>
+      </Node>
+      <Node Id="908" Class="Entity:SpawnArchetype" pos="1900,1370,0" flags="0" InHideMask="63" OutHideMask="7">
+       <Inputs Archetype="Asteroid.AsteroidNoCollide" Name="" Pos="0,0,0" Rot="0,0,0" Scale="5,5,5"/>
+      </Node>
+      <Node Id="909" Class="Vec3:RotateVec3OnAxis" pos="1620,1730,0" flags="0">
+       <Inputs Vector="0,0,0" Axis="0,0,0" Angle="270"/>
+      </Node>
+      <Node Id="910" Class="Physics:ActionImpulse" pos="2160,1680,0" flags="0">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,-200,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="911" Class="Vec3:ScaleVec3" pos="1920,1780,0" flags="0">
+       <Inputs vector="0,0,0" scale="3000"/>
+      </Node>
+      <Node Id="912" Class="Entity:SpawnArchetype" pos="1910,1650,0" flags="0" InHideMask="63" OutHideMask="7">
+       <Inputs Archetype="Asteroid.AsteroidNoCollide" Name="" Pos="0,0,0" Rot="0,0,0" Scale="5,5,5"/>
+      </Node>
+      <Node Id="914" Class="Math:Mul" pos="-30,1440,0" flags="0">
+       <Inputs A="0" B="0.3"/>
+      </Node>
+      <Node Id="915" Class="Math:Add" pos="150,1440,0" flags="0">
+       <Inputs A="0" B="8"/>
+      </Node>
+      <Node Id="916" Name="time tick" Class="_comment" pos="-1860,340,0" flags="0"/>
+      <Node Id="919" Class="Vec3:ToVec3" pos="890,1800,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="921" Class="Math:Mul" pos="650,1810,0" flags="0">
+       <Inputs A="0" B="0.6"/>
+      </Node>
+      <Node Id="922" Name="Debris Scale" Class="_comment" pos="650,1780,0" flags="0"/>
+      <Node Id="923" Class="Math:Mul" pos="640,1620,0" flags="0">
+       <Inputs A="0" B="2"/>
+      </Node>
+      <Node Id="924" Name="Debris Impulse" Class="_comment" pos="640,1590,0" flags="0"/>
+      <Node Id="931" Class="Vec3:SubVec3" pos="-1830,1300,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="933" Class="Vec3:ScaleVec3" pos="-1630,1300,0" flags="0">
+       <Inputs vector="0,0,0" scale="0.4"/>
+      </Node>
+      <Node Id="934" Class="Entity:GetPos" pos="-2210,1500,0" flags="0" InHideMask="7" OutHideMask="63">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="935" Class="Vec3:AddVec3" pos="-1420,1440,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="936" Class="Vec3:SubVec3" pos="-1420,1280,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="940" Class="Debug:Draw:AABB" pos="-1150,1440,0" flags="0">
+       <Inputs MinPos="0,0,0" MaxPos="0,0,0" Color="1,0,0" Time="0.1"/>
+      </Node>
+      <Node Id="943" Name="Fudge the bounding box a little bit to make it a little tighter around the object. \n(If the object clips through the box a little bit that is okay)" Class="_comment" pos="-2110,1240,0" flags="0"/>
+      <Node Id="948" Name="Bounding Box Size" Class="_comment" pos="-350,1440,0" flags="0"/>
+      <Node Id="950" Name="Calculate a distance that is the \nradius of the sphere + some offset \nbased on the size of the asteroid." Class="_comment" pos="-440,1250,0" flags="0"/>
+      <Node Id="955" Name="Debris # 2" Class="_comment" pos="1630,1390,0" flags="0"/>
+      <Node Id="956" Name="Debris #1" Class="_comment" pos="1630,1110,0" flags="0"/>
+      <Node Id="957" Name="Debris #3" Class="_comment" pos="1620,1700,0" flags="0"/>
+      <Node Id="959" Name="Bounding Box Min" Class="_comment" pos="-1420,1240,0" flags="0"/>
+      <Node Id="960" Name="Bounding Box Max" Class="_comment" pos="-1420,1410,0" flags="0"/>
+      <Node Id="961" Class="Entity:RemoveEntity" pos="-820,1530,0" flags="0">
+       <Inputs Entity="0"/>
+      </Node>
+      <Node Id="962" Class="Entity:FindEntityByName" pos="-2940,190,0" flags="0">
+       <Inputs Name="Shield"/>
+      </Node>
+      <Node Id="963" Class="Entity:EntityPos" pos="-2550,190,0" flags="0">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="964" Class="Iterator:GetEntitiesInSphere" pos="-2620,1380,0" flags="0">
+       <Inputs Limit="0" Immediate="0" Type="0" ArchetypeFilter="Asteroid.Asteroid" Center="0,0,0" Radius="8"/>
+      </Node>
+      <Node Id="965" Class="Math:SetNumber" pos="-5270,640,0" flags="0">
+       <Inputs In="4"/>
+      </Node>
+      <Node Id="966" Name="One stop shopping: \n Set size of sphere, iterator, and visuals." Class="_comment" pos="-5270,580,0" flags="0"/>
+      <Node Id="968" Name="Sets the scale of the spawned shield \n visual to match that of the detection sphere. " Class="_comment" pos="-5010,290,0" flags="0"/>
+      <Node Id="969" Class="Vec3:ToVec3" pos="-5010,200,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="971" Name="Since the shield entity is spawned,\nthe entity ID is created dynamically and\na fixed ID can not be plugged directly\ninto the node. In order to get the dynamic ID\nFindEntityByName node is used. " Class="_comment" pos="-2940,70,0" flags="0"/>
+      <Node Id="973" Name="Debug Size" Class="_comment" pos="-1160,1410,0" flags="0"/>
+      <Node Id="974" Name="Loop the function" Class="_comment" pos="-530,1670,0" flags="0"/>
+      <Node Id="975" Name="Asteroid Destruction System" Class="_commentbox" pos="-3350,861.2428,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="5880" Height="1090"/>
+       <NodeSize Width="5880" Height="1121.1578"/>
+      </Node>
+      <Node Id="976" Name="." Class="_commentbox" pos="-5300,29.105537,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1730" Height="480"/>
+       <NodeSize Width="1730" Height="511.15778"/>
+      </Node>
+      <Node Id="977" Name="Get ship position and set spawn position to be the same. " Class="_comment" pos="-5270,90,0" flags="0"/>
+      <Node Id="978" Name="Apply cool material here. " Class="_comment" pos="-4160,70,0" flags="0"/>
+      <Node Id="979" Name="Note: If we want in the future we could \n create different shield materials and \n hook them up to missions or achievements. " Class="_comment" pos="-4000,230,0" flags="0"/>
+      <Node Id="984" Class="Math:BooleanTo" pos="-3490,160,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="989" Name="If the shield visual is enabled, then enable time tick. " Class="_comment" pos="-3490,120,0" flags="0"/>
+      <Node Id="990" Name="." Class="_commentbox" pos="590,975.52222,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="110"/>
+       <NodeSize Width="800" Height="141.15778"/>
+      </Node>
+      <Node Id="991" Name="." Class="_commentbox" pos="590,1145.5378,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="810" Height="230"/>
+       <NodeSize Width="810" Height="261.15778"/>
+      </Node>
+      <Node Id="992" Name="." Class="_commentbox" pos="600,1541.5469,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="150"/>
+       <NodeSize Width="800" Height="181.15778"/>
+      </Node>
+      <Node Id="993" Name="." Class="_commentbox" pos="600,1725.5325,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="150"/>
+       <NodeSize Width="800" Height="181.15778"/>
+      </Node>
+      <Node Id="994" Class="Logic:All" pos="-4800,120,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="995" Class="Math:Counter" pos="-260,2140,0" flags="0">
+       <Inputs Max="0"/>
+      </Node>
+      <Node Id="997" Class="Math:Equal" pos="60,2130,0" flags="0">
+       <Inputs A="11" B="0"/>
+      </Node>
+      <Node Id="998" Class="Entity:RemoveEntity" pos="630,2160,0" flags="0">
+       <Inputs Entity="0"/>
+      </Node>
+      <Node Id="999" Class="Entity:FindEntityByName" pos="310,2160,0" flags="0">
+       <Inputs Name="Shield"/>
+      </Node>
+      <Node Id="1001" Class="JSON:GetJsonValue" pos="-7330,70,0" flags="0">
+       <Inputs JSON="" Attribute="player"/>
+      </Node>
+      <Node Id="1002" Class="JSON:GetJsonValue" pos="-7000,90,0" flags="0">
+       <Inputs JSON="" Attribute="inventory"/>
+      </Node>
+      <Node Id="1005" Class="JSON:IsValueInJsonArray" pos="-6650,90,0" flags="0">
+       <Inputs JsonArray="" Value="Shield"/>
+      </Node>
+      <Node Id="1009" Class="Mission:GameToken" pos="-7090,470,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="0"/>
+      </Node>
+      <Node Id="1013" Class="Logic:Any" pos="-4120,640,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1014" Name="If this is true then activate shield." Class="_comment" pos="-6650,50,0" flags="0"/>
+      <Node Id="1016" Class="Logic:Once" pos="-5760,120,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1017" Class="Game:Start" pos="-4310,640,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1018" Name="." Class="_commentbox" pos="-5300,539.84625,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="400" Height="150"/>
+       <NodeSize Width="400" Height="181.15778"/>
+      </Node>
+      <Node Id="1019" Name="." Class="_commentbox" pos="-2650,1180.1345,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2060" Height="420"/>
+       <NodeSize Width="2060" Height="451.15778"/>
+      </Node>
+      <Node Id="1020" Name="." Class="_commentbox" pos="1590,1025.5657,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="820" Height="820"/>
+       <NodeSize Width="820" Height="851.15778"/>
+      </Node>
+      <Node Id="1021" Name="Enable / Disable" Class="_commentbox" pos="-7870,-58.327988,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2410" Height="430"/>
+       <NodeSize Width="2410" Height="461.15778"/>
+      </Node>
+      <Node Id="1022" Name="." Class="_commentbox" pos="-7840,-18.328815,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2350" Height="360"/>
+       <NodeSize Width="2350" Height="391.15778"/>
+      </Node>
+      <Node Id="1024" Name="^" Class="_commentbox" pos="-7810,149.90237,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="410" Height="120"/>
+       <NodeSize Width="410" Height="151.15778"/>
+      </Node>
+      <Node Id="1028" Class="Logic:All" pos="-6010,120,0" flags="0" InHideMask="511" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1029" Name="Make sure we activate shield\n when the player is alive.  " Class="_comment" pos="-6020,60,0" flags="0"/>
+      <Node Id="1030" Name="Make sure on game start \n and when the shield is destroyed to disable time:tick" Class="_comment" pos="-4310,590,0" flags="0"/>
+      <Node Id="1031" Name="Shield Health" Class="_commentbox" pos="-310,2041.7324,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1420" Height="490"/>
+       <NodeSize Width="1420" Height="521.15778"/>
+      </Node>
+      <Node Id="1032" Class="Logic:Blocker" pos="-6220,270,0" flags="0">
+       <Inputs Block="0"/>
+      </Node>
+      <Node Id="1037" Class="Math:BooleanTo" pos="-6400,270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1038" Class="Game:Start" pos="-6660,270,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1040" Name="Value 0 = Alive" Class="_comment" pos="-7090,540,0" flags="0"/>
+      <Node Id="1041" Name="On start block signals from the PlayerDead token\n until after the shield has been granted. " Class="_comment" pos="-6430,210,0" flags="0"/>
+      <Node Id="1044" Name="Ensure the shield only \n spawns once per activation" Class="_comment" pos="-5760,60,0" flags="0"/>
+      <Node Id="1045" Name="Dead State Token" Class="_commentbox" pos="-7110,411.66757,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="510" Height="120"/>
+       <NodeSize Width="510" Height="151.15778"/>
+      </Node>
+      <Node Id="1046" Class="Material:EntityMaterialChange" pos="-4170,360,0" flags="0">
+       <Inputs entityId="0" mat_MaterialName="levels/samples/dont_die/geometry/shield_glow" SerializeChanges="0"/>
+      </Node>
+      <Node Id="1052" Class="Logic:Any" pos="-4300,180,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1054" Class="Time:Time" pos="-2910,1300,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="1055" Class="Math:BooleanTo" pos="-3110,1300,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1056" Class="Input:MouseButtonInfo" pos="-4540,370,0" flags="0">
+       <Inputs MouseButton="1" MouseWheel="0"/>
+      </Node>
+      <Node Id="1058" Name="Make shield glow on mouse button press" Class="_comment" pos="-4160,330,0" flags="0"/>
+      <Node Id="1059" Class="Logic:Any" pos="-3280,1210,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1060" Name="Enable / disable destruction on mouse click" Class="_comment" pos="-3280,1160,0" flags="0"/>
+      <Node Id="1061" Class="Entity:GetBounds" pos="-1640,110,0" flags="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1062" Class="Debug:Draw:AABB" pos="-1400,110,0" flags="0" InHideMask="31">
+       <Inputs MinPos="0,0,0" MaxPos="0,0,0" Color="0,0,0" Time="1"/>
+      </Node>
+      <Node Id="1063" Name="Draw detector lines and bounding boxes" Class="_commentbox" pos="-2130,1.4730215,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1380" Height="370"/>
+       <NodeSize Width="1380" Height="401.15778"/>
+      </Node>
+      <Node Id="1064" Name="." Class="_commentbox" pos="-2100,31.472816,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1310" Height="320"/>
+       <NodeSize Width="1310" Height="351.15778"/>
+      </Node>
+      <Node Id="1065" Name="b= ship pos" Class="_comment" pos="-1570,320,0" flags="0"/>
+      <Node Id="1066" Name="ship pos = pos 1" Class="_comment" pos="-960,230,0" flags="0"/>
+      <Node Id="1067" Class="Logic:Any" pos="-3270,1310,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1071" Class="UI:Canvas:Load" pos="-60,2460,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/shieldhp.xml"/>
+      </Node>
+      <Node Id="1073" Class="UI:Canvas:Unload" pos="890,2160,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="1074" Class="UI:Fader:Animation" pos="800,2380,0" flags="0">
+       <Inputs CanvasID="0" ElementID="11" StartValue="-1" TargetValue="0" Speed="1"/>
+      </Node>
+      <Node Id="1075" Class="Debug:InputKey" pos="-5990,450,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs entityId="0" Key="g" NonDevMode="0"/>
+      </Node>
+      <Node Id="1079" Class="Logic:Any" pos="-5600,220,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1080" Class="Math:Add" pos="10,2360,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="1083" Class="Math:BooleanFrom" pos="-260,2450,0" flags="0">
+       <Inputs Value="0"/>
+      </Node>
+      <Node Id="1090" Class="Debug:DisplayMessage" pos="-5310,-180,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1091" Class="JSON:GetJsonValue" pos="-6540,-310,0" flags="0">
+       <Inputs JSON="" Attribute="status"/>
+      </Node>
+      <Node Id="1092" Class="Debug:DisplayMessage" pos="-5510,-180,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="70" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1097" Name="debug shield working" Class="_comment" pos="-5980,420,0" flags="0"/>
+      <Node Id="1098" Name="Mission Display Text" Class="_commentbox" pos="-6920,-679.71088,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2560" Height="450"/>
+       <NodeSize Width="2560" Height="481.15778"/>
+      </Node>
+      <Node Id="1099" Name="Only show completion text \n if the mission is complete. " Class="_comment" pos="-5680,-400,0" flags="0"/>
+      <Node Id="1100" Name="." Class="_commentbox" pos="-6580,-449.84329,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2180" Height="200"/>
+       <NodeSize Width="2180" Height="231.15778"/>
+      </Node>
+      <Node Id="1101" Name="." Class="_commentbox" pos="-6580,-659.71436,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2180" Height="200"/>
+       <NodeSize Width="2180" Height="231.15778"/>
+      </Node>
+      <Node Id="1102" Name="." Class="_commentbox" pos="-290,2071.7266,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="140"/>
+       <NodeSize Width="1370" Height="171.15778"/>
+      </Node>
+      <Node Id="1103" Name="." Class="_commentbox" pos="-290,2251.7253,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1370" Height="260"/>
+       <NodeSize Width="1370" Height="291.15778"/>
+      </Node>
+      <Node Id="1104" Name="Health value" Class="_comment" pos="-260,2090,0" flags="0"/>
+      <Node Id="1105" Name="UI Health Bar" Class="_comment" pos="-260,2260,0" flags="0"/>
+      <Node Id="1106" Class="Mission:GameToken" pos="-6590,-140,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" CompareValue="1"/>
+      </Node>
+      <Node Id="1107" Name="Lambda values are stored in \n game token for us in the \n different flowgraphs." Class="_comment" pos="-7770,110,0" flags="0"/>
+      <Node Id="1108" Name="When shield health pool = 0 \n then find the shield entity id. " Class="_comment" pos="300,2110,0" flags="1"/>
+      <Node Id="1109" Name="Remove the shield" Class="_comment" pos="630,2120,0" flags="0"/>
+      <Node Id="1110" Name="Synchronize UI health \n bar element id with health pool size. " Class="_comment" pos="10,2300,0" flags="0"/>
+      <Node Id="1111" Name="Fade out the shield health bar." Class="_comment" pos="790,2340,0" flags="0"/>
+      <Node Id="1112" Name="When shield is \n gone unload UI. " Class="_comment" pos="880,2110,0" flags="0"/>
+      <Node Id="1113" Name="Detect if asteroids are in range" Class="_comment" pos="-2580,1170,0" flags="0"/>
+      <Node Id="1114" Name="Set shield position to update to ship position every frame. " Class="_comment" pos="-2950,20,0" flags="0"/>
+      <Node Id="1115" Name="." Class="_commentbox" pos="-4330,539.89093,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="470" Height="160"/>
+       <NodeSize Width="470" Height="191.15778"/>
+      </Node>
+      <Node Id="1116" Name="Spawn shield archetype" Class="_comment" pos="-5280,30,0" flags="0"/>
+      <Node Id="1117" Name="." Class="_commentbox" pos="-3500,70.482208,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="460" Height="150"/>
+       <NodeSize Width="460" Height="181.15778"/>
+      </Node>
+      <Node Id="1118" Name="." Class="_commentbox" pos="-3300,1150.3633,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="560" Height="230"/>
+       <NodeSize Width="560" Height="261.15778"/>
+      </Node>
+      <Node Id="1119" Name="." Class="_commentbox" pos="-490,1190.3513,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="830" Height="420"/>
+       <NodeSize Width="830" Height="451.15778"/>
+      </Node>
+      <Node Id="1120" Name="Create debris position" Class="_comment" pos="610,980,0" flags="0"/>
+      <Node Id="1121" Name="Create debris vector" Class="_comment" pos="600,1150,0" flags="0"/>
+      <Node Id="1122" Name="Spawn Debris" Class="_comment" pos="1610,1030,0" flags="0"/>
+      <Node Id="1123" Name="Create debris impulse force" Class="_comment" pos="600,1540,0" flags="0"/>
+      <Node Id="1124" Name="Create debris scale" Class="_comment" pos="620,1730,0" flags="0"/>
+      <Node Id="1125" Class="UI:Canvas:Load" pos="-5710,-610,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/missiontext.xml"/>
+      </Node>
+      <Node Id="1127" Class="UI:Text:SetText" pos="-4910,-610,0" flags="0">
+       <Inputs CanvasID="0" ElementID="2" Value=""/>
+      </Node>
+      <Node Id="1128" Class="UI:Canvas:Unload" pos="-4750,-520,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="1137" Class="UI:Canvas:Load" pos="-5390,-400,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/missioncomplete.xml"/>
+      </Node>
+      <Node Id="1138" Class="UI:Text:SetText" pos="-4650,-400,0" flags="0">
+       <Inputs CanvasID="0" ElementID="2" Value=""/>
+      </Node>
+      <Node Id="1139" Class="UI:Canvas:Unload" pos="-4650,-290,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="10" nodeOut="7" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="562" nodeOut="7" portIn="Enable" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="984" nodeOut="7" portIn="false" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="1046" nodeOut="7" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="1052" nodeOut="7" portIn="In1" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="1056" nodeOut="7" portIn="Enable" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="Pos" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="994" nodeOut="8" portIn="In0" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="609" nodeOut="562" portIn="entityId" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="1061" nodeOut="562" portIn="Get" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="1061" nodeOut="562" portIn="entityId" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="611" nodeOut="609" portIn="Pos2" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="634" nodeOut="609" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="634" nodeOut="609" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="892" nodeOut="615" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="907" nodeOut="615" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="911" nodeOut="615" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="635" nodeOut="634" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="664" nodeOut="635" portIn="A" portOut="Length" enabled="1"/>
+      <Edge nodeIn="664" nodeOut="635" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="611" nodeOut="664" portIn="Draw" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="609" nodeOut="817" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="836" nodeOut="817" portIn="Get" portOut="tick" enabled="1"/>
+      <Edge nodeIn="962" nodeOut="817" portIn="Set" portOut="tick" enabled="1"/>
+      <Edge nodeIn="611" nodeOut="836" portIn="Pos1" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="634" nodeOut="836" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="852" nodeOut="836" portIn="Draw" portOut="Pos" enabled="0"/>
+      <Edge nodeIn="852" nodeOut="836" portIn="Pos" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="836" portIn="SphereCenter" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="836" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="836" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="963" nodeOut="836" portIn="pos" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="964" nodeOut="836" portIn="Center" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="964" nodeOut="840" portIn="Next" portOut="Out" enabled="1"/>
+      <Edge nodeIn="931" nodeOut="858" portIn="A" portOut="Max" enabled="1"/>
+      <Edge nodeIn="931" nodeOut="858" portIn="Activate" portOut="Max" enabled="1"/>
+      <Edge nodeIn="931" nodeOut="858" portIn="B" portOut="Min" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="867" portIn="In0" portOut="False" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="867" portIn="Activate" portOut="True" enabled="1"/>
+      <Edge nodeIn="961" nodeOut="867" portIn="Activate" portOut="True" enabled="1"/>
+      <Edge nodeIn="876" nodeOut="875" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="876" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="881" nodeOut="876" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="881" nodeOut="876" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="876" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="886" nodeOut="876" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="887" nodeOut="876" portIn="Axis" portOut="out" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="876" portIn="Axis" portOut="out" enabled="1"/>
+      <Edge nodeIn="909" nodeOut="876" portIn="Axis" portOut="out" enabled="1"/>
+      <Edge nodeIn="1001" nodeOut="877" portIn="JSON" portOut="TokenValue" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="878" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="878" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="879" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="908" nodeOut="879" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="879" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="882" nodeOut="881" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="882" nodeOut="881" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="882" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="882" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="883" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="886" nodeOut="883" portIn="Activate" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="885" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="888" nodeOut="886" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="892" nodeOut="887" portIn="vector" portOut="Rotated Vector" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="887" portIn="Spawn" portOut="Rotated Vector" enabled="1"/>
+      <Edge nodeIn="887" nodeOut="888" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="887" nodeOut="888" portIn="Vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="888" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="888" portIn="Vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="909" nodeOut="888" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="909" nodeOut="888" portIn="Vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="891" nodeOut="892" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="891" nodeOut="892" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="897" nodeOut="893" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1091" nodeOut="893" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="895" nodeOut="894" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="895" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="914" nodeOut="895" portIn="A" portOut="Length" enabled="1"/>
+      <Edge nodeIn="914" nodeOut="895" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="921" nodeOut="895" portIn="A" portOut="Length" enabled="1"/>
+      <Edge nodeIn="921" nodeOut="895" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="895" portIn="A" portOut="Length" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="895" portIn="Activate" portOut="Length" enabled="1"/>
+      <Edge nodeIn="898" nodeOut="897" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="903" nodeOut="897" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1090" nodeOut="898" portIn="Show" portOut="OutValue" enabled="0"/>
+      <Edge nodeIn="1090" nodeOut="898" portIn="message" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1125" nodeOut="898" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1127" nodeOut="898" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="899" portIn="In1" portOut="True" enabled="1"/>
+      <Edge nodeIn="891" nodeOut="900" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="903" portIn="In0" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1092" nodeOut="903" portIn="message" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1138" nodeOut="903" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1090" nodeOut="904" portIn="Hide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1092" nodeOut="904" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="1128" nodeOut="904" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1137" nodeOut="904" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="907" nodeOut="905" portIn="vector" portOut="Rotated Vector" enabled="1"/>
+      <Edge nodeIn="908" nodeOut="905" portIn="Spawn" portOut="Rotated Vector" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="907" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="907" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="908" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="911" nodeOut="909" portIn="vector" portOut="Rotated Vector" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="909" portIn="Spawn" portOut="Rotated Vector" enabled="1"/>
+      <Edge nodeIn="910" nodeOut="911" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="910" nodeOut="911" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="910" nodeOut="912" portIn="entityId" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="915" nodeOut="914" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="915" nodeOut="914" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="915" portIn="scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="919" portIn="Scale" portOut="Result" enabled="1"/>
+      <Edge nodeIn="908" nodeOut="919" portIn="Scale" portOut="Result" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="919" portIn="Scale" portOut="Result" enabled="1"/>
+      <Edge nodeIn="919" nodeOut="921" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="919" nodeOut="921" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="919" nodeOut="921" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="615" nodeOut="923" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="615" nodeOut="923" portIn="Base" portOut="Out" enabled="1"/>
+      <Edge nodeIn="933" nodeOut="931" portIn="vector" portOut="Out" enabled="1"/>
+      <Edge nodeIn="935" nodeOut="933" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="935" nodeOut="933" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="936" nodeOut="933" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="936" nodeOut="933" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="858" nodeOut="934" portIn="Get" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="934" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="935" nodeOut="934" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="936" nodeOut="934" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="935" portIn="BoundsMax" portOut="Out" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="935" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="940" nodeOut="935" portIn="MinPos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="936" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="936" portIn="BoundsMin" portOut="Out" enabled="1"/>
+      <Edge nodeIn="894" nodeOut="936" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="940" nodeOut="936" portIn="Draw" portOut="Out" enabled="1"/>
+      <Edge nodeIn="940" nodeOut="936" portIn="MaxPos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="961" portIn="In1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="995" nodeOut="961" portIn="In" portOut="Done" enabled="1"/>
+      <Edge nodeIn="963" nodeOut="962" portIn="entityId" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="858" nodeOut="964" portIn="entityId" portOut="OutEntityId" enabled="1"/>
+      <Edge nodeIn="934" nodeOut="964" portIn="Get" portOut="OutEntityId" enabled="1"/>
+      <Edge nodeIn="934" nodeOut="964" portIn="entityId" portOut="OutEntityId" enabled="1"/>
+      <Edge nodeIn="961" nodeOut="964" portIn="Entity" portOut="OutEntityId" enabled="1"/>
+      <Edge nodeIn="852" nodeOut="965" portIn="Radius" portOut="Out" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="965" portIn="SphereRadius" portOut="Out" enabled="1"/>
+      <Edge nodeIn="915" nodeOut="965" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="964" nodeOut="965" portIn="Radius" portOut="Out" enabled="1"/>
+      <Edge nodeIn="969" nodeOut="965" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="969" nodeOut="965" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="969" nodeOut="965" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="969" portIn="Scale" portOut="Result" enabled="1"/>
+      <Edge nodeIn="994" nodeOut="969" portIn="In1" portOut="Result" enabled="1"/>
+      <Edge nodeIn="817" nodeOut="984" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="1083" nodeOut="984" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="994" portIn="Spawn" portOut="Out" enabled="1"/>
+      <Edge nodeIn="997" nodeOut="995" portIn="Activate" portOut="Count" enabled="1"/>
+      <Edge nodeIn="997" nodeOut="995" portIn="B" portOut="Count" enabled="1"/>
+      <Edge nodeIn="1074" nodeOut="995" portIn="Activate" portOut="Count" enabled="1"/>
+      <Edge nodeIn="1080" nodeOut="995" portIn="A" portOut="Count" enabled="1"/>
+      <Edge nodeIn="1080" nodeOut="995" portIn="Activate" portOut="Count" enabled="1"/>
+      <Edge nodeIn="995" nodeOut="997" portIn="Reset" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="999" nodeOut="997" portIn="Set" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="1013" nodeOut="998" portIn="In0" portOut="Done" enabled="1"/>
+      <Edge nodeIn="1073" nodeOut="998" portIn="Activate" portOut="Done" enabled="1"/>
+      <Edge nodeIn="998" nodeOut="999" portIn="Activate" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="998" nodeOut="999" portIn="Entity" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="893" nodeOut="1001" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1002" nodeOut="1001" portIn="JSON" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1005" nodeOut="1002" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1005" nodeOut="1002" portIn="JsonArray" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1028" nodeOut="1005" portIn="In0" portOut="True" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1005" portIn="false" portOut="True" enabled="1"/>
+      <Edge nodeIn="1032" nodeOut="1009" portIn="In" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="562" nodeOut="1013" portIn="Disable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="984" nodeOut="1013" portIn="true" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1056" nodeOut="1013" portIn="Disable" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1059" nodeOut="1013" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1028" nodeOut="1016" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1079" nodeOut="1016" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1092" nodeOut="1016" portIn="Hide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1139" nodeOut="1016" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1013" nodeOut="1017" portIn="In1" portOut="output" enabled="1"/>
+      <Edge nodeIn="1016" nodeOut="1028" portIn="In0" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1016" nodeOut="1032" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1028" nodeOut="1032" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1032" nodeOut="1037" portIn="Block" portOut="out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1038" portIn="true" portOut="output" enabled="1"/>
+      <Edge nodeIn="1075" nodeOut="1038" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="1052" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="964" nodeOut="1054" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="1054" nodeOut="1055" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="1046" nodeOut="1056" portIn="Activate" portOut="MousePressed" enabled="1"/>
+      <Edge nodeIn="1052" nodeOut="1056" portIn="In0" portOut="MouseReleased" enabled="1"/>
+      <Edge nodeIn="1059" nodeOut="1056" portIn="In1" portOut="MouseReleased" enabled="1"/>
+      <Edge nodeIn="1067" nodeOut="1056" portIn="In0" portOut="MousePressed" enabled="1"/>
+      <Edge nodeIn="1055" nodeOut="1059" portIn="true" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1062" nodeOut="1061" portIn="Draw" portOut="Max" enabled="1"/>
+      <Edge nodeIn="1062" nodeOut="1061" portIn="MaxPos" portOut="Max" enabled="1"/>
+      <Edge nodeIn="1062" nodeOut="1061" portIn="MinPos" portOut="Min" enabled="1"/>
+      <Edge nodeIn="1055" nodeOut="1067" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1073" nodeOut="1071" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="1074" nodeOut="1071" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="1079" nodeOut="1075" portIn="In1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="1079" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="965" nodeOut="1079" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1074" nodeOut="1080" portIn="ElementID" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1071" nodeOut="1083" portIn="Activate" portOut="False" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="1091" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="1091" portIn="Compare" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="1106" portIn="Reset" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="1127" nodeOut="1125" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="1127" nodeOut="1125" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="1128" nodeOut="1125" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="1138" nodeOut="1137" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="1138" nodeOut="1137" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="1139" nodeOut="1137" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{000076E8-EA46-4922-9DDC-7BFAC7966743}" Name="Clock" HideOrder="0" Pos="1051,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="141" Class="UI:Text:SetText" pos="-3990,-790,0" flags="0">
+       <Inputs CanvasID="0" ElementID="2" Value=""/>
+      </Node>
+      <Node Id="144" Class="Mission:GameTokenGet" pos="-4690,-640,0" flags="0">
+       <Inputs gametoken_Token="Level.Username"/>
+      </Node>
+      <Node Id="570" Name="Clocks" Class="_commentbox" pos="-5690,-508.10175,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3080" Height="700"/>
+       <NodeSize Width="3080" Height="752.69971"/>
+      </Node>
+      <Node Id="571" Name="Game Clock" Class="_commentbox" pos="-5670,-220.93132,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3030" Height="380"/>
+       <NodeSize Width="3030" Height="432.69968"/>
+      </Node>
+      <Node Id="691" Class="AWS:Primitive:LambdaInvoke" pos="-4670,-340,0" flags="0">
+       <Inputs FunctionName="DontDieAWS.DontDieMain" RequestBody=""/>
+      </Node>
+      <Node Id="718" Class="Time:Time" pos="-6070,-40,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="774" Class="Mission:GameTokenGet" pos="-5360,-110,0" flags="0">
+       <Inputs gametoken_Token="StartTime"/>
+      </Node>
+      <Node Id="786" Class="Math:Sub" pos="-5070,-20,0" flags="1">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="803" Class="Mission:GameTokenSet" pos="-5650,-110,0" flags="0">
+       <Inputs gametoken_Token="StartTime" TokenValue=""/>
+      </Node>
+      <Node Id="807" Class="Math:Floor" pos="-4250,110,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="814" Class="Math:Div" pos="-4470,100,0" flags="0">
+       <Inputs A="0" B="60"/>
+      </Node>
+      <Node Id="817" Class="String:Concat" pos="-4110,100,0" flags="0">
+       <Inputs String1="" String2=":"/>
+      </Node>
+      <Node Id="820" Name="Sec To Min" Class="_comment" pos="-4470,70,0" flags="0"/>
+      <Node Id="822" Name="Sec to Sec" Class="_comment" pos="-4470,-40,0" flags="0"/>
+      <Node Id="823" Name="Sec to Mill" Class="_comment" pos="-4470,-150,0" flags="0"/>
+      <Node Id="824" Class="Math:Sub" pos="-4670,-110,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="825" Class="Math:Floor" pos="-4870,-110,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="826" Class="Math:Mul" pos="-4470,-120,0" flags="0">
+       <Inputs A="0" B="100"/>
+      </Node>
+      <Node Id="827" Class="Math:Floor" pos="-4250,-110,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="828" Class="String:Concat" pos="-3940,-10,0" flags="0">
+       <Inputs String1="" String2=":"/>
+      </Node>
+      <Node Id="829" Class="String:Concat" pos="-3790,-100,0" flags="0">
+       <Inputs String1="" String2=":"/>
+      </Node>
+      <Node Id="830" Class="String:Concat" pos="-3610,-130,0" flags="0">
+       <Inputs String1="" String2=":"/>
+      </Node>
+      <Node Id="832" Class="Debug:DisplayMessage" pos="-3410,80,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="730" posY="640" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="833" Class="Math:Floor" pos="-4250,-10,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="834" Class="Math:Mod" pos="-4470,-10,0" flags="0">
+       <Inputs A="0" B="60"/>
+      </Node>
+      <Node Id="835" Name="." Class="_commentbox" pos="-5670,-461.2489,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2080" Height="190"/>
+       <NodeSize Width="2080" Height="242.69969"/>
+      </Node>
+      <Node Id="837" Name="At start / reset get raw time value once." Class="_comment" pos="-5410,-140,0" flags="0"/>
+      <Node Id="838" Class="UI:Canvas:Load" pos="-3450,-150,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/Dont_Die/UI/gametimer.xml"/>
+      </Node>
+      <Node Id="839" Class="UI:Text:SetText" pos="-2850,-150,0" flags="0">
+       <Inputs CanvasID="0" ElementID="8" Value=""/>
+      </Node>
+      <Node Id="840" Class="Logic:Gate" pos="-5380,90,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="841" Name="Stop the clock on death" Class="_comment" pos="-5380,60,0" flags="0"/>
+      <Node Id="842" Name="Zero start time" Class="_comment" pos="-5070,-50,0" flags="0"/>
+      <Node Id="849" Class="UI:Canvas:Unload" pos="-2860,20,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="870" Name="Dead State Token" Class="_commentbox" pos="-6970,8.3016243,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="120"/>
+       <NodeSize Width="440" Height="172.69969"/>
+      </Node>
+      <Node Id="871" Name="Reset World Token" Class="_commentbox" pos="-6970,-202.58925,0" flags="0">
+       <Inputs TextSize="1" Color="0.768151,0.590619,0.021219" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="120"/>
+       <NodeSize Width="440" Height="172.69969"/>
+      </Node>
+      <Node Id="876" Class="Mission:GameToken" pos="-6950,80,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="877" Class="Mission:GameToken" pos="-6950,-130,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" CompareValue="1"/>
+      </Node>
+      <Node Id="981" Name="^" Class="_commentbox" pos="-5360,-421.69934,0" flags="0">
+       <Inputs TextSize="1" Color="0.262251,0.577581,0.577581" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1260" Height="140"/>
+       <NodeSize Width="1260" Height="192.69969"/>
+      </Node>
+      <Node Id="982" Class="Game:GetUsername" pos="-6080,-510,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="983" Class="JSON:SetJsonProperty" pos="-5630,-340,0" flags="0">
+       <Inputs JsonObject="" Name="username" Value=""/>
+      </Node>
+      <Node Id="985" Name="Get windows user name and store" Class="_comment" pos="-6080,-550,0" flags="0"/>
+      <Node Id="986" Class="Mission:GameTokenSet" pos="-5620,-690,0" flags="0">
+       <Inputs gametoken_Token="Level.Username" TokenValue=""/>
+      </Node>
+      <Node Id="987" Name="Store Username in Token for UI" Class="_comment" pos="-5620,-720,0" flags="0"/>
+      <Node Id="995" Class="Time:Delay" pos="-5260,-690,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="996" Class="Mission:GameTokenGet" pos="-5060,-690,0" flags="0">
+       <Inputs gametoken_Token="Level.CanvasID"/>
+      </Node>
+      <Node Id="997" Class="String:Concat" pos="-4330,-660,0" flags="0">
+       <Inputs String1="Don&apos;t Die " String2=""/>
+      </Node>
+      <Node Id="998" Class="UI:Canvas:Unload" pos="-3780,-720,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="999" Class="Time:Delay" pos="-3980,-640,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs delay="3" resetOnInput="0"/>
+      </Node>
+      <Node Id="1000" Name="Welcome Text" Class="_commentbox" pos="-5690,-900.85095,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2150" Height="320"/>
+       <NodeSize Width="2150" Height="372.69968"/>
+      </Node>
+      <Node Id="1001" Name="." Class="_commentbox" pos="-5660,-870.85083,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2110" Height="270"/>
+       <NodeSize Width="2110" Height="322.69968"/>
+      </Node>
+      <Node Id="1046" Class="Mission:GameTokenSet" pos="-3990,-340,0" flags="0">
+       <Inputs gametoken_Token="Level.AWS.Lambda Update" TokenValue=""/>
+      </Node>
+      <Node Id="1047" Class="JSON:SetJsonProperty" pos="-5350,-350,0" flags="0">
+       <Inputs JsonObject="" Name="commands" Value="[ &quot;startGame&quot;, &quot;getDailyGift&quot;, &quot;getMessageOfTheDay&quot; ]"/>
+      </Node>
+      <Node Id="1048" Name="Start the clock on Lambda" Class="_comment" pos="-4670,-380,0" flags="0"/>
+      <Node Id="1049" Name="Send the updates to a token so they \n are accessible in other graphs. " Class="_comment" pos="-3990,-400,0" flags="0"/>
+      <Node Id="1050" Name="Send windows user name \n to lambda for highscore" Class="_comment" pos="-5640,-390,0" flags="0"/>
+      <Node Id="1051" Class="String:Concat" pos="-3650,10,0" flags="0">
+       <Inputs String1="" String2=" sec"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="997" nodeOut="144" portIn="Set" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="997" nodeOut="144" portIn="String2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1046" nodeOut="691" portIn="TokenValue" portOut="ResponseBody" enabled="1"/>
+      <Edge nodeIn="1046" nodeOut="691" portIn="Activate" portOut="Success" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="718" portIn="A" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="718" portIn="TokenValue" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="718" portIn="In" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="774" portIn="B" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="786" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="786" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="824" nodeOut="786" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="824" nodeOut="786" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="825" nodeOut="786" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="833" nodeOut="786" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="834" nodeOut="786" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="834" nodeOut="786" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="803" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="817" nodeOut="807" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="817" nodeOut="807" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="807" nodeOut="814" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="817" portIn="String1" portOut="Out" enabled="0"/>
+      <Edge nodeIn="826" nodeOut="824" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="826" nodeOut="824" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="824" nodeOut="825" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="827" nodeOut="826" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="830" nodeOut="827" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="830" nodeOut="827" portIn="String2" portOut="Out" enabled="0"/>
+      <Edge nodeIn="829" nodeOut="828" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="829" nodeOut="828" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1051" nodeOut="828" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1051" nodeOut="828" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="830" nodeOut="829" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="832" nodeOut="830" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="832" nodeOut="830" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="838" nodeOut="830" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="833" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="833" portIn="String2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="839" nodeOut="838" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="839" nodeOut="838" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="849" nodeOut="838" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="840" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="876" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="849" nodeOut="876" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="877" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="877" portIn="Open" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="982" nodeOut="877" portIn="GetUsername" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="983" nodeOut="982" portIn="In" portOut="Username" enabled="1"/>
+      <Edge nodeIn="983" nodeOut="982" portIn="Value" portOut="Username" enabled="1"/>
+      <Edge nodeIn="986" nodeOut="982" portIn="Activate" portOut="Username" enabled="1"/>
+      <Edge nodeIn="986" nodeOut="982" portIn="TokenValue" portOut="Username" enabled="1"/>
+      <Edge nodeIn="1047" nodeOut="983" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1047" nodeOut="983" portIn="JsonObject" portOut="Out" enabled="1"/>
+      <Edge nodeIn="995" nodeOut="986" portIn="in" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="996" nodeOut="995" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="996" portIn="CanvasID" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="144" nodeOut="996" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="998" nodeOut="996" portIn="CanvasId" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="997" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="997" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="999" nodeOut="997" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="998" nodeOut="999" portIn="Activate" portOut="out" enabled="1"/>
+      <Edge nodeIn="691" nodeOut="1047" portIn="Invoke" portOut="Out" enabled="1"/>
+      <Edge nodeIn="691" nodeOut="1047" portIn="RequestBody" portOut="Out" enabled="1"/>
+      <Edge nodeIn="839" nodeOut="1051" portIn="Value" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="BestSurviveTime" Type="2"/>
+      <Token Name="StartTime" Type="2"/>
+      <Token Name="SurviveTime" Type="2"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Logic" LayerGUID="{C188F01C-FD4D-467F-A107-3799619DB913}" Id="{52A2BCFA-3B85-4FFD-BD5F-F8AB71E9A529}" Name="Ship_Phys" HideOrder="0" Pos="1054,1050,50" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="3" Class="Physics:ActionImpulse" pos="3850,8540,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="-2,0,0" Point="0,0,0" PartIndex="0" CoordSystem="2"/>
+      </Node>
+      <Node Id="4" Class="Physics:ActionImpulse" pos="3850,8730,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="2,0,0" Point="0,0,0" PartIndex="0" CoordSystem="2"/>
+      </Node>
+      <Node Id="5" Name="Ship_Controller" Class="_commentbox" pos="3183.7666,7609.1196,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1850" Height="1780"/>
+       <NodeSize Width="1850" Height="1832.8408"/>
+      </Node>
+      <Node Id="7" Class="Logic:Gate" pos="3530,7800,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="13" Class="Debug:InputKey" pos="3250,8020,0" flags="0">
+       <Inputs entityId="0" Key="s" NonDevMode="1"/>
+      </Node>
+      <Node Id="15" Class="Physics:ActionImpulse" pos="4420,8010,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" Impulse="0,2000,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="0"/>
+      </Node>
+      <Node Id="16" Class="Logic:Gate" pos="3530,8020,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="98" Name="Forward_/_Reverse" Class="_commentbox" pos="3213.7666,7699.105,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1540" Height="470"/>
+       <NodeSize Width="1540" Height="522.84088"/>
+      </Node>
+      <Node Id="333" Class="Debug:Draw:Sphere" pos="4750,8390,0" flags="0" InHideMask="31">
+       <Inputs Pos="0,0,0" Radius="0.08" Color="1,1,1" Time="3"/>
+      </Node>
+      <Node Id="361" Class="Debug:InputKey" pos="3250,8560,0" flags="0">
+       <Inputs entityId="0" Key="a" NonDevMode="1"/>
+      </Node>
+      <Node Id="362" Class="Debug:InputKey" pos="3250,8760,0" flags="0">
+       <Inputs entityId="0" Key="d" NonDevMode="1"/>
+      </Node>
+      <Node Id="399" Class="Entity:GetPos" pos="3470,8330,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="401" Class="Time:Time" pos="2890,8180,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="404" Class="Math:AnglesToDir" pos="3623.7666,8335.0508,0" flags="0">
+       <Inputs Angles="0,0,0"/>
+      </Node>
+      <Node Id="405" Class="Vec3:ScaleVec3" pos="4220,7850,0" flags="0">
+       <Inputs vector="0,0,0" scale="-20"/>
+      </Node>
+      <Node Id="406" Class="Vec3:FromVec3" pos="3800,8340,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="407" Class="Vec3:ToVec3" pos="3970,8340,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="408" Class="Vec3:ScaleVec3" pos="4220,8070,0" flags="0">
+       <Inputs vector="0,0,0" scale="20"/>
+      </Node>
+      <Node Id="415" Class="Physics:ActionImpulse" pos="4420,7780,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" Impulse="0,-2000,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="0"/>
+      </Node>
+      <Node Id="416" Class="Debug:InputKey" pos="3240,7800,0" flags="0">
+       <Inputs entityId="0" Key="w" NonDevMode="1"/>
+      </Node>
+      <Node Id="417" Class="Logic:Gate" pos="3600,8560,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="418" Class="Logic:Gate" pos="3590,8760,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="421" Name="Left_/_Right" Class="_commentbox" pos="3213.7666,8459.0869,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="890" Height="420"/>
+       <NodeSize Width="890" Height="472.84088"/>
+      </Node>
+      <Node Id="423" Class="Entity:GetPos" pos="4280,8350,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{567C2B93-8A0D-4A56-973D-69B80A36578C}" EntityGUID_64="4A568A0D567C2B93">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="426" Name="Draws_trail" Class="_comment" pos="4280,8320,0" flags="0"/>
+      <Node Id="471" Class="Logic:Any" pos="4150,8350,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="477" Class="Debug:Draw:Sphere" pos="4750,8270,0" flags="0" InHideMask="31">
+       <Inputs Pos="0,0,0" Radius="0.08" Color="1,1,1" Time="3"/>
+      </Node>
+      <Node Id="479" Class="Vec3:AddVec3" pos="4480,8290,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs A="0.17,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="480" Class="Vec3:AddVec3" pos="4480,8380,0" flags="0" InHideMask="7" OutHideMask="1">
+       <Inputs A="-0.17,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="481" Name="." Class="_commentbox" pos="3233.7666,8199.0879,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="870" Height="230"/>
+       <NodeSize Width="870" Height="282.84088"/>
+      </Node>
+      <Node Id="482" Name="Ships_Vector" Class="_comment" pos="3620,8300,0" flags="0"/>
+      <Node Id="483" Name="Leave_out_Y_impulse" Class="_comment" pos="3803.7666,8305.0508,0" flags="0"/>
+      <Node Id="484" Name="Draw_two_trails_one_for_each_engine._" Class="_comment" pos="4660,8350,0" flags="0"/>
+      <Node Id="488" Name="fx" Class="_commentbox" pos="4120,8198.5566,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="890" Height="230"/>
+       <NodeSize Width="890" Height="282.84088"/>
+      </Node>
+      <Node Id="494" Name="Stablizer" Class="_commentbox" pos="3220,8942.4502,0" flags="0">
+       <Inputs TextSize="1" Color="0.127438,0.127438,0.127438" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1400" Height="390"/>
+       <NodeSize Width="1400" Height="442.84088"/>
+      </Node>
+      <Node Id="502" Class="Vec3:ToVec3" pos="4210,9050,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="508" Class="Physics:ActionImpulse" pos="4380,9020,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0" Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="2"/>
+      </Node>
+      <Node Id="514" Class="Math:Mul" pos="3980,9290,0" flags="0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="516" Class="Physics:Dynamics" pos="3240,9130,0" flags="0" EntityGUID="{280F0985-775C-4BD0-8209-A1C2BDE3C1D1}" EntityGUID_64="4BD0775C280F0985">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="518" Class="Vec3:FromVec3" pos="3520,9190,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="524" Class="Math:Mul" pos="3980,9170,0" flags="0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="540" Class="Debug:DisplayMessage" pos="4380,9270,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="70" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="557" Class="Math:Mul" pos="3980,9050,0" flags="0">
+       <Inputs A="0" B="-0.5"/>
+      </Node>
+      <Node Id="558" Name="yaw" Class="_comment" pos="3980,9020,0" flags="0"/>
+      <Node Id="559" Name="pitch" Class="_comment" pos="3980,9150,0" flags="0"/>
+      <Node Id="560" Name="roll" Class="_comment" pos="3980,9270,0" flags="0"/>
+      <Node Id="574" Class="Logic:Gate" pos="3260,8320,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="604" Name="When_dead_disable_controls" Class="_comment" pos="3220,8280,0" flags="0"/>
+      <Node Id="846" Class="Logic:Gate" pos="3720,9040,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="868" Class="Mission:GameToken" pos="2650,8420,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.PlayerDead" CompareValue="1"/>
+      </Node>
+      <Node Id="869" Class="Mission:GameToken" pos="2660,8600,0" flags="0">
+       <Inputs gametoken_Token="Level.WorldStates.ResetGame" CompareValue="1"/>
+      </Node>
+      <Node Id="870" Name="Dead State Token" Class="_commentbox" pos="2630,8318.1572,0" flags="0">
+       <Inputs TextSize="1" Color="0.822786,0.194618,0.194618" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="150"/>
+       <NodeSize Width="440" Height="202.84087"/>
+      </Node>
+      <Node Id="871" Name="Reset World Token" Class="_commentbox" pos="2640,8528.1582,0" flags="0">
+       <Inputs TextSize="1" Color="0.768151,0.590619,0.021219" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="440" Height="120"/>
+       <NodeSize Width="440" Height="172.84087"/>
+      </Node>
+      <Node Id="872" Name="Check to see if player is dead. " Class="_comment" pos="2650,8380,0" flags="0"/>
+      <Node Id="873" Name="Disabled due to gimbal lock" Class="_comment" pos="4130,9240,0" flags="0"/>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="415" nodeOut="7" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="471" nodeOut="7" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="13" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="13" portIn="Close" portOut="Released" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="16" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="471" nodeOut="16" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="417" nodeOut="361" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="417" nodeOut="361" portIn="Close" portOut="Released" enabled="1"/>
+      <Edge nodeIn="418" nodeOut="362" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="418" nodeOut="362" portIn="Close" portOut="Released" enabled="1"/>
+      <Edge nodeIn="404" nodeOut="399" portIn="Angles" portOut="Rotate" enabled="1"/>
+      <Edge nodeIn="574" nodeOut="401" portIn="In" portOut="tick" enabled="1"/>
+      <Edge nodeIn="406" nodeOut="404" portIn="vec3" portOut="Dir" enabled="1"/>
+      <Edge nodeIn="415" nodeOut="405" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="407" nodeOut="406" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="407" nodeOut="406" portIn="z" portOut="z" enabled="1"/>
+      <Edge nodeIn="405" nodeOut="407" portIn="vector" portOut="Result" enabled="1"/>
+      <Edge nodeIn="408" nodeOut="407" portIn="vector" portOut="Result" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="408" portIn="Impulse" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="416" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="416" portIn="Close" portOut="Released" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="417" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="418" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="479" nodeOut="423" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="479" nodeOut="423" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="480" nodeOut="423" portIn="Activate" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="480" nodeOut="423" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="423" nodeOut="471" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="477" nodeOut="479" portIn="Draw" portOut="Out" enabled="1"/>
+      <Edge nodeIn="477" nodeOut="479" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="333" nodeOut="480" portIn="Draw" portOut="Out" enabled="1"/>
+      <Edge nodeIn="333" nodeOut="480" portIn="Pos" portOut="Out" enabled="1"/>
+      <Edge nodeIn="508" nodeOut="502" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="508" nodeOut="502" portIn="AngularImpulse" portOut="Result" enabled="1"/>
+      <Edge nodeIn="540" nodeOut="502" portIn="Show" portOut="Result" enabled="0"/>
+      <Edge nodeIn="540" nodeOut="502" portIn="message" portOut="Result" enabled="1"/>
+      <Edge nodeIn="502" nodeOut="514" portIn="y" portOut="Out" enabled="0"/>
+      <Edge nodeIn="518" nodeOut="516" portIn="vec3" portOut="AngularVelocity" enabled="1"/>
+      <Edge nodeIn="514" nodeOut="518" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="514" nodeOut="518" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="524" nodeOut="518" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="524" nodeOut="518" portIn="Activate" portOut="x" enabled="1"/>
+      <Edge nodeIn="557" nodeOut="518" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="846" nodeOut="518" portIn="In" portOut="y" enabled="1"/>
+      <Edge nodeIn="502" nodeOut="524" portIn="z" portOut="Out" enabled="0"/>
+      <Edge nodeIn="502" nodeOut="557" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="574" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="574" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="399" nodeOut="574" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="417" nodeOut="574" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="418" nodeOut="574" portIn="In" portOut="Out" enabled="1"/>
+      <Edge nodeIn="557" nodeOut="846" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="574" nodeOut="868" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="846" nodeOut="868" portIn="Close" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="574" nodeOut="869" portIn="Open" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="846" nodeOut="869" portIn="Open" portOut="OnTrue" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="CognitoIdentityID" Type="5"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

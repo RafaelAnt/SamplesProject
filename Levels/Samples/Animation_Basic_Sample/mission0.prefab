@@ -1,0 +1,18 @@
+<ObjectStream version="1">
+	<Class name="EntityGroup" version="1" type="{0A7DD014-B302-4808-8DD7-30E4FE732B4D}">
+		<Class name="AZStd::vector" field="Entities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+			<Class name="AZ::Entity" field="element" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+				<Class name="AZ::u64" field="Id" value="13788715484135042521" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+				<Class name="AZStd::string" field="Name" value="Nothing selected." type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+				<Class name="bool" field="IsDependencyReady" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+				<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+					<Class name="TransformComponent" field="element" version="1" type="{22B10178-39B6-4C12-BB37-77DB45FDD3B6}">
+						<Class name="AZ::u64" field="Parent" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+						<Class name="Transform" field="Transform" value="1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000" type="{5D9958E9-9F1E-4985-B532-FFFDE75FEDFD}"/>
+					</Class>
+				</Class>
+			</Class>
+		</Class>
+	</Class>
+</ObjectStream>
+
