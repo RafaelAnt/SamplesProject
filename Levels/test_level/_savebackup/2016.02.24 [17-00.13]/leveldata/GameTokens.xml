@@ -1,5 +1,6 @@
 <GameTokens>
  <GameTokensLibrary>
   <LevelLibrary Name="Level"/>
+  <Library Name="GettingStarted_GT"/>
  </GameTokensLibrary>
 </GameTokens>
