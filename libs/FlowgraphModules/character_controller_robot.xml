@@ -13,15 +13,15 @@
   <Node Id="2" Class="Module:End_Character_Controller_Robot" pos="-350,1510,0" flags="0">
    <Inputs />
   </Node>
-  <Node Id="670" Name="Controller" Class="_commentbox" pos="674.77881,791.76605,0" flags="0">
+  <Node Id="670" Name="Controller" Class="_commentbox" pos="674.77881,707.23712,0" flags="0">
    <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1370" Height="2300"/>
-   <NodeSize Width="1370" Height="2325.105"/>
+   <NodeSize Width="1370" Height="2409.6338"/>
   </Node>
-  <Node Id="671" Name="." Class="_commentbox" pos="694.77881,965.88977,0" flags="0">
+  <Node Id="671" Name="." Class="_commentbox" pos="694.77881,881.36078,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
-   <NodeSize Width="1220" Height="195.10489"/>
+   <NodeSize Width="1220" Height="279.63388"/>
   </Node>
   <Node Id="685" Class="Actor:LocalPlayer" pos="1220,2670,0" flags="0">
    <Inputs />
@@ -87,28 +87,28 @@
    <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
   </Node>
   <Node Id="756" Name="Forward" Class="_comment" pos="694.77881,976.5564,0" flags="0"/>
-  <Node Id="757" Name="." Class="_commentbox" pos="694.77881,1165.8879,0" flags="0">
+  <Node Id="757" Name="." Class="_commentbox" pos="694.77881,1081.359,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
-   <NodeSize Width="1220" Height="195.10489"/>
+   <NodeSize Width="1220" Height="279.63388"/>
   </Node>
-  <Node Id="758" Name="." Class="_commentbox" pos="694.77881,1365.8879,0" flags="0">
+  <Node Id="758" Name="." Class="_commentbox" pos="694.77881,1281.359,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
-   <NodeSize Width="1220" Height="195.10489"/>
+   <NodeSize Width="1220" Height="279.63388"/>
   </Node>
-  <Node Id="759" Name="." Class="_commentbox" pos="694.77881,1565.8879,0" flags="0">
+  <Node Id="759" Name="." Class="_commentbox" pos="694.77881,1481.359,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1220" Height="170"/>
-   <NodeSize Width="1220" Height="195.10489"/>
+   <NodeSize Width="1220" Height="279.63388"/>
   </Node>
   <Node Id="760" Name="Backward" Class="_comment" pos="694.77881,1176.5564,0" flags="0"/>
   <Node Id="761" Name="Strafe Right" Class="_comment" pos="694.77881,1376.5564,0" flags="0"/>
   <Node Id="762" Name="Strafe Left" Class="_comment" pos="694.77881,1576.5564,0" flags="0"/>
-  <Node Id="763" Name="." Class="_commentbox" pos="694.77881,1995.8939,0" flags="0">
+  <Node Id="763" Name="." Class="_commentbox" pos="694.77881,1911.365,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1320" Height="300"/>
-   <NodeSize Width="1320" Height="325.10489"/>
+   <NodeSize Width="1320" Height="409.63388"/>
   </Node>
   <Node Id="764" Name="Mouse rotate yaw" Class="_comment" pos="704.77881,2036.5564,0" flags="0"/>
   <Node Id="765" Name="Mouse rotate pitch" Class="_comment" pos="704.77881,2166.5564,0" flags="0"/>
@@ -130,15 +130,15 @@
    <Inputs entityId="0" CoordSys="1"/>
   </Node>
   <Node Id="780" Name="add offset" Class="_comment" pos="1164.7788,2366.5564,0" flags="0"/>
-  <Node Id="784" Name="." Class="_commentbox" pos="694.77881,2325.8877,0" flags="0">
+  <Node Id="784" Name="." Class="_commentbox" pos="694.77881,2241.3591,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="950" Height="240"/>
-   <NodeSize Width="950" Height="265.10489"/>
+   <NodeSize Width="950" Height="349.63388"/>
   </Node>
-  <Node Id="786" Name="." Class="_commentbox" pos="694.77881,2595.8879,0" flags="0">
+  <Node Id="786" Name="." Class="_commentbox" pos="694.77881,2511.3594,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="950" Height="220"/>
-   <NodeSize Width="950" Height="245.10489"/>
+   <NodeSize Width="950" Height="329.63388"/>
   </Node>
   <Node Id="789" Name="The sphere&apos;s transform is constantly rotating but\nwe don&apos;t want the ref box to inherit the transform." Class="_comment" pos="724.77881,2536.5564,0" flags="0"/>
   <Node Id="790" Name="Set refbox pos to the sphere pos." Class="_comment" pos="1394.7788,2366.5564,0" flags="0"/>
@@ -146,10 +146,10 @@
   <Node Id="793" Class="Physics:ActionImpulse" pos="1724.7788,1826.5564,0" flags="0">
    <Inputs entityId="0" Impulse="0,0,2000" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
   </Node>
-  <Node Id="794" Name="." Class="_commentbox" pos="694.77881,1755.8896,0" flags="0">
+  <Node Id="794" Name="." Class="_commentbox" pos="694.77881,1671.3607,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1220" Height="220"/>
-   <NodeSize Width="1220" Height="245.10489"/>
+   <NodeSize Width="1220" Height="329.63388"/>
   </Node>
   <Node Id="796" Class="Physics:Dynamics" pos="724.77881,1916.5564,0" flags="0" InHideMask="7" OutHideMask="31">
    <Inputs entityId="0"/>
@@ -201,10 +201,10 @@
   <Node Id="883" Class="Input:ActionHandler" pos="720,2200,0" flags="0">
    <Inputs ActionMapName="player" ActionName="rotatepitch"/>
   </Node>
-  <Node Id="891" Name="." Class="_commentbox" pos="700,2849.4905,0" flags="0">
+  <Node Id="891" Name="." Class="_commentbox" pos="700,2764.9619,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1320" Height="220"/>
-   <NodeSize Width="1320" Height="245.10489"/>
+   <NodeSize Width="1320" Height="329.63388"/>
   </Node>
   <Node Id="895" Class="Entity:EntityPos" pos="1810,2920,0" flags="0">
    <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="0"/>
@@ -215,15 +215,15 @@
   <Node Id="897" Class="Interpolate:SmoothVec3" pos="1490,2990,0" flags="0">
    <Inputs InitialValue="0,0,0" TargetValue="0,0,0" Time="0.2"/>
   </Node>
-  <Node Id="900" Name="." Class="_commentbox" pos="2200,2461.5872,0" flags="0">
+  <Node Id="900" Name="." Class="_commentbox" pos="2200,2377.0586,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="710" Height="200"/>
-   <NodeSize Width="710" Height="225.10489"/>
+   <NodeSize Width="710" Height="309.63388"/>
   </Node>
-  <Node Id="925" Name="Deceleration" Class="_commentbox" pos="2170,2431.5903,0" flags="0">
+  <Node Id="925" Name="Deceleration" Class="_commentbox" pos="2170,2347.0618,0" flags="0">
    <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="770" Height="250"/>
-   <NodeSize Width="770" Height="275.10489"/>
+   <NodeSize Width="770" Height="359.63388"/>
   </Node>
   <Node Id="926" Class="Physics:ActionImpulse" pos="2730,2530,0" flags="0">
    <Inputs entityId="0" Impulse="100,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
@@ -286,15 +286,15 @@
   <Node Id="976" Class="Logic:Any" pos="2170,1610,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
   </Node>
-  <Node Id="977" Name="Head Lean and Pitch" Class="_commentbox" pos="2110,1335.0886,0" flags="0">
+  <Node Id="977" Name="Head Lean and Pitch" Class="_commentbox" pos="2110,1250.5598,0" flags="0">
    <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1330" Height="850"/>
-   <NodeSize Width="1330" Height="875.10492"/>
+   <NodeSize Width="1330" Height="959.63391"/>
   </Node>
-  <Node Id="978" Name="." Class="_commentbox" pos="2130,1365.0886,0" flags="0">
+  <Node Id="978" Name="." Class="_commentbox" pos="2130,1280.5598,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.223228,0.223228" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1290" Height="800"/>
-   <NodeSize Width="1290" Height="825.10492"/>
+   <NodeSize Width="1290" Height="909.63391"/>
   </Node>
   <Node Id="979" Class="Vec3:AddVec3" pos="1130,2990,0" flags="0">
    <Inputs A="0,0,0" B="0,0,90"/>
